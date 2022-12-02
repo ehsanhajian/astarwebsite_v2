@@ -137,13 +137,20 @@ const network = [
   {
     label: "Infrastructure",
     nav: [
-      { label: "Alchemy", href: "https://www.alchemy.com/astar" },
+      { 
+        label: "Shiden Network", 
+        href: "https://shiden.astar.network", 
+      },
+      { 
+        label: "Alchemy", 
+        href: "https://www.alchemy.com/astar", 
+      },
       {
         label: "Blockdeamon",
         href: "https://blockdaemon.com/protocols/astar/",
       },
       {
-        label: "Bware Labs",
+        label: "BlastAPI",
         href: "https://blastapi.io/",
       },
       {

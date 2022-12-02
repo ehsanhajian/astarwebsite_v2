@@ -57,10 +57,6 @@ const logos = [
     image: "huobi-ventures.png",
   },
   {
-    name: "Almaeda Research",
-    image: "almaeda-research.png",
-  },
-  {
     name: "Alchemy Ventures",
     image: "alchemy-ventures.svg",
   },

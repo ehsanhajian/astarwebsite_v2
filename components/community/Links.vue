@@ -36,19 +36,19 @@
 <script setup lang="ts">
 const links = [
   {
-    label: "Learn in depth",
+    label: "Ecosystem Developments",
     to: "Go to Medium",
     href: "https://medium.com/astar-network",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
-    label: "Watch our featured videos",
+    label: "Demos + Tutorials",
     to: "Go to YouTube",
     href: "https://www.youtube.com/c/AstarNetwork",
     color: "bg-space-blue hover:bg-space-blue-lighter",
   },
   {
-    label: "Chat with us directly",
+    label: "Join our Community",
     to: "Go to Discord",
     href: "https://discord.gg/Z3nC9U4",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",

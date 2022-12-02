@@ -7,11 +7,10 @@
         class="py-8 sm:py-12 px-6 sm:px-12 lg:pr-0 lg:pl-20 pr-8 lg:max-w-[500px] text-left"
       >
         <h2 class="font-bold text-2xl sm:text-3xl lg:text-4xl">
-          <span>Astar Space Lab</span>
+          <span>Astar Space Labs</span>
         </h2>
         <p>
-          Support the Astar core team through community and marketing
-          initiatives while accumulating rewards.
+          Get started building on Astar and become a part of our vibrant community through support of our community leaders striving to support you along your building journey. 
         </p>
         <Button
           href="https://astarnetwork.notion.site/Astar-SpaceLabs-bee19d9d13ab41ba8d113347ae56448f"

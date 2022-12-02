@@ -40,20 +40,20 @@ const features = [
   {
     title: "Multichain Smart Contracts",
     description:
-      "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more, allowing for the free flow of assets and communication between networks for the betterment of all.",
+      "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more, allowing for the free flow of assets and communication between multiple ecosystems.",
     href: "https://www.youtube.com/watch?v=bJgMm4SUSJQ&t=134s",
     image: "features-multichain.svg",
   },
   {
     title: "Basic Income For Developers",
-    description: `We invented the "Build2Earn" concept where we distribute ASTR tokens based on the developers' contribution. By making smart contracts, you are rewarded through our innovation we call "dApp Staking".`,
+    description: `Astar pioneered Build2Earn to support and expand the developer community by providing a reward mechanism for building on Astar. If you are a dApp developer you are rewarded by receiving ASTR based on your contribution through a concept we call dApp Staking.`,
     href: "https://docs.astar.network/docs/dapp-staking/",
     image: "features-basic-income.svg",
   },
   {
     title: "Web2 + Web3",
     description:
-      "Astar supports both web2 and web3 developers. Through our multivirtual machine solution, developers can deploy smart contracts both on Ethereum Virtual Machine and WebAssembly.",
+      "Astar supports both Web2 and Web3 developers. We support developers joining the Web3 revolution through our multi-virtual machine to deploy smart contracts using EVM and WASM.",
     href: "https://docs.astar.network/docs/wasm/",
     image: "features-web2-web3.svg",
   },

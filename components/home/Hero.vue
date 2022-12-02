@@ -6,10 +6,10 @@
       <h1
         class="text-3xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] drop-shadow tracking-tight"
       >
-        The Future of Smart Contracts for Multichain.
+        The Future of Smart Contracts for Multichain
       </h1>
       <p class="sm:text-xl mt-6 sm:mt-10 mb-8 sm:mb-14">
-        Astar is a scalable decentralised blockchain for next big Web3
+        Astar is a scalable decentralized blockchain for next big Web3
         innovations.
       </p>
       <div class="sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4">

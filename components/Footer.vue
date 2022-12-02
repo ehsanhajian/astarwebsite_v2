@@ -68,7 +68,7 @@
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
         :class="page === 'home' ? 'text-gray-200' : 'text-gray-400'"
       >
-        &copy; 2022 Astar Portal - The Future of Smart Contracts for Multichain.
+        &copy; 2022 Astar Network - The Future of Smart Contracts for Multichain.
         All Rights Reserved.
       </p>
     </div>
@@ -100,22 +100,25 @@ const nav = [
   {
     name: "Apply",
     nav: [
+      { 
+        name: "Careers", 
+        href: "https://angel.co/company/astar-network", 
+      },
+      {
+        name: "Astar Japan Lab",
+        href: "https://japan.astar.network/",
+      },
       {
         name: "Astar Space Lab",
         href: "https://astarnetwork.notion.site/Astar-SpaceLabs-bee19d9d13ab41ba8d113347ae56448f",
       },
-      { name: "Careers", href: "https://angel.co/company/astar-network" },
       {
-        name: "Astar Growth Program",
+        name: "Astar Ambassador Program",
         href: "https://github.com/AstarNetwork/growth-program",
       },
       {
         name: "Bug Bounty Program",
         href: "https://immunefi.com/bounty/astarnetwork",
-      },
-      {
-        name: "Astar Japan Lab",
-        href: "https://japan.astar.network/",
       },
     ],
   },
@@ -130,6 +133,10 @@ const nav = [
   {
     name: "Other",
     nav: [
+      {
+        name: "Brand Assets",
+        href: "https://github.com/AstarNetwork/brand-assets",
+      },
       {
         name: "Privacy Policy",
         href: "https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing",
@@ -165,7 +172,7 @@ const social = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/AstarNetwork/Astar",
+    href: "https://github.com/AstarNetwork",
     icon: Github,
   },
   {

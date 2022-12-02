@@ -61,19 +61,19 @@
 <script setup lang="ts">
 const building = [
   {
-    title: "Launch your Ethereum dApps",
+    title: "Launch your EVM dApps",
     image: "building-ethereum.svg",
     href: "https://docs.astar.network/docs/EVM/",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
-    title: "Launch your Wasm dApps",
+    title: "Launch your WASM dApps",
     image: "building-wasm.svg",
     href: "https://docs.astar.network/docs/wasm/",
     color: "bg-space-purple hover:bg-space-purple-lighter",
   },
   {
-    title: "Run a collator",
+    title: "Run a Collator",
     image: "building-collator.svg",
     href: "https://docs.astar.network/docs/nodes/",
     color: "bg-space-blue hover:bg-space-blue-lighter",
@@ -85,7 +85,7 @@ const building = [
     color: "bg-space-sky",
   },
   {
-    title: "DApps Template",
+    title: "DApps Templates",
     image: "building-template.svg",
     href: "https://github.com/AstarNetwork/wasm-showcase-dapps",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",

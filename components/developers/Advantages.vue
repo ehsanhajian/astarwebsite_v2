@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-6 sm:mb-16">
-      <span>Advantages of Astar</span>
+      <span>Why Astar?</span>
     </h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 sm:gap-y-16">
       <li v-for="(item, index) in advantages">
@@ -25,33 +25,33 @@
 <script setup lang="ts">
 const advantages = [
   {
-    name: "Solidity-compatible",
-    description: "Easily launch Ethereum dApps",
+    name: "EVM compatible",
+    description: "Easily launch EVM dApps written in Solidity or Vyper.",
     image: "advantages-ethereum.svg",
   },
   {
-    name: "Next Gen Wasm dApps",
-    description: "Easily launch Polkadot native dApps",
+    name: "WASM dApps",
+    description: "Launch next generation Polkadot native dApps",
     image: "advantages-wasm.svg",
   },
   {
-    name: "Highly-Scalable",
-    description: "Processes thousands of transactions.",
+    name: "Scalable",
+    description: "Astar is future-proof and build to scale.",
     image: "advantages-scalable.svg",
   },
   {
     name: "Secure",
-    description: "Astar Network is secured by Polkadot Relaychain",
+    description: "Astar Network is useing the shared-security of Polkadot Relay Chain.",
     image: "advantages-secure.svg",
   },
   {
-    name: "Private & public XCM",
+    name: "XCM",
     description: "Interact with other blockchains with trustless bridges.",
     image: "advantages-xcm.svg",
   },
   {
     name: "Basic Income",
-    description: "Earn token while making your projects.",
+    description: "Be part of our dApp staking mechanism to support your development on Astar Network.",
     image: "advantages-income.svg",
   },
 ];

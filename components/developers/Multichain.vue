@@ -17,8 +17,8 @@
           <span>Multichain Future</span>
         </h2>
         <p class="text-center lg:text-left">
-          We believe that interoperability is the key. Astar is the blockchain
-          that leads the future of web3.
+          Interoperability is key for any dApp utilizing blockchain technology. Astar is the blockchain
+          that leads the future of Web3.
         </p>
       </div>
       <ul class="grid gap-12 lg:ml-28">

@@ -8,7 +8,7 @@
           Developers
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
-          Build Ethereum and native dApps on Astar and be the part of multichain
+          Build EVM and Astar Network native dApps on Astar and be part of multichain
           innovation.
         </p>
         <ul

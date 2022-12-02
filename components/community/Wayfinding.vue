@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
-    <h2 class="title text-center mb-8 sm:mb-16"><span>Wayfinding</span></h2>
+    <h2 class="title text-center mb-8 sm:mb-16"><span>Connect with Us</span></h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
       <li v-for="(item, index) in social">
         <a
@@ -47,7 +47,7 @@ const social = [
     name: "Twitter",
     href: "https://twitter.com/astarNetwork",
     icon: Twitter,
-    stats: "358.7K",
+    stats: "+355K",
     unit: "followers",
     type: "Announcements",
     color: "text-[#1DA1F2]",
@@ -56,7 +56,7 @@ const social = [
     name: "Discord",
     href: "https://discord.gg/Z3nC9U4",
     icon: Discord,
-    stats: "2.1K",
+    stats: "+160K",
     unit: "members",
     type: "Engineering",
     color: "text-[#5865F2]",
@@ -65,7 +65,7 @@ const social = [
     name: "Telegram",
     href: "https://t.me/PlasmOfficial",
     icon: Telegram,
-    stats: "29K",
+    stats: "+28K",
     unit: "members",
     type: "Announcements",
     color: "text-[#0088CC]",
@@ -74,7 +74,7 @@ const social = [
     name: "Medium",
     href: "https://medium.com/astar-network",
     icon: Medium,
-    stats: "7.3K",
+    stats: "+7,0K",
     unit: "followers",
     type: "Announcements",
     color: "text-gray-200",
@@ -83,7 +83,7 @@ const social = [
     name: "GitHub",
     href: "https://github.com/AstarNetwork/Astar",
     icon: Github,
-    stats: "579",
+    stats: "+580",
     unit: "stars",
     type: "Engineering",
     color: "text-[#FAFAFA]",
@@ -92,7 +92,7 @@ const social = [
     name: "YouTube",
     href: "https://www.youtube.com/c/AstarNetwork",
     icon: Youtube,
-    stats: "2,61K",
+    stats: "+2,7K",
     unit: "subscribes",
     type: "Announcements",
     color: "text-[#e64747]",
@@ -101,7 +101,7 @@ const social = [
     name: "Forum",
     href: "https://forum.astar.network/",
     icon: Comments,
-    stats: "170",
+    stats: "+170",
     unit: "topics",
     type: "Announcements",
     color: "text-gray-200",

@@ -12,13 +12,10 @@
     <div class="xl:flex px-4 sm:px-6 lg:mr-6">
       <div class="sm:mr-4 xl:mx-8 mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
-          Welcome to the leading multichain smart contracts platform
+          Welcome to the Astar Network!
         </h2>
         <p class="text-xl">
-          Astar Network is a blockchian built for developers and by developers.
-          Our innovative developer basic income and multivirtual machine allow
-          developers to make scalable and secured applications for DeFi, NFTs,
-          Web3 and more.
+        Astar Network is the infrastructure for the building of dApps with EVM and WASM smart contracts and offers developers true interoperability, with cross-consensus messaging (XCM), and cross-virtual machine (XVM). Astar’s unique Build2Earn model empowers developers to get paid through a dApp staking mechanism for the code they write and dApps they build.
         </p>
       </div>
       <dl class="shrink-0">
@@ -52,7 +49,7 @@
             <img
               class="max-w-[300px] lg:max-w-full"
               src="~/assets/images/home/welcome-community-members.svg"
-              alt="100K Community Members"
+              alt="500K+ Community Members"
               width="505"
               height="105"
             />

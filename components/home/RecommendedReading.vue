@@ -82,21 +82,21 @@ const reading = [
   {
     title: "Welcome to Astar",
     description:
-      "Read the vision of Aster and lean about powerful blockchain technology that makes it possible.",
+      "Vision of Astar and the powerful blockchain technology that makes it possible.",
     href: "https://docs.astar.network/docs/getting-started",
     image: "reading-astar.svg",
   },
   {
-    title: "Discover the ASTR token",
+    title: "ASTR Tokenomics",
     description:
-      "Read Astar's original features and innovative features that unlock web3.",
+      "ASTR governance, incentives and features that unlock Web3.",
     href: "https://docs.astar.network/docs/about/token-economics/economics",
     image: "reading-token.svg",
   },
   {
     title: "Explore the ecosystem",
     description:
-      "Learn more about Astar ecosystem and where we are heading to realise web3.",
+      "Join our ecosystem and understand the power of Astar Network.",
     href: "https://docs.astar.network/docs/ecosystem/",
     image: "reading-ecosystem.svg",
   },

@@ -8,7 +8,7 @@
           Community
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
-          A star is born together with our awesome community.
+          A star is born together with our trusted community.
         </p>
       </div>
     </div>
