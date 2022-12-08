@@ -9,11 +9,9 @@
         </ScrollParallax>
       </div>
       <div class="space-gradient mix-blend-screen">
-        <nuxt-img
-          format="webp"
-          quality="90"
+        <img
           class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-          src="/common/space-cloud.png"
+          src="~/assets/images/common/space-cloud.png"
           alt=""
           width="1728"
           height="1281"

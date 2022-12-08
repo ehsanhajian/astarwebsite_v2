@@ -17,12 +17,17 @@
               data-aos="flip-left"
               :data-aos-delay="index * 100"
             >
-              <nuxt-img
+              <!-- <nuxt-img
                 format="webp"
                 quality="90"
                 width="760"
                 class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
                 :src="`/use-cases/${item.image}`"
+                :alt="item.title"
+              /> -->
+              <img
+                class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
+                :src="useAsset('japan/use-cases/' + item.image)"
                 :alt="item.title"
               />
             </div>

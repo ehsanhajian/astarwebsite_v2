@@ -12,23 +12,33 @@
       <div v-for="item in admins" class="flex items-center justify-center">
         <template v-if="item.href !== ''">
           <a :href="item.href" target="_blank" rel="noopener">
-            <nuxt-img
+            <!-- <nuxt-img
               format="webp"
               quality="90"
               width="400"
               class="h-16 sm:h-24 lg:sm:h-28 w-44 lg:w-48 object-contain"
               :src="`/members/${item.image}`"
               :alt="item.name"
+            /> -->
+            <img
+              class="h-16 sm:h-24 lg:sm:h-28 w-44 lg:w-48 object-contain"
+              :src="useAsset('japan/members/' + item.image)"
+              :alt="item.name"
             />
           </a>
         </template>
         <template v-else>
-          <nuxt-img
+          <!-- <nuxt-img
             format="webp"
             quality="90"
             width="400"
             class="h-28 w-44 lg:w-48 object-contain"
             :src="`/members/${item.image}`"
+            :alt="item.name"
+          /> -->
+          <img
+            class="h-28 w-44 lg:w-48 object-contain"
+            :src="useAsset('japan/members/' + item.image)"
             :alt="item.name"
           />
         </template>
@@ -55,12 +65,17 @@
           class="flex items-center justify-center"
         >
           <a :href="item.href" target="_blank">
-            <nuxt-img
+            <!-- <nuxt-img
               format="webp"
               quality="90"
               width="400"
               class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
               :src="`/members/${item.image}`"
+              :alt="item.name"
+            /> -->
+            <img
+              class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
+              :src="useAsset('japan/members/' + item.image)"
               :alt="item.name"
             />
           </a>
