@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/astar-network'
+    baseURL: '/astarwebsite_v2'
   },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
   image: {
