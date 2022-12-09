@@ -14,45 +14,42 @@
         <h2 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
           Welcome to the Astar Network!
         </h2>
-        <p class="text-xl">
-        Astar Network is the infrastructure for the building of dApps with EVM and WASM smart contracts and offers developers true interoperability, with cross-consensus messaging (XCM), and cross-virtual machine (XVM). Astar’s unique Build2Earn model empowers developers to get paid through a dApp staking mechanism for the code they write and dApps they build.
+        <p class="text-xl leading-loose">
+          Astar Network is the infrastructure for the building of dApps with EVM
+          and WASM smart contracts and offers developers true interoperability,
+          with cross-consensus messaging (XCM), and cross-virtual machine (XVM).
+          Astar’s unique Build2Earn model empowers developers to get paid
+          through a dApp staking mechanism for the code they write and dApps
+          they build.
         </p>
       </div>
       <dl class="shrink-0">
         <div
-          class="flex flex-col mb-12 xl:mb-16"
+          class="flex flex-col mb-12 xl:mb-16 leading-[0.9]"
           data-aos="zoom-out-left"
           data-aos-delay="200"
         >
-          <dt class="order-2 mt-2 text-3xl lg:text-4xl font-bold">
+          <dt
+            class="order-2 mt-2 sm:mt-0 text-3xl lg:text-4xl font-bold sm:pl-12"
+          >
             <span>DApps</span>
           </dt>
-          <dd class="order-1">
-            <img
-              class="max-w-[300px] lg:max-w-full"
-              src="~/assets/images/home/welcome-dapps.svg"
-              alt="50+ DApps"
-              width="403"
-              height="133"
-            />
+          <dd class="order-1 font-black text-8xl sm:text-14xl">
+            <span class="tracking-tighter">+50</span>
           </dd>
         </div>
         <div
-          class="flex flex-col"
+          class="flex flex-col leading-none"
           data-aos="zoom-out-left"
           data-aos-delay="300"
         >
-          <dt class="order-2 mt-2 text-2xl lg:text-3xl font-bold">
+          <dt
+            class="order-2 mt-2 sm:mt-0 text-2xl lg:text-3xl font-bold sm:pl-12"
+          >
             <span>Community Members</span>
           </dt>
-          <dd class="order-1">
-            <img
-              class="max-w-[300px] lg:max-w-full"
-              src="~/assets/images/home/welcome-community-members.svg"
-              alt="500K+ Community Members"
-              width="505"
-              height="105"
-            />
+          <dd class="order-1 font-black text-7xl sm:text-9xl">
+            <span class="tracking-tighter">+500k</span>
           </dd>
         </div>
       </dl>
@@ -63,9 +60,10 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="postcss">
-dt span {
+dt span,
+dd span {
   background: linear-gradient(
-    120deg,
+    90deg,
     #e6007a -5.88%,
     #703ac2 15.42%,
     #0070eb 40.77%,
