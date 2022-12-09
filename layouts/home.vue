@@ -25,7 +25,7 @@ useHead({
       rel: "canonical",
       href: `${meta.url}/${route.meta.slug}`,
     },
-    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    { rel: "icon", type: "image/x-icon", href: "/astarwebsite_v2/favicon.ico" },
   ],
   htmlAttrs: {
     lang: "en",
