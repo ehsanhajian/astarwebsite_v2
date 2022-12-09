@@ -12,9 +12,16 @@
         rel="noopener"
       >
         <div class="sm:mr-5" data-aos="flip-left">
-          <nuxt-img
+          <!-- <nuxt-img
             format="webp"
             quality="90"
+            :src="`http://img.youtube.com/vi/${videos[0].id}/maxresdefault.jpg`"
+            :alt="videos[0].title"
+            class="w-100 rounded-3xl group-hover:brightness-125"
+            width="1280"
+            height="720"
+          /> -->
+          <img
             :src="`http://img.youtube.com/vi/${videos[0].id}/maxresdefault.jpg`"
             :alt="videos[0].title"
             class="w-100 rounded-3xl group-hover:brightness-125"
