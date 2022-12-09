@@ -58,9 +58,16 @@
               data-aos="flip-left"
               :data-aos-delay="index * 100"
             >
-              <nuxt-img
+              <!-- <nuxt-img
                 format="webp"
                 quality="90"
+                :src="`http://img.youtube.com/vi/${video.id}/maxresdefault.jpg`"
+                :alt="video.title"
+                class="w-100 rounded-3xl group-hover:brightness-125"
+                width="1280"
+                height="720"
+              /> -->
+              <img
                 :src="`http://img.youtube.com/vi/${video.id}/maxresdefault.jpg`"
                 :alt="video.title"
                 class="w-100 rounded-3xl group-hover:brightness-125"
