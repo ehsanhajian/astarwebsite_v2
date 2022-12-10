@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:flex lg:items-end relative z-10">
+  <div class="lg:flex lg:items-end relative z-10">
     <div class="shrink-0 mb-8 sm:mb-0" data-aos="zoom-out-right">
       <img
         class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full float-animation"
@@ -9,12 +9,12 @@
         height="750"
       />
     </div>
-    <div class="xl:flex px-4 sm:px-6 lg:mr-6">
-      <div class="sm:mr-4 xl:mx-8 mb-12">
+    <div class="2xl:flex px-4 sm:px-6 lg:mr-6">
+      <div class="lg:mr-4 xl:mx-8 mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
           Welcome to the Astar Network!
         </h2>
-        <p class="text-xl leading-loose">
+        <p class="sm:text-xl sm:leading-loose">
           Astar Network is the infrastructure for the building of dApps with EVM
           and WASM smart contracts and offers developers true interoperability,
           with cross-consensus messaging (XCM), and cross-virtual machine (XVM).
