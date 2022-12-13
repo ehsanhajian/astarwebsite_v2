@@ -1,5 +1,3 @@
-# Nuxt 3 Minimal Starter
-
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
@@ -18,18 +16,18 @@ Start the development server on http://localhost:3000
 npm run dev
 ```
 
-## Production
+## Deploy to GitHub Pages
 
-Build the application for production:
+Export the application for production:
 
 ```bash
-npm run build
+npm run generate
 ```
 
-Locally preview production build:
+Deploy the application to GitHub Pages:
 
 ```bash
-npm run preview
+npm run deploy
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
