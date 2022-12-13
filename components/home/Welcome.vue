@@ -34,7 +34,7 @@
           >
             <span>DApps</span>
           </dt>
-          <dd class="order-1 font-black text-8xl sm:text-14xl">
+          <dd class="order-1 font-black text-9xl sm:text-15xl">
             <span class="tracking-tighter">+50</span>
           </dd>
         </div>
@@ -48,7 +48,7 @@
           >
             <span>Community Members</span>
           </dt>
-          <dd class="order-1 font-black text-7xl sm:text-9xl">
+          <dd class="order-1 font-black text-7xl sm:text-10xl">
             <span class="tracking-tighter">+500k</span>
           </dd>
         </div>
