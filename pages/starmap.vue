@@ -14,15 +14,15 @@
       width="1728"
       height="1728"
     />
-    <RoadmapHero />
+    <StarmapHero />
   </div>
-  <RoadmapContents class="pb-28 sm:pb-44" />
+  <StarmapContents class="pb-28 sm:pb-44" />
 </template>
 
 <script setup lang="ts">
 definePageMeta({
-  pageTitle: "Year of Andromeda",
-  slug: "roadmap",
+  pageTitle: "2023 Starmap",
+  slug: "starmap",
   description: "Embarking on a new journey to reach our full potential",
 });
 </script>

@@ -5,7 +5,7 @@
         <h1
           class="text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight drop-shadow"
         >
-          Year of Andromeda
+          2023 Starmap
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
           Embarking on a new journey to reach our full potential
