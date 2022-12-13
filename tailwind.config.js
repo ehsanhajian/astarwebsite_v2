@@ -18,13 +18,14 @@ module.exports = {
       "5xl": "4rem",
       "6xl": "5rem",
       "7xl": "6rem",
-      "8xl": "8rem",
-      "9xl": "9rem",
+      "8xl": "7rem",
+      "9xl": "8rem",
+      "10xl": "9rem",
       "10xl": "10rem",
-      "10xl": "11rem",
-      "12xl": "12rem",
-      "13xl": "13rem",
-      "14xl": "14rem",
+      "12xl": "11rem",
+      "13xl": "12rem",
+      "14xl": "13rem",
+      "15xl": "14rem",
     },
     extend: {
       colors: {
@@ -68,6 +69,7 @@ module.exports = {
       fontFamily: {
         'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
         'mono': ['"Roboto Mono"', ...defaultTheme.fontFamily.mono],
+        'jp': ['"Noto Sans JP"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
