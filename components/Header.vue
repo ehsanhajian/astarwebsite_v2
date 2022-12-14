@@ -29,6 +29,7 @@
 
           <div class="hidden lg:flex lg:items-center">
             <nav class="flex space-x-10">
+              <a href="/starmap" class="nav-item">2023 Starmap</a>
               <a href="/developers" class="nav-item">Developers</a>
 
               <PopoverButton
@@ -137,13 +138,13 @@ const network = [
   {
     label: "Infrastructure",
     nav: [
-      { 
-        label: "Shiden Network", 
-        href: "https://shiden.astar.network", 
+      {
+        label: "Shiden Network",
+        href: "https://shiden.astar.network",
       },
-      { 
-        label: "Alchemy", 
-        href: "https://www.alchemy.com/astar", 
+      {
+        label: "Alchemy",
+        href: "https://www.alchemy.com/astar",
       },
       {
         label: "Blockdeamon",
