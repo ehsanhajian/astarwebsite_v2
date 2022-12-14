@@ -11,7 +11,7 @@
         leave-to="opacity-0"
       >
         <div
-          class="fixed inset-0 bg-space-gray-dark bg-opacity-75 transition-opacity"
+          class="fixed inset-0 bg-space-gray-dark bg-opacity-90 transition-opacity"
         />
       </TransitionChild>
 
@@ -35,11 +35,11 @@
                 <div class="mt-3 sm:mt-5">
                   <DialogTitle
                     as="h3"
-                    class="text-2xl font-bold text-gray-900 text-center leading-tight"
+                    class="text-3xl font-bold text-space-gray text-center leading-tight"
                   >
                     {{ discoveries[discoveryId]["title"] }}
                   </DialogTitle>
-                  <div class="mt-4">
+                  <div class="mt-4 text-lg">
                     <p class="text-gray-600">
                       {{ discoveries[discoveryId]["description"] }}
                     </p>
@@ -83,20 +83,26 @@
       'starmap/nebula.png'
     )}) no-repeat center top`"
   >
-    <div class="absolute w-full">
-      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6">
-        <div class="flex items-center min-h-[800px]">
-          <div class="whitespace-nowrap text-center">
-            <div class="font-black text-14xl leading-none -mb-4 tracking-tight">
-              Q1
-            </div>
-            <span class="font-jp text-14xl kanji leading-[1.05]"
-              >創<br />世</span
+    <div class="xl:absolute w-full">
+      <div
+        class="max-w-screen-2xl mx-auto px-4 sm:px-6 space-y-24 sm:space-y-0"
+      >
+        <div class="sm:flex items-center min-h-[800px]">
+          <div class="whitespace-nowrap text-center text-7xl sm:text-14xl">
+            <span
+              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
             >
+              Q1
+            </span>
+            <span
+              class="font-jp kanji leading-tight tracking-wide sm:[writing-mode:vertical-lr]"
+            >
+              創世
+            </span>
           </div>
-          <div class="max-w-[580px] ml-10 hidden xl:block">
+          <div class="max-w-[580px] sm:ml-10 relative z-10">
             <h2 class="title mb-4">
-              <span class="text-4xl">The Reborn Nebula</span>
+              <span class="text-3xl sm:text-4xl">The Reborn Nebula</span>
             </h2>
             <div class="text-lg">
               <p class="mb-8">
@@ -112,8 +118,16 @@
                 to the following:
               </p>
               <ul class="list-disc pl-4">
-                <li>XVM</li>
-                <li>Astar UI Library & Astar.js</li>
+                <li>
+                  <span @click="clickAction('xvm')" class="popup-link">
+                    XVM
+                  </span>
+                </li>
+                <li>
+                  <span @click="clickAction('ui')" class="popup-link">
+                    Astar UI Library & Astar.js
+                  </span>
+                </li>
                 <li>WASM tooling and showcase dapps</li>
                 <li>XCM smart contracts</li>
                 <li>dApp staking</li>
@@ -122,18 +136,23 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-end min-h-[800px]">
-          <div class="whitespace-nowrap text-center order-2">
-            <div class="font-black text-14xl leading-none -mb-4 tracking-tight">
+        <div class="sm:flex items-center justify-end min-h-[800px]">
+          <div
+            class="whitespace-nowrap text-center order-2 text-7xl sm:text-14xl"
+          >
+            <span
+              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
+            >
               Q2
-            </div>
-            <span class="font-jp text-14xl kanji leading-[1.05]"
-              >発<br />展</span
+            </span>
+            <span
+              class="font-jp kanji leading-tight tracking-wide sm:[writing-mode:vertical-lr]"
+              >発展</span
             >
           </div>
-          <div class="max-w-[580px] ml-10 order-1">
+          <div class="max-w-[580px] sm:ml-10 order-1">
             <h2 class="title mb-4">
-              <span class="text-4xl">The Growth Nebula</span>
+              <span class="text-3xl sm:text-4xl">The Growth Nebula</span>
             </h2>
             <div class="text-lg">
               <p class="mb-8">
@@ -157,7 +176,10 @@
       </div>
     </div>
 
-    <StarmapLine v-on:showDetails="clickAction" class="w-full relative" />
+    <StarmapLine
+      v-on:showDetails="clickAction"
+      class="w-full relative hidden xl:block"
+    />
   </div>
 </template>
 
@@ -177,14 +199,14 @@ const discoveries = {
   xvm: {
     title: "XVM",
     description:
-      "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    href: "#",
+      "We want to use parachains as a service for dApps on Astar Network. Stay tuned for this discovery coming January 2023.",
+    href: "",
   },
   ui: {
     title: "Astar UI Library & Astar.js",
     description:
-      "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    href: "#",
+      "Check in after our fist discovery to get insight about the second one. See you soon!",
+    href: "",
   },
 };
 
@@ -197,7 +219,7 @@ const clickAction = (discovery) => {
 <style scoped lang="postcss">
 .kanji {
   background: linear-gradient(
-    90deg,
+    180deg,
     #e6007a -5.88%,
     #703ac2 15.42%,
     #0070eb 40.77%,
@@ -207,5 +229,8 @@ const clickAction = (discovery) => {
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
   @apply text-space-gray-dark;
+}
+.popup-link {
+  @apply text-space-cyan hover:underline cursor-pointer transition hover:text-space-cyan-lighter;
 }
 </style>
