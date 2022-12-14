@@ -46,6 +46,13 @@
               <ul class="border-b border-gray-600">
                 <li>
                   <a
+                    href="/starmap"
+                    class="text-white block border-t border-gray-600 px-6 py-5"
+                    >2023 Starmap</a
+                  >
+                </li>
+                <li>
+                  <a
                     href="/developers"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                     >Developers</a
