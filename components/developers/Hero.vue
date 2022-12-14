@@ -8,7 +8,8 @@
           Developers
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
-          Astar XVM SDK is the foundation of our multichain smart contracts. Build unique EVM and WASM applications with a developer community.
+          Be part of the exciting world of mulichain innovation by building EVM and WASM dApps on Astar Network. 
+          Astar XVM SDK is the foundation of our multichain smart contracts.
         </p>
         <ul
           class="hidden sm:flex justify-center sm:justify-start mt-12 space-x-2"

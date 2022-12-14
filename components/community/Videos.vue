@@ -101,7 +101,7 @@
         target="_blank"
         rel="noopener"
       >
-        Youtube
+        YouTube
         <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
       </Button>
     </div>

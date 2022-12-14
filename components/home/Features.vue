@@ -40,13 +40,13 @@ const features = [
   {
     title: "Multichain Smart Contracts",
     description:
-      "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more, allowing for the free flow of assets and communication between multiple ecosystems.",
+      "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more; allowing for the free flow of assets and communications between multiple ecosystems.",
     href: "https://www.youtube.com/watch?v=bJgMm4SUSJQ&t=134s",
     image: "features-multichain.svg",
   },
   {
-    title: "Basic Income For Developers",
-    description: `Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive ASTR rewards through our dApp staking mechanism.`,
+    title: "Build2Earn",
+    description: `The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive $ASTR rewards through our dApp staking mechanism.`,
     href: "https://docs.astar.network/docs/dapp-staking/",
     image: "features-basic-income.svg",
   },

@@ -4,7 +4,7 @@
       <span
         class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight title"
       >
-        <span>Join Our Fast <br />Growing Ecosystem</span>
+        <span>Join Our<br />Fast-Growing Ecosystem</span>
       </span>
     </h2>
     <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-8">
@@ -47,28 +47,28 @@ const developers = [
   {
     name: "Developer",
     image: "become-developer.svg",
-    description: "Create a dApp or infrastructure on our Blockchain",
+    description: "Create a dApp or infrastructure on our blockchain.",
     href: "https://docs.astar.network/docs/quickstart/",
     color: "text-space-pink hover:text-space-pink-lighter",
   },
   {
     name: "Collator",
     image: "become-collator.svg",
-    description: "Run a node to support the network",
+    description: "Run a node to support the blockchain.",
     href: "https://docs.astar.network/docs/nodes/",
     color: "text-space-sky hover:text-space-sky-lighter",
   },
   {
     name: "Staker",
     image: "become-staker.svg",
-    description: "Stake Astar and earn rewards for joining our network",
+    description: "Stake $ASTR and earn staking rewards.",
     href: "https://portal.astar.network/#/astar/dapp-staking/discover",
     color: "text-space-cyan hover:text-space-cyan-lighter",
   },
   {
     name: "Users",
     image: "become-users.svg",
-    description: "Use ASTR tokens and be a part of the Web3 movement",
+    description: "Use $ASTR tokens and be a part of the Web3 movement.",
     href: "https://portal.astar.network/#/astar/assets",
     color: "text-space-teal hover:text-space-teal-lighter",
   },
