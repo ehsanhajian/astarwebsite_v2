@@ -46,7 +46,7 @@ const features = [
   },
   {
     title: "Basic Income For Developers",
-    description: `Astar pioneered Build2Earn to support and expand the developer community by providing a reward mechanism for building on Astar. If you are a dApp developer you are rewarded by receiving ASTR based on your contribution through a concept we call dApp Staking.`,
+    description: `Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive ASTR rewards through our dApp staking mechanism.`,
     href: "https://docs.astar.network/docs/dapp-staking/",
     image: "features-basic-income.svg",
   },
