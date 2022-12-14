@@ -9,8 +9,7 @@
         The Future of Smart Contracts for Multichain
       </h1>
       <p class="sm:text-xl mt-6 sm:mt-10 mb-8 sm:mb-14">
-        Astar is a scalable decentralized blockchain for next big Web3
-        innovations.
+        Astar is a scalable decentralized blockchain for the next big Web3 innovations.
       </p>
       <div class="sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4">
         <Button

@@ -4,8 +4,8 @@
       <span>Administrative Office Members</span>
     </h2>
     <p class="mb-12 max-w-3xl mx-auto text-sm sm:text-base">
-      Eligibility: Companies and communities participating in Astar / Shiden
-      Network's dAppStaking
+      Companies and communities participating in Astar / Shiden
+      Network's dApp Staking
     </p>
 
     <div class="grid grid-cols-3 gap-x-4 lg:gap-x-8 mb-28">
@@ -49,7 +49,7 @@
       <span>Registered Members</span>
     </h2>
     <p class="mb-12 max-w-3xl mx-auto text-sm sm:text-base">
-      Eligibility: Companies and communities that wish to join our organization
+      Companies and communities that wish to join our organization
       and have been approved by the participating companies in the organization.
     </p>
 

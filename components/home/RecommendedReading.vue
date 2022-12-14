@@ -87,9 +87,9 @@ const reading = [
     image: "reading-astar.svg",
   },
   {
-    title: "ASTR Tokenomics",
+    title: "$ASTR Tokenomics",
     description:
-      "ASTR governance, incentives and features that unlock Web3.",
+      "$ASTR governance, incentives and features that unlock Web3.",
     href: "https://docs.astar.network/docs/about/token-economics/economics",
     image: "reading-token.svg",
   },

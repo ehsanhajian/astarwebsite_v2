@@ -36,7 +36,7 @@ const advantages = [
   },
   {
     name: "Scalable",
-    description: "Astar is future-proof and built to scale.",
+    description: "Astar is future-proof and built for scalability.",
     image: "advantages-scalable.svg",
   },
   {
@@ -50,7 +50,7 @@ const advantages = [
     image: "advantages-xcm.svg",
   },
   {
-    name: "Basic Income",
+    name: "Build2Earn",
     description: "Use our dApp staking mechanism to support your development on Astar Network.",
     image: "advantages-income.svg",
   },

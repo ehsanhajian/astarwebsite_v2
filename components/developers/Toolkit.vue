@@ -21,7 +21,7 @@
           rel="noopener"
           class="text-space-cyan transition hover:text-space-cyan-light hover:underline"
         >
-          Explore all Projects Building on Astar ->
+          Explore all projects building on Astar ->
         </a>
       </p>
       <div class="px-4 sm:px-6">

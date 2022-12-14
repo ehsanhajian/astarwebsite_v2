@@ -12,11 +12,11 @@
     <div class="2xl:flex px-4 sm:px-6 lg:mr-6">
       <div class="lg:mr-4 xl:mx-8 mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
-          Welcome to the Astar Network!
+          Welcome to Astar Network!
         </h2>
         <p class="sm:text-xl sm:leading-loose">
-          Astar Network is the infrastructure for the building of dApps with EVM
-          and WASM smart contracts. It offers developers true interoperability
+          Astar Network provides the infrastructure for building dApps with EVM
+          and WASM smart contracts offering developers true interoperability
           with cross-consensus messaging (XCM) and a cross-virtual machine (XVM).
           Astar’s unique Build2Earn model empowers developers to get paid
           through a dApp staking mechanism for the code they write and dApps
@@ -32,7 +32,7 @@
           <dt
             class="order-2 mt-2 sm:mt-0 text-3xl lg:text-4xl font-bold sm:pl-12"
           >
-            <span>DApps</span>
+            <span>dApps</span>
           </dt>
           <dd class="order-1 font-black text-9xl sm:text-15xl">
             <span class="tracking-tighter">+50</span>

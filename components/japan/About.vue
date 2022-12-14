@@ -24,7 +24,7 @@
 <script setup lang="ts">
 const advantages = [
   {
-    text: "Creating Business Opportunities in Japan with Astar Network",
+    text: "Creating business opportunities in Japan with Astar Network",
     image: "icon-japan.svg",
   },
   {
