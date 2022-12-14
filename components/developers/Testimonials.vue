@@ -59,7 +59,7 @@ const testimonials = [
   {
     name: "Ben White",
     company: "Parity Technologies",
-    text: "Astar is a layer1 blockchain build on Substrate. Through Polkadot’s shared security and XCMP, Astar's progress on WASM support can enable very unique use-cases to the Polkadot ecosystem.",
+    text: "Astar is a layer 1 blockchain built on Substrate. Through Polkadot’s shared security and XCMP, Astar's progress on WASM support can enable very unique use-cases to the Polkadot ecosystem.",
     image: "ben-white.jpg",
   },
   {

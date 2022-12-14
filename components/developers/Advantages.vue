@@ -36,12 +36,12 @@ const advantages = [
   },
   {
     name: "Scalable",
-    description: "Astar is future-proof and build to scale.",
+    description: "Astar is future-proof and built to scale.",
     image: "advantages-scalable.svg",
   },
   {
     name: "Secure",
-    description: "Astar Network is useing the shared-security of Polkadot Relay Chain.",
+    description: "Astar Network uses the shared security of the Polkadot Relay Chain.",
     image: "advantages-secure.svg",
   },
   {
@@ -51,7 +51,7 @@ const advantages = [
   },
   {
     name: "Basic Income",
-    description: "Be part of our dApp staking mechanism to support your development on Astar Network.",
+    description: "Use our dApp staking mechanism to support your development on Astar Network.",
     image: "advantages-income.svg",
   },
 ];
