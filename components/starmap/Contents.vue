@@ -17,7 +17,7 @@
 
       <div class="fixed inset-0 z-10 overflow-y-auto">
         <div
-          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
         >
           <TransitionChild
             as="template"
@@ -35,11 +35,11 @@
                 <div class="mt-3 sm:mt-5">
                   <DialogTitle
                     as="h3"
-                    class="text-3xl font-bold text-space-gray text-center leading-tight"
+                    class="text-2xl sm:text-3xl font-bold text-space-gray text-center leading-tight"
                   >
                     {{ discoveries[discoveryId]["title"] }}
                   </DialogTitle>
-                  <div class="mt-4 text-lg">
+                  <div class="mt-4 sm:text-lg">
                     <p class="text-gray-600">
                       {{ discoveries[discoveryId]["description"] }}
                     </p>
@@ -173,6 +173,82 @@
             </div>
           </div>
         </div>
+
+        <div class="sm:flex items-center min-h-[800px]">
+          <div class="whitespace-nowrap text-center text-7xl sm:text-14xl">
+            <span
+              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
+            >
+              Q3
+            </span>
+            <span
+              class="font-jp kanji leading-tight tracking-wide sm:[writing-mode:vertical-lr]"
+            >
+              拡大
+            </span>
+          </div>
+          <div class="max-w-[580px] sm:ml-10 relative z-10">
+            <h2 class="title mb-4">
+              <span class="text-3xl sm:text-4xl">The Expansion Nebula</span>
+            </h2>
+            <div class="text-lg">
+              <p class="mb-8">
+                At Astar we plan to expand our reach even further. By creating
+                high quality tools and projects, we can further attract top
+                talent. We will focus on improving not only the user experience,
+                but also the developer experience.
+              </p>
+              <h3 class="font-bold text-xl">Q3</h3>
+              <p>
+                We can look forward to discoveries that relate to the following:
+              </p>
+              <ul class="list-disc pl-4">
+                <li>Astar SDK</li>
+                <li>Decentralization of our infrastructure</li>
+                <li>Developer tooling improvements</li>
+                <li>Learning Hub for dApp developers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:flex items-center justify-end min-h-[800px]">
+          <div
+            class="whitespace-nowrap text-center order-2 text-7xl sm:text-14xl"
+          >
+            <span
+              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
+            >
+              Q4
+            </span>
+            <span
+              class="font-jp kanji leading-tight tracking-wide sm:[writing-mode:vertical-lr]"
+            >
+              煌閃
+            </span>
+          </div>
+          <div class="max-w-[580px] sm:ml-10 order-1">
+            <h2 class="title mb-4">
+              <span class="text-3xl sm:text-4xl">The Shine Nebula</span>
+            </h2>
+            <div class="text-lg">
+              <p class="mb-8">
+                We now approach the last nebula in 2023. By now we have made
+                many great discoveries and grown to new heights - as Web3
+                technology, and as a team. But we are not done yet. We plan to
+                shine like a star to close out the year and prepare for the 2024
+                journey ahead.
+              </p>
+              <h3 class="font-bold text-xl">Q4</h3>
+              <p>We’re excited for this quarter. Stay tuned for more info.</p>
+              <!-- <ul class="list-disc pl-4">
+                <li>Swanky Suite and projects</li>
+                <li>Token economics</li>
+                <li>Decentralized tooling</li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -203,7 +279,7 @@ const discoveries = {
     href: "",
   },
   ui: {
-    title: "Astar UI Library & Astar.js",
+    title: "Coming soon!",
     description:
       "Check in after our fist discovery to get insight about the second one. See you soon!",
     href: "",
