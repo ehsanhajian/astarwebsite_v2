@@ -54,7 +54,7 @@ const developers = [
   {
     name: "Collator",
     image: "become-collator.svg",
-    description: "Run a node and support the network",
+    description: "Run a node to support the network",
     href: "https://docs.astar.network/docs/nodes/",
     color: "text-space-sky hover:text-space-sky-lighter",
   },
@@ -68,7 +68,7 @@ const developers = [
   {
     name: "Users",
     image: "become-users.svg",
-    description: "Use ASTR tokens and be a part of the web3 movement",
+    description: "Use ASTR tokens and be a part of the Web3 movement",
     href: "https://portal.astar.network/#/astar/assets",
     color: "text-space-teal hover:text-space-teal-lighter",
   },
