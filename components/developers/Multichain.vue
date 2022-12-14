@@ -17,8 +17,7 @@
           <span>Multichain Future</span>
         </h2>
         <p class="text-center lg:text-left">
-          Interoperability is key for any dApp utilizing blockchain technology. Astar is the blockchain
-          that leads the future of Web3.
+          Astar Network will be the go-to blockchain for Web3 and beyond by focusing on the key aspect of interoperability.
         </p>
       </div>
       <ul class="grid gap-12 lg:ml-28">
@@ -46,25 +45,25 @@ const future = [
   {
     name: "DeFi",
     description:
-      "Set to operate a next-gen decentralized exchange, swapping digital assets from across the Interchain, with very low fees and instant transaction confirmation.",
+      "The quantity and quality of options available for our user base boost our decentralized finance sector. In addition to very low fees and quick transaction speed, our XCM compatibility with other parachains allow for more secure transfers and swaps within our ecosystem.",
     image: "multichain-defi.svg",
   },
   {
     name: "NFT",
     description:
-      "With the upcoming Interchain Security feature, ATOM will soon be securing many chains, in exchange for additional staking rewards.",
+      "Astar's NFT environment is inviting for small and large communities alike. From personal collections to full-scale projects by renowned Japanese IPs, we have all the tools necessary to help connect the team with the interested communities.",
     image: "multichain-nft.svg",
   },
   {
     name: "Leading Infra Providers",
     description:
-      "A core mission of the Hub – to connect chains by establishing IBC connections with compatible chains and operating decentralized bridges with chains like Ethereum and Bitcoin.",
+      "Our goal is to provide the most secure and efficient connections to other leading blockchains. Considering the high level of importance this has, we take a rigorous approach when integrating bridges and other infra.",
     image: "multichain-providers.svg",
   },
   {
     name: "DAO",
     description:
-      "Located at the crossroads of the Interchain, the Hub is extremely secure, the best place to hold digital assets and manage accounts across many chains.",
+      "Decentralized autonomous organizations are the future. Our community will help mold the shape of the network through means which are transparent and accessible.",
     image: "multichain-dao.svg",
   },
 ];
