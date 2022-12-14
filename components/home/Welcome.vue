@@ -16,8 +16,8 @@
         </h2>
         <p class="sm:text-xl sm:leading-loose">
           Astar Network is the infrastructure for the building of dApps with EVM
-          and WASM smart contracts and offers developers true interoperability,
-          with cross-consensus messaging (XCM), and cross-virtual machine (XVM).
+          and WASM smart contracts. It offers developers true interoperability
+          with cross-consensus messaging (XCM) and a cross-virtual machine (XVM).
           Astar’s unique Build2Earn model empowers developers to get paid
           through a dApp staking mechanism for the code they write and dApps
           they build.
