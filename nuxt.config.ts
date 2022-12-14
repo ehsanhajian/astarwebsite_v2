@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   app: {
-    baseURL: '/astarwebsite_v2'
+    baseURL: '/'
   },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
   image: {
