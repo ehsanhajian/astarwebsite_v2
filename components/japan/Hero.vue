@@ -21,11 +21,9 @@
             />
           </h1>
           <p class="sm:text-lg max-w-3xl mx-auto">
-            Astar Japan Lab was established to actively conduct research and
-            development, gather knowledge, and exchange opinions on the
-            development of services and business creation using the Astar
-            Network in Japan, with the aim of further developing the Astar
-            Network.
+            Astar Japan Lab fuels the growth of Japanese services and
+            businesses by conducting research and development, gathering
+            knowledge, and collaborating with exciting and established companies.
           </p>
         </div>
       </div>

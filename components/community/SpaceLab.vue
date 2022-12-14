@@ -10,7 +10,7 @@
           <span>Astar Space Labs</span>
         </h2>
         <p>
-          Get started building on Astar and become a part of our vibrant community through support of our community leaders striving to support you along your building journey. 
+          Get started building on Astar and become a part of our vibrant ecosystem. Our community leaders support you along your building journey. 
         </p>
         <Button
           href="https://astarnetwork.notion.site/Astar-SpaceLabs-bee19d9d13ab41ba8d113347ae56448f"

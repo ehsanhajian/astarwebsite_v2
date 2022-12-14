@@ -47,7 +47,7 @@
 const news = [
   {
     title:
-      "AstarFarm, a GameFi on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
+      "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
     image: "astarfarm.png",
     href: "",
   },
@@ -63,7 +63,7 @@ const news = [
   },
   {
     title:
-      "Distributed Shiden Network's NFT by Sound at a live music concert venue.",
+      "Distributed Shiden Network's NFT by audio at a live music concert venue.",
     image: "revolt.png",
     href: "",
   },

@@ -40,7 +40,7 @@ const advantages = [
     image: "icon-vc.svg",
   },
   {
-    text: "Sharing of Astar use cases and study sessions for participants",
+    text: "Group study sessions to advance use cases for Astar",
     image: "icon-session.svg",
   },
   {
