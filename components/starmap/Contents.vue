@@ -123,11 +123,7 @@
                     XVM
                   </span>
                 </li>
-                <li>
-                  <span @click="clickAction('ui')" class="popup-link">
-                    Astar UI Library & Astar.js
-                  </span>
-                </li>
+                <li>Astar UI Library & Astar.js</li>
                 <li>WASM tooling and showcase dapps</li>
                 <li>XCM smart contracts</li>
                 <li>dApp staking</li>
