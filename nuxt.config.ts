@@ -15,13 +15,6 @@ export default defineNuxtConfig({
           type: "text/javascript",
         },
       ],
-      noscript: [
-        {
-          children: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53GS73F"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          body: true
-        },
-      ],
     },
   },
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
