@@ -8,7 +8,7 @@
           Developers
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
-          Be part of the exciting world of mulichain innovation by building EVM and WASM dApps on Astar Network. 
+          Be part of the exciting world of multichain innovation by building EVM and WASM dApps on Astar Network. 
           Astar XVM SDK is the foundation of our multichain smart contracts.
         </p>
         <ul
