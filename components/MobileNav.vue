@@ -92,16 +92,15 @@
                   <a
                     href="/community"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Community</a
+                    >Community</a>
+                </li>
+                <li>
+                  <a
+                    href="/japan"
+                    class="text-white block border-t border-gray-600 px-6 py-5"
+                    >Japan</a
                   >
                 </li>
-                <!-- <li>
-                  <a
-                    href="#"
-                    class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Ecosystem</a
-                  >
-                </li> -->
               </ul>
               <div class="py-12 px-6">
                 <Button
