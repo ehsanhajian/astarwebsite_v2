@@ -22,6 +22,7 @@
             >{{ item.publishedDate }}</time
           >
           <a
+            v-if="item.href !== ''"
             :href="item.href"
             target="_blank"
             rel="noopener"
@@ -29,6 +30,9 @@
           >
             {{ item.text }}
           </a>
+          <span v-else>
+            {{ item.text }}
+          </span>
         </li>
       </ul>
     </div>
