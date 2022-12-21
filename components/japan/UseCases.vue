@@ -7,6 +7,7 @@
       >
         <li v-for="(item, index) in news">
           <a
+            v-if="item.href !== ''"
             :href="item.href"
             target="_blank"
             rel="noopener"
@@ -17,14 +18,6 @@
               data-aos="flip-left"
               :data-aos-delay="index * 100"
             >
-              <!-- <nuxt-img
-                format="webp"
-                quality="90"
-                width="760"
-                class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
-                :src="`/use-cases/${item.image}`"
-                :alt="item.title"
-              /> -->
               <img
                 class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
                 :src="useAsset('japan/use-cases/' + item.image)"
@@ -37,6 +30,24 @@
               {{ item.title }}
             </p>
           </a>
+          <div v-else>
+            <div
+              class="mb-4"
+              data-aos="flip-left"
+              :data-aos-delay="index * 100"
+            >
+              <img
+                class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
+                :src="useAsset('japan/use-cases/' + item.image)"
+                :alt="item.title"
+              />
+            </div>
+            <p
+              class="font-medium mb-2 transition group-hover:underline group-hover:text-blue-600"
+            >
+              {{ item.title }}
+            </p>
+          </div>
         </li>
       </ul>
     </div>
