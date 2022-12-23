@@ -59,7 +59,7 @@ useHead({
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: route.meta.pageTitle,
+      content: `${route.meta.pageTitle} | ${meta.title}`,
     },
     {
       hid: "twitter:description",
