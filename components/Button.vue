@@ -48,6 +48,12 @@ const classes = computed(() => ({
 .btn.lg {
   @apply text-lg px-10 py-3;
 }
+.btn.xl {
+  @apply text-lg sm:text-xl px-10 py-4 sm:px-14 sm:py-5;
+}
+.btn.xxl {
+  @apply text-xl px-14 py-5 sm:text-2xl sm:px-20 sm:py-6;
+}
 .btn.contained.primary {
   @apply text-white rounded-xl;
   background: linear-gradient(
