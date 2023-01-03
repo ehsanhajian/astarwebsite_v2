@@ -90,7 +90,7 @@
 const members = [
   {
     category: "Companies",
-    logos: 
+    logos:  [
       {
         name: "DENTSU INC.",
         image: "dentsu.png",
