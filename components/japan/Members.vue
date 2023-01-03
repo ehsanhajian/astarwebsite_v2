@@ -86,28 +86,11 @@
 </template>
 
 <script setup lang="ts">
-const admins = [
-  {
-    name: "double jump.tokyo",
-    image: "doublejump.png",
-    href: "https://www.doublejump.tokyo/",
-  },
-  {
-    name: "SUSHI TOP MARKETING 株式会社",
-    image: "sushitopmarketing.png",
-    href: "https://www.sushitopmarketing.com/",
-  },
-  {
-    name: "tofuNFT.com",
-    image: "tofunft.png",
-    href: "https://tofunft.com/astar",
-  },
-];
 
 const members = [
   {
     category: "Companies",
-    logos: [
+    logos: 
       {
         name: "DENTSU INC.",
         image: "dentsu.png",
@@ -392,6 +375,26 @@ const members = [
         name: "Utoniq,Inc.",
         image: "utoniq.png",
         href: "https://about.utoniq.com/",
+      },
+      {
+        name: "double jump.tokyo",
+        image: "doublejump.png",
+        href: "https://www.doublejump.tokyo/",
+      },
+      {
+        name: "SUSHI TOP MARKETING 株式会社",
+        image: "sushitopmarketing.png",
+        href: "https://www.sushitopmarketing.com/",
+      },
+      {
+        name: "tofuNFT.com",
+        image: "tofunft.png",
+        href: "https://tofunft.com/astar",
+      },
+      {
+        name: "Slash Fintech",
+        image: "slash.png",
+        href: "https://slash.fi/",
       },
     ],
   },
