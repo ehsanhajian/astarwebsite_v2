@@ -1,12 +1,4 @@
 <template>
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 text-center">
-    <h2 class="title text-center mb-4 sm:mb-8">
-      <span>Administrative Office Members</span>
-    </h2>
-    <p class="mb-12 max-w-3xl mx-auto text-sm sm:text-base">
-      Companies and communities participating in Astar / Shiden
-      Network's dApp Staking
-    </p>
 
     <div class="grid grid-cols-3 gap-x-4 lg:gap-x-8 mb-28">
       <div v-for="item in admins" class="flex items-center justify-center">
