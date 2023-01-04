@@ -1,6 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  ssr: false,
+  // ssr: false,
   app: {
     baseURL: "/",
     head: {
@@ -21,8 +21,5 @@ export default defineNuxtConfig({
   image: {
     domains: ["img.youtube.com"],
   },
+  plugins: [{ src: "~/plugins/aos" }],
 });
-
-
-
-
