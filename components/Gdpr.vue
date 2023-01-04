@@ -30,10 +30,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const gdpr_accept = ref(false);
+const gdpr_accept = ref(true);
 
-if (localStorage.getItem("gdpr") !== null) {
-  gdpr_accept.value = true;
+if (typeof window !== "undefined") {
+  if (localStorage.getItem("gdpr") === null) {
+    gdpr_accept.value = false;
+  }
 }
 
 const acceptCookies = () => {
