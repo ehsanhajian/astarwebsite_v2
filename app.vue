@@ -12,4 +12,6 @@
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+
+  <Gdpr />
 </template>
