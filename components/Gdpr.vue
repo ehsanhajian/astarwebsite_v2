@@ -28,18 +28,18 @@
 </template>
 
 <script setup lang="ts">
-import { useCookies } from "vue3-cookies";
 import { ref } from "vue";
 
-const { cookies } = useCookies();
-const gdpr_accept = ref(false);
+const gdpr_accept = ref(true);
 
-if (cookies.get("gdpr") !== null) {
-  gdpr_accept.value = true;
+if (typeof window !== "undefined") {
+  if (localStorage.getItem("gdpr") === null) {
+    gdpr_accept.value = false;
+  }
 }
 
 const acceptCookies = () => {
-  cookies.set("gdpr", "accept", "1y");
+  localStorage.setItem("gdpr", "true");
   gdpr_accept.value = true;
 };
 </script>
