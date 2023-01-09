@@ -83,9 +83,9 @@ const members = [
         href: "https://www.pwc.com/",
       },
       {
-        name: "GLOBIS CAPITAL PARTNERS",
-        image: "globiscapital.png",
-        href: "https://www.globiscapital.co.jp/",
+        name: "ABeam",
+        image: "ABeam.png",
+        href: "https://www.abeam.com/jp/ja",
       },
       {
         name: "Mori Building Co., Ltd.",
@@ -108,9 +108,39 @@ const members = [
         href: "https://harti.tokyo/",
       },
       {
+        name: "Sun Asterisk Inc.",
+        image: "sun.png",
+        href: "https://sun-asterisk.com/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
+      },
+      {
+        name: "GLOBIS CAPITAL PARTNERS",
+        image: "globiscapital.png",
+        href: "https://www.globiscapital.co.jp/",
+      },
+      {
+        name: "Hyperithm Group",
+        image: "hyperithm.png",
+        href: "https://hyperithm.jp/",
+      },
+      {
+        name: "double jump.tokyo",
+        image: "doublejump.png",
+        href: "https://www.doublejump.tokyo/",
+      },
+      {
+        name: "SUSHI TOP MARKETING 株式会社",
+        image: "sushitopmarketing.png",
+        href: "https://www.sushitopmarketing.com/",
+      },
+      {
+        name: "tofuNFT.com",
+        image: "tofunft.png",
+        href: "https://tofunft.com/astar",
       },
       {
         name: "JPYC inc.",
@@ -293,11 +323,6 @@ const members = [
         href: "https://www.toppan.co.jp/",
       },
       {
-        name: "Hyperithm Group",
-        image: "hyperithm.png",
-        href: "https://hyperithm.jp/",
-      },
-      {
         name: "LLC Ango-ya",
         image: "ango-ya.png",
         href: "https://www.ango-ya.org/",
@@ -323,24 +348,29 @@ const members = [
         href: "https://about.utoniq.com/",
       },
       {
-        name: "double jump.tokyo",
-        image: "doublejump.png",
-        href: "https://www.doublejump.tokyo/",
-      },
-      {
-        name: "SUSHI TOP MARKETING 株式会社",
-        image: "sushitopmarketing.png",
-        href: "https://www.sushitopmarketing.com/",
-      },
-      {
-        name: "tofuNFT.com",
-        image: "tofunft.png",
-        href: "https://tofunft.com/astar",
-      },
-      {
         name: "Slash Fintech",
         image: "slash.png",
         href: "https://slash.fi/",
+      },
+      {
+        name: "D Inc.",
+        image: "Dinc.png",
+        href: "https://decentralizedpro.io/",
+      },
+      {
+        name: "Crypto Lab Inc.",
+        image: "CryptoLab.png",
+        href: "https://cryptolab.jp/",
+      },
+      {
+        name: "Fukuripa Inc.",
+        image: "fukuripa.png",
+        href: "https://fukuoka-leapup.jp/",
+      },
+      {
+        name: "devillage",
+        image: "Magpy.png",
+        href: "https://www.magpy.xyz/",
       },
     ],
   },
