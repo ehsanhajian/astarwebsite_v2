@@ -1,56 +1,11 @@
 <template>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 text-center">
     <h2 class="title text-center mb-4 sm:mb-8">
-      <span>Administrative Office Members</span>
-    </h2>
-    <p class="mb-12 max-w-3xl mx-auto text-sm sm:text-base">
-      Companies and communities participating in Astar / Shiden
-      Network's dApp Staking
-    </p>
-
-    <div class="grid grid-cols-3 gap-x-4 lg:gap-x-8 mb-28">
-      <div v-for="item in admins" class="flex items-center justify-center">
-        <template v-if="item.href !== ''">
-          <a :href="item.href" target="_blank" rel="noopener">
-            <!-- <nuxt-img
-              format="webp"
-              quality="90"
-              width="400"
-              class="h-16 sm:h-24 lg:sm:h-28 w-44 lg:w-48 object-contain"
-              :src="`/members/${item.image}`"
-              :alt="item.name"
-            /> -->
-            <img
-              class="h-16 sm:h-24 lg:sm:h-28 w-44 lg:w-48 object-contain"
-              :src="useAsset('japan/members/' + item.image)"
-              :alt="item.name"
-            />
-          </a>
-        </template>
-        <template v-else>
-          <!-- <nuxt-img
-            format="webp"
-            quality="90"
-            width="400"
-            class="h-28 w-44 lg:w-48 object-contain"
-            :src="`/members/${item.image}`"
-            :alt="item.name"
-          /> -->
-          <img
-            class="h-28 w-44 lg:w-48 object-contain"
-            :src="useAsset('japan/members/' + item.image)"
-            :alt="item.name"
-          />
-        </template>
-      </div>
-    </div>
-
-    <h2 class="title text-center mb-4 sm:mb-8">
       <span>Registered Members</span>
     </h2>
     <p class="mb-12 max-w-3xl mx-auto text-sm sm:text-base">
-      Companies and communities that wish to join our organization
-      and have been approved by the participating companies in the organization.
+      Companies and communities that wish to join our organization and have been
+      approved by the participating companies in the organization.
     </p>
 
     <div v-for="member in members" class="mb-20 sm:mb-28">
@@ -65,14 +20,6 @@
           class="flex items-center justify-center"
         >
           <a :href="item.href" target="_blank">
-            <!-- <nuxt-img
-              format="webp"
-              quality="90"
-              width="400"
-              class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
-              :src="`/members/${item.image}`"
-              :alt="item.name"
-            /> -->
             <img
               class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
               :src="useAsset('japan/members/' + item.image)"
@@ -86,24 +33,6 @@
 </template>
 
 <script setup lang="ts">
-const admins = [
-  {
-    name: "double jump.tokyo",
-    image: "doublejump.png",
-    href: "https://www.doublejump.tokyo/",
-  },
-  {
-    name: "SUSHI TOP MARKETING 株式会社",
-    image: "sushitopmarketing.png",
-    href: "https://www.sushitopmarketing.com/",
-  },
-  {
-    name: "tofuNFT.com",
-    image: "tofunft.png",
-    href: "https://tofunft.com/astar",
-  },
-];
-
 const members = [
   {
     category: "Companies",
@@ -154,9 +83,9 @@ const members = [
         href: "https://www.pwc.com/",
       },
       {
-        name: "GLOBIS CAPITAL PARTNERS",
-        image: "globiscapital.png",
-        href: "https://www.globiscapital.co.jp/",
+        name: "ABeam",
+        image: "ABeam.png",
+        href: "https://www.abeam.com/jp/ja",
       },
       {
         name: "Mori Building Co., Ltd.",
@@ -179,9 +108,39 @@ const members = [
         href: "https://harti.tokyo/",
       },
       {
+        name: "Sun Asterisk Inc.",
+        image: "sun.png",
+        href: "https://sun-asterisk.com/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
+      },
+      {
+        name: "GLOBIS CAPITAL PARTNERS",
+        image: "globiscapital.png",
+        href: "https://www.globiscapital.co.jp/",
+      },
+      {
+        name: "Hyperithm Group",
+        image: "hyperithm.png",
+        href: "https://hyperithm.jp/",
+      },
+      {
+        name: "double jump.tokyo",
+        image: "doublejump.png",
+        href: "https://www.doublejump.tokyo/",
+      },
+      {
+        name: "SUSHI TOP MARKETING 株式会社",
+        image: "sushitopmarketing.png",
+        href: "https://www.sushitopmarketing.com/",
+      },
+      {
+        name: "tofuNFT.com",
+        image: "tofunft.png",
+        href: "https://tofunft.com/astar",
       },
       {
         name: "JPYC inc.",
@@ -364,11 +323,6 @@ const members = [
         href: "https://www.toppan.co.jp/",
       },
       {
-        name: "Hyperithm Group",
-        image: "hyperithm.png",
-        href: "https://hyperithm.jp/",
-      },
-      {
         name: "LLC Ango-ya",
         image: "ango-ya.png",
         href: "https://www.ango-ya.org/",
@@ -392,6 +346,31 @@ const members = [
         name: "Utoniq,Inc.",
         image: "utoniq.png",
         href: "https://about.utoniq.com/",
+      },
+      {
+        name: "Slash Fintech",
+        image: "slash.png",
+        href: "https://slash.fi/",
+      },
+      {
+        name: "D Inc.",
+        image: "Dinc.png",
+        href: "https://decentralizedpro.io/",
+      },
+      {
+        name: "Crypto Lab Inc.",
+        image: "CryptoLab.png",
+        href: "https://cryptolab.jp/",
+      },
+      {
+        name: "Fukuripa Inc.",
+        image: "fukuripa.png",
+        href: "https://fukuoka-leapup.jp/",
+      },
+      {
+        name: "devillage",
+        image: "Magpy.png",
+        href: "https://www.magpy.xyz/",
       },
     ],
   },
