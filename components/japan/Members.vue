@@ -368,7 +368,7 @@ const members = [
         href: "https://fukuoka-leapup.jp/",
       },
       {
-        name: "devillage",
+        name: "Magpy",
         image: "Magpy.png",
         href: "https://www.magpy.xyz/",
       },
