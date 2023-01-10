@@ -113,6 +113,21 @@ const members = [
         href: "https://sun-asterisk.com/",
       },
       {
+        name: "Fujitsu Inc.",
+        image: "Fujitsu.png",
+        href: "https://www.fujitsu.com/jp/",
+      },
+      {
+        name: "NISSAY Inc.",
+        image: "NISSAY.jpg",
+        href: "https://www.nissay.co.jp/kaisha/nipponlifex/",
+      },
+      {
+        name: "TOPPAN Inc.",
+        image: "TOPPAN.jpeg",
+        href: "https://www.toppan.co.jp/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -126,6 +141,11 @@ const members = [
         name: "Hyperithm Group",
         image: "hyperithm.png",
         href: "https://hyperithm.jp/",
+      },
+      {
+        name: "ANOBAKA",
+        image: "anobaka.png",
+        href: "https://anobaka.jp/",
       },
       {
         name: "double jump.tokyo",
@@ -372,6 +392,16 @@ const members = [
         image: "Magpy.png",
         href: "https://www.magpy.xyz/",
       },
+      {
+        name: "Pacific Meta Inc.",
+        image: "Pacific Meta.png",
+        href: "https://pacific-meta.co.jp/",
+      },
+      {
+        name: "ArtiLamps Inc.",
+        image: "ArtiLamps.png",
+        href: "https://www.artilamps.com",
+      },
     ],
   },
   {
@@ -386,6 +416,11 @@ const members = [
         name: "Sendai City",
         image: "sendai.png",
         href: "https://www.city.sendai.jp/",
+      },
+      {
+        name: "Shibuya",
+        image: "Shibuya.PNG",
+        href: "https://www.city.shibuya.tokyo.jp/",
       },
     ],
   },
