@@ -399,7 +399,7 @@ const members = [
       },
       {
         name: "Pacific Meta Inc.",
-        image: "Pacific Meta.png",
+        image: "Pacific-Meta.png",
         href: "https://pacific-meta.co.jp/",
       },
       {
@@ -429,7 +429,7 @@ const members = [
       },
       {
         name: "Shibuya",
-        image: "Shibuya.PNG",
+        image: "Shibuya.png",
         href: "https://www.city.shibuya.tokyo.jp/",
       },
     ],
