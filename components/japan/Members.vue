@@ -338,11 +338,6 @@ const members = [
         href: "https://www.shinto-tsushin.co.jp/",
       },
       {
-        name: "Toppan",
-        image: "toppan.png",
-        href: "https://www.toppan.co.jp/",
-      },
-      {
         name: "LLC Ango-ya",
         image: "ango-ya.png",
         href: "https://www.ango-ya.org/",
