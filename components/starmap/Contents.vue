@@ -39,9 +39,20 @@
                   >
                     {{ discoveries[discoveryId]["title"] }}
                   </DialogTitle>
-                  <div class="flex items-center flex-col-reverse lg:flex-row">
+                  <div
+                    :class="
+                      discoveries[discoveryId]['image'] &&
+                      'flex items-center flex-col-reverse lg:flex-row'
+                    "
+                  >
                     <div class="my-6">
-                      <p class="text-gray-200 whitespace-pre-wrap">
+                      <p
+                        class="text-gray-200 whitespace-pre-wrap"
+                        :class="
+                          discoveries[discoveryId]['image'] === '' &&
+                          'text-center'
+                        "
+                      >
                         {{ discoveries[discoveryId]["description"] }}
                       </p>
                       <a
@@ -297,7 +308,7 @@ const discoveries = {
   xvm: {
     title: "Cross-Virtual Machine (XVM): The Portal to the Future",
     description: `As we are well-aware, WASM is the future. Currently, WASM smart contracts have a large limitation when pushing the technology for mass adoption in the EVM-dominated space. Teams are inclined to choose one or the other when developing their project. This is why we created XVM.\n\nCross-Virtual Machine (XVM) is a custom pallet and a set of interfaces that allow a smart contract in one virtual machine to communicate with another, as if they are in the same environment. In other words, with XVM, you can create an ink! smart contract and access any assets or contracts available on the EVM side. You can enjoy the best of both worlds!`,
-    href: "#",
+    href: "https://medium.com/astar-network/cross-virtual-machine-creating-a-portal-to-the-future-of-smart-contracts-a96c6d2f79b8",
     image: "xvm.svg",
   },
   ui: {
