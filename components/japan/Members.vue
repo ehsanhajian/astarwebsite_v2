@@ -190,7 +190,7 @@ const members = [
       {
         name: "BOBG",
         image: "bobg.png",
-        href: "",
+        href: "https://www.bobg.xyz/",
       },
       {
         name: "Neweconomy",
@@ -199,7 +199,7 @@ const members = [
       },
       {
         name: "TEMPURA",
-        image: "tempuradao.png",
+        image: "Tempuradao.png",
         href: "https://tempuradao.xyz/",
       },
       {
