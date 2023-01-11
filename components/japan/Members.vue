@@ -128,6 +128,11 @@ const members = [
         href: "https://www.toppan.co.jp/",
       },
       {
+        name: "Tokai-Tokyo-fh.",
+        image: "Tokai-Tokyo.png",
+        href: "https://www.tokaitokyo-fh.jp/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -146,6 +151,21 @@ const members = [
         name: "ANOBAKA",
         image: "anobaka.png",
         href: "https://anobaka.jp/",
+      },
+      {
+        name: "ABC DREAM VENTURES, Inc.",
+        image: "adventures.png",
+        href: "http://adventures.co.jp/",
+      },
+      {
+        name: "So & Sato",
+        image: "innovationlaw.png",
+        href: "https://innovationlaw.jp/",
+      },
+      {
+        name: "AMT",
+        image: "AMT.png",
+        href: "https://www.amt-law.com/",
       },
       {
         name: "double jump.tokyo",
@@ -313,16 +333,6 @@ const members = [
         href: "https://pixel-inc.jp/",
       },
       {
-        name: "ABC DREAM VENTURES, Inc.",
-        image: "adventures.png",
-        href: "http://adventures.co.jp/",
-      },
-      {
-        name: "So & Sato",
-        image: "innovationlaw.png",
-        href: "https://innovationlaw.jp/",
-      },
-      {
         name: "giftee, Inc.",
         image: "giftee.png",
         href: "https://giftee.co.jp/",
@@ -396,6 +406,11 @@ const members = [
         name: "ArtiLamps Inc.",
         image: "ArtiLamps.png",
         href: "https://www.artilamps.com",
+      },
+      {
+        name: "ShortShort",
+        image: "SHORTSHORT.jpg",
+        href: "https://shortshorts.org/",
       },
     ],
   },
