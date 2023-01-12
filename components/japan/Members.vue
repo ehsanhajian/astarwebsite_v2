@@ -113,6 +113,26 @@ const members = [
         href: "https://sun-asterisk.com/",
       },
       {
+        name: "Fujitsu Inc.",
+        image: "Fujitsu.png",
+        href: "https://www.fujitsu.com/jp/",
+      },
+      {
+        name: "NISSAY Inc.",
+        image: "NISSAY.jpg",
+        href: "https://www.nissay.co.jp/kaisha/nipponlifex/",
+      },
+      {
+        name: "TOPPAN Inc.",
+        image: "TOPPAN.jpeg",
+        href: "https://www.toppan.co.jp/",
+      },
+      {
+        name: "Tokai-Tokyo-fh.",
+        image: "Tokai-Tokyo.png",
+        href: "https://www.tokaitokyo-fh.jp/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -126,6 +146,26 @@ const members = [
         name: "Hyperithm Group",
         image: "hyperithm.png",
         href: "https://hyperithm.jp/",
+      },
+      {
+        name: "ANOBAKA",
+        image: "anobaka.png",
+        href: "https://anobaka.jp/",
+      },
+      {
+        name: "ABC DREAM VENTURES, Inc.",
+        image: "adventures.png",
+        href: "http://adventures.co.jp/",
+      },
+      {
+        name: "So & Sato",
+        image: "innovationlaw.png",
+        href: "https://innovationlaw.jp/",
+      },
+      {
+        name: "AMT",
+        image: "AMT.png",
+        href: "https://www.amt-law.com/",
       },
       {
         name: "double jump.tokyo",
@@ -150,7 +190,7 @@ const members = [
       {
         name: "BOBG",
         image: "bobg.png",
-        href: "",
+        href: "https://www.bobg.xyz/",
       },
       {
         name: "Neweconomy",
@@ -159,7 +199,7 @@ const members = [
       },
       {
         name: "TEMPURA",
-        image: "tempuradao.png",
+        image: "Tempuradao.png",
         href: "https://tempuradao.xyz/",
       },
       {
@@ -293,16 +333,6 @@ const members = [
         href: "https://pixel-inc.jp/",
       },
       {
-        name: "ABC DREAM VENTURES, Inc.",
-        image: "adventures.png",
-        href: "http://adventures.co.jp/",
-      },
-      {
-        name: "So & Sato",
-        image: "innovationlaw.png",
-        href: "https://innovationlaw.jp/",
-      },
-      {
         name: "giftee, Inc.",
         image: "giftee.png",
         href: "https://giftee.co.jp/",
@@ -316,11 +346,6 @@ const members = [
         name: "Shinto Tsushin Co., Ltd.",
         image: "shinto-tsushin.png",
         href: "https://www.shinto-tsushin.co.jp/",
-      },
-      {
-        name: "Toppan",
-        image: "toppan.png",
-        href: "https://www.toppan.co.jp/",
       },
       {
         name: "LLC Ango-ya",
@@ -372,6 +397,21 @@ const members = [
         image: "Magpy.png",
         href: "https://www.magpy.xyz/",
       },
+      {
+        name: "Pacific Meta Inc.",
+        image: "Pacific-Meta.png",
+        href: "https://pacific-meta.co.jp/",
+      },
+      {
+        name: "ArtiLamps Inc.",
+        image: "ArtiLamps.png",
+        href: "https://www.artilamps.com",
+      },
+      {
+        name: "ShortShort",
+        image: "SHORTSHORT.jpg",
+        href: "https://shortshorts.org/",
+      },
     ],
   },
   {
@@ -386,6 +426,11 @@ const members = [
         name: "Sendai City",
         image: "sendai.png",
         href: "https://www.city.sendai.jp/",
+      },
+      {
+        name: "Shibuya",
+        image: "Shibuya.png",
+        href: "https://www.city.shibuya.tokyo.jp/",
       },
     ],
   },
