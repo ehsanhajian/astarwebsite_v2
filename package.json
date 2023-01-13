@@ -5,8 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist -t true"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@headlessui/vue": "^1.7.7",
