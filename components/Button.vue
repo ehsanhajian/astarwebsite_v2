@@ -1,13 +1,20 @@
 <template>
-  <a :class="classes">
+  <a v-if="href !== ''" :class="classes" :href="href">
     <span><slot>Button</slot></span>
   </a>
+  <button v-else :class="classes" type="button">
+    <span><slot>Button</slot></span>
+  </button>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
 
 const props = defineProps({
+  href: {
+    type: String,
+    default: "",
+  },
   color: {
     type: String,
     default: "primary",
