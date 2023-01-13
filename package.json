@@ -17,6 +17,7 @@
     "aos": "^2.3.4",
     "gh-pages": "^4.0.0",
     "nuxt": "3.0.0-rc.11",
+    "sitemap": "^7.1.1",
     "vue3-carousel": "^0.2.5",
     "vue3-parallax": "^0.1.4"
   }
