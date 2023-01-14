@@ -115,20 +115,20 @@
   </TransitionRoot>
 
   <div
-    class="relative z-10"
-    :style="`background: url(${useAsset(
+    class="relative z-10 bg-cover"
+    :style="`background-image: url(${useAsset(
       'starmap/nebula.png'
-    )}) no-repeat center top`"
+    )}); background-position:center top; background-repeat:no-repeat;`"
   >
-    <div class="xl:absolute w-full">
+    <div class="md:absolute w-full">
       <div
         class="max-w-screen-2xl mx-auto px-4 sm:px-6 space-y-24 sm:space-y-0"
       >
-        <div class="sm:flex items-center min-h-[800px]">
-          <div class="whitespace-nowrap text-center text-7xl sm:text-14xl">
-            <span
-              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
-            >
+        <div class="sm:flex items-center min-h-[600px] lg:min-h-[800px]">
+          <div
+            class="whitespace-nowrap text-center text-7xl sm:text-10xl lg:text-11xl xl:text-14xl mb-4 sm:mb-0 leading-none"
+          >
+            <span class="font-black tracking-tight sm:block mr-1 sm:mr-0">
               Q1
             </span>
             <span
@@ -137,11 +137,11 @@
               創世
             </span>
           </div>
-          <div class="max-w-[580px] sm:ml-10 relative z-10">
+          <div class="md:max-w-[400px] xl:max-w-[540px] sm:ml-10 relative z-10">
             <h2 class="title mb-4">
-              <span class="text-3xl sm:text-4xl">The Reborn Nebula</span>
+              <span class="text-3xl lg:text-4xl">The Reborn Nebula</span>
             </h2>
-            <div class="text-lg">
+            <div class="xl:text-lg">
               <p class="mb-8">
                 Our journey begins in the Reborn Nebula where we aim to make the
                 first discoveries of the year. Each one will upgrade our network
@@ -169,13 +169,13 @@
           </div>
         </div>
 
-        <div class="sm:flex items-center justify-end min-h-[800px]">
+        <div
+          class="sm:flex items-center justify-end min-h-[600px] lg:min-h-[800px]"
+        >
           <div
-            class="whitespace-nowrap text-center order-2 text-7xl sm:text-14xl"
+            class="whitespace-nowrap text-center order-2 text-7xl sm:text-10xl lg:text-11xl xl:text-14xl mb-4 sm:mb-0 leading-none"
           >
-            <span
-              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
-            >
+            <span class="font-black tracking-tight sm:block mr-1 sm:mr-0">
               Q2
             </span>
             <span
@@ -183,11 +183,11 @@
               >発展</span
             >
           </div>
-          <div class="max-w-[580px] sm:ml-10 order-1">
+          <div class="md:max-w-[400px] xl:max-w-[540px] order-1">
             <h2 class="title mb-4">
-              <span class="text-3xl sm:text-4xl">The Growth Nebula</span>
+              <span class="text-3xl lg:text-4xl">The Growth Nebula</span>
             </h2>
-            <div class="text-lg">
+            <div class="xl:text-lg">
               <p class="mb-8">
                 We continue to grow at a steady pace while bringing true
                 innovation to our users and builders alike. In this quarter we
@@ -207,11 +207,11 @@
           </div>
         </div>
 
-        <div class="sm:flex items-center min-h-[800px]">
-          <div class="whitespace-nowrap text-center text-7xl sm:text-14xl">
-            <span
-              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
-            >
+        <div class="sm:flex items-center min-h-[600px] lg:min-h-[800px]">
+          <div
+            class="whitespace-nowrap text-center text-7xl sm:text-10xl lg:text-11xl xl:text-14xl mb-4 sm:mb-0 leading-none"
+          >
+            <span class="font-black tracking-tight sm:block mr-1 sm:mr-0">
               Q3
             </span>
             <span
@@ -220,11 +220,11 @@
               拡大
             </span>
           </div>
-          <div class="max-w-[580px] sm:ml-10 relative z-10">
+          <div class="md:max-w-[400px] xl:max-w-[540px] sm:ml-10 relative z-10">
             <h2 class="title mb-4">
-              <span class="text-3xl sm:text-4xl">The Expansion Nebula</span>
+              <span class="text-3xl lg:text-4xl">The Expansion Nebula</span>
             </h2>
-            <div class="text-lg">
+            <div class="xl:text-lg">
               <p class="mb-8">
                 At Astar we plan to expand our reach even further. By creating
                 high quality tools and projects, we can further attract top
@@ -245,13 +245,13 @@
           </div>
         </div>
 
-        <div class="sm:flex items-center justify-end min-h-[800px]">
+        <div
+          class="sm:flex items-center justify-end min-h-[600px] lg:min-h-[800px]"
+        >
           <div
-            class="whitespace-nowrap text-center order-2 text-7xl sm:text-14xl"
+            class="whitespace-nowrap text-center order-2 text-7xl sm:text-10xl lg:text-11xl xl:text-14xl mb-4 sm:mb-0 leading-none"
           >
-            <span
-              class="font-black leading-none tracking-tight sm:block mr-1 sm:mr-0"
-            >
+            <span class="font-black tracking-tight sm:block mr-1 sm:mr-0">
               Q4
             </span>
             <span
@@ -260,11 +260,11 @@
               煌閃
             </span>
           </div>
-          <div class="max-w-[580px] sm:ml-10 order-1">
+          <div class="md:max-w-[400px] xl:max-w-[540px] order-1">
             <h2 class="title mb-4">
-              <span class="text-3xl sm:text-4xl">The Shine Nebula</span>
+              <span class="text-3xl lg:text-4xl">The Shine Nebula</span>
             </h2>
-            <div class="text-lg">
+            <div class="xl:text-lg">
               <p class="mb-8">
                 We now approach the last nebula in 2023. By now we have made
                 many great discoveries and grown to new heights - as Web3
@@ -287,7 +287,7 @@
 
     <StarmapLine
       v-on:showDetails="clickAction"
-      class="w-full relative hidden xl:block"
+      class="relative hidden md:block w-full h-auto"
     />
   </div>
 </template>

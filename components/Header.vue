@@ -10,7 +10,7 @@
         ]"
       >
         <div
-          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 md:space-x-10 lg:px-8"
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 lg:px-8"
         >
           <a href="/" class="flex">
             <span class="sr-only">Astar Network</span>
@@ -28,7 +28,7 @@
           </div>
 
           <div class="hidden lg:flex lg:items-center">
-            <nav class="flex space-x-10">
+            <nav class="flex space-x-4 xl:space-x-10">
               <a href="/starmap" class="nav-item">2023 Starmap</a>
               <a href="/developers" class="nav-item">Developers</a>
 
@@ -54,7 +54,7 @@
               <a href="/japan" class="nav-item">Japan</a>
               <!-- <a href="#" class="nav-item">About</a> -->
             </nav>
-            <div class="md:ml-12">
+            <div class="ml-6 xl:ml-12">
               <Button
                 variant="outlined"
                 href="https://portal.astar.network/"
