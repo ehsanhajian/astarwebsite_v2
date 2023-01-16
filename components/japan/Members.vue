@@ -249,7 +249,7 @@ const members = [
       },
       {
         name: "HEAL-Ⅲ",
-        image: "heal-3.png",
+        image: "HEAL-III.png",
         href: "https://heal-3.net/",
       },
       {
@@ -411,6 +411,21 @@ const members = [
         name: "ShortShort",
         image: "SHORTSHORT.jpg",
         href: "https://shortshorts.org/",
+      },
+      {
+        name: "Parallax Network",
+        image: "Parallax.png",
+        href: "https://parallaxnetwork.io/",
+      },
+      {
+        name: "Straym Inc.",
+        image: "STRAYM.png",
+        href: "https://straym.co.jp",
+      },
+      {
+        name: "z game studio Inc.",
+        image: "Z-Game-Studio.png",
+        href: "https://www.z-gamestudio.com/",
       },
     ],
   },
