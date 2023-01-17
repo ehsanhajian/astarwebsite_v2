@@ -12,7 +12,7 @@ export default defineNuxtModule({
     compatibility: { nuxt: '^3.0.0-rc.11' },
   },
   defaults: {
-    hostname: 'http://localhost:3000',
+    hostname: 'https://astar.network',
   },
   async setup(options, nuxt) {
     async function generateSitemap(routes) {

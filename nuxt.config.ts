@@ -20,6 +20,6 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "~/modules/sitemap"],
   plugins: [{ src: "~/plugins/aos" }],
   sitemap: {
-    hostname: "https://astar.network/",
+    hostname: "https://astar.network",
   },
 });
