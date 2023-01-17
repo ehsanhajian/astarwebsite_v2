@@ -427,6 +427,16 @@ const members = [
         image: "Z-Game-Studio.png",
         href: "https://www.z-gamestudio.com/",
       },
+      {
+        name: "OMG LCC.",
+        image: "OMG.png",
+        href: "http://omg-llc.net/",
+      },
+      {
+        name: "NFT Studio24 Inc.",
+        image: "NFTStudio24.png",
+        href: "https://nftstudio24.com/",
+      },
     ],
   },
   {
