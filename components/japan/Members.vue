@@ -133,6 +133,11 @@ const members = [
         href: "https://www.tokaitokyo-fh.jp/",
       },
       {
+        name: "secom Inc.",
+        image: "SECOM.png",
+        href: "https://www.secomtrust.net/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
