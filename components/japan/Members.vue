@@ -133,6 +133,11 @@ const members = [
         href: "https://www.tokaitokyo-fh.jp/",
       },
       {
+        name: "secom Inc.",
+        image: "SECOM.png",
+        href: "https://www.secomtrust.net/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -249,7 +254,7 @@ const members = [
       },
       {
         name: "HEAL-Ⅲ",
-        image: "heal-3.png",
+        image: "HEAL-III.png",
         href: "https://heal-3.net/",
       },
       {
@@ -411,6 +416,31 @@ const members = [
         name: "ShortShort",
         image: "SHORTSHORT.jpg",
         href: "https://shortshorts.org/",
+      },
+      {
+        name: "Parallax Network",
+        image: "Parallax.png",
+        href: "https://parallaxnetwork.io/",
+      },
+      {
+        name: "Straym Inc.",
+        image: "STRAYM.png",
+        href: "https://straym.co.jp",
+      },
+      {
+        name: "z game studio Inc.",
+        image: "Z-Game-Studio.png",
+        href: "https://www.z-gamestudio.com/",
+      },
+      {
+        name: "OMG LCC.",
+        image: "OMG.png",
+        href: "http://omg-llc.net/",
+      },
+      {
+        name: "NFT Studio24 Inc.",
+        image: "NFTStudio24.png",
+        href: "https://nftstudio24.com/",
       },
     ],
   },
