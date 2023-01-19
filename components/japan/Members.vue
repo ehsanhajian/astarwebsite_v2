@@ -188,6 +188,11 @@ const members = [
         href: "https://tofunft.com/astar",
       },
       {
+        name: "AstarGames",
+        image: "AstarGames.png",
+        href: "https://cryptogames.co.jp/astargames",
+      },
+      {
         name: "JPYC inc.",
         image: "jpyc.png",
         href: "https://jpyc.co.jp/",
