@@ -1,13 +1,20 @@
 <template>
-  <a :class="classes">
+  <a v-if="href !== ''" :class="classes" :href="href">
     <span><slot>Button</slot></span>
   </a>
+  <button v-else :class="classes" type="button">
+    <span><slot>Button</slot></span>
+  </button>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
 
 const props = defineProps({
+  href: {
+    type: String,
+    default: "",
+  },
   color: {
     type: String,
     default: "primary",
@@ -47,6 +54,12 @@ const classes = computed(() => ({
 }
 .btn.lg {
   @apply text-lg px-10 py-3;
+}
+.btn.xl {
+  @apply text-lg sm:text-xl px-10 py-4 sm:px-14 sm:py-5;
+}
+.btn.xxl {
+  @apply text-xl px-14 py-5 sm:text-2xl sm:px-20 sm:py-6;
 }
 .btn.contained.primary {
   @apply text-white rounded-xl;

@@ -25,8 +25,10 @@
     />
     <JapanHero />
   </div>
+  <JapanRegister />
   <JapanAbout class="py-24 sm:py-44" />
   <JapanNews class="pt-12 pb-36 lg:py-44" />
+
   <div class="relative z-10">
     <img
       class="w-full"
@@ -39,7 +41,9 @@
       <div class="sky-gradient">
         <div class="sky-gradient-inner">
           <JapanMembers class="py-12" />
+          <JapanRegister />
           <JapanUseCases class="pt-12 pb-24 lg:pt-44" />
+          <JapanNewsletter class="py-8 sm:py-16 lg:py-28" />
           <img
             class="w-full"
             src="~/assets/images/japan/footer-landscape.svg"

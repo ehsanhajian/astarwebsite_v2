@@ -11,13 +11,13 @@
         leave-to="opacity-0"
       >
         <div
-          class="fixed inset-0 bg-space-gray-dark bg-opacity-90 transition-opacity"
+          class="fixed inset-0 bg-gray-900 bg-opacity-90 transition-opacity"
         />
       </TransitionChild>
 
       <div class="fixed inset-0 z-10 overflow-y-auto">
         <div
-          class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
+          class="flex min-h-full items-center justify-center p-2 sm:p-4 text-center"
         >
           <TransitionChild
             as="template"
@@ -29,47 +29,84 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-3xl bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:w-full sm:max-w-lg sm:p-8"
+              class="relative transform overflow-hidden rounded-3xl bg-space-gray-dark px-4 py-8 text-left shadow-xl transition-all sm:w-full sm:max-w-7xl lg:p-12 lg:pr-4"
             >
               <div>
                 <div class="mt-3 sm:mt-5">
                   <DialogTitle
                     as="h3"
-                    class="text-2xl sm:text-3xl font-bold text-space-gray text-center leading-tight"
+                    class="text-xl sm:text-2xl font-bold text-white text-center leading-tight sm:px-16"
                   >
                     {{ discoveries[discoveryId]["title"] }}
                   </DialogTitle>
-                  <div class="mt-4 sm:text-lg">
-                    <p class="text-gray-600">
-                      {{ discoveries[discoveryId]["description"] }}
-                    </p>
-                    <a
-                      v-if="discoveries[discoveryId]['href']"
-                      :href="discoveries[discoveryId]['href']"
-                      target="_blank"
-                      rel="noopener"
-                      class="flex items-center transition text-space-blue hover:underline hover:text-space-blue-lighter mt-2 outline-none"
+                  <div
+                    :class="
+                      discoveries[discoveryId]['image'] &&
+                      'flex items-center flex-col-reverse lg:flex-row'
+                    "
+                  >
+                    <div class="my-6">
+                      <p
+                        class="text-gray-200 whitespace-pre-wrap"
+                        :class="
+                          discoveries[discoveryId]['image'] === '' &&
+                          'text-center'
+                        "
+                      >
+                        {{ discoveries[discoveryId]["description"] }}
+                      </p>
+                      <a
+                        v-if="discoveries[discoveryId]['href']"
+                        :href="discoveries[discoveryId]['href']"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center transition text-space-cyan hover:underline hover:text-space-cyan-lighter mt-5 outline-none"
+                      >
+                        More info in the article
+                        <span class="sr-only">
+                          about {{ discoveries[discoveryId]["title"] }}
+                        </span>
+                        <IconArrowTopRightOnSquare
+                          class="w-5 h-5 stroke-2 ml-1"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      v-if="discoveries[discoveryId]['image']"
+                      class="shrink-0 ml-2"
                     >
-                      Learn more
-                      <span class="sr-only">
-                        about {{ discoveries[discoveryId]["title"] }}
-                      </span>
-                      <IconArrowTopRightOnSquare
-                        class="w-5 h-5 stroke-2 ml-1"
+                      <img
+                        class=""
+                        src="~/assets/images/starmap/xvm.svg"
+                        :alt="discoveries[discoveryId]['title']"
+                        width="580"
+                        height="480"
                       />
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="mt-5 sm:mt-6 text-center">
-                <button
-                  type="button"
-                  class="text-gray-500 transition cursor-pointer py-3 px-6 hover:bg-gray-100 rounded-lg outline-none"
-                  @click="open = false"
+
+              <button
+                type="button"
+                class="text-gray-500 transition cursor-pointer p-3 hover:bg-space-gray hover:text-gray-400 rounded-full outline-none absolute right-0 top-0 sm:right-3 sm:top-3"
+                @click="open = false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1"
+                  stroke="currentColor"
+                  class="w-8 h-8 sm:w-12 sm:h-12"
                 >
-                  Close
-                </button>
-              </div>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </DialogPanel>
           </TransitionChild>
         </div>
@@ -120,7 +157,7 @@
               <ul class="list-disc pl-4">
                 <li>
                   <span @click="clickAction('xvm')" class="popup-link">
-                    XVM
+                    Cross-Virtual Machine (XVM): The Portal to the Future
                   </span>
                 </li>
                 <li>Astar UI Library & Astar.js</li>
@@ -269,16 +306,17 @@ const discoveryId = ref("xvm");
 
 const discoveries = {
   xvm: {
-    title: "XVM",
-    description:
-      "We want to use parachains as a service for dApps on Astar Network. Stay tuned for this discovery coming January 2023.",
-    href: "",
+    title: "Cross-Virtual Machine (XVM): The Portal to the Future",
+    description: `As we are well-aware, WASM is the future. Currently, WASM smart contracts have a large limitation when pushing the technology for mass adoption in the EVM-dominated space. Teams are inclined to choose one or the other when developing their project. This is why we created XVM.\n\nCross-Virtual Machine (XVM) is a custom pallet and a set of interfaces that allow a smart contract in one virtual machine to communicate with another, as if they are in the same environment. In other words, with XVM, you can create an ink! smart contract and access any assets or contracts available on the EVM side. You can enjoy the best of both worlds!`,
+    href: "https://medium.com/astar-network/cross-virtual-machine-creating-a-portal-to-the-future-of-smart-contracts-a96c6d2f79b8",
+    image: "xvm.svg",
   },
   ui: {
     title: "Coming soon!",
     description:
       "Check in after our fist discovery to get insight about the second one. See you soon!",
     href: "",
+    image: "",
   },
 };
 

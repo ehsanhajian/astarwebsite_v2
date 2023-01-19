@@ -17,9 +17,9 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
-  image: {
-    domains: ["img.youtube.com"],
-  },
+  modules: ["@nuxtjs/tailwindcss", "~/modules/sitemap"],
   plugins: [{ src: "~/plugins/aos" }],
+  sitemap: {
+    hostname: "https://astar.network",
+  },
 });
