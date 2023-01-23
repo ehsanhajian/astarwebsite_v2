@@ -492,6 +492,11 @@ const members = [
         image: "rodos.png",
         href: "http://rodos.tech/",
       },
+      {
+        name: "Paima Studios",
+        image: "logo-vertical-color-full - Sebastien Guillemot.png",
+        href: "http://paimastudios.com/",
+      },
     ],
   },
 ];
