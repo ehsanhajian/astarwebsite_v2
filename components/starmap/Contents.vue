@@ -287,7 +287,7 @@
 
     <StarmapLine
       v-on:showDetails="clickAction"
-      class="relative hidden md:block w-full h-auto"
+      class="relative hidden md:block w-full h-auto max-w-[1280px] mx-auto"
     />
   </div>
 </template>
