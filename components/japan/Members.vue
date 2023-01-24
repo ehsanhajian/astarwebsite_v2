@@ -502,6 +502,11 @@ const members = [
         image: "neweconomy.png",
         href: "https://www.neweconomy.jp/",
       },
+      {
+        name: "Paima Studios",
+        image: "paima.png",
+        href: "http://paimastudios.com/",
+      },
     ],
   },
 ];
