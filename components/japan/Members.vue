@@ -492,6 +492,16 @@ const members = [
         image: "rodos.png",
         href: "http://rodos.tech/",
       },
+      {
+        name: "MAGHUB",
+        image: "maghub.png",
+        href: "https://www.mugenart.io/",
+      },
+      {
+        name: "株式会社幻冬舎（あたらしい経済）",
+        image: "neweconomy.png",
+        href: "https://www.neweconomy.jp/",
+      },
     ],
   },
 ];
