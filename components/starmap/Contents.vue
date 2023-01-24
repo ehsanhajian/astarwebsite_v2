@@ -77,7 +77,11 @@
                     >
                       <img
                         class=""
-                        src="~/assets/images/starmap/xvm.svg"
+                        :src="
+                          useAsset(
+                            'starmap/' + discoveries[discoveryId]['image']
+                          )
+                        "
                         :alt="discoveries[discoveryId]['title']"
                         width="580"
                         height="480"
@@ -160,7 +164,12 @@
                     Cross-Virtual Machine (XVM): The Portal to the Future
                   </span>
                 </li>
-                <li>Astar UI Library & Astar.js</li>
+                <li>
+                  Astar UI Library &
+                  <span @click="clickAction('astarjs')" class="popup-link">
+                    Astar.js
+                  </span>
+                </li>
                 <li>WASM tooling and showcase dapps</li>
                 <li>XCM smart contracts</li>
                 <li>dApp staking</li>
@@ -304,14 +313,28 @@ import {
 const open = ref(false);
 const discoveryId = ref("xvm");
 
-const discoveries = {
+interface Discovery {
+  title: string;
+  description: string;
+  href: string;
+  image: string;
+}
+
+const discoveries: { [index: string]: Discovery } = {
   xvm: {
     title: "Cross-Virtual Machine (XVM): The Portal to the Future",
     description: `As we are well-aware, WASM is the future. Currently, WASM smart contracts have a large limitation when pushing the technology for mass adoption in the EVM-dominated space. Teams are inclined to choose one or the other when developing their project. This is why we created XVM.\n\nCross-Virtual Machine (XVM) is a custom pallet and a set of interfaces that allow a smart contract in one virtual machine to communicate with another, as if they are in the same environment. In other words, with XVM, you can create an ink! smart contract and access any assets or contracts available on the EVM side. You can enjoy the best of both worlds!`,
     href: "https://medium.com/astar-network/cross-virtual-machine-creating-a-portal-to-the-future-of-smart-contracts-a96c6d2f79b8",
     image: "xvm.svg",
   },
-  ui: {
+  astarjs: {
+    title: "Astar.js",
+    description:
+      "Astar.js is an essential tool for anyone looking to build dApps on the Astar network. Its modular design and comprehensive feature set make it easy for developers to create powerful and scalable decentralised applications. Whether you're a seasoned blockchain developer or just starting out, Astar.js is a valuable tool to have in your toolkit.",
+    href: "",
+    image: "astarjs.svg",
+  },
+  comingSoon: {
     title: "Coming soon!",
     description:
       "Check in after our fist discovery to get insight about the second one. See you soon!",
@@ -320,7 +343,7 @@ const discoveries = {
   },
 };
 
-const clickAction = (discovery) => {
+const clickAction = (discovery: string) => {
   discoveryId.value = discovery;
   open.value = true;
 };
