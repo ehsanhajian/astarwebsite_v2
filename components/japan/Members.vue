@@ -148,9 +148,9 @@ const members = [
         href: "https://www.globiscapital.co.jp/",
       },
       {
-        name: "Hyperithm Group",
-        image: "hyperithm.png",
-        href: "https://hyperithm.jp/",
+        name: "DMTP",
+        image: "DMTP.png",
+        href: "https://dmtp.tech/",
       },
       {
         name: "ANOBAKA",
@@ -446,6 +446,16 @@ const members = [
         name: "NFT Studio24 Inc.",
         image: "NFTStudio24.png",
         href: "https://nftstudio24.com/",
+      },
+      {
+        name: "MAGHUB",
+        image: "maghub.png",
+        href: "https://www.mugenart.io/",
+      },
+      {
+        name: "Paima Studios",
+        image: "paima.png",
+        href: "http://paimastudios.com/",
       },
     ],
   },
