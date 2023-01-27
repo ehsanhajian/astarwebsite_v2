@@ -138,6 +138,11 @@ const members = [
         href: "https://www.secomtrust.net/",
       },
       {
+        name: “TMJ”,
+        image: “TMJ.png”,
+        href: “https://www.tmj.jp/”
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -456,6 +461,31 @@ const members = [
         name: "Paima Studios",
         image: "paima.png",
         href: "http://paimastudios.com/",
+      },
+      {
+        name: “AGI Creative Labo”,
+        image: “AGICL.jpg”,
+        href: “https://agi-cl.com/”
+      },
+      {
+        name: “LATEGRA Inc.“,
+        image: “LATEGRA.png”,
+        href: “https://lategra.co.jp/”
+      },
+      {
+        name: “POLYGLOTS”,
+        image: “POLYGLOTS.png”,
+        href: “https://www.polyglots.net/”
+      },
+      {
+        name: “Sanka”,
+        image: “Sanka.png”,
+        href: “https://sanka.io/”
+      },
+      {
+        name: “XYLOCAPA”,
+        image: “XYLOCAPA.png”,
+        href: “https://www.tmj.jp/”
       },
     ],
   },
