@@ -283,9 +283,9 @@ const members = [
         href: "https://lp.tarifflabo.com/",
       },
       {
-        name: "Highphen Pte. Ltd.",
-        image: "highphen.png",
-        href: "https://highphen.co/",
+        name: "DMTP",
+        image: "DMTP.png"
+        href: "https://dmtp.tech/",
       },
       {
         name: "Synamon Inc.",
