@@ -447,6 +447,16 @@ const members = [
         image: "NFTStudio24.png",
         href: "https://nftstudio24.com/",
       },
+      {
+        name: "MAGHUB",
+        image: "maghub.png",
+        href: "https://www.mugenart.io/",
+      },
+      {
+        name: "Paima Studios",
+        image: "paima.png",
+        href: "http://paimastudios.com/",
+      },
     ],
   },
   {
@@ -491,21 +501,6 @@ const members = [
         name: "Rodos Alchemy Star",
         image: "rodos.png",
         href: "http://rodos.tech/",
-      },
-      {
-        name: "MAGHUB",
-        image: "maghub.png",
-        href: "https://www.mugenart.io/",
-      },
-      {
-        name: "株式会社幻冬舎（あたらしい経済）",
-        image: "neweconomy.png",
-        href: "https://www.neweconomy.jp/",
-      },
-      {
-        name: "Paima Studios",
-        image: "paima.png",
-        href: "http://paimastudios.com/",
       },
     ],
   },
