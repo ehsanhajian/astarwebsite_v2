@@ -148,9 +148,9 @@ const members = [
         href: "https://www.globiscapital.co.jp/",
       },
       {
-        name: "Hyperithm Group",
-        image: "hyperithm.png",
-        href: "https://hyperithm.jp/",
+        name: "DMTP",
+        image: "DMTP.png",
+        href: "https://dmtp.tech/",
       },
       {
         name: "ANOBAKA",
