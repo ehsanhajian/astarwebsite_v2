@@ -478,8 +478,8 @@ const members = [
         href: "https://sanka.io/",
       },
       {
-        name: "XYLOCAPA",
-        image: "XYLOCAPA.png",
+        name: "XYLOCOPA",
+        image: "XYLOCOPA.png",
         href: "https://xylocopa.xyz",
       },
     ],
