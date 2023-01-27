@@ -284,7 +284,7 @@ const members = [
       },
       {
         name: "DMTP",
-        image: "DMTP.png"
+        image: "DMTP.png",
         href: "https://dmtp.tech/",
       },
       {
