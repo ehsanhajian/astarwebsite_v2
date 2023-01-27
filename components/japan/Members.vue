@@ -333,9 +333,9 @@ const members = [
         href: "https://i-nextage.co.jp/",
       },
       {
-        name: "AGI Creative Labo",
-        image: "agi-cl.png",
-        href: "https://agi-cl.com/",
+        name: “AGI Creative Labo”,
+        image: “AGICL.jpg”,
+        href: “https://agi-cl.com/”
       },
       {
         name: "Ginco Inc.",
@@ -461,11 +461,6 @@ const members = [
         name: "Paima Studios",
         image: "paima.png",
         href: "http://paimastudios.com/",
-      },
-      {
-        name: “AGI Creative Labo”,
-        image: “AGICL.jpg”,
-        href: “https://agi-cl.com/”
       },
       {
         name: “LATEGRA Inc.“,
