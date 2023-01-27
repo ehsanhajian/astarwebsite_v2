@@ -138,9 +138,9 @@ const members = [
         href: "https://www.secomtrust.net/",
       },
       {
-        name: “TMJ”,
-        image: “TMJ.png”,
-        href: “https://www.tmj.jp/”
+        name: "TMJ",
+        image: "TMJ.png",
+        href: "https://www.tmj.jp/",
       },
       {
         name: "F Ventures",
@@ -333,9 +333,9 @@ const members = [
         href: "https://i-nextage.co.jp/",
       },
       {
-        name: “AGI Creative Labo”,
-        image: “AGICL.jpg”,
-        href: “https://agi-cl.com/”
+        name: "AGI Creative Labo",
+        image: "AGICL.jpg",
+        href: "https://agi-cl.com/",
       },
       {
         name: "Ginco Inc.",
@@ -463,24 +463,24 @@ const members = [
         href: "http://paimastudios.com/",
       },
       {
-        name: “LATEGRA Inc.“,
-        image: “LATEGRA.png”,
-        href: “https://lategra.co.jp/”
+        name: "LATEGRA Inc.",
+        image: "LATEGRA.png",
+        href: "https://lategra.co.jp/",
       },
       {
-        name: “POLYGLOTS”,
-        image: “POLYGLOTS.png”,
-        href: “https://www.polyglots.net/”
+        name: "POLYGLOTS",
+        image: "POLYGLOTS.png",
+        href: "https://www.polyglots.net/",
       },
       {
-        name: “Sanka”,
-        image: “Sanka.png”,
-        href: “https://sanka.io/”
+        name: "Sanka",
+        image: "Sanka.png",
+        href: "https://sanka.io/",
       },
       {
-        name: “XYLOCAPA”,
-        image: “XYLOCAPA.png”,
-        href: “https://xylocopa.xyz”
+        name: "XYLOCAPA",
+        image: "XYLOCAPA.png",
+        href: "https://xylocopa.xyz",
       },
     ],
   },
