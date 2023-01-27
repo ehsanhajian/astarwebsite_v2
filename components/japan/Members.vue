@@ -480,7 +480,7 @@ const members = [
       {
         name: “XYLOCAPA”,
         image: “XYLOCAPA.png”,
-        href: “https://www.tmj.jp/”
+        href: “https://xylocopa.xyz”
       },
     ],
   },
