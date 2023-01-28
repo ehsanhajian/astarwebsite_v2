@@ -94,7 +94,7 @@ definePageMeta({
 
 <style scoped lang="postcss">
 .banner--hiring {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.85);
   position: absolute;
   top: 0px;
   right: 0px;
