@@ -138,6 +138,11 @@ const members = [
         href: "https://www.secomtrust.net/",
       },
       {
+        name: "TMJ",
+        image: "TMJ.png",
+        href: "https://www.tmj.jp/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -148,9 +153,9 @@ const members = [
         href: "https://www.globiscapital.co.jp/",
       },
       {
-        name: "Hyperithm Group",
-        image: "hyperithm.png",
-        href: "https://hyperithm.jp/",
+        name: "DMTP",
+        image: "DMTP.png",
+        href: "https://dmtp.tech/",
       },
       {
         name: "ANOBAKA",
@@ -278,9 +283,9 @@ const members = [
         href: "https://lp.tarifflabo.com/",
       },
       {
-        name: "Highphen Pte. Ltd.",
-        image: "highphen.png",
-        href: "https://highphen.co/",
+        name: "DMTP",
+        image: "DMTP.png",
+        href: "https://dmtp.tech/",
       },
       {
         name: "Synamon Inc.",
@@ -329,7 +334,7 @@ const members = [
       },
       {
         name: "AGI Creative Labo",
-        image: "agi-cl.png",
+        image: "AGICL.jpg",
         href: "https://agi-cl.com/",
       },
       {
@@ -446,6 +451,36 @@ const members = [
         name: "NFT Studio24 Inc.",
         image: "NFTStudio24.png",
         href: "https://nftstudio24.com/",
+      },
+      {
+        name: "MAGHUB",
+        image: "maghub.png",
+        href: "https://www.mugenart.io/",
+      },
+      {
+        name: "Paima Studios",
+        image: "paima.png",
+        href: "http://paimastudios.com/",
+      },
+      {
+        name: "LATEGRA Inc.",
+        image: "LATEGRA.png",
+        href: "https://lategra.co.jp/",
+      },
+      {
+        name: "POLYGLOTS",
+        image: "POLYGLOTS.png",
+        href: "https://www.polyglots.net/",
+      },
+      {
+        name: "Sanka",
+        image: "Sanka.png",
+        href: "https://sanka.io/",
+      },
+      {
+        name: "XYLOCOPA",
+        image: "XYLOCOPA.png",
+        href: "https://xylocopa.xyz",
       },
     ],
   },
