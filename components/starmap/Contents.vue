@@ -29,7 +29,12 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-3xl bg-space-gray-dark px-4 py-8 text-left shadow-xl transition-all sm:w-full sm:max-w-7xl lg:p-12 lg:pr-4"
+              class="relative transform overflow-hidden rounded-3xl bg-space-gray-dark px-4 py-8 text-left shadow-xl transition-all sm:w-full lg:p-12 lg:pr-4"
+              :class="
+                discoveries[discoveryId]['description'] === ''
+                  ? 'sm:max-w-xl'
+                  : 'sm:max-w-7xl'
+              "
             >
               <div>
                 <div class="mt-3 sm:mt-5">
@@ -336,8 +341,7 @@ const discoveries: { [index: string]: Discovery } = {
   },
   comingSoon: {
     title: "Coming soon!",
-    description:
-      "Check in after our fist discovery to get insight about the second one. See you soon!",
+    description: "",
     href: "",
     image: "",
   },
