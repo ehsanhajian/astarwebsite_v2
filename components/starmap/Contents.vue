@@ -330,7 +330,7 @@ const discoveries: { [index: string]: Discovery } = {
   astarjs: {
     title: "Astar.js",
     description:
-      "Astar.js is an essential tool for anyone looking to build dApps on the Astar network. Its modular design and comprehensive feature set make it easy for developers to create powerful and scalable decentralised applications. Whether you're a seasoned blockchain developer or just starting out, Astar.js is a valuable tool to have in your toolkit.",
+      "Astar.js is an essential tool for anyone looking to build a dApp on the Astar network. Its modular design and comprehensive feature set make it easy for developers to create powerful and scalable decentralised applications. In addition to the many packages it contains, it also supports EVM and substrate native structures. Whether you're a seasoned blockchain developer or just starting out, Astar.js is a valuable tool to have in your toolkit.",
     href: "",
     image: "astarjs.svg",
   },
