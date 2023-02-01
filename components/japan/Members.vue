@@ -153,11 +153,6 @@ const members = [
         href: "https://www.globiscapital.co.jp/",
       },
       {
-        name: "DMTP",
-        image: "DMTP.png",
-        href: "https://dmtp.tech/",
-      },
-      {
         name: "ANOBAKA",
         image: "anobaka.png",
         href: "https://anobaka.jp/",
