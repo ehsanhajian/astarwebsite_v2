@@ -334,7 +334,7 @@ const members = [
       },
       {
         name: "AGI Creative Labo",
-        image: "AGICL.jpg",
+        image: "AGI Creative Labo (1).jpg",
         href: "https://agi-cl.com/",
       },
       {
