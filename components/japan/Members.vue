@@ -142,6 +142,11 @@ const members = [
         image: "TMJ.png",
         href: "https://www.tmj.jp/",
       },
+      { 
+        name: "JMACS", 
+        image: "JMACS.png", 
+        href: "https://www.jmacs-j.co.jp", 
+      },
       {
         name: "F Ventures",
         image: "f-ventures.png",
