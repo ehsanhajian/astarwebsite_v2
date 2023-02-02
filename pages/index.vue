@@ -1,5 +1,10 @@
 <template>
   <div class="relative">
+    <div class="banner--hiring">
+      <a href="https://angel.co/company/astar-network" target="_blank" rel="noopener" class="link--hiring">
+        We are hiring! <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+      </a>
+    </div>
     <div class="bg-black">
       <div class="absolute z-0 w-screen h-screen flex items-center">
         <ScrollParallax :speed="0.25">
@@ -88,6 +93,29 @@ definePageMeta({
 </script>
 
 <style scoped lang="postcss">
+.banner--hiring {
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 220px;
+  height: 30px;
+  color: #fff;
+  z-index: 9999;
+  text-align: right;
+  border-bottom-left-radius: 10px;
+}
+.link--hiring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( 90deg, #e6007a -5.88%, #703ac2 15.42%, #0070eb 40.77% );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0070eb;
+}
 .welcome-bg {
   background: linear-gradient(
     0deg,
