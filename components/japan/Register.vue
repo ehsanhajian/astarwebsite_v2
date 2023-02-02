@@ -5,7 +5,7 @@
       size="xxl"
       target="_blank"
       rel="noopener"
-      href="https://docs.google.com/forms/d/e/1FAIpQLScAnmWe2Q3CjhQGFZ2WuSxpXO699i04lx85wXeQr8SaivIzlg/viewform?usp=sf_link"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfjqTQyzWIlpl4T921MO8z7nn9v438lRLdlZSpF1nC7HHm3-g/viewform?usp=sf_link"
     >
       Register Now
     </Button>
