@@ -30,7 +30,6 @@ const meta = {
 
 useHead({
   title: `${route.meta.pageTitle} | ${meta.title}`,
-  charset: "utf-8",
   link: [
     {
       hid: "canonical",
@@ -112,3 +111,9 @@ useHead({
   ],
 });
 </script>
+
+<style lang="postcss">
+body {
+  @apply text-gray-200 bg-space-gray-dark;
+}
+</style>

@@ -163,7 +163,7 @@ const network = [
 ];
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .nav-item {
   @apply text-white hover:text-space-cyan-light font-medium transition;
 }

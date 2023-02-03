@@ -1,7 +1,13 @@
 <template>
-  <div class="overflow-hidden">
-    <Header />
-    <slot />
+  <div>
+    <div class="bg-black h-[700px] flex flex-col">
+      <IncubationHeader />
+      <div class="flex items-center h-full">
+        <slot name="hero" />
+      </div>
+    </div>
+    <slot name="main" />
+    <IncubationFooter />
   </div>
 </template>
 
@@ -9,20 +15,30 @@
 const route = useRoute();
 
 const meta = {
-  title: "Astar Network - The Future of Smart Contracts for Multichain.",
-  siteName: "Astar Network",
-  url: "https://astar.network",
+  title:
+    "Web3 Incubation Program by Sony Network Communications and Astar Network",
+  url: "https://astar.network/incubation",
   ogImage: "https://astar.network/social-preview.png",
   twitter: "@AstarNetwork",
+  description:
+    "This is a joint program between Sony Network Communications and Astar, and aims to foster cutting-edge Web3 use cases using the knowledge and resources of SONY and Astar.",
 };
 
+const title = route.meta.pageTitle
+  ? `${route.meta.pageTitle} | ${meta.title}`
+  : meta.title;
+const url = route.meta.slug ? `${meta.url}/${route.meta.slug}` : meta.url;
+const description = route.meta.description
+  ? route.meta.description
+  : meta.description;
+
 useHead({
-  title: `${route.meta.pageTitle} | ${meta.title}`,
+  title: title,
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: `${meta.url}/${route.meta.slug}`,
+      href: url,
     },
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
   ],
@@ -30,7 +46,8 @@ useHead({
     lang: "en",
   },
   meta: [
-    { name: "description", content: route.meta.description },
+    { name: "description", content: description },
+
     // Twitter
     {
       hid: "twitter:card",
@@ -41,17 +58,17 @@ useHead({
     {
       hid: "twitter:url",
       name: "twitter:url",
-      content: `${meta.url}/${route.meta.slug}`,
+      content: url,
     },
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: `${route.meta.pageTitle} | ${meta.title}`,
+      content: title,
     },
     {
       hid: "twitter:description",
       name: "twitter:description",
-      content: route.meta.description,
+      content: description,
     },
     {
       hid: "twitter:image",
@@ -63,23 +80,23 @@ useHead({
     {
       hid: "og:site_name",
       property: "og:site_name",
-      content: meta.siteName,
+      content: meta.title,
     },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:url",
       property: "og:url",
-      content: meta.url,
+      content: url,
     },
     {
       hid: "og:title",
       property: "og:title",
-      content: `${route.meta.pageTitle} | ${meta.title}`,
+      content: title,
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: route.meta.description,
+      content: description,
     },
     {
       hid: "og:image",
@@ -97,12 +114,27 @@ useHead({
       content: meta.title,
     },
   ],
-  script: [{ src: "https://js.hsforms.net/forms/v2.js" }],
 });
 </script>
 
 <style lang="postcss">
 body {
-  @apply text-gray-200 bg-space-gray-dark;
+  @apply bg-white text-gray-600 font-roboto;
+}
+h1 {
+  @apply text-white font-bold text-7xl;
+}
+h2,
+h3 {
+  @apply text-black;
+}
+a {
+  @apply text-space-sky transition hover:underline hover:text-space-sky-lighter;
+}
+#hero {
+  @apply text-gray-300;
+}
+#hero p {
+  @apply text-2xl font-light;
 }
 </style>

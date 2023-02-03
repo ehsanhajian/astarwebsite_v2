@@ -1,8 +1,14 @@
 <template>
   <div class="relative">
     <div class="banner--hiring">
-      <a href="https://angel.co/company/astar-network" target="_blank" rel="noopener" class="link--hiring">
-        We are hiring! <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+      <a
+        href="https://angel.co/company/astar-network"
+        target="_blank"
+        rel="noopener"
+        class="link--hiring"
+      >
+        We are hiring!
+        <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
       </a>
     </div>
     <div class="bg-black">
@@ -87,8 +93,8 @@ definePageMeta({
   layout: "home",
   pageTitle: "Home",
   slug: "",
-  description:
-    "Astar is a scalable decentralised blockchain for next big Web3 innovations.",
+  // description:
+  //   "Astar is a scalable decentralised blockchain for next big Web3 innovations.",
 });
 </script>
 
@@ -109,7 +115,12 @@ definePageMeta({
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 90deg, #e6007a -5.88%, #703ac2 15.42%, #0070eb 40.77% );
+  background: linear-gradient(
+    90deg,
+    #e6007a -5.88%,
+    #703ac2 15.42%,
+    #0070eb 40.77%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;

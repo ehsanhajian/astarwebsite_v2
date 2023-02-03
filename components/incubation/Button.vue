@@ -1,6 +1,6 @@
 <template>
   <a v-if="href !== ''" :class="classes" :href="href">
-    <span><slot>Button</slot></span>
+    <slot>Button</slot>
   </a>
   <button v-else :class="classes" type="button">
     <span><slot>Button</slot></span>
@@ -41,10 +41,7 @@ const classes = computed(() => ({
 
 <style lang="postcss" scoped>
 .btn {
-  @apply shadow font-medium transition-all inline-block hover:cursor-pointer;
-}
-.btn span {
-  @apply flex items-center justify-center;
+  @apply rounded-sm font-normal inline-block hover:cursor-pointer;
 }
 .btn.sm {
   @apply text-sm px-3 py-1;
@@ -140,10 +137,23 @@ const classes = computed(() => ({
   color: white;
   -webkit-text-fill-color: white;
 }
+
 .btn.contained.secondary {
-  @apply border-2 border-white rounded-xl text-space-gray-dark bg-white bg-opacity-80 hover:bg-opacity-100;
+  @apply text-black bg-white;
 }
+.btn.contained.secondary:hover {
+  @apply text-white;
+  background: linear-gradient(
+    120deg,
+    #e6007a -5.88%,
+    #703ac2 15.42%,
+    #0070eb 40.77%,
+    #0297fb 72.21%,
+    #0ae2ff 95.53%
+  );
+}
+
 .btn.outlined.secondary {
-  @apply border border-white rounded-xl bg-white/20 hover:bg-white/60 hover:text-space-gray-dark;
+  @apply border border-white text-white hover:bg-white hover:text-black;
 }
 </style>
