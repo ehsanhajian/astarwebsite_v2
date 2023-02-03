@@ -12,9 +12,9 @@
         <div
           class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 lg:px-8"
         >
-          <a
-            href="/incubation"
-            class="logo text-white flex flex-col leading-tight"
+          <NuxtLink
+            :to="localePath('/incubation')"
+            class="logo text-white flex flex-col leading-tight hover:no-underline"
           >
             <span class="font-bold text-[1.75rem]">
               Web3 Incubation Program
@@ -22,43 +22,51 @@
             <span class="text-[1rem]">
               by SONY Network Communications and Astar
             </span>
-          </a>
+          </NuxtLink>
 
           <div class="-my-2 -mr-2 lg:hidden">Mobile nav</div>
 
           <div class="hidden lg:flex lg:items-center">
             <nav class="flex items-center space-x-4 xl:space-x-10">
-              <a
-                href="/incubation/program"
+              <NuxtLink
+                :to="localePath('/incubation/program')"
                 class="nav-item"
                 :class="route.meta.slug === 'program' && 'current'"
               >
-                <span>Program</span>
-              </a>
-              <a
-                href="/incubation/partners"
+                <span>{{ $t("pages.program.title") }}</span>
+              </NuxtLink>
+              <NuxtLink
+                :to="localePath('/incubation/partners')"
                 class="nav-item"
                 :class="route.meta.slug === 'partners' && 'current'"
               >
-                <span>Partners</span>
-              </a>
-              <a
-                href="/incubation/mentors"
+                <span>{{ $t("pages.partners.title") }}</span>
+              </NuxtLink>
+              <NuxtLink
+                :to="localePath('/incubation/mentors')"
                 class="nav-item"
                 :class="route.meta.slug === 'mentors' && 'current'"
               >
-                <span>Mentors</span>
-              </a>
+                <span>{{ $t("pages.mentors.title") }}</span>
+              </NuxtLink>
               <IncubationButton
                 href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
                 variant="contained"
                 color="secondary"
                 target="_blank"
               >
-                Apply Now
+                <span>{{ $t("nav.apply") }}</span>
               </IncubationButton>
-              <a href="/incubation/ja" class="nav-item"><span>日本語</span></a>
             </nav>
+            <NuxtLink
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+              class="nav-item border-l border-gray-500 pl-4 ml-6"
+            >
+              <IconGlove class="w-6 h-6 inline-block" />
+              {{ locale.name }}
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -70,11 +78,19 @@
 import { Popover, PopoverButton } from "@headlessui/vue";
 
 const route = useRoute();
+
+const { locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
+const availableLocales = computed(() => {
+  return locales.value.filter((i) => i.code !== locale.value);
+});
+
+const localePath = useLocalePath();
 </script>
 
 <style lang="postcss" scoped>
 .nav-item {
-  @apply text-white text-lg hover:text-red-500 transition duration-500;
+  @apply text-white text-lg hover:no-underline hover:text-gray-300;
 }
 .nav-item.current span,
 .logo:hover span,

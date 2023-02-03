@@ -1,0 +1,26 @@
+{
+  "welcome": "Welcome",
+  "meta": {
+    "title": "Web3 Incubation Program by Sony Network Communications and Astar Network",
+    "description": "This is a joint program between Sony Network Communications and Astar, and aims to foster cutting-edge Web3 use cases using the knowledge and resources of SONY and Astar."
+  },
+  "pages": {
+    "program": {
+      "title": "Program",
+      "description": "Provide large scale and comprehensive support for Web3 builders"
+    },
+    "partners": {
+      "title": "Partners",
+      "description": "Provide all the support necessary for web3 companies to grow"
+    },
+    "mentors": {
+      "title": "Mentors",
+      "description": "Providing constructive advice and feedback by utilizing their technical and financial knowledge"
+    }
+  },
+  "nav": {
+    "apply": "Apply Now",
+    "tac": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  }
+}

@@ -1,34 +1,39 @@
 <template>
   <NuxtLayout name="incubation">
     <template #hero>
-      <section id="hero" class="max-w-5xl mx-auto text-center">
-        <h1>Partners</h1>
-        <p>
-          Provide all the support necessary <br />
-          for web3 companies to grow.
-        </p>
-      </section>
+      <IncubationSubPageHero
+        :title="$t('pages.partners.title')"
+        :description="$t('pages.partners.description')"
+      />
     </template>
     <template #main>
       <main class="max-w-5xl mx-auto px-4 py-24">
         <template v-for="partner in partners">
           <h2>{{ partner.category }}</h2>
-          <div
-            class="grid grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-8 lg:gap-y-20 sm:grid-cols-4"
+          <ul
+            class="grid grid-cols-2 gap-x-2 gap-y-2 lg:gap-y-8 mt-8 mb-24"
+            :class="partner.category === 'Sponsors' && 'sm:grid-cols-4'"
           >
             <li
               v-for="item in partner.logos"
               class="flex items-center justify-center"
             >
-              <a :href="item.href" target="_blank">
+              <NuxtLink
+                :href="item.href"
+                target="_blank"
+                class="hover:shadow-lg rounded p-4"
+              >
                 <img
-                  class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
+                  class="h-16 w-44 object-contain"
+                  :class="
+                    partner.category === 'Host' ? 'lg:w-80 lg:h-20' : 'lg:w-48'
+                  "
                   :src="useAsset('incubation/partners/' + item.image)"
                   :alt="item.name"
                 />
-              </a>
+              </NuxtLink>
             </li>
-          </div>
+          </ul>
         </template>
       </main>
     </template>
@@ -36,11 +41,15 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n({
+  useScope: "local",
+});
+
 definePageMeta({
   layout: false,
-  pageTitle: "Partners",
+  title: "pages.partners.title",
   slug: "partners",
-  description: "Provide all the support necessary for web3 companies to grow.",
+  description: "pages.partners.description",
 });
 
 const partners = [

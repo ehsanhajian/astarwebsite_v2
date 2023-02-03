@@ -13,24 +13,22 @@
 
 <script setup lang="ts">
 const route = useRoute();
+const { t } = useI18n();
 
 const meta = {
-  title:
-    "Web3 Incubation Program by Sony Network Communications and Astar Network",
   url: "https://astar.network/incubation",
   ogImage: "https://astar.network/social-preview.png",
   twitter: "@AstarNetwork",
-  description:
-    "This is a joint program between Sony Network Communications and Astar, and aims to foster cutting-edge Web3 use cases using the knowledge and resources of SONY and Astar.",
 };
 
-const title = route.meta.pageTitle
-  ? `${route.meta.pageTitle} | ${meta.title}`
-  : meta.title;
+const site_name = t("meta.title");
+const title = route.meta.title
+  ? `${t(route.meta.title)} | ${t("meta.title")}`
+  : t("meta.title");
 const url = route.meta.slug ? `${meta.url}/${route.meta.slug}` : meta.url;
 const description = route.meta.description
-  ? route.meta.description
-  : meta.description;
+  ? t(route.meta.description)
+  : t("meta.description");
 
 useHead({
   title: title,
@@ -80,7 +78,7 @@ useHead({
     {
       hid: "og:site_name",
       property: "og:site_name",
-      content: meta.title,
+      content: site_name,
     },
     { hid: "og:type", property: "og:type", content: "website" },
     {
@@ -111,7 +109,7 @@ useHead({
     {
       hid: "og:image:alt",
       property: "og:image:alt",
-      content: meta.title,
+      content: site_name,
     },
   ],
 });
@@ -122,7 +120,7 @@ body {
   @apply bg-white text-gray-600 font-roboto;
 }
 h1 {
-  @apply text-white font-bold text-7xl;
+  @apply text-white;
 }
 h2,
 h3 {
@@ -130,11 +128,5 @@ h3 {
 }
 a {
   @apply text-space-sky transition hover:underline hover:text-space-sky-lighter;
-}
-#hero {
-  @apply text-gray-300;
-}
-#hero p {
-  @apply text-2xl font-light;
 }
 </style>

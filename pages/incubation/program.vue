@@ -1,18 +1,24 @@
 <template>
   <NuxtLayout name="incubation">
     <template #hero>
-      <h1>program</h1>
+      <IncubationSubPageHero
+        :title="$t('pages.program.title')"
+        :description="$t('pages.program.description')"
+      />
     </template>
     <template #main> program main </template>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n({
+  useScope: "local",
+});
+
 definePageMeta({
   layout: false,
-  pageTitle: "Our Program",
+  pageTitle: "pages.program.title",
   slug: "program",
-  description:
-    "Provide large scale and comprehensive support for Web3 builders",
+  description: "pages.program.description",
 });
 </script>

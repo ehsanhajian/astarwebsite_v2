@@ -16,7 +16,40 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "~/modules/sitemap"],
+  modules: ["@nuxtjs/tailwindcss", "~/modules/sitemap", "@nuxtjs/i18n"],
+  i18n: {
+    baseUrl: "https://astar.network",
+    locales: [
+      {
+        code: "en",
+        name: "English",
+        iso: "en-US",
+        file: "en.json",
+      },
+      {
+        code: "ja",
+        name: "日本語",
+        iso: "ja-JP",
+        file: "ja.json",
+      },
+    ],
+    langDir: "lang",
+    defaultLocale: "en",
+    strategy: "prefix_except_default",
+    vueI18n: {
+      legacy: false,
+      locale: "en",
+      fallbackLocale: "en",
+      // messages: {
+      //   en: {
+      //     welcome: 'Welcome'
+      //   },
+      //   ja: {
+      //     welcome: 'ようこそ'
+      //   }
+      // }
+    },
+  },
   plugins: [{ src: "~/plugins/aos" }],
   sitemap: {
     hostname: "https://astar.network",

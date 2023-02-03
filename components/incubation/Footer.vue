@@ -1,11 +1,10 @@
 <template>
   <footer class="px-4 py-12 text-center">
     <nav class="flex justify-center space-x-10">
-      <a
+      <NuxtLink
         v-for="item in social"
-        :href="item.href"
+        :to="item.href"
         target="_blank"
-        rel="noopener"
         class="block"
       >
         <component
@@ -15,11 +14,15 @@
           aria-hidden="true"
         />
         <span class="sr-only">{{ item.name }}</span>
-      </a>
+      </NuxtLink>
     </nav>
     <nav class="py-8 space-x-10">
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Privacy Policy</a>
+      <NuxtLink to="#">
+        {{ $t("nav.tac") }}
+      </NuxtLink>
+      <NuxtLink to="#">
+        {{ $t("nav.privacy") }}
+      </NuxtLink>
     </nav>
     <p class="text-sm">
       © 2023 Web3 Incubation Program by SONY Network Communications and Astar.
