@@ -68,7 +68,7 @@
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
         :class="page === 'home' ? 'text-gray-200' : 'text-gray-400'"
       >
-        &copy; 2022 Astar Network - The Future of Smart Contracts for
+        &copy; 2023 Astar Network - The Future of Smart Contracts for
         Multichain. All Rights Reserved.
       </p>
     </div>
