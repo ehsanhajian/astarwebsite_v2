@@ -341,7 +341,7 @@ const clickAction = (discovery: string) => {
 };
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 .kanji {
   background: linear-gradient(
     180deg,

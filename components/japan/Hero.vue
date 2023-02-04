@@ -21,16 +21,12 @@
             />
           </h1>
           <p class="sm:text-lg max-w-3xl mx-auto">
-            Astar Japan Lab fuels the growth of Japanese services and
-            businesses by conducting research and development, gathering
-            knowledge, and collaborating with exciting and established companies.
+            Astar Japan Lab fuels the growth of Japanese services and businesses
+            by conducting research and development, gathering knowledge, and
+            collaborating with exciting and established companies.
           </p>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped lang="postcss"></style>

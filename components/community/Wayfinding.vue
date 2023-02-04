@@ -1,6 +1,8 @@
 <template>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
-    <h2 class="title text-center mb-8 sm:mb-16"><span>Connect with Us</span></h2>
+    <h2 class="title text-center mb-8 sm:mb-16">
+      <span>Connect with Us</span>
+    </h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
       <li v-for="(item, index) in social">
         <a
@@ -109,7 +111,7 @@ const social = [
 ];
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 .stats span {
   background: linear-gradient(
     90deg,

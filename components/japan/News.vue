@@ -83,5 +83,3 @@ const news = [
   },
 ];
 </script>
-
-<style scoped lang="scss"></style>

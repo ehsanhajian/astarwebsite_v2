@@ -27,7 +27,7 @@ definePageMeta({
 });
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 .space-gradient::before {
   @apply w-full h-full absolute content-[""] z-[0];
   background: linear-gradient(

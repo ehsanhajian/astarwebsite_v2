@@ -128,9 +128,3 @@ const videos = [
   },
 ];
 </script>
-
-<style scoped lang="postcss">
-/* ul li:nth-child(1) {
-  grid-column: 1/4;
-} */
-</style>

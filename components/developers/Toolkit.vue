@@ -66,5 +66,3 @@ const logos = [
   { name: "OpenBrush", image: "openbrush.svg" },
 ];
 </script>
-
-<style scoped lang="scss"></style>

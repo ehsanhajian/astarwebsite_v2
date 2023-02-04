@@ -8,8 +8,9 @@
           Developers
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
-          Be part of the exciting world of multichain innovation by building EVM and WASM dApps on Astar Network. 
-          Astar XVM SDK is the foundation of our multichain smart contracts.
+          Be part of the exciting world of multichain innovation by building EVM
+          and WASM dApps on Astar Network. Astar XVM SDK is the foundation of
+          our multichain smart contracts.
         </p>
         <ul
           class="hidden sm:flex justify-center sm:justify-start mt-12 space-x-2"
@@ -54,5 +55,3 @@ const hero = [
   { name: "Discord", href: "https://discord.gg/Z3nC9U4", icon: Discord },
 ];
 </script>
-
-<style scoped lang="postcss"></style>

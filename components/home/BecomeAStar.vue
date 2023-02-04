@@ -74,5 +74,3 @@ const developers = [
   },
 ];
 </script>
-
-<style scoped lang="postcss"></style>

@@ -60,7 +60,7 @@ const features = [
 ];
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 h2 {
   @apply leading-[1.1] text-3xl lg:text-4xl font-bold;
 }

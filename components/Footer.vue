@@ -68,8 +68,8 @@
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
         :class="page === 'home' ? 'text-gray-200' : 'text-gray-400'"
       >
-        &copy; 2022 Astar Network - The Future of Smart Contracts for Multichain.
-        All Rights Reserved.
+        &copy; 2022 Astar Network - The Future of Smart Contracts for
+        Multichain. All Rights Reserved.
       </p>
     </div>
   </footer>
@@ -100,9 +100,9 @@ const nav = [
   {
     name: "Apply",
     nav: [
-      { 
-        name: "Careers", 
-        href: "https://angel.co/company/astar-network", 
+      {
+        name: "Careers",
+        href: "https://angel.co/company/astar-network",
       },
       {
         name: "Astar Japan Lab",
@@ -182,5 +182,3 @@ const social = [
   },
 ];
 </script>
-
-<style scoped lang="postcss"></style>
