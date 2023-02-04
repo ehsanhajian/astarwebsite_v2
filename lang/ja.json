@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "ソニーネットワークコミュニケーションズとアスターネットワークによるWeb3インキュベーションプログラム",
-    "description": "ソニーとアスターネットワークの知見とリソースを活用した最先端のWeb3活用事例の育成",
+    "title": "Web3 Incubation Program by Sony Network Communications and Astar Network",
+    "description": "Sony Network CommunicationsとAstar Networkの知見とリソースを活用した最先端web3プロジェクトの育成プログラム",
       "program": {
-        "title": "プログラム",
-        "description": "Web3開発者を大規模かつ包括的にサポート"
+        "title": "Program",
+        "description": "Provide large scale and comprehensive support for Web3 builders"
       },
       "partners": {
-        "title": "パートナー",
-        "description": "Web3企業が成長するために必要なあらゆるサポートをパートナー企業から提供"
+        "title": "Partners",
+        "description": "Provide all the support necessary for web3 companies to grow"
       },
       "mentors": {
-        "title": "メンター",
-        "description": "メンターによる技術やファイナンスの知識を活かした建設的なアドバイスやフィードバック"
+        "title": "Mentors",
+        "description": "Providing constructive advice and feedback by utilizing their technical and financial knowledge"
       }
   },
   "nav": {
@@ -20,58 +20,58 @@
     "privacy": "プライバシーポリシー"
   },
   "cta":{
-    "apply": "申し込む",
-    "lead":"あなたも参加しませんか？",
+    "apply": "参加はこちら",
+    "lead":"Let's Join With Us",
     "contact":"お問い合わせはこちら:"
   },
   "learn_more": "もっと見る",
   "program":{
     "offer":{
-      "subheading":"私たちが提供するもの",
+      "subheading":"このインキュベーションプログラムで得られるもの",
       "connection":{
-        "lead":"世界トップのWeb3企業と直接繋がる",
-        "text":"Web3 FoundationやAlchemyなど、Web3のトップレベルのイノベーターと直接繋がり、フィードバックを受け、貴重なセッションに無料で参加することができます。"
+        "lead":"世界トップのweb3企業と直接繋がる機会",
+        "text":"Web3 FoundationやAlchemyなどの世界トップのWeb3企業からフィードバックを受けられ、彼らからの貴重なセッションに無料で参加することができます。"
       },
       "support":{
-        "lead":"SONYとAstar Networkがリソースや技術、資金をサポート",
-        "text":"SONYやAstar Networkのリソースを活用できるだけでなく、技術的・経済的な支援も受けられます。また、優れたプロダクトについては、SONYからの投資を検討することができます。"
+        "lead":"Sony Network CommunicationsとAstar Networkからの技術や資金サポート",
+        "text":"Sony Network CommunicationsやAstar Networkのリソースを活用し、web3テックサポートやSony Network Communicationsからの投資を検討することができます。"
       },
       "grow":{
-        "lead":"SONY・AstarNetworkと共にあなたのWeb3スタートアップを成長させる",
-        "text":"インキュベーションプログラム終了後、成功したプロジェクトは次のフェーズに移行し、SONYと共同で実証実験を行う予定です。"
+        "lead":"Sony Network CommunicationsとAstarNetworkと共にweb3プロジェクトを成長させる経験",
+        "text":"インキュベーションプログラム終了後にも、特に優れたプロジェクトはSony Network Communicationsと共同で実証実験を行う予定になっています。"
       }
     },
     "timeline": {
-      "subheading": "タイムライン",
-      "heading": "1ヶ月の応募期間、3ヶ月のインキュベーション期間、デモデイ",
-      "learn_more":"タイムラインについてもっと見る",
+      "subheading": "Timeline",
+      "heading": "インキュベーションプログラムは1ヶ月の応募期間と3ヶ月のインキュベーション期間、そしてデモデイで構成されています。",
+      "learn_more":"もっと見る",
       "application": {
-        "title": "申請",
+        "title": "応募期間",
         "duration": "1ヶ月",
         "dates": "2月17日〜3月6日",
-        "description": "このフェーズで、参加者はチームやプロダクトに関する基本情報を申請フォームに入力します。ソニーネットワークコミュニケーションズとAstar Foundationが審査を行い、10〜15チームの参加者を決定します。選ばれたチームには、電子メールにてご連絡いたします。",
-        "description_short": "Web3スタートアップの状況に関わらず、世界各国から参加可能"
+        "description": "参加者はチームやプロダクトに関するプロジェクトの基本情報を申請フォームに入力します。Sony Network CommunicationsとAstar Foundationが厳正なる審査を行い、10〜15チームをインキュベーションに採択します。選考に通過したチームにはメールにてご連絡いたします。",
+        "description_short": "私たちは世界中から多様なプロジェクトを募集します。バリュエーションに制限はありません。"
       },
       "incubation": {
         "title": "インキュベーション",
         "duration": "3ヶ月",
         "dates": "3月15日〜6月中旬",
-        "description": "このフェーズでは、世界最高峰のイノベーターによるセッション、メンタリング、戦略へのフィードバック、ソニーネットワークコミュニケーションズとAstar Foundationによる開発支援などが行われます。SONYのリソースとWeb3スタートアップの技術をマッチングし、ユースケースを創出していきます。",
-        "description_short": "世界的なVCやWeb3企業とのセッション、事業・技術戦略に関するメンタリング、SONYグループ内のリソースとのマッチングなどを実施"
+        "description": "世界最高峰のweb3イノベーターによるセッション、メンタリング、経営戦略へのフィードバックを提供します。Sony Network CommunicationsとAstar Foundationによる開発支援などが行われます。Sony Network CommunicationsのリソースとWeb3スタートアップの技術をマッチングし、ユースケースを創出していきます。",
+        "description_short": "世界的なVCやweb3企業によるセッション、技術や事業戦略に関するメンタリング、そしてSONYグループ内のプロジェクトとのビジネスマッチングの創出などを実施します"
       },
       "demo": {
         "title": "デモデイ",
         "duration": "",
         "dates": "",
-        "description": "デモデイは、Japan Blockchain開催中の6月に東京のSONY本社で開催される予定です。インキュベーションプログラムに参加する企業や投資家など約200名が参加する予定です。",
-        "description_short": "6月に東京のSONY本社でデモデイを開催する予定"
+        "description": "デモデイは、Japan Blockchain Week中の6月に東京のSONY本社で開催されます。インキュベーションプログラムに参加する企業や投資家などが一堂に集まり、約200名が参加する予定です。",
+        "description_short": "6月に東京のSONY本社でデモデイをオフライン開催する予定です"
       }
     }
   },
   "partners":{
-    "learn_more":"パートナーをもっと見る"
+    "learn_more":"もっと見る"
   },
   "mentors":{
-    "learn_more":"メンターをもっと見る"
+    "learn_more":"もっと見る"
   }
 }
