@@ -1,4 +1,5 @@
 <template>
+  <IncubationCallToAction />
   <footer class="px-4 py-12 text-center">
     <nav class="flex justify-center space-x-10">
       <NuxtLink

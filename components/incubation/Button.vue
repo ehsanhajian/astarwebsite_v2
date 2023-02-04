@@ -41,10 +41,7 @@ const classes = computed(() => ({
 
 <style lang="postcss" scoped>
 .btn {
-  @apply rounded-sm font-normal inline-block hover:cursor-pointer hover:no-underline;
-}
-.btn.sm {
-  @apply text-sm px-3 py-1;
+  @apply rounded-sm font-normal inline-block hover:cursor-pointer hover:no-underline text-center;
 }
 .btn.md {
   @apply px-4 py-2;
@@ -52,92 +49,12 @@ const classes = computed(() => ({
 .btn.lg {
   @apply text-lg px-10 py-3;
 }
-.btn.xl {
-  @apply text-lg sm:text-xl px-10 py-4 sm:px-14 sm:py-5;
-}
-.btn.xxl {
-  @apply text-xl px-14 py-5 sm:text-2xl sm:px-20 sm:py-6;
-}
 .btn.contained.primary {
-  @apply text-white rounded-xl;
-  background: linear-gradient(
-    120deg,
-    #e6007a -5.88%,
-    #703ac2 15.42%,
-    #0070eb 40.77%,
-    #0297fb 72.21%,
-    #0ae2ff 95.53%
-  );
-}
-.btn.contained.primary:hover {
-  background: linear-gradient(
-    120deg,
-    #ff1994 -5.88%,
-    #8e4fee 15.42%,
-    #3091f9 40.77%,
-    #3db1ff 72.21%,
-    #3fe9ff 95.53%
-  );
+  @apply bg-black rounded text-white hover:bg-gray-800;
 }
 .btn.outlined.primary {
-  border-radius: 0.625rem;
-  position: relative;
-  background: linear-gradient(
-    120deg,
-    #ffebf6 -5.88%,
-    #ebdeff 15.42%,
-    #d3e8ff 40.77%,
-    #bee5ff 72.21%,
-    #bef7ff 95.53%
-  );
+  @apply rounded border border-black hover:bg-black hover:text-white;
 }
-.btn.outlined.primary:hover {
-  background: linear-gradient(
-    120deg,
-    #e6007a -5.88%,
-    #703ac2 15.42%,
-    #0070eb 40.77%,
-    #0297fb 72.21%,
-    #0ae2ff 95.53%
-  );
-}
-.btn.outlined.primary::after {
-  @apply rounded-xl;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  background-image: linear-gradient(
-    120deg,
-    #e6007a -5.88%,
-    #703ac2 15.42%,
-    #0070eb 40.77%,
-    #0297fb 72.21%,
-    #0ae2ff 95.53%
-  );
-}
-.btn.outlined.primary span {
-  background: linear-gradient(
-    90deg,
-    #e6007a -5.88%,
-    #703ac2 15.42%,
-    #0070eb 40.77%,
-    #0297fb 72.21%,
-    #0ae2ff 95.53%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  @apply text-space-sky;
-}
-.btn.outlined.primary:hover span {
-  color: white;
-  -webkit-text-fill-color: white;
-}
-
 .btn.contained.secondary {
   @apply text-black bg-white;
 }
@@ -152,7 +69,6 @@ const classes = computed(() => ({
     #0ae2ff 95.53%
   );
 }
-
 .btn.outlined.secondary {
   @apply border border-white text-white hover:bg-white hover:text-black;
 }

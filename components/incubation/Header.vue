@@ -10,7 +10,7 @@
         ]"
       >
         <div
-          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 lg:px-8"
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-8"
         >
           <NuxtLink
             :to="localePath('/incubation')"
@@ -24,7 +24,9 @@
             </span>
           </NuxtLink>
 
-          <div class="-my-2 -mr-2 lg:hidden">Mobile nav</div>
+          <div class="-my-2 -mr-2 lg:hidden">
+            <IncubationMobileNav />
+          </div>
 
           <div class="hidden lg:flex lg:items-center">
             <nav class="flex items-center space-x-4 xl:space-x-10">
@@ -33,21 +35,21 @@
                 class="nav-item"
                 :class="route.meta.slug === 'program' && 'current'"
               >
-                <span>{{ $t("pages.program.title") }}</span>
+                <span>{{ $t("meta.program.title") }}</span>
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/incubation/partners')"
                 class="nav-item"
                 :class="route.meta.slug === 'partners' && 'current'"
               >
-                <span>{{ $t("pages.partners.title") }}</span>
+                <span>{{ $t("meta.partners.title") }}</span>
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/incubation/mentors')"
                 class="nav-item"
                 :class="route.meta.slug === 'mentors' && 'current'"
               >
-                <span>{{ $t("pages.mentors.title") }}</span>
+                <span>{{ $t("meta.mentors.title") }}</span>
               </NuxtLink>
               <IncubationButton
                 href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
@@ -55,7 +57,7 @@
                 color="secondary"
                 target="_blank"
               >
-                <span>{{ $t("nav.apply") }}</span>
+                <span>{{ $t("cta.apply") }}</span>
               </IncubationButton>
             </nav>
             <NuxtLink
@@ -64,7 +66,7 @@
               :to="switchLocalePath(locale.code)"
               class="nav-item border-l border-gray-500 pl-4 ml-6"
             >
-              <IconGlove class="w-6 h-6 inline-block" />
+              <GlobeAltIcon class="w-6 h-6 inline-block" />
               {{ locale.name }}
             </NuxtLink>
           </div>
@@ -75,16 +77,15 @@
 </template>
 
 <script setup lang="ts">
+import { GlobeAltIcon } from "@heroicons/vue/24/outline";
 import { Popover, PopoverButton } from "@headlessui/vue";
 
 const route = useRoute();
-
 const { locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 const availableLocales = computed(() => {
   return locales.value.filter((i) => i.code !== locale.value);
 });
-
 const localePath = useLocalePath();
 </script>
 

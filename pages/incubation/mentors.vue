@@ -2,23 +2,49 @@
   <NuxtLayout name="incubation">
     <template #hero>
       <IncubationSubPageHero
-        :title="$t('pages.mentors.title')"
-        :description="$t('pages.mentors.description')"
+        :title="$t('meta.mentors.title')"
+        :description="$t('meta.mentors.description')"
       />
     </template>
-    <template #main> mentors main </template>
+    <template #main>
+      <ul
+        class="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-x-20 gap-y-20 my-36"
+      >
+        <IncubationMentorsListItem
+          v-for="(mentor, index) in mentors"
+          :mentor="mentor"
+          @modal="modalAction(index)"
+        />
+      </ul>
+      <IncubationMentorsModal
+        :mentor="mentors[mentorIndex]"
+        :open="open"
+        @test="modalClose"
+      />
+    </template>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n({
-  useScope: "local",
-});
+import { mentors } from "../../content/mentors";
+import { ref } from "vue";
 
 definePageMeta({
   layout: false,
-  pageTitle: "pages.mentors.title",
+  pageTitle: "meta.mentors.title",
   slug: "mentors",
-  description: "pages.mentors.description",
+  description: "meta.mentors.description",
 });
+
+const open = ref(false);
+const mentorIndex = ref(0);
+
+const modalAction = (index: number) => {
+  mentorIndex.value = index;
+  open.value = true;
+};
+
+const modalClose = () => {
+  open.value = false;
+};
 </script>

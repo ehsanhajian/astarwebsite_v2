@@ -101,7 +101,7 @@
                 class="text-gray-500 transition cursor-pointer p-3 hover:bg-space-gray hover:text-gray-400 rounded-full outline-none absolute right-0 top-0 sm:right-3 sm:top-3"
                 @click="open = false"
               >
-                <IconX class="w-8 h-8 sm:w-12 sm:h-12" />
+                <XMarkIcon class="w-8 h-8 sm:w-12 sm:h-12" />
               </button>
             </DialogPanel>
           </TransitionChild>
@@ -294,6 +294,7 @@
 </template>
 
 <script setup lang="ts">
+import { XMarkIcon } from "@heroicons/vue/24/outline";
 import { ref } from "vue";
 import {
   Dialog,

@@ -2,23 +2,23 @@
   <NuxtLayout name="incubation">
     <template #hero>
       <IncubationSubPageHero
-        :title="$t('pages.program.title')"
-        :description="$t('pages.program.description')"
+        :title="$t('meta.program.title')"
+        :description="$t('meta.program.description')"
       />
     </template>
-    <template #main> program main </template>
+    <template #main>
+      <main>
+        <IncubationProgramOffer />
+      </main>
+    </template>
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n({
-  useScope: "local",
-});
-
 definePageMeta({
   layout: false,
-  pageTitle: "pages.program.title",
+  pageTitle: "meta.program.title",
   slug: "program",
-  description: "pages.program.description",
+  description: "meta.program.description",
 });
 </script>

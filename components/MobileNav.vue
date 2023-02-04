@@ -4,7 +4,7 @@
       class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
     >
       <span class="sr-only">Open menu</span>
-      <IconBars3 class="h-6 w-6" aria-hidden="true" />
+      <Bars3Icon class="h-6 w-6" aria-hidden="true" />
     </PopoverButton>
 
     <teleport to="body">
@@ -38,7 +38,7 @@
                   class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
                 >
                   <span class="sr-only">Close menu</span>
-                  <IconXMark class="h-6 w-6" aria-hidden="true" />
+                  <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
@@ -92,7 +92,8 @@
                   <a
                     href="/community"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Community</a>
+                    >Community</a
+                  >
                 </li>
                 <li>
                   <a
@@ -123,6 +124,7 @@
 </template>
 
 <script setup lang="ts">
+import { XMarkIcon, Bars3Icon } from "@heroicons/vue/24/outline";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 
 interface Network {

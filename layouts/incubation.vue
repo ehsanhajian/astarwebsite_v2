@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div class="bg-black h-[700px] flex flex-col">
-      <IncubationHeader />
-      <div class="flex items-center h-full">
-        <slot name="hero" />
-      </div>
-    </div>
+    <slot name="hero" />
     <slot name="main" />
     <IncubationFooter />
   </div>

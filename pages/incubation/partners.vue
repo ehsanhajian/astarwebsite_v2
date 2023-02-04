@@ -2,17 +2,20 @@
   <NuxtLayout name="incubation">
     <template #hero>
       <IncubationSubPageHero
-        :title="$t('pages.partners.title')"
-        :description="$t('pages.partners.description')"
+        :title="$t('meta.partners.title')"
+        :description="$t('meta.partners.description')"
       />
     </template>
     <template #main>
       <main class="max-w-5xl mx-auto px-4 py-24">
         <template v-for="partner in partners">
-          <h2>{{ partner.category }}</h2>
+          <h2>
+            <template v-if="locale === 'ja'">{{ partner.label.ja }}</template>
+            <template v-else>{{ partner.label.en }}</template>
+          </h2>
           <ul
             class="grid grid-cols-2 gap-x-2 gap-y-2 lg:gap-y-8 mt-8 mb-24"
-            :class="partner.category === 'Sponsors' && 'sm:grid-cols-4'"
+            :class="partner.category === 'sponsors' && 'sm:grid-cols-4'"
           >
             <li
               v-for="item in partner.logos"
@@ -41,79 +44,16 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n({
-  useScope: "local",
-});
+import { partners } from "../../content/partners";
 
 definePageMeta({
   layout: false,
-  title: "pages.partners.title",
+  title: "meta.partners.title",
   slug: "partners",
-  description: "pages.partners.description",
+  description: "meta.partners.description",
 });
 
-const partners = [
-  {
-    category: "Host",
-    logos: [
-      {
-        name: "Sony Network Communications",
-        image: "sony.svg",
-        href: "https://www.sonynetwork.co.jp/",
-      },
-      {
-        name: "Startale Labs",
-        image: "startale.svg",
-        href: "",
-      },
-    ],
-  },
-  {
-    category: "Sponsors",
-    logos: [
-      {
-        name: "Astar Network",
-        image: "astar.svg",
-        href: "https://astar.network/",
-      },
-      {
-        name: "Web3 Foundation",
-        image: "w3f.svg",
-        href: "https://web3.foundation/",
-      },
-      {
-        name: "Amazon Web Services (AWS)",
-        image: "aws.svg",
-        href: "https://aws.amazon.com/",
-      },
-      {
-        name: "Alchemy",
-        image: "alchemy.svg",
-        href: "https://www.alchemy.com/",
-      },
-      {
-        name: "Dragonfly Capital",
-        image: "dragonfly.png",
-        href: "https://www.dragonfly.xyz/",
-      },
-      {
-        name: "Fenbushi Capital",
-        image: "fenbushi.png",
-        href: "https://www.fenbushicapital.vc/",
-      },
-      {
-        name: "LongHash Ventures",
-        image: "longhash.png",
-        href: "https://www.longhash.vc/",
-      },
-      {
-        name: "Next Web Capital",
-        image: "nwc.png",
-        href: "https://nextweb.capital/",
-      },
-    ],
-  },
-];
+const { locale } = useI18n();
 </script>
 
 <style lang="postcss" scoped>
