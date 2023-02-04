@@ -29,15 +29,15 @@
     "offer":{
       "subheading":"What we offer",
       "connection":{
-        "lead":"世界トップのweb3企業と直接繋がる機会",
+        "lead":"Web3 FoundationやAlchemyなどの世界トップのweb3企業と直接繋がる機会",
         "text":"Web3 FoundationやAlchemyなどの世界トップのWeb3企業からフィードバックを受けられ、彼らからの貴重なセッションに無料で参加することができます。"
       },
       "support":{
-        "lead":"Sony Network CommunicationsとAstar Networkからの技術や資金サポート",
+        "lead":"Sony Network CommunicationsとAstar Networkによる技術的・経済的サポート",
         "text":"Sony Network CommunicationsやAstar Networkのリソースを活用し、web3テックサポートやSony Network Communicationsからの投資を検討することができます。"
       },
       "grow":{
-        "lead":"Sony Network CommunicationsとAstarNetworkと共にweb3プロジェクトを成長させる経験",
+        "lead":"Sony Network CommunicationsとAstar Networkと共にプロジェクトを成長させる経験",
         "text":"インキュベーションプログラム終了後にも、特に優れたプロジェクトはSony Network Communicationsと共同で実証実験を行う予定になっています。"
       }
     },
