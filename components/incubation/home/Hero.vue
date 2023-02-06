@@ -14,8 +14,8 @@
         >
           <span>
             {{ $t("cta.apply") }}
-            <ArrowRightIcon class="w-6 h-6 inline-block ml-1"
-          /></span>
+            <ArrowTopRightOnSquareIcon class="w-6 h-6 inline-block align-sub" />
+          </span>
         </IncubationButton>
         <IncubationButton
           variant="outlined"
@@ -25,8 +25,8 @@
         >
           <span>
             {{ $t("learn_more") }}
-            <ArrowRightIcon class="w-6 h-6 inline-block ml-1"
-          /></span>
+            <ArrowRightIcon class="w-6 h-6 inline-block" />
+          </span>
         </IncubationButton>
       </div>
     </div>
@@ -41,5 +41,8 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+import {
+  ArrowRightIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/vue/24/outline";
 </script>

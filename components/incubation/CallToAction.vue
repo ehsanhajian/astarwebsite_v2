@@ -18,7 +18,7 @@
         >
           <span>
             {{ $t("cta.apply") }}
-            <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
+            <ArrowTopRightOnSquareIcon class="w-6 h-6 inline-block align-sub" />
           </span>
         </IncubationButton>
         <p>
@@ -36,5 +36,5 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 </script>
