@@ -65,6 +65,21 @@ export const partners = [
         image: "nwc.png",
         href: "https://nextweb.capital/",
       },
+      {
+        name: "Blockdaemon",
+        image: "blockdaemon.svg",
+        href: "https://blockdaemon.com/",
+      },
+      {
+        name: "HashKey Capital",
+        image: "hashkey.svg",
+        href: "https://capital.hashkey.com/",
+      },
+      {
+        name: "Parity Technologies",
+        image: "parity.png",
+        href: "https://www.parity.io/",
+      },
     ],
   },
 ];
