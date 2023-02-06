@@ -8,7 +8,8 @@
     </template>
     <template #main>
       <main>
-        <IncubationProgramOffer />
+        <IncubationProgramOffer class="py-40" />
+        <IncubationProgramTimeline />
       </main>
     </template>
   </NuxtLayout>

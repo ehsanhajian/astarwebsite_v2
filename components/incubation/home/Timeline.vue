@@ -19,7 +19,10 @@
           </span>
         </IncubationButton>
       </div>
-      <div class="border-l border-gray-300 py-36 w-1/2">
+      <div class="border-l-2 border-gray-300 py-36 w-1/2 relative">
+        <ChevronDownIcon
+          class="w-8 h-8 text-white absolute left-[-1.05rem] -bottom-3"
+        />
         <ol class="timeline space-y-12">
           <li class="after:bg-space-pink before:text-space-pink">
             <h3 class="text-space-pink">
@@ -56,7 +59,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+import { ArrowRightIcon, ChevronDownIcon } from "@heroicons/vue/24/outline";
 
 const localePath = useLocalePath();
 </script>
