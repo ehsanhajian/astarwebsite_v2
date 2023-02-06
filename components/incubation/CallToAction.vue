@@ -23,7 +23,11 @@
         </IncubationButton>
         <p>
           <span class="text-gray-300 mr-2">{{ $t("cta.contact") }}</span>
-          <a href="mailto:info@startale.org">info@startale.org</a>
+          <NuxtLink
+            to="mailto:info@startale.org"
+            class="text-space-sky-lighter hover:text-space-sky-light hover:underline"
+            >info@startale.org</NuxtLink
+          >
         </p>
       </div>
       <div class="w-full" />

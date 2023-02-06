@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-7xl px-4 mx-auto flex w-full h-full items-center">
+  <div class="max-w-7xl px-4 mx-auto flex w-full h-[80vh] items-center">
     <div class="w-1/2">
-      <h1 class="text-9xl leading-none font-bold">
+      <h1 class="text-9xl leading-none font-bold text-white">
         Web3 <br />Incubation <br />Program
       </h1>
       <div class="flex space-x-4 mt-16">

@@ -1,8 +1,14 @@
 <template>
-  <section class="">
+  <section>
     <div>
-      <p>{{ $t("meta.mentors.title") }}</p>
-      <h2 class="">{{ $t("meta.mentors.description") }}</h2>
+      <p class="font-bold text-3xl title text-center">
+        <span>{{ $t("meta.mentors.title") }}</span>
+      </p>
+      <h2
+        class="text-center text-3xl font-medium mt-2 mb-12 mx-auto max-w-3xl text-black leading-snug"
+      >
+        {{ $t("meta.mentors.description") }}
+      </h2>
 
       <ul
         class="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-x-20 gap-y-20 my-12"
@@ -18,11 +24,18 @@
         :open="open"
         @test="modalClose"
       />
-
-      <NuxtLink :to="localePath('/incubation/mentors')">
-        {{ $t("mentors.learn_more") }}
-        <ArrowRightIcon class="w-5 h-5 inline-block ml-1" />
-      </NuxtLink>
+      <div class="text-center">
+        <IncubationButton
+          variant="outlined"
+          color="primary"
+          :href="localePath('/incubation/mentors')"
+        >
+          <span>
+            {{ $t("program.timeline.learn_more") }}
+            <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
+          </span>
+        </IncubationButton>
+      </div>
     </div>
   </section>
 </template>

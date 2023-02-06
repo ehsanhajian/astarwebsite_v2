@@ -32,50 +32,57 @@
               <div class="flex">
                 <div class="shrink-0">
                   <img
-                    class="w-full max-w-[320px] object-cover rounded-sm"
+                    class="w-full max-w-[320px] object-cover rounded-sm mb-8"
                     :src="useAsset('incubation/mentors/' + mentor.image)"
                     :alt="mentor.name.en"
                   />
-                  <h3>Areas of Expertise</h3>
-                  <ul>
-                    <li v-for="item in mentor.expertise">
+                  <h3 class="font-medium text-lg mb-2 text-black leading-snug">
+                    Areas of Expertise
+                  </h3>
+                  <ul class="flex flex-wrap mb-8">
+                    <li
+                      v-for="item in mentor.expertise"
+                      class="border rounded border-gray-600 px-4 py-1 text-black mr-1 mb-1"
+                    >
                       <template v-if="locale === 'ja'">{{ item.ja }}</template>
                       <template v-else>{{ item.en }}</template>
                     </li>
                   </ul>
-                  <h3>Links</h3>
-                  <div class="flex items-center space-x-3">
+                  <h3 class="font-medium text-lg mb-2 text-black leading-snug">
+                    Links
+                  </h3>
+                  <div class="flex items-center space-x-4">
                     <NuxtLink
                       :to="mentor.links.website"
                       v-if="mentor.links.website"
                       target="_blank"
+                      class="link-item"
                     >
-                      <GlobeAltIcon
-                        class="w-6 h-6 text-gray-400 hover:text-space-sky"
-                      />
+                      <GlobeAltIcon class="w-6 h-6 mr-1" />
+                      Website
                     </NuxtLink>
                     <NuxtLink
                       :to="mentor.links.linkedin"
                       v-if="mentor.links.linkedin"
                       target="_blank"
+                      class="link-item"
                     >
-                      <IconLinkedin
-                        class="w-6 h-6 text-gray-400 hover:text-space-sky"
-                      />
+                      <IconLinkedin class="w-6 h-6 mr-1" />
+                      Linkedin
                     </NuxtLink>
                     <NuxtLink
                       :to="mentor.links.twitter"
                       v-if="mentor.links.twitter"
                       target="_blank"
+                      class="link-item"
                     >
-                      <IconTwitter
-                        class="w-6 h-6 text-gray-400 hover:text-space-sky"
-                      />
+                      <IconTwitter class="w-6 h-6 mr-1" />
+                      Twitter
                     </NuxtLink>
                   </div>
                 </div>
                 <div class="px-12">
-                  <h2 class="text-3xl font-medium mt-4">
+                  <h2 class="text-3xl font-medium mt-4 text-black leading-snug">
                     <template v-if="locale === 'ja'">
                       {{ mentor.name.ja }}
                     </template>
@@ -87,7 +94,7 @@
                     </template>
                     <template v-else>{{ mentor.title.en }}</template>
                   </p>
-                  <p class="pt-4 text-lg">
+                  <p class="pt-4 text-lg text-gray-600">
                     <template v-if="locale === 'ja'">
                       {{ mentor.profile.ja }}
                     </template>
@@ -99,7 +106,7 @@
               <div class="mt-5 sm:mt-6">
                 <button
                   type="button"
-                  class="absolute right-2 top-2 hover:bg-gray-100 p-4 rounded-full transition"
+                  class="absolute right-2 top-2 text-gray-600 hover:bg-gray-100 p-4 rounded-full transition"
                   @click="handleClick"
                 >
                   <XMarkIcon class="w-8 h-8" />
@@ -138,3 +145,9 @@ const handleClick = () => {
 
 const { locale } = useI18n();
 </script>
+
+<style lang="postcss" scoped>
+.link-item {
+  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap;
+}
+</style>

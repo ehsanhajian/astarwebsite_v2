@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white text-gray-600 font-roboto">
     <slot name="hero" />
     <slot name="main" />
     <IncubationFooter />
@@ -111,17 +111,17 @@ useHead({
 </script>
 
 <style lang="postcss">
-body {
+/* .incubation {
   @apply bg-white text-gray-600 font-roboto;
 }
-h1 {
+.incubation h1 {
   @apply text-white;
 }
-h2,
-h3 {
-  @apply text-black;
+.incubation h2,
+.incubation h3 {
+  @apply text-black leading-snug;
 }
-a {
-  @apply text-space-sky transition hover:underline hover:text-space-sky-lighter;
-}
+.incubation a {
+  @apply text-space-blue transition hover:underline hover:text-space-blue-lighter;
+} */
 </style>

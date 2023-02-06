@@ -7,7 +7,7 @@
         :alt="mentor.name.en"
       />
       <h2
-        class="text-xl font-medium mt-4 group-hover:text-space-sky transition"
+        class="text-xl font-medium mt-4 group-hover:text-space-blue-lighter transition text-black leading-snug"
       >
         <template v-if="locale === 'ja'">{{ mentor.name.ja }}</template>
         <template v-else>{{ mentor.name.en }}</template>
@@ -23,21 +23,21 @@
         v-if="mentor.links.website"
         target="_blank"
       >
-        <GlobeAltIcon class="w-6 h-6 text-gray-400 hover:text-space-sky" />
+        <GlobeAltIcon class="w-6 h-6 text-gray-400 hover:text-space-blue" />
       </NuxtLink>
       <NuxtLink
         :to="mentor.links.linkedin"
         v-if="mentor.links.linkedin"
         target="_blank"
       >
-        <IconLinkedin class="w-6 h-6 text-gray-400 hover:text-space-sky" />
+        <IconLinkedin class="w-6 h-6 text-gray-400 hover:text-space-blue" />
       </NuxtLink>
       <NuxtLink
         :to="mentor.links.twitter"
         v-if="mentor.links.twitter"
         target="_blank"
       >
-        <IconTwitter class="w-6 h-6 text-gray-400 hover:text-space-sky" />
+        <IconTwitter class="w-6 h-6 text-gray-400 hover:text-space-blue" />
       </NuxtLink>
     </div>
   </li>

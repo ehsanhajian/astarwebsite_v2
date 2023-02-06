@@ -24,12 +24,13 @@
               <NuxtLink
                 :href="item.href"
                 target="_blank"
-                class="hover:shadow-lg rounded p-4"
+                class="rounded p-4"
+                :class="item.href !== '' && 'hover:shadow-lg'"
               >
                 <img
                   class="h-16 w-44 object-contain"
                   :class="
-                    partner.category === 'Host' ? 'lg:w-80 lg:h-20' : 'lg:w-48'
+                    partner.category === 'host' ? 'lg:w-80 lg:h-20' : 'lg:w-48'
                   "
                   :src="useAsset('incubation/partners/' + item.image)"
                   :alt="item.name"
@@ -58,7 +59,7 @@ const { locale } = useI18n();
 
 <style lang="postcss" scoped>
 h2 {
-  @apply text-center overflow-hidden uppercase font-semibold text-2xl;
+  @apply text-center overflow-hidden uppercase font-semibold text-2xl text-black;
 }
 h2::before,
 h2::after {

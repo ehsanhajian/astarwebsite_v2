@@ -26,6 +26,11 @@
   },
   "learn_more": "もっと見る",
   "program":{
+    "about":{
+      "subheading": "About this program",
+      "heading":"このインキュベーションプログラムを通じて、ソニーネットワークコミュニケーションズとアスターネットワークの知識とリソースを活用したWeb3プロジェクトを開発します",
+      "description":"このインキュベーションプログラムは、ソニーネットワークコミュニケーションズとAstar Networkの共同プログラムであり、ソニーとAstar Networkの知識とリソースを用いて、最先端のWeb3ユースケースを育成することを目的としています。プログラムはオンラインで全世界から参加でき、期間は3月から6月までの3ヶ月間です。"
+    },
     "offer":{
       "subheading":"What we offer",
       "connection":{
@@ -43,7 +48,7 @@
     },
     "timeline": {
       "subheading": "Timeline",
-      "heading": "インキュベーションプログラムは1ヶ月の応募期間と3ヶ月のインキュベーション期間、そしてデモデイで構成されています。",
+      "heading": "インキュベーションプログラムは1ヶ月の応募期間と3ヶ月のインキュベーション期間、そしてデモデイで構成されています",
       "learn_more":"もっと見る",
       "application": {
         "title": "応募期間",
@@ -57,14 +62,14 @@
         "duration": "3ヶ月",
         "dates": "3月15日〜6月中旬",
         "description": "世界最高峰のweb3イノベーターによるセッション、メンタリング、経営戦略へのフィードバックを提供します。Sony Network CommunicationsとAstar Foundationによる開発支援などが行われます。Sony Network CommunicationsのリソースとWeb3スタートアップの技術をマッチングし、ユースケースを創出していきます。",
-        "description_short": "世界的なVCやweb3企業によるセッション、技術や事業戦略に関するメンタリング、そしてSONYグループ内のプロジェクトとのビジネスマッチングの創出などを実施します"
+        "description_short": "世界的なVCやweb3企業によるセッション、技術や事業戦略に関するメンタリング、そしてSONYグループ内のプロジェクトとのビジネスマッチングの創出などを実施します。"
       },
       "demo": {
         "title": "デモデイ",
         "duration": "",
         "dates": "",
         "description": "デモデイは、Japan Blockchain Week中の6月に東京のSONY本社で開催されます。インキュベーションプログラムに参加する企業や投資家などが一堂に集まり、約200名が参加する予定です。",
-        "description_short": "6月に東京のSONY本社でデモデイをオフライン開催する予定です"
+        "description_short": "6月に東京のSONY本社でデモデイをオフライン開催する予定です。"
       }
     }
   },

@@ -5,9 +5,11 @@
     >
       <IncubationHeader />
       <section class="flex items-center h-full">
-        <div class="text-gray-300 max-w-5xl mx-auto text-center">
-          <h1 class="font-bold text-7xl">{{ title }}</h1>
-          <p class="text-2xl font-light">{{ description }}</p>
+        <div class="max-w-5xl mx-auto text-center">
+          <h1 class="font-bold text-7xl text-white">{{ title }}</h1>
+          <p class="text-2xl font-light text-gray-300 tracking-wide">
+            {{ description }}
+          </p>
         </div>
       </section>
     </div>

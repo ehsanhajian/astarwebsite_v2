@@ -1,7 +1,11 @@
 <template>
-  <section class="py-24">
-    <p class="text-center">{{ $t("program.offer.subheading") }}</p>
-    <h2 class="text-center">
+  <section>
+    <p class="text-center font-bold text-3xl title">
+      <span>{{ $t("program.offer.subheading") }}</span>
+    </p>
+    <h2
+      class="text-center text-3xl font-medium mt-2 mb-12 mx-auto max-w-2xl text-black leading-snug"
+    >
       {{ $t("meta.partners.description") }}
     </h2>
     <ul class="grid grid-cols-3 gap-8">
@@ -10,10 +14,13 @@
           :src="useAsset('incubation/home/' + item.image)"
           :alt="item.text"
         />
-        <p class="text-black text-xl mt-5 leading-snug">
+        <p class="text-black text-xl mt-5 mb-2 leading-snug">
           {{ item.text }}
         </p>
-        <NuxtLink :to="`/incubation/program#${item.link}`">
+        <NuxtLink
+          :to="`/incubation/program#${item.link}`"
+          class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
+        >
           {{ $t("learn_more") }}
           <ArrowRightIcon class="w-5 h-5 inline-block ml-1" />
         </NuxtLink>

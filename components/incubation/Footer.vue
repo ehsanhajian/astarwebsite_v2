@@ -18,10 +18,16 @@
       </NuxtLink>
     </nav>
     <nav class="py-8 space-x-10">
-      <NuxtLink to="#">
+      <NuxtLink
+        to="#"
+        class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
+      >
         {{ $t("nav.tac") }}
       </NuxtLink>
-      <NuxtLink to="#">
+      <NuxtLink
+        to="#"
+        class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
+      >
         {{ $t("nav.privacy") }}
       </NuxtLink>
     </nav>

@@ -1,6 +1,6 @@
 <template>
-  <section class="max-w-4xl mx-auto px-4 my-36">
-    <h2 class="text-center">FAQ</h2>
+  <section class="max-w-4xl mx-auto px-4">
+    <h2 class="text-center font-bold text-4xl title"><span>FAQ</span></h2>
     <dl
       class="mt-10 divide-y divide-gray-500 border-b border-t border-gray-500"
     >
@@ -12,7 +12,7 @@
       >
         <dt>
           <DisclosureButton
-            class="flex w-full items-start justify-between text-left text-gray-900 py-6"
+            class="flex w-full items-start justify-between text-left text-gray-900 py-6 hover:text-space-blue-lighter"
           >
             <span class="text-base font-semibold leading-7">
               <template v-if="locale === 'ja'">{{ faq.question.ja }}</template>

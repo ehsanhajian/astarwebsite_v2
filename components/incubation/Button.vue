@@ -53,7 +53,7 @@ const classes = computed(() => ({
   @apply bg-black rounded text-white hover:bg-gray-800;
 }
 .btn.outlined.primary {
-  @apply rounded border border-black hover:bg-black hover:text-white;
+  @apply rounded border border-black text-black hover:bg-black hover:text-white;
 }
 .btn.contained.secondary {
   @apply text-black bg-white;
