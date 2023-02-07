@@ -15,7 +15,9 @@
           </h2>
           <ul
             class="grid grid-cols-2 gap-x-2 gap-y-2 lg:gap-y-8 mt-8 mb-24"
-            :class="partner.category === 'sponsors' && 'sm:grid-cols-4'"
+            :class="
+              partner.category === 'sponsors' && 'sm:grid-cols-3 lg:grid-cols-4'
+            "
           >
             <li
               v-for="item in partner.logos"

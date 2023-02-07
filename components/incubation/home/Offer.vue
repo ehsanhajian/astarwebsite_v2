@@ -8,10 +8,10 @@
     >
       {{ $t("meta.partners.description") }}
     </h2>
-    <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8">
       <li
         v-for="item in offer"
-        class="p-6 sm:p-10 rounded border border-gray-500"
+        class="p-6 lg:p-10 rounded border border-gray-500"
       >
         <img
           :src="useAsset('incubation/home/' + item.image)"

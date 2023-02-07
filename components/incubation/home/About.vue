@@ -1,5 +1,5 @@
 <template>
-  <section class="sm:w-1/2 relative">
+  <section class="lg:w-1/2 relative">
     <p class="font-bold text-2xl sm:text-3xl title">
       <span>{{ $t("program.about.subheading") }}</span>
     </p>

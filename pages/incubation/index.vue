@@ -11,16 +11,16 @@
           </div>
         </div>
       </div>
-      <div class="w-full -mt-24 sm:absolute sm:top-[60vh]">
+      <div class="w-full -mt-24 lg:absolute sm:top-[60vh]">
         <div
-          class="bg-[url('/assets/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-8 sm:ml-[45vw] min-h-[546.51px] sm:min-h-[1078px] bg-cover"
+          class="bg-[url('/assets/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-8 lg:ml-[45vw] min-h-[546.51px] min-h-[700px] lg:min-h-[1078px] bg-cover"
         />
       </div>
     </template>
     <template #main>
       <main>
         <div class="max-w-7xl mx-auto px-4">
-          <IncubationHomeAbout class="sm:py-32" />
+          <IncubationHomeAbout class="lg:py-32" />
           <IncubationHomeOffer class="pt-24 pb-24 sm:pb-44" />
         </div>
         <IncubationHomeTimeline />

@@ -5,7 +5,9 @@
         <div :id="item.id" class="sm:flex items-center">
           <div
             class="mb-12 sm:mb-0"
-            :class="index === 1 ? 'order-2 sm:ml-16' : 'sm:mr-16'"
+            :class="
+              index === 1 ? 'order-2 sm:ml-8 lg:ml-16' : 'sm:mr-8 lg:mr-16'
+            "
           >
             <h2
               class="text-2xl sm:text-3xl font-medium mb-6 text-black leading-snug"
@@ -14,11 +16,11 @@
             </h2>
             <p class="text-lg leading-loose">{{ item.text }}</p>
           </div>
-          <div class="shrink-0" :class="index === 1 && 'order-1'">
+          <div class="lg:shrink-0" :class="index === 1 && 'order-1'">
             <img
               :src="useAsset('incubation/program/' + item.image)"
               :alt="item.text"
-              :class="index === 1 && 'w-full max-w-[456px]'"
+              :class="index === 1 && 'w-full lg:max-w-[456px]'"
             />
           </div>
         </div>
