@@ -12,7 +12,7 @@ const { t } = useI18n();
 
 const meta = {
   url: "https://astar.network/incubation",
-  ogImage: "https://astar.network/social-preview.png",
+  ogImage: "https://astar.network/social-preview-incubation.png",
   twitter: "@AstarNetwork",
 };
 
