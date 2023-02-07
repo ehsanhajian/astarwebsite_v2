@@ -29,60 +29,22 @@
             <DialogPanel
               class="relative transform overflow-hidden rounded bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-5xl sm:p-6"
             >
-              <div class="flex">
+              <div class="flex flex-col sm:flex-row">
                 <div class="shrink-0">
                   <img
                     class="w-full max-w-[320px] object-cover rounded-sm mb-8"
                     :src="useAsset('incubation/mentors/' + mentor.image)"
                     :alt="mentor.name.en"
                   />
-                  <h3 class="font-medium text-lg mb-2 text-black leading-snug">
-                    Areas of Expertise
-                  </h3>
-                  <ul class="flex flex-wrap mb-8">
-                    <li
-                      v-for="item in mentor.expertise"
-                      class="border rounded border-gray-600 px-4 py-1 text-black mr-1 mb-1"
-                    >
-                      <template v-if="locale === 'ja'">{{ item.ja }}</template>
-                      <template v-else>{{ item.en }}</template>
-                    </li>
-                  </ul>
-                  <h3 class="font-medium text-lg mb-2 text-black leading-snug">
-                    Links
-                  </h3>
-                  <div class="flex items-center space-x-4">
-                    <NuxtLink
-                      :to="mentor.links.website"
-                      v-if="mentor.links.website"
-                      target="_blank"
-                      class="link-item"
-                    >
-                      <GlobeAltIcon class="w-6 h-6 mr-1" />
-                      Website
-                    </NuxtLink>
-                    <NuxtLink
-                      :to="mentor.links.linkedin"
-                      v-if="mentor.links.linkedin"
-                      target="_blank"
-                      class="link-item"
-                    >
-                      <IconLinkedin class="w-6 h-6 mr-1" />
-                      Linkedin
-                    </NuxtLink>
-                    <NuxtLink
-                      :to="mentor.links.twitter"
-                      v-if="mentor.links.twitter"
-                      target="_blank"
-                      class="link-item"
-                    >
-                      <IconTwitter class="w-6 h-6 mr-1" />
-                      Twitter
-                    </NuxtLink>
-                  </div>
+                  <IncubationMentorsModalDetail
+                    :mentor="mentor"
+                    class="hidden sm:block"
+                  />
                 </div>
-                <div class="px-12">
-                  <h2 class="text-3xl font-medium mt-4 text-black leading-snug">
+                <div class="sm:px-12">
+                  <h2
+                    class="text-3xl font-medium sm:mt-4 text-black leading-snug"
+                  >
                     <template v-if="locale === 'ja'">
                       {{ mentor.name.ja }}
                     </template>
@@ -101,6 +63,10 @@
                     <template v-else>{{ mentor.profile.en }}</template>
                   </p>
                 </div>
+                <IncubationMentorsModalDetail
+                  :mentor="mentor"
+                  class="sm:hidden"
+                />
               </div>
 
               <div class="mt-5 sm:mt-6">
@@ -137,17 +103,11 @@ defineProps({
   },
 });
 
-const emit = defineEmits(["test"]);
+const emit = defineEmits(["close"]);
 
 const handleClick = () => {
-  emit("test");
+  emit("close");
 };
 
 const { locale } = useI18n();
 </script>
-
-<style lang="postcss" scoped>
-.link-item {
-  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap;
-}
-</style>

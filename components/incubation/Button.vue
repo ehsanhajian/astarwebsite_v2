@@ -70,6 +70,6 @@ const classes = computed(() => ({
   );
 }
 .btn.outlined.secondary {
-  @apply border border-white text-white hover:bg-white hover:text-black;
+  @apply border border-white text-white hover:bg-white hover:text-black bg-black;
 }
 </style>

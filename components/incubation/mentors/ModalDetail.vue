@@ -1,0 +1,61 @@
+<template>
+  <div class="mt-8 sm:mt-0">
+    <h3 class="font-medium text-lg mb-2 text-black leading-snug">
+      Areas of Expertise
+    </h3>
+    <ul class="flex flex-wrap mb-8">
+      <li
+        v-for="item in mentor.expertise"
+        class="border rounded border-gray-600 px-4 py-1 text-black mr-1 mb-1"
+      >
+        <template v-if="locale === 'ja'">{{ item.ja }}</template>
+        <template v-else>{{ item.en }}</template>
+      </li>
+    </ul>
+    <h3 class="font-medium text-lg mb-2 text-black leading-snug">Links</h3>
+    <div class="flex items-center space-x-4">
+      <NuxtLink
+        :to="mentor.links.website"
+        v-if="mentor.links.website"
+        target="_blank"
+        class="link-item"
+      >
+        <GlobeAltIcon class="w-6 h-6 mr-1" />
+        Website
+      </NuxtLink>
+      <NuxtLink
+        :to="mentor.links.linkedin"
+        v-if="mentor.links.linkedin"
+        target="_blank"
+        class="link-item"
+      >
+        <IconLinkedin class="w-6 h-6 mr-1" />
+        Linkedin
+      </NuxtLink>
+      <NuxtLink
+        :to="mentor.links.twitter"
+        v-if="mentor.links.twitter"
+        target="_blank"
+        class="link-item"
+      >
+        <IconTwitter class="w-6 h-6 mr-1" />
+        Twitter
+      </NuxtLink>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { GlobeAltIcon } from "@heroicons/vue/24/outline";
+const { locale } = useI18n();
+
+defineProps({
+  mentor: {},
+});
+</script>
+
+<style lang="postcss" scoped>
+.link-item {
+  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap;
+}
+</style>

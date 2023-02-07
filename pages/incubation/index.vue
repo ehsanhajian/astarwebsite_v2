@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full -mt-24 lg:absolute sm:top-[60vh]">
+      <div class="w-full -mt-12 lg:absolute sm:top-[60vh]">
         <div
           class="bg-[url('/assets/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-8 lg:ml-[45vw] min-h-[546.51px] min-h-[500px] lg:min-h-[1078px] bg-cover"
         />

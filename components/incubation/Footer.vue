@@ -17,7 +17,7 @@
       </NuxtLink>
     </nav>
     <nav
-      class="py-8 space-y-2 sm:space-y-0 sm:space-x-10 flex flex-col sm:flex-row"
+      class="py-8 space-y-2 sm:space-y-0 sm:space-x-10 flex flex-col sm:flex-row justify-center"
     >
       <NuxtLink
         to="https://docs.google.com/document/d/1gxM0PEzFq7nW5VB11pMcDUaaKxfMz3BjTDtmEem_oo4/edit?usp=sharing"

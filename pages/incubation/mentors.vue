@@ -19,7 +19,7 @@
       <IncubationMentorsModal
         :mentor="mentors[mentorIndex]"
         :open="open"
-        @test="modalClose"
+        @close="modalClose"
       />
     </template>
   </NuxtLayout>

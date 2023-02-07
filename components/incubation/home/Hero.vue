@@ -11,12 +11,12 @@
         </h1>
       </div>
       <div
-        class="w-full lg:w-1/2 flex justify-center lg:justify-end my-8 lg:my-0"
+        class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-2 mb-6 lg:my-0"
       >
         <img
           src="~/assets/images/incubation/home/hero-text.svg"
           alt="by Sony Network Communications and Astar"
-          class="max-w-[220px] sm:max-w-[340px] lg:max-w-[520px] w-full"
+          class="max-w-[200px] sm:max-w-[340px] lg:max-w-[520px] w-full"
         />
       </div>
       <div
