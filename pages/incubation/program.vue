@@ -8,7 +8,7 @@
     </template>
     <template #main>
       <main>
-        <IncubationProgramOffer class="py-40" />
+        <IncubationProgramOffer class="py-16 sm:py-40" />
         <IncubationProgramTimeline />
       </main>
     </template>

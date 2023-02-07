@@ -1,15 +1,17 @@
 <template>
   <section class="bg-black">
     <div class="max-w-4xl mx-auto px-4">
-      <div class="border-l-2 border-gray-300 py-36 relative">
+      <div class="border-l-2 border-gray-300 py-16 sm:py-36 relative">
         <ChevronDownIcon
           class="w-8 h-8 text-white absolute left-[-1.05rem] -bottom-3"
         />
-        <div class="ml-24">
-          <p class="font-bold text-3xl title">
+        <div class="ml-8 sm:ml-24">
+          <p class="font-bold text-2xl sm:text-3xl title">
             <span>{{ $t("program.timeline.subheading") }}</span>
           </p>
-          <h2 class="text-white text-3xl font-medium mt-2 mb-16 leading-snug">
+          <h2
+            class="text-white text-2xl sm:text-3xl font-medium mt-2 mb-16 leading-snug"
+          >
             {{ $t("program.timeline.heading") }}
           </h2>
         </div>
@@ -18,7 +20,7 @@
             <div class="border-space-pink">
               <h3 class="text-space-pink">
                 {{ $t("program.timeline.application.title") }}
-                <small>
+                <small class="block sm:inline">
                   ({{ $t("program.timeline.application.dates") }})
                 </small>
               </h3>
@@ -31,7 +33,9 @@
             <div class="border-space-sky">
               <h3 class="text-space-sky">
                 {{ $t("program.timeline.incubation.title") }}
-                <small>({{ $t("program.timeline.incubation.dates") }})</small>
+                <small class="block sm:inline"
+                  >({{ $t("program.timeline.incubation.dates") }})</small
+                >
               </h3>
               <p class="text-gray-300">
                 {{ $t("program.timeline.incubation.description") }}
@@ -65,7 +69,7 @@ const localePath = useLocalePath();
   counter-reset: num;
 } */
 .timeline li {
-  @apply pl-24 relative;
+  @apply pl-8 sm:pl-24 relative;
 }
 .timeline li div {
   @apply border p-8 bg-black relative;

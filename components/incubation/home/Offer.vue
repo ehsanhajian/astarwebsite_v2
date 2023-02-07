@@ -1,15 +1,18 @@
 <template>
   <section>
-    <p class="text-center font-bold text-3xl title">
+    <p class="text-center font-bold text-2xl sm:text-3xl title">
       <span>{{ $t("program.offer.subheading") }}</span>
     </p>
     <h2
-      class="text-center text-3xl font-medium mt-2 mb-12 mx-auto max-w-2xl text-black leading-snug"
+      class="text-center text-2xl sm:text-3xl font-medium mt-2 mb-12 mx-auto max-w-2xl text-black leading-snug"
     >
       {{ $t("meta.partners.description") }}
     </h2>
-    <ul class="grid grid-cols-3 gap-8">
-      <li v-for="item in offer" class="p-10 rounded border border-gray-500">
+    <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <li
+        v-for="item in offer"
+        class="p-6 sm:p-10 rounded border border-gray-500"
+      >
         <img
           :src="useAsset('incubation/home/' + item.image)"
           :alt="item.text"

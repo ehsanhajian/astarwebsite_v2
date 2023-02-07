@@ -1,13 +1,13 @@
 <template>
   <section class="bg-black">
     <div
-      class="flex bg-[url('/assets/images/incubation/sub-page-hero.svg')] bg-center bg-repeat"
+      class="sm:flex bg-[url('/assets/images/incubation/sub-page-hero.svg')] bg-center bg-repeat"
     >
       <div
-        class="w-full bg-[url('/assets/images/incubation/cta.svg')] bg-right bg-no-repeat"
+        class="w-full bg-[url('/assets/images/incubation/cta.svg')] bg-right bg-no-repeat hidden sm:block"
       />
-      <div class="text-center py-36 px-10 shrink-0">
-        <p class="text-white text-3xl">{{ $t("cta.lead") }}</p>
+      <div class="text-center py-24 sm:py-36 sm:px-10 shrink-0">
+        <p class="text-white text-2xl sm:text-3xl">{{ $t("cta.lead") }}</p>
         <IncubationButton
           href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
           variant="contained"
@@ -30,7 +30,7 @@
           >
         </p>
       </div>
-      <div class="w-full" />
+      <div class="w-full hidden sm:block" />
     </div>
   </section>
 </template>

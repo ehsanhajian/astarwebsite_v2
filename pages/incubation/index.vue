@@ -3,30 +3,30 @@
     <template #hero>
       <div class="bg-black">
         <div
-          class="h-screen flex flex-col bg-[url('/assets/images/incubation/home/hero-bg.svg')] bg-center bg-repeat"
+          class="bg-[url('/assets/images/incubation/home/hero-bg.svg')] bg-center bg-repeat"
         >
-          <div class="relative z-10">
+          <div class="relative z-10 h-screen">
             <IncubationHeader />
             <IncubationHomeHero />
           </div>
         </div>
       </div>
-      <div class="w-full absolute top-[60vh]">
+      <div class="w-full -mt-24 sm:absolute sm:top-[60vh]">
         <div
-          class="bg-[url('/assets/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-[45vw] min-h-[1078px]"
+          class="bg-[url('/assets/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-8 sm:ml-[45vw] min-h-[546.51px] sm:min-h-[1078px] bg-cover"
         />
       </div>
     </template>
     <template #main>
       <main>
         <div class="max-w-7xl mx-auto px-4">
-          <IncubationHomeAbout class="py-32" />
-          <IncubationHomeOffer class="pt-24 pb-44" />
+          <IncubationHomeAbout class="sm:py-32" />
+          <IncubationHomeOffer class="pt-24 pb-24 sm:pb-44" />
         </div>
         <IncubationHomeTimeline />
-        <IncubationHomePartners class="py-40" />
-        <IncubationHomeMentors class="py-40" />
-        <IncubationHomeFaq class="pt-24 pb-60" />
+        <IncubationHomePartners class="py-24 sm:py-40" />
+        <IncubationHomeMentors class="sm:py-40" />
+        <IncubationHomeFaq class="pt-24 pb-24 sm:pb-60" />
       </main>
     </template>
   </NuxtLayout>

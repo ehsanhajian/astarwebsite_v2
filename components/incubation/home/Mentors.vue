@@ -1,17 +1,17 @@
 <template>
   <section>
     <div>
-      <p class="font-bold text-3xl title text-center">
+      <p class="font-bold text-2xl sm:text-3xl title text-center">
         <span>{{ $t("meta.mentors.title") }}</span>
       </p>
       <h2
-        class="text-center text-3xl font-medium mt-2 mb-12 mx-auto max-w-3xl text-black leading-snug"
+        class="text-center text-2xl sm:text-3xl font-medium mt-2 mb-12 mx-auto max-w-3xl text-black leading-snug"
       >
         {{ $t("meta.mentors.description") }}
       </h2>
 
       <ul
-        class="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-x-20 gap-y-20 my-12"
+        class="max-w-xs sm:max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-x-20 gap-y-20 my-12"
       >
         <IncubationMentorsListItem
           v-for="(mentor, index) in indexMentors"

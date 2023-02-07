@@ -1,11 +1,13 @@
 <template>
   <section class="bg-black">
-    <div class="max-w-7xl mx-auto px-4 flex">
-      <div class="py-36 mr-16 w-1/2">
-        <p class="font-bold text-3xl title">
+    <div class="max-w-7xl mx-auto px-4 sm:flex py-24 sm:py-0">
+      <div class="sm:py-36 sm:mr-16 sm:w-1/2 mb-16 sm:mb-0">
+        <p class="font-bold text-2xl sm:text-3xl title">
           <span>{{ $t("program.timeline.subheading") }}</span>
         </p>
-        <h2 class="text-white text-3xl font-medium mt-2 mb-8 leading-snug">
+        <h2
+          class="text-white text-2xl sm:text-3xl font-medium mt-2 mb-8 leading-snug"
+        >
           {{ $t("program.timeline.heading") }}
         </h2>
         <IncubationButton
@@ -19,7 +21,7 @@
           </span>
         </IncubationButton>
       </div>
-      <div class="border-l-2 border-gray-300 py-36 w-1/2 relative">
+      <div class="border-l-2 border-gray-300 sm:py-36 sm:w-1/2 relative">
         <ChevronDownIcon
           class="w-8 h-8 text-white absolute left-[-1.05rem] -bottom-3"
         />

@@ -1,48 +1,26 @@
 <template>
-  <div class="max-w-7xl px-4 mx-auto flex w-full h-[80vh] items-center">
-    <div class="w-1/2">
-      <h1 class="text-9xl leading-none font-bold text-white">
-        Web3 <br />Incubation <br />Program
-      </h1>
-      <div class="flex space-x-4 mt-16">
-        <IncubationButton
-          href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
-          variant="contained"
-          color="secondary"
-          size="lg"
-          target="_blank"
+  <div
+    class="max-w-7xl px-4 mx-auto flex sm:flex-row items-center w-full h-[calc(100vh-100px)] sm:h-[70vh]"
+  >
+    <div class="w-full sm:flex">
+      <div class="w-full sm:w-1/2">
+        <h1
+          class="text-5xl sm:text-9xl leading-none font-bold text-white text-center sm:text-left"
         >
-          <span>
-            {{ $t("cta.apply") }}
-            <ArrowTopRightOnSquareIcon class="w-6 h-6 inline-block align-sub" />
-          </span>
-        </IncubationButton>
-        <IncubationButton
-          variant="outlined"
-          color="secondary"
-          size="lg"
-          href="/incubation/program"
-        >
-          <span>
-            {{ $t("learn_more") }}
-            <ArrowRightIcon class="w-6 h-6 inline-block" />
-          </span>
-        </IncubationButton>
+          Web3 <br />Incubation <br />Program
+        </h1>
+        <IncubationHomeHeroButtons class="hidden sm:block mt-16" />
       </div>
-    </div>
-    <div class="w-1/2 flex justify-end">
-      <img
-        src="~/assets/images/incubation/home/hero-text.svg"
-        alt=""
-        class=""
-      />
+      <div
+        class="w-full sm:w-1/2 flex justify-center sm:justify-end mt-8 my-12 sm:my-0"
+      >
+        <img
+          src="~/assets/images/incubation/home/hero-text.svg"
+          alt="by Sony Network Communications and Astar"
+          class="max-w-[260px] sm:max-w-[520px] w-full"
+        />
+      </div>
+      <IncubationHomeHeroButtons class="sm:hidden" />
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import {
-  ArrowRightIcon,
-  ArrowTopRightOnSquareIcon,
-} from "@heroicons/vue/24/outline";
-</script>

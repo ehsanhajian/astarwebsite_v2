@@ -10,16 +10,16 @@
         ]"
       >
         <div
-          class="mx-auto flex max-w-7xl items-center justify-between px-4 py-8"
+          class="mx-auto flex max-w-7xl items-center justify-between px-4 h-[100px] sm:h-[110px]"
         >
           <NuxtLink
             :to="localePath('/incubation')"
             class="logo text-white flex flex-col leading-tight hover:no-underline"
           >
-            <span class="font-bold text-[1.75rem]">
+            <span class="font-bold text-xl sm:text-[1.75rem]">
               Web3 Incubation Program
             </span>
-            <span class="text-[1rem]">
+            <span class="text-[0.85rem] first-letter:sm:text-[1rem]">
               by SONY Network Communications and Astar
             </span>
           </NuxtLink>

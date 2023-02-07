@@ -8,7 +8,7 @@
     </template>
     <template #main>
       <ul
-        class="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-x-20 gap-y-20 my-36"
+        class="max-w-xs sm:max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-3 gap-x-20 gap-y-20 my-16 sm:my-36"
       >
         <IncubationMentorsListItem
           v-for="(mentor, index) in mentors"

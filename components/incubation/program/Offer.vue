@@ -1,10 +1,15 @@
 <template>
   <section class="max-w-7xl mx-auto px-4">
-    <div class="space-y-32">
+    <div class="space-y-24 sm:space-y-32">
       <template v-for="(item, index) in offer">
-        <div :id="item.id" class="flex items-center">
-          <div :class="index === 1 ? 'order-2 ml-16' : 'mr-16'">
-            <h2 class="text-3xl font-medium mb-6 text-black leading-snug">
+        <div :id="item.id" class="sm:flex items-center">
+          <div
+            class="mb-12 sm:mb-0"
+            :class="index === 1 ? 'order-2 sm:ml-16' : 'sm:mr-16'"
+          >
+            <h2
+              class="text-2xl sm:text-3xl font-medium mb-6 text-black leading-snug"
+            >
               {{ item.lead }}
             </h2>
             <p class="text-lg leading-loose">{{ item.text }}</p>

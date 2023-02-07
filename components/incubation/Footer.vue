@@ -1,7 +1,7 @@
 <template>
   <IncubationCallToAction />
   <footer class="px-4 py-12 text-center">
-    <nav class="flex justify-center space-x-10">
+    <nav class="flex justify-center space-x-6 sm:space-x-10">
       <NuxtLink
         v-for="item in social"
         :to="item.href"
@@ -10,7 +10,7 @@
       >
         <component
           :is="item.icon"
-          class="h-10 sm:h-10 w-10 sm:w-10 text-black hover:text-space-blue-lighter"
+          class="h-7 sm:h-10 w-7 sm:w-10 text-black hover:text-space-blue-lighter"
           aria-hidden="true"
         />
         <span class="sr-only">{{ item.name }}</span>

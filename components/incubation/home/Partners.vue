@@ -1,10 +1,12 @@
 <template>
-  <section class="max-w-7xl mx-auto px-4 flex items-center">
-    <div class="mr-8">
-      <p class="font-bold text-3xl title">
+  <section class="max-w-7xl mx-auto px-4 sm:flex items-center">
+    <div class="sm:mr-8">
+      <p class="font-bold text-2xl sm:text-3xl title">
         <span>{{ $t("meta.partners.title") }}</span>
       </p>
-      <h2 class="text-3xl font-medium mt-2 mb-8 text-black leading-snug">
+      <h2
+        class="text-2xl sm:text-3xl font-medium mt-2 mb-8 text-black leading-snug"
+      >
         {{ $t("meta.partners.description") }}
       </h2>
       <IncubationButton
