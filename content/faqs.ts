@@ -5,7 +5,7 @@ export const faqs = [
       ja: "質問 1",
     },
     answer: {
-      en: "Answer 1",
+      en: "All dApps on Astar are able to participate, including new developers as well as existing projects that wish to develop using Sony Network Communications and Astar resources. There are no limitations on Valuation.",
       ja: "回答 1",
     },
   },
