@@ -1,11 +1,11 @@
 <template>
   <section class="max-w-7xl mx-auto px-4 sm:flex items-center">
-    <div class="sm:mr-8">
+    <div class="sm:mr-8 mb-12 sm:mb-0">
       <p class="font-bold text-2xl sm:text-3xl title">
         <span>{{ $t("meta.partners.title") }}</span>
       </p>
       <h2
-        class="text-2xl sm:text-3xl font-medium mt-2 mb-8 text-black leading-snug"
+        class="mt-2 mb-8 text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
       >
         {{ $t("meta.partners.description") }}
       </h2>

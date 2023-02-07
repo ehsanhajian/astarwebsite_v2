@@ -3,10 +3,9 @@
     class="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 relative z-10 lg:-mt-28"
   >
     <li v-for="(item, index) in links">
-      <a
-        :href="item.href"
+      <NuxtLink
+        :to="item.href"
         target="_blank"
-        rel="noopener"
         class="py-12 px-6 h-full flex items-center justify-center rounded-3xl text-center shadow-xl"
         :class="
           index === 2
@@ -28,7 +27,7 @@
             <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
-      </a>
+      </NuxtLink>
     </li>
   </ul>
 </template>

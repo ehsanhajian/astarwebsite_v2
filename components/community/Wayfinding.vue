@@ -5,10 +5,9 @@
     </h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
       <li v-for="(item, index) in social">
-        <a
-          :href="item.href"
+        <NuxtLink
+          :to="item.href"
           target="_blank"
-          rel="noopener"
           class="bg-space-gray block rounded-3xl text-center py-6 sm:py-8 px-2 sm:px-4 hover:bg-space-gray-lighter transition"
           data-aos="flip-left"
           :data-aos-delay="index * 100"
@@ -29,7 +28,7 @@
             <span class="font-bold text-xl mr-1.5">{{ item.stats }}</span>
             <small class="block">{{ item.unit }}</small>
           </div>
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </div>

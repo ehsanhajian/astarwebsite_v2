@@ -1,7 +1,7 @@
 <template>
-  <a v-if="href !== ''" :class="classes" :href="href">
+  <NuxtLink v-if="href !== ''" :class="classes" :to="href">
     <span><slot>Button</slot></span>
-  </a>
+  </NuxtLink>
   <button v-else :class="classes" type="button">
     <span><slot>Button</slot></span>
   </button>

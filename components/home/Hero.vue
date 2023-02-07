@@ -19,7 +19,6 @@
           size="lg"
           href="https://docs.astar.network/"
           target="_blank"
-          rel="noopener"
           class="w-[280px] sm:w-auto"
         >
           Documentation
@@ -30,7 +29,6 @@
           size="lg"
           href="https://portal.astar.network/"
           target="_blank"
-          rel="noopener"
           class="w-[280px] sm:w-auto"
         >
           Launch App

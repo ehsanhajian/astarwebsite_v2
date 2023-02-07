@@ -31,12 +31,11 @@
               </h3>
             </div>
           </span>
-          <a
+          <NuxtLink
             v-else
-            :href="item.href"
+            :to="item.href"
             class="block hover:brightness-125"
             target="_blank"
-            rel="noopener"
           >
             <img
               class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
@@ -51,7 +50,7 @@
                 <span class="whitespace-nowrap">-></span>
               </h3>
             </div>
-          </a>
+          </NuxtLink>
         </li>
       </template>
     </ul>

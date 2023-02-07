@@ -2,15 +2,14 @@
   <NuxtLayout name="default">
     <template #space>
       <div class="banner--hiring">
-        <a
-          href="https://angel.co/company/astar-network"
+        <NuxtLink
+          to="https://angel.co/company/astar-network"
           target="_blank"
-          rel="noopener"
           class="link--hiring"
         >
           We are hiring!
           <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
-        </a>
+        </NuxtLink>
       </div>
       <div class="bg-black">
         <div class="absolute z-0 w-screen h-screen flex items-center">

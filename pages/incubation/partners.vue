@@ -7,7 +7,7 @@
       />
     </template>
     <template #main>
-      <main class="max-w-5xl mx-auto px-4 py-24">
+      <main class="max-w-5xl mx-auto px-4 py-12 sm:py-24">
         <template v-for="partner in partners">
           <h2>
             <template v-if="locale === 'ja'">{{ partner.label.ja }}</template>
@@ -24,7 +24,7 @@
               class="flex items-center justify-center"
             >
               <NuxtLink
-                :href="item.href"
+                :to="item.href"
                 target="_blank"
                 class="rounded p-4"
                 :class="item.href !== '' && 'hover:shadow-lg'"

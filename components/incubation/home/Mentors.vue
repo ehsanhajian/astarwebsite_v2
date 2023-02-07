@@ -5,7 +5,7 @@
         <span>{{ $t("meta.mentors.title") }}</span>
       </p>
       <h2
-        class="text-center text-2xl sm:text-3xl font-medium mt-2 mb-12 mx-auto max-w-3xl text-black leading-snug"
+        class="text-center mt-2 mb-12 mx-auto max-w-3xl text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
       >
         {{ $t("meta.mentors.description") }}
       </h2>

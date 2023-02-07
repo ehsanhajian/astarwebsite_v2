@@ -13,7 +13,6 @@
         <Button
           href="https://astarjapan.substack.com/about"
           target="_blank"
-          rel="noopener"
           size="xl"
         >
           Subscribe

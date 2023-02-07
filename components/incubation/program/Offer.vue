@@ -10,11 +10,11 @@
             "
           >
             <h2
-              class="text-2xl sm:text-3xl font-medium mb-6 text-black leading-snug"
+              class="mb-6 text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
             >
               {{ item.lead }}
             </h2>
-            <p class="text-lg leading-loose">{{ item.text }}</p>
+            <p class="text-lg sm:leading-loose">{{ item.text }}</p>
           </div>
           <div class="lg:shrink-0" :class="index === 1 && 'order-1'">
             <img

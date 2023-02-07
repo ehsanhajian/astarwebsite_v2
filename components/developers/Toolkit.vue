@@ -15,28 +15,19 @@
       </h2>
       <p class="text-center mb-12 sm:mb-28">
         All your favorite tools and integrations work natively with Astar.<br />
-        <a
-          href="https://portal.astar.network/#/astar/dapp-staking/discover"
+        <NuxtLink
+          to="https://portal.astar.network/#/astar/dapp-staking/discover"
           target="_blank"
-          rel="noopener"
           class="text-space-cyan transition hover:text-space-cyan-light hover:underline"
         >
           Explore all projects building on Astar ->
-        </a>
+        </NuxtLink>
       </p>
       <div class="px-4 sm:px-6">
         <div
           class="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-20 sm:grid-cols-4 lg:grid-cols-5"
         >
           <div v-for="item in logos" class="flex items-center justify-center">
-            <!-- <nuxt-img
-              format="webp"
-              quality="90"
-              width="400"
-              class="h-12 w-32 lg:w-48 object-contain"
-              :src="`/toolkit/${item.image}`"
-              :alt="item.name"
-            /> -->
             <img
               class="h-12 w-32 lg:w-48 object-contain"
               :src="useAsset('developers/toolkit/' + item.image)"

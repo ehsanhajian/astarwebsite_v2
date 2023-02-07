@@ -60,11 +60,10 @@
                       >
                         {{ discoveries[discoveryId]["description"] }}
                       </p>
-                      <a
+                      <NuxtLink
                         v-if="discoveries[discoveryId]['href']"
-                        :href="discoveries[discoveryId]['href']"
+                        :to="discoveries[discoveryId]['href']"
                         target="_blank"
-                        rel="noopener"
                         class="flex items-center transition text-space-cyan hover:underline hover:text-space-cyan-lighter mt-5 outline-none"
                       >
                         More info in the article
@@ -74,7 +73,7 @@
                         <IconArrowTopRightOnSquare
                           class="w-5 h-5 stroke-2 ml-1"
                         />
-                      </a>
+                      </NuxtLink>
                     </div>
                     <div
                       v-if="discoveries[discoveryId]['image']"

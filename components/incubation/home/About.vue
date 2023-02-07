@@ -4,11 +4,11 @@
       <span>{{ $t("program.about.subheading") }}</span>
     </p>
     <h2
-      class="text-2xl sm:text-3xl font-medium mt-2 mb-4 text-black leading-snug"
+      class="mt-2 mb-4 text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
     >
       {{ $t("program.about.heading") }}
     </h2>
-    <p class="text-lg leading-loose">
+    <p class="text-lg sm:leading-loose">
       {{ $t("program.about.description") }}
     </p>
   </section>

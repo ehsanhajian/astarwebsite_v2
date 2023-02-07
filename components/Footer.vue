@@ -17,10 +17,9 @@
             :key="item.name"
             class="leading-snug"
           >
-            <a
-              :href="item.href"
-              target="_blank"
-              rel="noopener"
+            <NuxtLink
+              :to="item.href"
+              :target="item.href.includes('https') ? '_blank' : '_self'"
               class="text-tiny hover:underline transition"
               :class="
                 color === 'light'
@@ -30,9 +29,10 @@
             >
               {{ item.name }}
               <IconArrowTopRightOnSquare
+                v-if="item.href.includes('https')"
                 class="w-4 h-4 inline-block stroke-2"
               />
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -47,12 +47,11 @@
       "
     >
       <div class="flex space-x-6 order-2 justify-center">
-        <a
+        <NuxtLink
           v-for="item in social"
           target="_blank"
-          rel="noopener"
           :key="item.name"
-          :href="item.href"
+          :to="item.href"
           class="transition"
           :class="
             color === 'light'
@@ -62,7 +61,7 @@
         >
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-        </a>
+        </NuxtLink>
       </div>
       <p
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
@@ -106,7 +105,7 @@ const nav = [
       },
       {
         name: "Astar Japan Lab",
-        href: "https://astar.network/japan/",
+        href: "/japan",
       },
       {
         name: "Astar Space Lab",

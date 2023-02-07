@@ -21,7 +21,6 @@
               variant="contained"
               :href="item.href"
               target="_blank"
-              rel="noopener"
             >
               <component
                 :is="item.icon"

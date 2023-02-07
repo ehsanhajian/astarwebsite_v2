@@ -10,7 +10,7 @@
             <span>{{ $t("program.timeline.subheading") }}</span>
           </p>
           <h2
-            class="text-white text-2xl sm:text-3xl font-medium mt-2 mb-16 leading-snug"
+            class="text-white text-2xl sm:text-3xl font-medium mt-2 mb-8 sm:mb-16 leading-snug"
           >
             {{ $t("program.timeline.heading") }}
           </h2>
@@ -65,14 +65,11 @@ const localePath = useLocalePath();
 </script>
 
 <style lang="postcss" scoped>
-/* .timeline {
-  counter-reset: num;
-} */
 .timeline li {
   @apply pl-8 sm:pl-24 relative;
 }
 .timeline li div {
-  @apply border p-8 bg-black relative;
+  @apply border p-4 sm:p-8 bg-black relative;
 }
 .timeline li::before {
   @apply block absolute top-[50%] h-[1px] left-0 w-full;
@@ -85,9 +82,9 @@ const localePath = useLocalePath();
   @apply inline-block text-3xl font-medium mb-2;
 }
 .timeline li h3 small {
-  @apply font-normal text-lg;
+  @apply font-normal text-base sm:text-lg;
 }
 .timeline li p {
-  @apply text-lg;
+  @apply sm:text-lg;
 }
 </style>

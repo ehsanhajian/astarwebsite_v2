@@ -27,16 +27,15 @@
           {{ item.name }}
         </h3>
         <p class="my-2">{{ item.description }}</p>
-        <a
-          :href="item.href"
+        <NuxtLink
+          :to="item.href"
           target="_blank"
-          rel="noopener"
           :class="item.color"
           class="hover:underline transition flex items-center"
         >
           Learn more<span class="sr-only"> about {{ item.name }}</span>
           <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </div>
