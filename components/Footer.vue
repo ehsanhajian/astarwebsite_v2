@@ -1,13 +1,13 @@
 <template>
   <footer
     class="mx-auto max-w-6xl pb-12 px-4 sm:px-6 lg:pb-16"
-    :class="page === 'home' ? 'text-white' : 'text-gray-500'"
+    :class="color === 'light' ? 'text-white' : 'text-gray-500'"
   >
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <div v-for="category in nav">
         <h3
           class="font-medium uppercase"
-          :class="page === 'home' ? 'text-white' : 'text-space-gray-dark'"
+          :class="color === 'light' ? 'text-white' : 'text-space-gray-dark'"
         >
           {{ category.name }}
         </h3>
@@ -23,7 +23,7 @@
               rel="noopener"
               class="text-tiny hover:underline transition"
               :class="
-                page === 'home'
+                color === 'light'
                   ? 'text-gray-200 hover:text-gray-50'
                   : 'text-gray-500 hover:text-space-gray-dark'
               "
@@ -41,7 +41,7 @@
     <div
       class="mt-16 border-t pt-8 lg:flex items-center justify-between"
       :class="
-        page === 'home'
+        color === 'light'
           ? 'text-white border-white border-opacity-30'
           : 'border-gray-200'
       "
@@ -55,7 +55,7 @@
           :href="item.href"
           class="transition"
           :class="
-            page === 'home'
+            color === 'light'
               ? 'text-gray-200 hover:text-gray-50'
               : 'text-gray-400 hover:text-gray-500'
           "
@@ -66,7 +66,7 @@
       </div>
       <p
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
-        :class="page === 'home' ? 'text-gray-200' : 'text-gray-400'"
+        :class="color === 'light' ? 'text-gray-200' : 'text-gray-400'"
       >
         &copy; 2023 Astar Network - The Future of Smart Contracts for
         Multichain. All Rights Reserved.
@@ -84,7 +84,7 @@ const Github = resolveComponent("IconGithub");
 const Youtube = resolveComponent("IconYoutube");
 
 interface Props {
-  page?: string;
+  color?: string;
 }
 const props = defineProps<Props>();
 

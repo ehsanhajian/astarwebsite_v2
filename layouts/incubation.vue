@@ -109,19 +109,3 @@ useHead({
   ],
 });
 </script>
-
-<style lang="postcss">
-/* .incubation {
-  @apply bg-white text-gray-600 font-roboto;
-}
-.incubation h1 {
-  @apply text-white;
-}
-.incubation h2,
-.incubation h3 {
-  @apply text-black leading-snug;
-}
-.incubation a {
-  @apply text-space-blue transition hover:underline hover:text-space-blue-lighter;
-} */
-</style>

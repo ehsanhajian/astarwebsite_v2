@@ -1,44 +1,39 @@
 <template>
-  <div class="space-gradient relative">
-    <img
-      class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-      src="~/assets/images/common/space-cloud.png"
-      alt=""
-      width="1728"
-      height="1281"
-    />
-    <ScrollParallax :speed="0.2">
-      <img
-        class="absolute z-[3] w-screen h-screen object-scale-down portrait:hidden"
-        src="~/assets/images/japan/hero-landscape.svg"
-        alt="Astar Japan Lab"
-        width="1460"
-        height="808"
-      />
-    </ScrollParallax>
-    <img
-      class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
-      src="~/assets/images/common/space-stars.svg"
-      alt=""
-      width="1728"
-      height="1728"
-    />
-    <JapanHero />
-  </div>
-  <JapanRegister />
-  <JapanAbout class="py-24 sm:py-44" />
-  <JapanNews class="pt-12 pb-36 lg:py-44" />
+  <NuxtLayout name="default">
+    <template #space>
+      <div class="space-gradient relative">
+        <img
+          class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
+          src="~/assets/images/common/space-cloud.png"
+          alt=""
+          width="1728"
+          height="1281"
+        />
+        <ScrollParallax :speed="0.2">
+          <img
+            class="absolute z-[3] w-screen h-screen object-scale-down portrait:hidden"
+            src="~/assets/images/japan/hero-landscape.svg"
+            alt="Astar Japan Lab"
+            width="1460"
+            height="808"
+          />
+        </ScrollParallax>
+        <img
+          class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
+          src="~/assets/images/common/space-stars.svg"
+          alt=""
+          width="1728"
+          height="1728"
+        />
+        <JapanHero />
+      </div>
+      <JapanRegister />
+      <JapanAbout class="py-24 sm:py-44" />
+      <JapanNews class="pt-12 pb-36 lg:py-44" />
+    </template>
 
-  <div class="relative z-10">
-    <img
-      class="w-full"
-      src="~/assets/images/common/cloud.svg"
-      alt=""
-      width="2000"
-      height="464"
-    />
-    <div class="bg-white text-gray-700">
-      <div class="sky-gradient">
+    <template #earth>
+      <div class="sky-gradient text-gray-700">
         <div class="sky-gradient-inner">
           <JapanMembers class="py-12" />
           <JapanRegister />
@@ -52,22 +47,22 @@
             height="220"
           />
         </div>
-      </div>
-      <div class="footer">
-        <div class="pt-12 sm:pt-28 bg-black">
-          <Footer page="home" />
+        <div class="footer">
+          <div class="pt-12 sm:pt-28 bg-black">
+            <Footer color="light" />
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </template>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 definePageMeta({
-  layout: "home",
-  pageTitle: "Astar Japan Lab",
+  layout: false,
+  title: "Astar Japan Lab",
   slug: "japan",
   description:
     "Astar Japan Lab was established to actively conduct research and development, gather knowledge, and exchange opinions on the development of services and business creation using the Astar Network in Japan, with the aim of further developing the Astar Network.",

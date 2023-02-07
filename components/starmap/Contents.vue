@@ -275,11 +275,6 @@
               </p>
               <h3 class="font-bold text-xl">Q4</h3>
               <p>We’re excited for this quarter. Stay tuned for more info.</p>
-              <!-- <ul class="list-disc pl-4">
-                <li>Swanky Suite and projects</li>
-                <li>Token economics</li>
-                <li>Decentralized tooling</li>
-              </ul> -->
             </div>
           </div>
         </div>
@@ -353,7 +348,7 @@ const clickAction = (discovery: string) => {
   );
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
-  @apply text-space-gray-dark;
+  @apply text-space-gray-dark font-black;
 }
 .popup-link {
   @apply text-space-cyan hover:underline cursor-pointer transition hover:text-space-cyan-lighter;
