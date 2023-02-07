@@ -12,7 +12,7 @@
           href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
           variant="contained"
           color="secondary"
-          size="lg"
+          size="xl"
           target="_blank"
           class="w-full max-w-[300px] my-6"
         >

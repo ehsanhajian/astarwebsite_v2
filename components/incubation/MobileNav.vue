@@ -23,7 +23,7 @@
           <div class="bg-white shadow-lg min-h-screen flex items-center">
             <PopoverButton class="absolute right-0 top-0 p-3">
               <span class="sr-only">Close menu</span>
-              <XMarkIcon class="h-8 w-8" aria-hidden="true" />
+              <XMarkIcon class="h-8 w-8 text-gray-600" aria-hidden="true" />
             </PopoverButton>
 
             <div class="px-12 w-full text-center">
@@ -53,7 +53,7 @@
                   href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
                   variant="contained"
                   color="primary"
-                  size="lg"
+                  size="xl"
                   target="_blank"
                   class="w-full my-6"
                 >

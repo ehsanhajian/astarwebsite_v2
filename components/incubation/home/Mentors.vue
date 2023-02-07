@@ -22,7 +22,7 @@
       <IncubationMentorsModal
         :mentor="indexMentors[mentorIndex]"
         :open="open"
-        @test="modalClose"
+        @close="modalClose"
       />
       <div class="text-center">
         <IncubationButton

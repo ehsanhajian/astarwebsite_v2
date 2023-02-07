@@ -47,6 +47,9 @@ const classes = computed(() => ({
   @apply px-4 py-2;
 }
 .btn.lg {
+  @apply sm:text-lg px-10 py-2 sm:py-3;
+}
+.btn.xl {
   @apply text-lg px-10 py-3;
 }
 .btn.contained.primary {

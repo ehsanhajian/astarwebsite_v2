@@ -20,7 +20,7 @@
         />
       </div>
       <div
-        class="sm:flex sm:space-x-4 space-y-4 sm:space-y-0 text-center lg:mt-20 justify-center"
+        class="sm:flex sm:space-x-4 space-y-3 sm:space-y-0 text-center lg:mt-20 justify-center"
       >
         <IncubationButton
           href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
@@ -28,7 +28,7 @@
           color="secondary"
           size="lg"
           target="_blank"
-          class="w-[280px] sm:w-auto"
+          class="w-[240px] sm:w-auto"
         >
           <span>
             {{ $t("cta.apply") }}
@@ -40,7 +40,7 @@
           color="secondary"
           size="lg"
           href="/incubation/program"
-          class="w-[280px] sm:w-auto"
+          class="w-[240px] sm:w-auto"
         >
           <span>
             {{ $t("learn_more") }}
