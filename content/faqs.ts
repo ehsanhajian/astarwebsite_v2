@@ -57,8 +57,7 @@ export const faqs = [
     },
   },{
     question: {
-      en: "What expectations can companies that participate in the incubation program have?
-",
+      en: "What expectations can companies that participate in the incubation program have?",
       ja: "質問 2",
     },
     answer: {
