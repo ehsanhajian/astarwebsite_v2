@@ -1,11 +1,13 @@
 <template>
-  <section class="bg-black">
+  <section class="bg-black py-8 sm:py-12">
     <div class="max-w-4xl mx-auto px-4">
-      <div class="border-l-2 border-gray-300 py-16 sm:py-36 relative">
+      <div
+        class="border-l-2 border-gray-300 relative py-16 sm:py-24 after:block after:absolute after:w-3 after:h-3 after:rounded-full after:left-[-0.4rem] after:top-0 after:bg-white"
+      >
         <ChevronDownIcon
           class="w-8 h-8 text-white absolute left-[-1.05rem] -bottom-3"
         />
-        <div class="ml-8 sm:ml-24">
+        <div class="ml-6 sm:ml-8 lg:ml-24">
           <p class="font-bold text-2xl sm:text-3xl title">
             <span>{{ $t("program.timeline.subheading") }}</span>
           </p>
@@ -60,26 +62,24 @@
 
 <script setup lang="ts">
 import { ChevronDownIcon } from "@heroicons/vue/24/outline";
-
-const localePath = useLocalePath();
 </script>
 
 <style lang="postcss" scoped>
 .timeline li {
-  @apply pl-8 sm:pl-24 relative;
+  @apply pl-6 sm:pl-8 lg:pl-24 relative;
 }
 .timeline li div {
-  @apply border p-4 sm:p-8 bg-black relative;
+  @apply border px-4 py-8 sm:p-8 bg-black relative;
 }
 .timeline li::before {
   @apply block absolute top-[50%] h-[1px] left-0 w-full;
   content: "";
 }
 .timeline li::after {
-  @apply block absolute w-4 h-4 rounded-full mr-2 -left-2 top-[50%] -mt-2;
+  @apply block absolute w-4 h-4 rounded-full mr-2 left-[-0.575rem] top-[50%] -mt-2;
 }
 .timeline li h3 {
-  @apply inline-block text-3xl font-medium mb-2;
+  @apply inline-block text-2xl sm:text-3xl font-medium mb-2 leading-tight;
 }
 .timeline li h3 small {
   @apply font-normal text-base sm:text-lg;

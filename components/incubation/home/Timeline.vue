@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-black">
-    <div class="max-w-7xl mx-auto px-4 sm:flex py-24 sm:py-0">
-      <div class="sm:py-36 sm:mr-16 sm:w-1/2 mb-16 sm:mb-0">
+  <section class="bg-black py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:flex">
+      <div class="sm:py-24 sm:mr-16 sm:w-1/2 mb-8 sm:mb-0">
         <p class="font-bold text-2xl sm:text-3xl title">
           <span>{{ $t("program.timeline.subheading") }}</span>
         </p>
@@ -21,7 +21,9 @@
           </span>
         </IncubationButton>
       </div>
-      <div class="border-l-2 border-gray-300 sm:py-36 sm:w-1/2 relative">
+      <div
+        class="border-l-2 border-gray-300 sm:w-1/2 relative py-16 sm:py-24 after:block after:absolute after:w-3 after:h-3 after:rounded-full after:left-[-0.4rem] after:top-0 after:bg-white"
+      >
         <ChevronDownIcon
           class="w-8 h-8 text-white absolute left-[-1.05rem] -bottom-3"
         />
@@ -71,23 +73,23 @@ const localePath = useLocalePath();
   counter-reset: num;
 }
 .timeline li {
-  @apply pl-12 relative;
+  @apply pl-8 sm:pl-12 relative;
 }
 .timeline li::before {
   content: counters(num, ".", decimal-leading-zero);
   counter-increment: num;
-  @apply mr-2 inline-block text-3xl;
+  @apply mr-2 inline-block text-2xl sm:text-3xl leading-tight;
 }
 .timeline li::after {
-  @apply block absolute w-4 h-4 rounded-full mr-2 -left-2 top-5;
+  @apply block absolute w-4 h-4 rounded-full mr-2 left-[-0.575rem] top-3;
 }
 .timeline li h3 {
-  @apply inline-block text-3xl font-medium mb-2;
+  @apply inline-block text-2xl sm:text-3xl font-medium mb-3 leading-tight;
 }
 .timeline li h3 small {
   @apply font-normal text-lg;
 }
 .timeline li p {
-  @apply text-lg;
+  @apply sm:text-lg;
 }
 </style>

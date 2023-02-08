@@ -6,7 +6,7 @@
           <div
             class="mb-12 sm:mb-0"
             :class="
-              index === 1 ? 'order-2 sm:ml-8 lg:ml-16' : 'sm:mr-8 lg:mr-16'
+              index === 1 ? 'order-2 sm:ml-8 lg:ml-20' : 'sm:mr-8 lg:mr-20'
             "
           >
             <h2
@@ -20,7 +20,8 @@
             <img
               :src="useAsset('incubation/program/' + item.image)"
               :alt="item.text"
-              :class="index === 1 && 'w-full lg:max-w-[456px]'"
+              class="w-full"
+              :class="item.class"
             />
           </div>
         </div>
@@ -38,18 +39,21 @@ const offer = [
     text: t("program.offer.connection.text"),
     image: "connection.svg",
     id: "connection",
+    class: "lg:max-w-[540px] min-w-[340px]",
   },
   {
     lead: t("program.offer.support.lead"),
     text: t("program.offer.support.text"),
     image: "support.png",
     id: "support",
+    class: "lg:max-w-[456px] min-w-[340px]",
   },
   {
     lead: t("program.offer.grow.lead"),
     text: t("program.offer.grow.text"),
     image: "grow.svg",
     id: "grow",
+    class: "lg:max-w-[680px] min-w-[340px]",
   },
 ];
 </script>

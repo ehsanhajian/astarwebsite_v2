@@ -4,7 +4,7 @@
     "description": "Sony Network CommunicationsとAstar Networkの知見とリソースを活用した最先端web3プロジェクトの育成プログラム",
       "program": {
         "title": "Program",
-        "description": "web3プロジェクトに対して高クオリティで手厚いサポートを提供"
+        "description": "web3プロジェクトに対して手厚いサポートをクオリティ高く提供"
       },
       "partners": {
         "title": "Partners",
@@ -12,7 +12,7 @@
       },
       "mentors": {
         "title": "Mentors",
-        "description": "テック面、ファイナンス面などあらゆる視点から建設的なフィードバックを提供"
+        "description": "世界有数のプロフェッショナルがテック面、ファイナンス面などあらゆる視点から建設的なフィードバックを提供"
       }
   },
   "nav": {
@@ -27,23 +27,21 @@
   "learn_more": "もっと見る",
   "program":{
     "about":{
-      "subheading": "About this program",
-      "heading":"Sony Network CommunicationsとAstar Networkはその知識とリソースを活用し、参加するweb3プロジェクト開発をサポートします",
-      "description":"このインキュベーションプログラムは、Sony Network CommunicationsとAstar Networkの共同プログラムであり、その知識とリソースを用いて、最先端のweb3ユースケースを育成することを目的としています。インキュベーションプログラムはオンラインで全世界から参加でき、期間は3月から6月までの3ヶ月間です。"
+      "heading":"Sony Network CommunicationsとAstar Networkは互いの知識とリソースを活用し、参加するweb3プロジェクト開発をサポートします",
+      "description":"このインキュベーションプログラムは、Sony Network CommunicationsとAstar Networkの共同プログラムであり、互いの知識とリソースを用いて、最先端のweb3スタートアップを育成することを目的としています。インキュベーションプログラムはオンラインで全世界から参加でき、期間は3月から6月までの3ヶ月間です。"
     },
     "offer":{
-      "subheading":"What we offer",
       "connection":{
         "lead":"Web3 FoundationやAlchemyなどの世界トップのweb3企業と直接繋がる機会",
         "text":"Web3 FoundationやAlchemyなどの世界トップのWeb3企業からフィードバックを受けられ、彼らからの貴重なセッションに無料で参加することができます。"
       },
       "support":{
         "lead":"Sony Network CommunicationsとAstar Networkによる技術的・経済的サポート",
-        "text":"Sony Network CommunicationsやAstar Networkのリソースを活用し、web3テックサポートやSony Network Communicationsからの投資を検討することができます。"
+        "text":"Sony Network CommunicationsやAstar Networkのリソースの活用。web3テックサポートや有望なプロジェクトにはSony Network Communicationsからの投資も検討されます。"
       },
       "grow":{
         "lead":"Sony Network CommunicationsとAstar Networkと共にプロジェクトを成長させる経験",
-        "text":"インキュベーションプログラム終了後にも、特に優れたプロジェクトはSony Network Communicationsと共同で実証実験を行う予定になっています。"
+        "text":"インキュベーションプログラム終了後にも、特に優れたプロジェクトはSony Network Communicationsと共同で実証実験を行ったり、出資が検討されます。"
       }
     },
     "timeline": {

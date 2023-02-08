@@ -15,7 +15,7 @@
 
       <div class="fixed inset-0 z-10 overflow-y-auto">
         <div
-          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+          class="flex min-h-full items-end justify-center p-4 text-center sm:items-center lg:p-0"
         >
           <TransitionChild
             as="template"
@@ -32,7 +32,7 @@
               <div class="flex flex-col sm:flex-row">
                 <div class="shrink-0">
                   <img
-                    class="w-full max-w-[320px] object-cover rounded-sm mb-8"
+                    class="w-full lg:max-w-[280px] sm:max-w-[320px] object-cover rounded-sm mb-8"
                     :src="useAsset('incubation/mentors/' + mentor.image)"
                     :alt="mentor.name.en"
                   />
@@ -41,7 +41,7 @@
                     class="hidden sm:block"
                   />
                 </div>
-                <div class="sm:px-12">
+                <div class="sm:pl-6 lg:px-12">
                   <h2
                     class="text-3xl font-medium sm:mt-4 text-black leading-snug"
                   >
@@ -56,7 +56,7 @@
                     </template>
                     <template v-else>{{ mentor.title.en }}</template>
                   </p>
-                  <p class="pt-4 text-lg text-gray-600">
+                  <p class="pt-4 sm:text-lg text-gray-600">
                     <template v-if="locale === 'ja'">
                       {{ mentor.profile.ja }}
                     </template>
@@ -72,7 +72,7 @@
               <div class="mt-5 sm:mt-6">
                 <button
                   type="button"
-                  class="absolute right-2 top-2 text-gray-600 hover:bg-gray-100 p-4 rounded-full transition"
+                  class="absolute right-1 sm:right-2 top-1 sm:top-2 text-gray-600 hover:bg-gray-100 p-2 sm:p-4 rounded-full transition bg-gray-200 bg-opacity-80"
                   @click="handleClick"
                 >
                   <XMarkIcon class="w-8 h-8" />

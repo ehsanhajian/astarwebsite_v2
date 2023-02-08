@@ -19,8 +19,8 @@
             <span class="font-bold text-xl sm:text-[1.75rem]">
               Web3 Incubation Program
             </span>
-            <span class="text-[0.85rem] first-letter:sm:text-[1rem]">
-              by SONY Network Communications and Astar
+            <span class="text-xs first-letter:sm:text-[1rem]">
+              by Sony Network Communications and Astar Network
             </span>
           </NuxtLink>
 

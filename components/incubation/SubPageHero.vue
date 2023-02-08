@@ -1,10 +1,10 @@
 <template>
   <div class="bg-black">
     <div
-      class="bg-[url('/assets/images/incubation/sub-page-hero.svg')] bg-center bg-repeat h-[60vh] sm:h-[700px] flex flex-col"
+      class="bg-[url('/assets/images/incubation/sub-page-hero.svg')] bg-center bg-repeat h-[60vh] sm:h-[75vh] flex flex-col"
     >
       <IncubationHeader />
-      <section class="flex items-center h-full">
+      <section class="flex items-center h-full pb-16">
         <div class="max-w-5xl mx-auto text-center px-4">
           <h1 class="font-bold text-4xl sm:text-6xl lg:text-7xl text-white">
             {{ title }}

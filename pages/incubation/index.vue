@@ -24,8 +24,8 @@
           <IncubationHomeOffer class="pt-24 pb-24 sm:pb-44" />
         </div>
         <IncubationHomeTimeline />
-        <IncubationHomePartners class="py-24 sm:py-40" />
-        <IncubationHomeMentors class="sm:py-40" />
+        <IncubationHomePartners class="pt-24 sm:pt-40 pb-24" />
+        <IncubationHomeMentors class="sm:py-36" />
         <IncubationHomeFaq class="pt-24 pb-24 sm:pb-60" />
       </main>
     </template>

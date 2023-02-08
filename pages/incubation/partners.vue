@@ -14,9 +14,11 @@
             <template v-else>{{ partner.label.en }}</template>
           </h2>
           <ul
-            class="grid grid-cols-2 gap-x-2 gap-y-2 lg:gap-y-8 mt-8 mb-24"
+            class="grid gap-x-2 gap-y-2 lg:gap-y-16 mt-8 mb-24"
             :class="
-              partner.category === 'sponsors' && 'sm:grid-cols-3 lg:grid-cols-4'
+              partner.category === 'sponsors'
+                ? 'sm:grid-cols-3 lg:grid-cols-4 grid-cols-2'
+                : 'grid-cols-1 sm:grid-cols-2'
             "
           >
             <li
@@ -30,9 +32,11 @@
                 :class="item.href !== '' && 'hover:shadow-lg'"
               >
                 <img
-                  class="h-16 w-44 object-contain"
+                  class="h-16 object-contain"
                   :class="
-                    partner.category === 'host' ? 'lg:w-80 lg:h-20' : 'lg:w-48'
+                    partner.category === 'host'
+                      ? 'w-96 lg:h-20 w-80'
+                      : 'lg:w-48 lg:h-20 w-44'
                   "
                   :src="useAsset('incubation/partners/' + item.image)"
                   :alt="item.name"

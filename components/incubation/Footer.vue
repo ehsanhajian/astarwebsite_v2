@@ -34,10 +34,7 @@
         <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block align-sub" />
       </NuxtLink>
     </nav>
-    <p class="text-sm">
-      © 2023 Web3 Incubation Program by SONY Network Communications and Astar.
-      All Rights Reserved
-    </p>
+    <p class="text-sm">© 2023 {{ $t("meta.title") }}. All Rights Reserved</p>
   </footer>
 </template>
 

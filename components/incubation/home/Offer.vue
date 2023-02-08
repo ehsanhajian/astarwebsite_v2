@@ -1,10 +1,10 @@
 <template>
   <section>
     <p class="text-center font-bold text-2xl sm:text-3xl title">
-      <span>{{ $t("program.offer.subheading") }}</span>
+      <span>What We Offer</span>
     </p>
     <h2
-      class="text-center mt-2 mb-12 mx-auto max-w-2xl text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
+      class="text-center mt-2 mb-8 sm:mb-12 mx-auto max-w-2xl text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
     >
       {{ $t("meta.partners.description") }}
     </h2>
