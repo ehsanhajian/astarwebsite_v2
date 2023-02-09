@@ -30,9 +30,9 @@
               class="relative transform overflow-hidden rounded bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-5xl sm:p-6"
             >
               <div class="flex flex-col sm:flex-row">
-                <div class="shrink-0">
+                <div class="shrink-0 max-w-[280px] lg:max-w-[320px] mx-auto">
                   <img
-                    class="w-full lg:max-w-[280px] sm:max-w-[320px] object-cover rounded-sm mb-8"
+                    class="w-full object-cover rounded-sm mb-8"
                     :src="useAsset('incubation/mentors/' + mentor.image)"
                     :alt="mentor.name.en"
                   />
@@ -41,7 +41,7 @@
                     class="hidden sm:block"
                   />
                 </div>
-                <div class="sm:pl-6 lg:px-12">
+                <div class="sm:pl-6 lg:px-12 flex-1">
                   <h2
                     class="text-3xl font-medium sm:mt-4 text-black leading-snug"
                   >
@@ -72,7 +72,7 @@
               <div class="mt-5 sm:mt-6">
                 <button
                   type="button"
-                  class="absolute right-1 sm:right-2 top-1 sm:top-2 text-gray-600 hover:bg-gray-100 p-2 sm:p-4 rounded-full transition bg-gray-200 bg-opacity-80"
+                  class="absolute right-1 sm:right-2 top-1 sm:top-2 text-gray-600 hover:bg-gray-100 p-2 sm:p-4 rounded-full transition bg-gray-200 bg-opacity-80 sm:bg-transparent"
                   @click="handleClick"
                 >
                   <XMarkIcon class="w-8 h-8" />

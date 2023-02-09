@@ -13,7 +13,7 @@
       </li>
     </ul>
     <h3 class="font-medium text-lg mb-2 text-black leading-snug">Links</h3>
-    <div class="flex items-center space-x-4">
+    <div class="flex flex-wrap items-center">
       <NuxtLink
         :to="mentor.links.website"
         v-if="mentor.links.website"
@@ -56,6 +56,6 @@ defineProps({
 
 <style lang="postcss" scoped>
 .link-item {
-  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap;
+  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap mr-4 mb-2;
 }
 </style>
