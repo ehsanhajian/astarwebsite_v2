@@ -16,7 +16,7 @@
           <ul
             class="grid gap-x-2 gap-y-2 lg:gap-y-16 mt-8 mb-24"
             :class="
-              partner.category === 'sponsors'
+              partner.category === 'mentors'
                 ? 'sm:grid-cols-3 lg:grid-cols-4 grid-cols-2'
                 : 'grid-cols-1 sm:grid-cols-2'
             "

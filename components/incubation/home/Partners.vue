@@ -1,6 +1,6 @@
 <template>
   <section
-    class="max-w-7xl mx-auto px-4 sm:flex items-center space-x-4 lg:space-x-10"
+    class="max-w-7xl mx-auto px-4 sm:flex items-center sm:space-x-2 lg:space-x-10"
   >
     <div class="mb-12 sm:mb-0">
       <p class="font-bold text-2xl sm:text-3xl title">

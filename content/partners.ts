@@ -19,10 +19,10 @@ export const partners = [
     ],
   },
   {
-    category: "sponsors",
+    category: "mentors",
     label: {
-      en: "Sponsors",
-      ja: "スポンサー",
+      en: "Mentors",
+      ja: "メンター",
     },
     logos: [
       {
