@@ -25,7 +25,7 @@
           </DisclosureButton>
         </dt>
         <DisclosurePanel as="dd" class="pr-12 pb-6">
-          <p class="text-base leading-7 text-gray-600">
+          <p class="text-base leading-7 text-gray-600 whitespace-pre-line">
             <template v-if="locale === 'ja'">{{ faq.answer.ja }}</template>
             <template v-else>{{ faq.answer.en }}</template>
           </p>
