@@ -487,6 +487,11 @@ const members = [
         image: "XYLOCOPA.png",
         href: "https://xylocopa.xyz",
       },
+      {
+        name: "Sense It Smart",
+        image: "Sense It Smart.png",
+        href: "https://www.senseitsmart.com",
+      },
     ],
   },
   {
