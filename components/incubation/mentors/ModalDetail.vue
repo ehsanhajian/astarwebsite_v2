@@ -3,11 +3,8 @@
     <h3 class="font-medium text-lg mb-2 text-black leading-snug">
       Areas of Expertise
     </h3>
-    <ul class="flex flex-wrap mb-8">
-      <li
-        v-for="item in mentor.expertise"
-        class="border rounded border-gray-600 px-4 py-1 text-black mr-1 mb-1"
-      >
+    <ul class="mb-8 list-disc pl-4 text-gray-700">
+      <li v-for="item in mentor.expertise" class="leading-tight my-2">
         <template v-if="locale === 'ja'">{{ item.ja }}</template>
         <template v-else>{{ item.en }}</template>
       </li>

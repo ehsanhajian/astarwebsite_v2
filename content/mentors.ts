@@ -24,4 +24,82 @@ export const mentors = [
       twitter: "https://twitter.com/WatanabeSota",
     },
   },
+  {
+    index: false,
+    name: {
+      en: "Glenn Woo",
+      ja: "",
+    },
+    title: {
+      en: "Head of Sales APAC at Blockdaemon",
+      ja: "",
+    },
+    profile: {
+      en: "Glenn joined Blockdaemon in April 2022 as Head of Sales APAC. Blockdaemon offers institutional grade blockchain infrastructures connecting enterprises to blockchains. He joined the blockchain industry in 2018 as Managing Director, Head of APAC for Ledger. Glenn has an extensive career in the financial services and fintech, working for S&P Global Market intelligence as Head of North Asia based in Korea and Hong Kong for 9 years, and prior to that, at Shinhan Financial Group in asset custody and funds administration.",
+      ja: "",
+    },
+    image: "glenn.jpg",
+    expertise: [
+      { en: "Infrastructure (Node, Staking, Custody)", ja: "" },
+      { en: "Finance", ja: "" },
+      { en: "Data & Analytics", ja: "" },
+    ],
+    links: {
+      website: "https://blockdaemon.com/",
+      linkedin: "https://www.linkedin.com/in/glennwoo/",
+      twitter: "",
+    },
+  },
+  {
+    index: false,
+    name: {
+      en: "Yuki Yuminaga",
+      ja: "",
+    },
+    title: {
+      en: "Investment & Research at Fenbushi Capital",
+      ja: "",
+    },
+    profile: {
+      en: 'I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)',
+      ja: "",
+    },
+    image: "yuki.jpg",
+    expertise: [
+      { en: "Consensus/MEV/privacy infrastructure", ja: "" },
+      { en: "DeFi", ja: "" },
+    ],
+    links: {
+      website: "https://www.fenbushicapital.vc",
+      linkedin: "https://www.linkedin.com/in/yuki-yuminaga-024252134/",
+      twitter: "https://twitter.com/ballsyalchemist",
+    },
+  },
+  {
+    index: false,
+    name: {
+      en: "Wei Shi Khai",
+      ja: "",
+    },
+    title: {
+      en: "General Partner & COO at LongHash Ventures",
+      ja: "",
+    },
+    profile: {
+      en: "Shi Khai leads LongHash Ventures, which specializes in bootstrapping Web3 ecosystems. LongHashX Accelerator is Asia’s first and leading Web3 accelerator, which supported >60 web3 startups and helped them raise >$150m in funding. LongHashX partners include Polkadot, Filecoin, and Axelar, and notable alumni include Astar, Xanpool, and Lit Protocol.",
+      ja: "",
+    },
+    image: "wei.jpg",
+    expertise: [
+      { en: "Multi-chain infrastructure", ja: "" },
+      { en: "DAOs", ja: "" },
+      { en: "Tokenomics", ja: "" },
+      { en: "Strategy", ja: "" },
+    ],
+    links: {
+      website: "https://www.longhash.vc",
+      linkedin: "https://www.linkedin.com/in/shikhai",
+      twitter: "https://twitter.com/theshikhai",
+    },
+  },
 ];

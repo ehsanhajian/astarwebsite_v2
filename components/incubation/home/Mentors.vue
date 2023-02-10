@@ -30,7 +30,7 @@
         :href="localePath('/incubation/mentors')"
       >
         <span>
-          {{ $t("program.timeline.learn_more") }}
+          {{ $t("mentors.learn_more") }}
           <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
         </span>
       </IncubationButton>
