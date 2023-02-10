@@ -1,11 +1,11 @@
 <template>
   <div
-    class="max-w-7xl px-4 mx-auto flex sm:flex-row items-center w-full h-[calc(100vh-100px)] lg:h-[70vh]"
+    class="max-w-7xl px-4 mx-auto flex sm:flex-row items-center w-full h-[calc(100vh-100px)] lg:h-[80vh]"
   >
     <div class="w-full lg:flex flex-wrap items-center">
       <div class="w-full lg:w-1/2">
         <h1
-          class="text-4xl sm:text-8xl lg:text-9xl leading-none font-bold text-white text-center lg:text-left"
+          class="text-4xl sm:text-8xl lg:text-9xl leading-[0.95] font-bold text-white text-center lg:text-left"
         >
           Web3 <br />Incubation <br />Program
         </h1>
@@ -16,7 +16,7 @@
         <img
           src="~/assets/images/incubation/home/hero-text.svg"
           alt="by Sony Network Communications and Astar"
-          class="max-w-[200px] sm:max-w-[340px] lg:max-w-[520px] w-full"
+          class="max-w-[200px] sm:max-w-[340px] lg:max-w-full w-full lg:pl-16"
         />
       </div>
       <div
