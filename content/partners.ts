@@ -30,10 +30,15 @@ export const partners = [
         image: "astar.svg",
         href: "https://astar.network/",
       },
+      // {
+      //   name: "Web3 Foundation",
+      //   image: "w3f.svg",
+      //   href: "https://web3.foundation/",
+      // },
       {
-        name: "Web3 Foundation",
-        image: "w3f.svg",
-        href: "https://web3.foundation/",
+        name: "Polkadot",
+        image: "polkadot.svg",
+        href: "https://polkadot.network/",
       },
       {
         name: "Amazon Web Services (AWS)",
@@ -75,11 +80,11 @@ export const partners = [
         image: "hashkey.svg",
         href: "https://capital.hashkey.com/",
       },
-      {
-        name: "Parity Technologies",
-        image: "parity.png",
-        href: "https://www.parity.io/",
-      },
+      // {
+      //   name: "Parity Technologies",
+      //   image: "parity.png",
+      //   href: "https://www.parity.io/",
+      // },
     ],
   },
 ];
