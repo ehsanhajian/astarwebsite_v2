@@ -148,6 +148,11 @@ const members = [
         href: "https://www.jmacs-j.co.jp", 
       },
       {
+        name: "SOLIZE",
+        image: "SOLIZE.png",
+        href: "https://www.solize.com/",
+       },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
