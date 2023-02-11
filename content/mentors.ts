@@ -53,31 +53,6 @@ export const mentors = [
   {
     index: false,
     name: {
-      en: "Yuki Yuminaga",
-      ja: "",
-    },
-    title: {
-      en: "Investment & Research at Fenbushi Capital",
-      ja: "",
-    },
-    profile: {
-      en: 'I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)',
-      ja: "",
-    },
-    image: "yuki.jpg",
-    expertise: [
-      { en: "Consensus/MEV/privacy infrastructure", ja: "" },
-      { en: "DeFi", ja: "" },
-    ],
-    links: {
-      website: "https://www.fenbushicapital.vc",
-      linkedin: "https://www.linkedin.com/in/yuki-yuminaga-024252134/",
-      twitter: "https://twitter.com/ballsyalchemist",
-    },
-  },
-  {
-    index: false,
-    name: {
       en: "Wei Shi Khai",
       ja: "",
     },
@@ -100,6 +75,31 @@ export const mentors = [
       website: "https://www.longhash.vc",
       linkedin: "https://www.linkedin.com/in/shikhai",
       twitter: "https://twitter.com/theshikhai",
+    },
+  },
+  {
+    index: false,
+    name: {
+      en: "Yuki Yuminaga",
+      ja: "",
+    },
+    title: {
+      en: "Investment & Research at Fenbushi Capital",
+      ja: "",
+    },
+    profile: {
+      en: 'I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)',
+      ja: "",
+    },
+    image: "yuki.jpg",
+    expertise: [
+      { en: "Consensus/MEV/privacy infrastructure", ja: "" },
+      { en: "DeFi", ja: "" },
+    ],
+    links: {
+      website: "https://www.fenbushicapital.vc",
+      linkedin: "https://www.linkedin.com/in/yuki-yuminaga-024252134/",
+      twitter: "https://twitter.com/ballsyalchemist",
     },
   },
 ];
