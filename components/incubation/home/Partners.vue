@@ -17,7 +17,7 @@
         :href="localePath('/incubation/partners')"
       >
         <span>
-          {{ $t("program.timeline.learn_more") }}
+          {{ $t("partners.learn_more") }}
           <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
         </span>
       </IncubationButton>
