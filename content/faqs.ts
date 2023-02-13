@@ -6,7 +6,7 @@ export const faqs = [
     },
     answer: {
       en: "All dApps on Astar are able to participate. New developers and existing projects that wish to develop using Sony Network Communications and Astar resources can apply, too. There are no restrictions on the qualifications for participating in the program.",
-      ja: "ソニーネットワークコミュニケーションズとAstarのリソースを使って開発を希望する既存プロジェクトや新規プロジェクトが対象になります。参加資格に制限はありません。",
+      ja: "Sony Network CommunicationsとAstar Networkのリソースを使って開発を希望する既存プロジェクトや新規プロジェクトが対象になります。バリュエーションなど参加条件に制限はありません。",
     },
   },
   {
@@ -15,7 +15,7 @@ export const faqs = [
       ja: "インキュベーションプログラムの内容はどのようなものですか？",
     },
     answer: {
-      en: "During the three-month program, you will receive professional career training. You will have regular mentoring and weekly web3 sessions to refine your business plans. The program will end with a demo day at Sony's headquarters in Tokyo. Participants will give a presentation to their mentors.",
+      en: "During the three-month incubation, mentoring and weekly web3 sessions will be held in order to brush up your business plans. On the final day, a demo day will be held at Sony's headquarters in Tokyo. Participants will give a presentation to their mentors.",
       ja: "3ヶ月間のインキュベーションでは、ビジネスプランのブラッシュアップや、web3事業に関するセッションが毎週開催されます。また、メンターとプロジェクトのマッチングを通してメンタリングが行われます。最終日は東京のSONY本社でデモデイが開催されます。参加者にはメンターに対してプレゼンテーションを行なってもらいます。",
     },
   },
@@ -53,7 +53,7 @@ export const faqs = [
       ja: "申し込みにあたって必要な項目はどのようなものでしょうか？",
     },
     answer: {
-      en: "Name, Email, and Team Details. \nSocials (Telegram, Discord, Twitter*, and LinkedIn*). \nProject Name, URL Link, and Description. \nProject Slide Deck, Mission, and Past Performance. \nWhat are the problems your project solves? How? \nFunding history and plans for future funding. \nWhat do you expect from Sony Network Communications? \nWhat do you expect from Astar Network? \nHow did you find out about this program?",
+      en: "Name, Email, and Team Details. \nSocials (Telegram, Discord, Twitter*, and LinkedIn*). \nProject Name, URL Link, and Description. \nProject Slide Deck, Mission, and Past Performance. \nWhat are the problems your project solves? How? \nFunding history and plans for future funding. \nWhat do you expect from Sony Network Communications? \nWhat do you expect from Astar Network? \nHow did you find out about this program?\n\n*Optional items",
       ja: "Typeformで申し込みの際にいただいているのは以下の情報です。 \n\nお名前／メールアドレス／Telegram／Discord／Twitter(*)／LinkedIn(*)／プロジェクトの名前／プロジェクトの簡単な説明／プロジェクトのリンク(*)／所在地／タイムゾーン／プロジェクトの種類／プロジェクトのミッション／プロジェクト説明スライド／プロダクトが解決する問題／プロダクトのソリューション／トラクション／過去の資金調達歴／資金調達予定／チームの詳細／Sony Network Communicationsに求めること／Astar Networkに求めること／本プログラムを知ったきっかけ \n\n（*は任意項目）",
     },
   },
