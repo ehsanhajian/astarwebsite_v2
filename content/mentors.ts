@@ -28,7 +28,7 @@ export const mentors = [
       ja: "",
     },
     title: {
-      en: "General Manager at Sony Network Communications",
+      en: "General Manager at Sony",
       ja: "",
     },
     profile: {

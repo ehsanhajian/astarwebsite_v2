@@ -15,8 +15,8 @@ export const faqs = [
       ja: "インキュベーションプログラムの内容はどのようなものですか？",
     },
     answer: {
-      en: "During the three-month incubation, mentoring and weekly web3 sessions will be held in order to brush up your business plans. On the final day, a demo day will be held at Sony's headquarters in Tokyo. Participants will give a presentation to their mentors.",
-      ja: "3ヶ月間のインキュベーションでは、ビジネスプランのブラッシュアップや、web3事業に関するセッションが毎週開催されます。また、メンターとプロジェクトのマッチングを通してメンタリングが行われます。最終日は東京のSONY本社でデモデイが開催されます。参加者にはメンターに対してプレゼンテーションを行なってもらいます。",
+      en: "During the three-month incubation, mentoring and weekly web3 sessions will be held in order to brush up your business plans. On the final day, a demo day will be held at Sony Group Corporation Headquarters in Tokyo. Participants will give a presentation to their mentors.",
+      ja: "3ヶ月間のインキュベーションでは、ビジネスプランのブラッシュアップや、web3事業に関するセッションが毎週開催されます。また、メンターとプロジェクトのマッチングを通してメンタリングが行われます。最終日は東京のソニーグループ株式会社 本社でデモデイが開催されます。参加者にはメンターに対してプレゼンテーションを行なってもらいます。",
     },
   },
   {
@@ -34,8 +34,8 @@ export const faqs = [
       ja: "インキュベーションプログラムはどのように実施されるのですか？",
     },
     answer: {
-      en: "The majority of the program will be online. Communication will take place on Slack. Mentoring and web3 sessions will be conducted using online meeting tools. Only the demo day will be held in person at Sony's headquarters in Tokyo.",
-      ja: "デモデイを除く全てのプログラムはオンラインで実施されます。コミュニケーションはSlackで行われ、メンタリングやweb3セッションはミーティングツールを用いて実施されます。デモデイは6月中旬に東京のSONY本社にてオフライン開催されます。",
+      en: "The majority of the program will be online. Communication will take place on Slack. Mentoring and web3 sessions will be conducted using online meeting tools. Only the demo day will be held in person at Sony Group Corporation Headquarters in Tokyo.",
+      ja: "デモデイを除く全てのプログラムはオンラインで実施されます。コミュニケーションはSlackで行われ、メンタリングやweb3セッションはミーティングツールを用いて実施されます。デモデイは6月中旬に東京のソニーグループ株式会社 本社にてオフライン開催されます。",
     },
   },{
     question: {
