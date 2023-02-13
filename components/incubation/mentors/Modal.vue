@@ -56,7 +56,7 @@
                     </template>
                     <template v-else>{{ mentor.title.en }}</template>
                   </p>
-                  <p class="pt-4 sm:text-lg text-gray-600">
+                  <p class="pt-4 sm:text-lg text-gray-600 whitespace-pre-line">
                     <template v-if="locale === 'ja'">
                       {{ mentor.profile.ja }}
                     </template>
