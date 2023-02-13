@@ -27,7 +27,7 @@
         <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block align-sub" />
       </NuxtLink>
       <NuxtLink
-        to="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
+        to="https://docs.google.com/document/d/1XSEQ7pPtAt9qnIVLThwWytdoOqV0aNQh/edit?usp=sharing&ouid=106208569002643720949&rtpof=true&sd=true"
         class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
       >
         {{ $t("nav.privacy") }}
