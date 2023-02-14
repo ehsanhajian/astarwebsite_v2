@@ -63,6 +63,6 @@ defineProps({
 
 <style lang="postcss" scoped>
 .link-item {
-  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap mr-4 mb-2;
+  @apply flex items-center text-space-blue hover:text-space-blue-lighter whitespace-nowrap mr-4 mb-2 outline-0;
 }
 </style>

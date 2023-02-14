@@ -16,7 +16,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "~/modules/sitemap", "@nuxtjs/i18n"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "~/modules/sitemap",
+    "@nuxtjs/i18n",
+  ],
   i18n: {
     baseUrl: "https://astar.network",
     locales: [
@@ -40,14 +44,6 @@ export default defineNuxtConfig({
       legacy: false,
       locale: "en",
       fallbackLocale: "en",
-      // messages: {
-      //   en: {
-      //     welcome: 'Welcome'
-      //   },
-      //   ja: {
-      //     welcome: 'ようこそ'
-      //   }
-      // }
     },
   },
   plugins: [{ src: "~/plugins/aos" }],

@@ -63,7 +63,7 @@
               <div class="mt-5 sm:mt-6">
                 <button
                   type="button"
-                  class="absolute right-1 sm:right-2 top-1 sm:top-2 text-gray-600 hover:bg-gray-100 p-2 sm:p-4 rounded-full transition bg-gray-200 bg-opacity-80 sm:bg-transparent"
+                  class="absolute right-1 sm:right-2 top-1 sm:top-2 text-gray-600 hover:bg-gray-100 p-2 sm:p-4 rounded-full transition bg-gray-200 bg-opacity-80 sm:bg-transparent outline-0"
                   @click="handleClick"
                 >
                   <XMarkIcon class="w-8 h-8" />
