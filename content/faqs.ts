@@ -25,7 +25,7 @@ export const faqs = [
       ja: "インキュベーションプログラムに参加すると何が得られるのですか？",
     },
     answer: {
-      en: "The program offers free sessions and mentorship from world-class web3 companies. In addition, the most promising teams will have an opportunity to receive funding to develop their Proof of Concept project.",
+      en: "The program offers free sessions and mentorship from world-class web3 companies. In addition, all projects that share our values will have an opportunity to receive support to develop their Proof of Concept project. You will have an opportunity to receive financial support and collaborate with Sony Network Communications and the Astar Foundation to conduct demonstrations or research and development.",
       ja: "インキュベーションプログラムでは世界トップクラスのweb3企業のメンターからのセッションやメンタリングを無料で受けられます。また、特に有望なプロジェクトには出資や実証実験の機会が用意されます。",
     },
   },{
