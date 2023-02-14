@@ -186,8 +186,8 @@ export const mentors = [
       ja: "Investor & Researcher at Fenbushi Capital",
     },
     profile: {
-      en: 'I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)',
-      ja: "I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)',
+      en: 'I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)",
+      ja: "I am an investor and researcher at Fenbushi Capital. Always love building and researching alongside the innovators in the space! Love to brainstorm about ways to break a system ("trustless" something something) and dream one day of economically attacking one also ;)",
     },
     image: "yuki.jpg",
     expertise: [
