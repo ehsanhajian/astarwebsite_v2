@@ -34,7 +34,7 @@
                   <img
                     class="w-full object-cover rounded-sm mb-8"
                     :src="useAsset('incubation/mentors/' + mentor.image)"
-                    :alt="mentor.name.en"
+                    :alt="mentor.name"
                   />
                   <IncubationMentorsModalDetail
                     :mentor="mentor"
@@ -45,22 +45,13 @@
                   <h2
                     class="text-3xl font-medium sm:mt-4 text-black leading-snug"
                   >
-                    <template v-if="locale === 'ja'">
-                      {{ mentor.name.ja }}
-                    </template>
-                    <template v-else>{{ mentor.name.en }}</template>
+                    {{ mentor.name }}
                   </h2>
                   <p class="leading-tight text-gray-500 mb-3">
-                    <template v-if="locale === 'ja'">
-                      {{ mentor.title.ja }}
-                    </template>
-                    <template v-else>{{ mentor.title.en }}</template>
+                    {{ mentor.title }}
                   </p>
                   <p class="pt-4 sm:text-lg text-gray-600 whitespace-pre-line">
-                    <template v-if="locale === 'ja'">
-                      {{ mentor.profile.ja }}
-                    </template>
-                    <template v-else>{{ mentor.profile.en }}</template>
+                    {{ mentor.profile }}
                   </p>
                 </div>
                 <IncubationMentorsModalDetail

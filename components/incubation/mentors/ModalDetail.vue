@@ -6,8 +6,7 @@
       </h3>
       <ul class="mb-8 list-disc pl-4 text-gray-700">
         <li v-for="item in mentor.expertise" class="leading-tight my-2">
-          <template v-if="locale === 'ja'">{{ item.ja }}</template>
-          <template v-else>{{ item.en }}</template>
+          {{ item }}
         </li>
       </ul>
     </template>

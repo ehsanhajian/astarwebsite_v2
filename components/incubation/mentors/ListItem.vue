@@ -4,18 +4,16 @@
       <img
         class="w-full object-cover rounded-sm shadow-lg group-hover:opacity-90 transition"
         :src="useAsset('incubation/mentors/' + mentor.image)"
-        :alt="mentor.name.en"
+        :alt="mentor.name"
       />
       <h2
         class="text-xl font-medium mt-4 group-hover:text-space-blue-lighter transition text-black leading-snug"
       >
-        <template v-if="locale === 'ja'">{{ mentor.name.ja }}</template>
-        <template v-else>{{ mentor.name.en }}</template>
+        {{ mentor.name }}
       </h2>
     </div>
     <p class="leading-tight text-gray-500 mb-3">
-      <template v-if="locale === 'ja'">{{ mentor.title.ja }}</template>
-      <template v-else>{{ mentor.title.en }}</template>
+      {{ mentor.title }}
     </p>
     <div class="flex items-center space-x-3">
       <NuxtLink
