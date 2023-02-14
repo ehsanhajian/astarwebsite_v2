@@ -32,7 +32,7 @@ export const mentors = [
     name: "Sota Watanabe",
     title: "Founder of Astar Network, CEO at Startale Labs",
     profile:
-      "After an internship in Silicon Valley, and as graduate blockchain co-researcher at the University of Tokyo, I founded Stake Technologies in 2019, and became the founder of Astar Network. I’m also a board member of Japan Blockchain Association (JBA) and an advisor/advisor to GMO Web3, Dentsu Web3, and Marui Group.In 2022, the company was named Forbes Asia 30 Under 30 and Forbes Japan 30 Under 30 in the technology category. In 2023, he founded Startale Labs, a web3 development company, and will collaborate with large Japanese companies on projects to create use cases utilizing the Astar Network.",
+      "Founder of Astar Network, Japan's first public blockchain, CEO of Startale Labs, and a founder of Next Web Capital and Hakuhodo Key3. He is a board member of Japan Blockchain Association and advisor to Marui Group, GMO Web3, Dentsu web3 Club, etc. In 2022, he was selected by Forbes magazine as one of the 30 under 30 in Asia in the technology category.",
     image: "sota.jpg",
     expertise: ["Infrastructure", "Product"],
     links: {
