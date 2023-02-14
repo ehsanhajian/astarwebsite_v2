@@ -43,7 +43,7 @@ export const faqs = [
       ja: "インキュベーションプログラムに参加するには、どのような手続きが必要ですか？",
     },
     answer: {
-      en: 'Click on "Apply Now" and complete the form to register. We will send you an email to confirm that your application has been received. Each applicant is reviewed manually, so it may take up to a week for you to receive confirmation. We will conduct an initial screening, followed by a final screening with an interview for successful applications. If you pass, you will be selected for incubation and invited to participate in this program. \n\nStart date Feb 17th. \n\nDeadline to complete your application March 6th.',
+      en: 'Click on "Apply Now" and complete the form to register. We will send you an email to confirm that your application has been received. Each applicant is reviewed manually, so it may take up to a week for you to receive confirmation. We will conduct an initial screening, followed by a final screening with an interview for successful applications. If you pass, you will be selected for incubation and invited to participate in this program. \n\nStart date Feb 17th. \nDeadline to complete your application March 6th.',
       ja: "「参加はこちら」のボタンをクリックするとTypeformにて申し込みしていただけるようになっています。メールにて受付完了が確認できれば申し込み完了となります。 \n（＊手動にて対応しておりますので、お時間をいただく可能性があります。） \nその後、1次審査を行い、通過すると面接による最終審査を実施します。最終審査に通過するとインキュベーションに採択され、本プログラムに参加できます。\n\n申込開始：2月17日 \n申込締切：3月6日",
     },
   },
