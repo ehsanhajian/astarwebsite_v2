@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:w-1/2 relative">
+  <section class="lg:w-[52%] relative">
     <p class="font-bold text-2xl sm:text-3xl title">
       <span>About This Program</span>
     </p>

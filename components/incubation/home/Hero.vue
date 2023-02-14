@@ -3,9 +3,9 @@
     class="max-w-7xl px-4 mx-auto flex sm:flex-row items-center w-full h-[calc(100vh-100px)] lg:h-[80vh]"
   >
     <div class="w-full lg:flex flex-wrap items-center">
-      <div class="w-full lg:w-[60%]">
+      <div class="w-full lg:w-[62%]">
         <h1
-          class="text-5xl sm:text-8xl lg:text-9xl xl:text-10xl leading-[0.94] font-bold text-white text-center lg:text-left mb-8 sm:mb-12 lg:mb-0"
+          class="text-5xl sm:text-8xl lg:text-10xl leading-[0.94] font-bold text-white text-center lg:text-left mb-8 sm:mb-12 lg:mb-0"
         >
           Web3 <br />Incubation <br />Program
         </h1>
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div
-        class="w-full lg:w-[40%] flex justify-center lg:justify-end mt-2 mb-6 lg:my-0 pb-8"
+        class="w-full lg:w-[38%] flex justify-center lg:justify-end mt-2 mb-6 lg:my-0 pb-8"
       >
         <img
           src="~/assets/images/incubation/home/hero-logos.svg"
