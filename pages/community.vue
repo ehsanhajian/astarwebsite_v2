@@ -8,7 +8,7 @@
       height="1281"
     />
     <img
-      class="absolute z-[2] right-0 max-h-[40vh] lg:max-h-[80vh] -bottom-4 lg:bottom-4"
+      class="absolute z-[2] right-0 -bottom-4 lg:bottom-4 portrait:max-h-[50vh] landscape:max-h-[80vh] w-auto"
       src="~/assets/images/community/hero.svg"
       alt="Community"
       width="1106"
