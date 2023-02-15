@@ -17,7 +17,7 @@
         :data-aos-delay="index * 200"
       >
         <div>
-          <span class="block text-2xl font-bold leading-tight">{{
+          <span class="block text-xl lg:text-2xl font-bold leading-tight">{{
             item.label
           }}</span>
           <span
