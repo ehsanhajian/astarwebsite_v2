@@ -77,6 +77,23 @@ export const mentors = [
   },
   {
     index: false,
+    name: "Bill Laboon",
+    title: "Head of Education and Grants at Web3 Foundation",
+    profile:
+      "Bill Laboon is the Head of Education and Grants at the Web3 Foundation, after spending the previous five years teaching Computer Science at the University of Pittsburgh.  He is the author of two books: A Friendly Introduction to Software Testing, an undergraduate textbook; and Strength in Numbers, a near-future novel set in a world in which cryptocurrency has eliminated traditional money.",
+    image: "bill.jpg",
+    expertise: [
+      "Polkadot",
+      "Technical Education",
+    ],
+    links: {
+      website: "https://web3.foundation/",
+      linkedin: "https://www.linkedin.com/in/billlaboon/",
+      twitter: "https://twitter.com/BillLaboon",
+    },
+  },
+  {
+    index: false,
     name: "Dmitry Lapidus",
     title: "Investment Partner at Dragonfly",
     profile:
@@ -138,6 +155,27 @@ export const mentors = [
       website: "https://capital.hashkey.com/",
       linkedin: "https://www.linkedin.com/in/roylu1/",
       twitter: "https://twitter.com/roycclu",
+    },
+  },
+  {
+    index: false,
+    name: "Vittorio Rivabella",
+    title: "Lead developers experience at Alchemy",
+    profile:
+      "Vitto leads Developer Experience at Alchemy and is on a mission to bring 1 million developers into the web3 ecosystem. He's also a web3 educator, investor, developer and a former VFX supervisor. He's splits his time between San Francisco, California and Genoa, Italy.",
+    image: "vittorio.jpg",
+    expertise: [
+      "Infrastructure",
+      "Full stack web3 development",
+      "Strategy",
+      "Product",
+      "Community",
+      "Marketing"
+    ],
+    links: {
+      website: "https://www.alchemy.com/",
+      linkedin: "https://www.linkedin.com/in/vittorio-rivabella/",
+      twitter: "twitter.com/vittostack",
     },
   },
   {
