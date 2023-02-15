@@ -11,7 +11,7 @@
         />
         <ScrollParallax :speed="0.2">
           <img
-            class="absolute z-[2] right-0 max-h-[40vh] lg:max-h-[80vh]"
+            class="absolute z-[2] right-0 portrait:max-h-[40vh] landscape:max-h-[65vh] landscape:xl:max-h-[80vh] w-auto"
             src="~/assets/images/developers/hero.svg"
             alt="Developers"
             width="1106"

@@ -148,6 +148,11 @@ const members = [
         href: "https://www.jmacs-j.co.jp",
       },
       {
+        name: "SOLIZE",
+        image: "SOLIZE.png",
+        href: "https://www.solize.com/",
+       },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -481,6 +486,11 @@ const members = [
         name: "XYLOCOPA",
         image: "XYLOCOPA.png",
         href: "https://xylocopa.xyz",
+      },
+      {
+        name: "Sense It Smart",
+        image: "Sense It Smart .jpg",
+        href: "https://www.senseitsmart.com",
       },
     ],
   },
