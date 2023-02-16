@@ -35,9 +35,9 @@
             <div class="border-space-sky">
               <h3 class="text-space-sky">
                 {{ $t("program.timeline.incubation.title") }}
-                <small class="block sm:inline"
-                  >({{ $t("program.timeline.incubation.dates") }})</small
-                >
+                <small class="block sm:inline">
+                  ({{ $t("program.timeline.incubation.dates") }})
+                </small>
               </h3>
               <p class="text-gray-300">
                 {{ $t("program.timeline.incubation.description") }}
@@ -48,6 +48,9 @@
             <div class="border-space-cyan">
               <h3 class="text-space-cyan">
                 {{ $t("program.timeline.demo.title") }}
+                <small class="block sm:inline">
+                  ({{ $t("program.timeline.demo.dates") }})
+                </small>
               </h3>
               <p class="text-gray-300">
                 {{ $t("program.timeline.demo.description") }}
