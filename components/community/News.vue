@@ -5,8 +5,16 @@
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
     >
       <li v-for="(item, index) in news">
-        <NuxtLink :to="item.href" target="_blank" class="block group">
+        <a :href="item.href" target="_blank" rel="noopener" class="block group">
           <div class="mb-4" data-aos="flip-left" :data-aos-delay="index * 100">
+            <!-- <nuxt-img
+              format="webp"
+              quality="90"
+              width="760"
+              class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
+              :src="`/medium/${item.id}.jpg`"
+              :alt="item.title"
+            /> -->
             <img
               class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
               :src="useAsset('community/medium/' + item.id + '.jpg')"
@@ -24,11 +32,16 @@
             Read article
             <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </span>
-        </NuxtLink>
+        </a>
       </li>
     </ul>
     <div class="text-center mt-12 sm:mt-20">
-      <Button size="lg" href="https://medium.com/astar-network" target="_blank">
+      <Button
+        size="lg"
+        href="https://medium.com/astar-network"
+        target="_blank"
+        rel="noopener"
+      >
         Medium
         <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
       </Button>
@@ -89,3 +102,5 @@ const news = [
   },
 ];
 </script>
+
+<style scoped lang="postcss"></style>

@@ -6,10 +6,11 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
       >
         <li v-for="(item, index) in news">
-          <NuxtLink
+          <a
             v-if="item.href !== ''"
-            :to="item.href"
+            :href="item.href"
             target="_blank"
+            rel="noopener"
             class="block group"
           >
             <div
@@ -28,7 +29,7 @@
             >
               {{ item.title }}
             </p>
-          </NuxtLink>
+          </a>
           <div v-else>
             <div
               class="mb-4"
@@ -90,3 +91,5 @@ const news = [
   },
 ];
 </script>
+
+<style scoped lang="postcss"></style>

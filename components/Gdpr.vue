@@ -8,13 +8,14 @@
         Our website uses cookies to enhance site navigation and analyze site
         usage. Please let us know you agree to all of our cookies. You can find
         out more on our
-        <NuxtLink
-          to="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
+        <a
+          href="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
           target="_blank"
+          rel="noopener"
           class="text-space-blue hover:underline hover:text-space-blue-lighter transition whitespace-nowrap"
         >
           Privacy Policy
-        </NuxtLink>
+        </a>
         page.
       </div>
       <div class="text-center mt-4 sm:mt-0">
