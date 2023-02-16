@@ -21,15 +21,10 @@
           <span>{{ item.title }}</span>
         </h2>
         <p>{{ item.description }}</p>
-        <a
-          :href="item.href"
-          target="_blank"
-          rel="noopener"
-          class="flex items-center"
-        >
+        <NuxtLink :to="item.href" target="_blank" class="flex items-center">
           Learn more<span class="sr-only"> about {{ item.title }}</span>
           <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -60,7 +55,7 @@ const features = [
 ];
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 h2 {
   @apply leading-[1.1] text-3xl lg:text-4xl font-bold;
 }

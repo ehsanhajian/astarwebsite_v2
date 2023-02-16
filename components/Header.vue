@@ -12,7 +12,7 @@
         <div
           class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 lg:px-8"
         >
-          <a href="/" class="flex">
+          <NuxtLink to="/" class="flex">
             <span class="sr-only">Astar Network</span>
             <img
               class="h-10 w-auto sm:h-14"
@@ -21,7 +21,7 @@
               width="188"
               height="60"
             />
-          </a>
+          </NuxtLink>
 
           <div class="-my-2 -mr-2 lg:hidden">
             <MobileNav :network="network" />
@@ -29,8 +29,8 @@
 
           <div class="hidden lg:flex lg:items-center">
             <nav class="flex space-x-4 xl:space-x-10">
-              <a href="/starmap" class="nav-item">2023 Starmap</a>
-              <a href="/developers" class="nav-item">Developers</a>
+              <NuxtLink to="/starmap" class="nav-item">2023 Starmap</NuxtLink>
+              <NuxtLink to="/developers" class="nav-item">Developers</NuxtLink>
 
               <PopoverButton
                 :class="[
@@ -50,16 +50,14 @@
                 />
               </PopoverButton>
 
-              <a href="/community" class="nav-item">Community</a>
-              <a href="/japan" class="nav-item">Japan</a>
-              <!-- <a href="#" class="nav-item">About</a> -->
+              <NuxtLink to="/community" class="nav-item">Community</NuxtLink>
+              <NuxtLink to="/japan" class="nav-item">Japan</NuxtLink>
             </nav>
             <div class="ml-6 xl:ml-12">
               <Button
                 variant="outlined"
                 href="https://portal.astar.network/"
                 target="_blank"
-                rel="noopener"
               >
                 Launch App
                 <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
@@ -87,17 +85,16 @@
                   >
                   <ul>
                     <li v-for="nav in item.nav">
-                      <a
+                      <NuxtLink
                         class="inline-block py-2 text-white hover:underline transition hover:text-space-cyan-lighter"
-                        :href="nav.href"
+                        :to="nav.href"
                         target="_blank"
-                        rel="noopener"
                       >
                         {{ nav.label }}
                         <IconArrowTopRightOnSquare
                           class="w-4 h-4 inline-block stroke-2"
                         />
-                      </a>
+                      </NuxtLink>
                     </li>
                   </ul>
                 </li>
@@ -163,7 +160,7 @@ const network = [
 ];
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .nav-item {
   @apply text-white hover:text-space-cyan-light font-medium transition;
 }

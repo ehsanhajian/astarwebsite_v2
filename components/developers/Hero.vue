@@ -23,7 +23,6 @@
               variant="contained"
               :href="item.href"
               target="_blank"
-              rel="noopener"
             >
               <component
                 :is="item.icon"
@@ -57,5 +56,3 @@ const hero = [
   { name: "Discord", href: "https://discord.gg/Z3nC9U4", icon: Discord },
 ];
 </script>
-
-<style scoped lang="postcss"></style>

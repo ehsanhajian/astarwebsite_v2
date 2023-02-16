@@ -19,13 +19,13 @@
           v-for="item in member.logos"
           class="flex items-center justify-center"
         >
-          <a :href="item.href" target="_blank">
+          <NuxtLink :to="item.href" target="_blank">
             <img
               class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
               :src="useAsset('japan/members/' + item.image)"
               :alt="item.name"
             />
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -142,10 +142,10 @@ const members = [
         image: "TMJ.png",
         href: "https://www.tmj.jp/",
       },
-      { 
-        name: "JMACS", 
-        image: "JMACS.png", 
-        href: "https://www.jmacs-j.co.jp", 
+      {
+        name: "JMACS",
+        image: "JMACS.png",
+        href: "https://www.jmacs-j.co.jp",
       },
       {
         name: "SOLIZE",
@@ -541,5 +541,3 @@ const members = [
   },
 ];
 </script>
-
-<style scoped lang="postcss"></style>
