@@ -60,11 +60,10 @@
                       >
                         {{ discoveries[discoveryId]["description"] }}
                       </p>
-                      <a
+                      <NuxtLink
                         v-if="discoveries[discoveryId]['href']"
-                        :href="discoveries[discoveryId]['href']"
+                        :to="discoveries[discoveryId]['href']"
                         target="_blank"
-                        rel="noopener"
                         class="flex items-center transition text-space-cyan hover:underline hover:text-space-cyan-lighter mt-5 outline-none"
                       >
                         More info in the article
@@ -74,7 +73,7 @@
                         <IconArrowTopRightOnSquare
                           class="w-5 h-5 stroke-2 ml-1"
                         />
-                      </a>
+                      </NuxtLink>
                     </div>
                     <div
                       v-if="discoveries[discoveryId]['image']"
@@ -101,20 +100,7 @@
                 class="text-gray-500 transition cursor-pointer p-3 hover:bg-space-gray hover:text-gray-400 rounded-full outline-none absolute right-0 top-0 sm:right-3 sm:top-3"
                 @click="open = false"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1"
-                  stroke="currentColor"
-                  class="w-8 h-8 sm:w-12 sm:h-12"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <XMarkIcon class="w-8 h-8 sm:w-12 sm:h-12" />
               </button>
             </DialogPanel>
           </TransitionChild>
@@ -288,11 +274,6 @@
               </p>
               <h3 class="font-bold text-xl">Q4</h3>
               <p>We’re excited for this quarter. Stay tuned for more info.</p>
-              <!-- <ul class="list-disc pl-4">
-                <li>Swanky Suite and projects</li>
-                <li>Token economics</li>
-                <li>Decentralized tooling</li>
-              </ul> -->
             </div>
           </div>
         </div>
@@ -307,6 +288,7 @@
 </template>
 
 <script setup lang="ts">
+import { XMarkIcon } from "@heroicons/vue/24/outline";
 import { ref } from "vue";
 import {
   Dialog,
@@ -353,7 +335,7 @@ const clickAction = (discovery: string) => {
 };
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 .kanji {
   background: linear-gradient(
     180deg,
@@ -365,7 +347,7 @@ const clickAction = (discovery: string) => {
   );
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
-  @apply text-space-gray-dark;
+  @apply text-space-gray-dark font-black;
 }
 .popup-link {
   @apply text-space-cyan hover:underline cursor-pointer transition hover:text-space-cyan-lighter;

@@ -4,7 +4,7 @@
       class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
     >
       <span class="sr-only">Open menu</span>
-      <IconBars3 class="h-6 w-6" aria-hidden="true" />
+      <Bars3Icon class="h-6 w-6" aria-hidden="true" />
     </PopoverButton>
 
     <teleport to="body">
@@ -24,7 +24,7 @@
             <div
               class="flex items-center justify-between px-4 py-5 sm:px-6 sm:py-8"
             >
-              <a href="/" class="block">
+              <NuxtLink to="/" class="block">
                 <img
                   class="h-10 w-auto sm:h-14"
                   src="~/assets/images/common/logo.svg"
@@ -32,38 +32,41 @@
                   width="188"
                   height="60"
                 />
-              </a>
+              </NuxtLink>
               <div class="-mr-2 sm:mr-0">
                 <PopoverButton
                   class="inline-flex items-center justify-center rounded-md p-2 text-gray-200 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
                 >
                   <span class="sr-only">Close menu</span>
-                  <IconXMark class="h-6 w-6" aria-hidden="true" />
+                  <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                 </PopoverButton>
               </div>
             </div>
             <nav class="">
               <ul class="border-b border-gray-600">
                 <li>
-                  <a
-                    href="/starmap"
+                  <NuxtLink
+                    to="/starmap"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >2023 Starmap</a
                   >
+                    2023 Starmap
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/developers"
+                  <NuxtLink
+                    to="/developers"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Developers</a
                   >
+                    Developers
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <NuxtLink
+                    to="#"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Network</a
                   >
+                    Network
+                  </NuxtLink>
                   <ul class="px-6 py-4 text-sm">
                     <li v-for="item in network" class="mb-6">
                       <span
@@ -72,41 +75,42 @@
                       >
                       <ul>
                         <li v-for="nav in item.nav">
-                          <a
+                          <NuxtLink
                             class="inline-block py-2 text-white hover:underline transition hover:text-space-cyan-lighter"
-                            :href="nav.href"
+                            :to="nav.href"
                             target="_blank"
-                            rel="noopener"
                           >
                             {{ nav.label }}
                             <IconArrowTopRightOnSquare
                               class="w-4 h-4 inline-block stroke-2"
                             />
-                          </a>
+                          </NuxtLink>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/community"
+                  <NuxtLink
+                    to="/community"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Community</a>
+                  >
+                    Community
+                  </NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/japan"
+                  <NuxtLink
+                    to="/japan"
                     class="text-white block border-t border-gray-600 px-6 py-5"
-                    >Japan</a
                   >
+                    Japan
+                  </NuxtLink>
                 </li>
               </ul>
               <div class="py-12 px-6">
                 <Button
                   href="https://portal.astar.network/"
                   target="_blank"
-                  rel="noopener"
                   size="lg"
                   class="w-full"
                 >
@@ -123,6 +127,7 @@
 </template>
 
 <script setup lang="ts">
+import { XMarkIcon, Bars3Icon } from "@heroicons/vue/24/outline";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 
 interface Network {

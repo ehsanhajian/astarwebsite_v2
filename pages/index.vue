@@ -1,98 +1,92 @@
 <template>
-  <div class="relative">
-    <div class="banner--hiring">
-      <a href="https://angel.co/company/astar-network" target="_blank" rel="noopener" class="link--hiring">
-        We are hiring! <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
-      </a>
-    </div>
-    <div class="bg-black">
-      <div class="absolute z-0 w-screen h-screen flex items-center">
-        <ScrollParallax :speed="0.25">
-          <video webkit-playsinline playsinline muted autoplay loop>
-            <source src="~/assets/videos/astar.mp4" type="video/mp4" />
-          </video>
-        </ScrollParallax>
+  <NuxtLayout name="default">
+    <template #space>
+      <div class="banner--hiring">
+        <NuxtLink
+          to="https://angel.co/company/astar-network"
+          target="_blank"
+          class="link--hiring"
+        >
+          We are hiring!
+          <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+        </NuxtLink>
       </div>
-      <div class="space-gradient mix-blend-screen">
-        <img
-          class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-cloud.png"
-          alt=""
-          width="1728"
-          height="1281"
-        />
-        <img
-          class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
-          alt=""
-          width="1728"
-          height="1728"
-        />
-        <HomeHero />
-        <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">
-          <HomeWelcome />
+      <div class="bg-black">
+        <div class="absolute z-0 w-screen h-screen flex items-center">
+          <ScrollParallax :speed="0.25">
+            <video webkit-playsinline playsinline muted autoplay loop>
+              <source src="~/assets/videos/astar.mp4" type="video/mp4" />
+            </video>
+          </ScrollParallax>
         </div>
-      </div>
-    </div>
-
-    <HomeGateway />
-
-    <HomeBecomeAStar class="pt-32 sm:pt-64 pb-32 sm:pb-64" />
-
-    <HomeRecommendedReading class="pb-24" />
-
-    <div class="relative z-10">
-      <img
-        class="w-full"
-        src="~/assets/images/common/cloud.svg"
-        alt=""
-        width="2000"
-        height="464"
-      />
-      <div class="bg-white">
-        <div class="sky-gradient">
-          <div class="sky-gradient-inner">
-            <HomeFeatures class="pt-12 pb-32 sm:pb-56" />
-            <HomeBackers />
-            <img
-              class="w-full"
-              src="~/assets/images/home/footer-sky.svg"
-              alt=""
-              width="1728"
-              height="290"
-            />
-            <img
-              class="w-full"
-              src="~/assets/images/home/footer-landscape.svg"
-              alt=""
-              width="1728"
-              height="220"
-            />
-          </div>
-        </div>
-        <div class="footer">
-          <div class="footer-inner pt-12 sm:pt-28">
-            <Footer page="home" />
+        <div class="space-gradient mix-blend-screen">
+          <img
+            class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
+            src="~/assets/images/common/space-cloud.png"
+            alt=""
+            width="1728"
+            height="1281"
+          />
+          <img
+            class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
+            src="~/assets/images/common/space-stars.svg"
+            alt=""
+            width="1728"
+            height="1728"
+          />
+          <HomeHero />
+          <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">
+            <HomeWelcome />
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
+      <HomeGateway />
+
+      <HomeBecomeAStar class="pt-32 sm:pt-64 pb-32 sm:pb-64" />
+
+      <HomeRecommendedReading class="pb-24" />
+    </template>
+
+    <template #earth>
+      <div class="sky-gradient">
+        <div class="sky-gradient-inner">
+          <HomeFeatures class="pt-12 pb-32 sm:pb-56" />
+          <HomeBackers />
+          <img
+            class="w-full"
+            src="~/assets/images/home/footer-sky.svg"
+            alt=""
+            width="1728"
+            height="290"
+          />
+          <img
+            class="w-full"
+            src="~/assets/images/home/footer-landscape.svg"
+            alt=""
+            width="1728"
+            height="220"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-inner pt-12 sm:pt-28">
+          <Footer color="light" />
+        </div>
+      </div>
+    </template>
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 definePageMeta({
-  layout: "home",
-  pageTitle: "Home",
-  slug: "",
-  description:
-    "Astar is a scalable decentralised blockchain for next big Web3 innovations.",
+  layout: false,
 });
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 .banner--hiring {
   background: rgba(255, 255, 255, 0.85);
   position: absolute;
@@ -109,7 +103,12 @@ definePageMeta({
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 90deg, #e6007a -5.88%, #703ac2 15.42%, #0070eb 40.77% );
+  background: linear-gradient(
+    90deg,
+    #e6007a -5.88%,
+    #703ac2 15.42%,
+    #0070eb 40.77%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: underline;

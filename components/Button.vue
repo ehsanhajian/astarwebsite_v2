@@ -1,7 +1,7 @@
 <template>
-  <a v-if="href !== ''" :class="classes" :href="href">
+  <NuxtLink v-if="href !== ''" :class="classes" :to="href">
     <span><slot>Button</slot></span>
-  </a>
+  </NuxtLink>
   <button v-else :class="classes" type="button">
     <span><slot>Button</slot></span>
   </button>
@@ -39,7 +39,7 @@ const classes = computed(() => ({
 }));
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .btn {
   @apply shadow font-medium transition-all inline-block hover:cursor-pointer;
 }
