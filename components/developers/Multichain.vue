@@ -17,8 +17,7 @@
           <span>Multichain Future</span>
         </h2>
         <p class="text-center lg:text-left">
-          Astar Network will be the go-to blockchain for Web3 and beyond by
-          focusing on the key aspect of interoperability.
+          Astar Network will be the go-to blockchain for Web3 and beyond by focusing on the key aspect of interoperability.
         </p>
       </div>
       <ul class="grid gap-12 lg:ml-28">
@@ -69,3 +68,5 @@ const future = [
   },
 ];
 </script>
+
+<style scoped lang="scss"></style>

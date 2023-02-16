@@ -1,7 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <Header />
-    <slot name="space" />
+    <slot />
     <div class="relative z-10">
       <img
         class="w-full"
@@ -11,7 +11,7 @@
         height="464"
       />
       <div class="bg-white">
-        <slot name="earth" />
+        <Footer />
       </div>
     </div>
   </div>
@@ -21,30 +21,21 @@
 const route = useRoute();
 
 const meta = {
-  title: "Astar Network - The Future of Smart Contracts for Multichain",
+  title: "Astar Network - The Future of Smart Contracts for Multichain.",
   siteName: "Astar Network",
   url: "https://astar.network",
   ogImage: "https://astar.network/social-preview.png",
   twitter: "@AstarNetwork",
-  description:
-    "Astar is a scalable decentralised blockchain for next big Web3 innovations",
 };
 
-const title = route.meta.title
-  ? `${route.meta.title} | ${meta.title}`
-  : meta.title;
-const url = route.meta.slug ? `${meta.url}/${route.meta.slug}` : meta.url;
-const description = route.meta.description
-  ? route.meta.description
-  : meta.description;
-
 useHead({
-  title: title,
+  title: `${route.meta.pageTitle} | ${meta.title}`,
+  charset: "utf-8",
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: url,
+      href: `${meta.url}/${route.meta.slug}`,
     },
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
   ],
@@ -52,7 +43,7 @@ useHead({
     lang: "en",
   },
   meta: [
-    { name: "description", content: description },
+    { name: "description", content: route.meta.description },
     // Twitter
     {
       hid: "twitter:card",
@@ -63,17 +54,17 @@ useHead({
     {
       hid: "twitter:url",
       name: "twitter:url",
-      content: url,
+      content: `${meta.url}/${route.meta.slug}`,
     },
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: title,
+      content: `${route.meta.pageTitle} | ${meta.title}`,
     },
     {
       hid: "twitter:description",
       name: "twitter:description",
-      content: description,
+      content: route.meta.description,
     },
     {
       hid: "twitter:image",
@@ -96,12 +87,12 @@ useHead({
     {
       hid: "og:title",
       property: "og:title",
-      content: title,
+      content: `${route.meta.pageTitle} | ${meta.title}`,
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: description,
+      content: route.meta.description,
     },
     {
       hid: "og:image",
@@ -121,9 +112,3 @@ useHead({
   ],
 });
 </script>
-
-<style lang="postcss">
-body {
-  @apply text-gray-200 bg-space-gray-dark;
-}
-</style>

@@ -5,12 +5,22 @@
     </h2>
 
     <div class="mb-12 sm:mb-16">
-      <NuxtLink
+      <a
         class="group sm:flex items-center"
-        :to="`https://www.youtube.com/watch?v=${videos[0].id}`"
+        :href="`https://www.youtube.com/watch?v=${videos[0].id}`"
         target="_blank"
+        rel="noopener"
       >
         <div class="sm:mr-5" data-aos="flip-left">
+          <!-- <nuxt-img
+            format="webp"
+            quality="90"
+            :src="`http://img.youtube.com/vi/${videos[0].id}/maxresdefault.jpg`"
+            :alt="videos[0].title"
+            class="w-100 rounded-3xl group-hover:brightness-125"
+            width="1280"
+            height="720"
+          /> -->
           <img
             :src="`http://img.youtube.com/vi/${videos[0].id}/maxresdefault.jpg`"
             :alt="videos[0].title"
@@ -30,23 +40,33 @@
             <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
-      </NuxtLink>
+      </a>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
       <template v-for="(video, index) in videos">
         <div v-if="index !== 0">
-          <NuxtLink
+          <a
             class="group block"
-            :to="`https://www.youtube.com/watch?v=${video.id}`"
+            :href="`https://www.youtube.com/watch?v=${video.id}`"
             :class="index === 0 ? 'flex items-center' : ''"
             target="_blank"
+            rel="noopener"
           >
             <div
               :class="index === 0 ? 'mr-5' : ''"
               data-aos="flip-left"
               :data-aos-delay="index * 100"
             >
+              <!-- <nuxt-img
+                format="webp"
+                quality="90"
+                :src="`http://img.youtube.com/vi/${video.id}/maxresdefault.jpg`"
+                :alt="video.title"
+                class="w-100 rounded-3xl group-hover:brightness-125"
+                width="1280"
+                height="720"
+              /> -->
               <img
                 :src="`http://img.youtube.com/vi/${video.id}/maxresdefault.jpg`"
                 :alt="video.title"
@@ -69,7 +89,7 @@
                 <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
               </span>
             </div>
-          </NuxtLink>
+          </a>
         </div>
       </template>
     </div>
@@ -77,8 +97,9 @@
     <div class="text-center mt-12 sm:mt-20">
       <Button
         size="lg"
-        to="https://www.youtube.com/c/AstarNetwork"
+        href="https://www.youtube.com/c/AstarNetwork"
         target="_blank"
+        rel="noopener"
       >
         YouTube
         <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
@@ -107,3 +128,9 @@ const videos = [
   },
 ];
 </script>
+
+<style scoped lang="postcss">
+/* ul li:nth-child(1) {
+  grid-column: 1/4;
+} */
+</style>

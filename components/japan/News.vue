@@ -21,14 +21,15 @@
             class="w-36 shrink-0 block text-gray-400 text-sm sm:text-base"
             >{{ item.publishedDate }}</time
           >
-          <NuxtLink
+          <a
             v-if="item.href !== ''"
-            :to="item.href"
+            :href="item.href"
             target="_blank"
+            rel="noopener"
             class="hover:underline transition hover:text-space-cyan-light"
           >
             {{ item.text }}
-          </NuxtLink>
+          </a>
           <span v-else>
             {{ item.text }}
           </span>
@@ -82,3 +83,5 @@ const news = [
   },
 ];
 </script>
+
+<style scoped lang="scss"></style>

@@ -70,7 +70,6 @@ module.exports = {
         'sans': ['"Inter"', ...defaultTheme.fontFamily.sans],
         'mono': ['"Roboto Mono"', ...defaultTheme.fontFamily.mono],
         'jp': ['"Noto Sans JP"', ...defaultTheme.fontFamily.sans],
-        'roboto': ['"Roboto"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

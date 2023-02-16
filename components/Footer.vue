@@ -1,13 +1,13 @@
 <template>
   <footer
     class="mx-auto max-w-6xl pb-12 px-4 sm:px-6 lg:pb-16"
-    :class="color === 'light' ? 'text-white' : 'text-gray-500'"
+    :class="page === 'home' ? 'text-white' : 'text-gray-500'"
   >
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <div v-for="category in nav">
         <h3
           class="font-medium uppercase"
-          :class="color === 'light' ? 'text-white' : 'text-space-gray-dark'"
+          :class="page === 'home' ? 'text-white' : 'text-space-gray-dark'"
         >
           {{ category.name }}
         </h3>
@@ -17,22 +17,22 @@
             :key="item.name"
             class="leading-snug"
           >
-            <NuxtLink
-              :to="item.href"
-              :target="item.href.includes('https') ? '_blank' : '_self'"
+            <a
+              :href="item.href"
+              target="_blank"
+              rel="noopener"
               class="text-tiny hover:underline transition"
               :class="
-                color === 'light'
+                page === 'home'
                   ? 'text-gray-200 hover:text-gray-50'
                   : 'text-gray-500 hover:text-space-gray-dark'
               "
             >
               {{ item.name }}
               <IconArrowTopRightOnSquare
-                v-if="item.href.includes('https')"
                 class="w-4 h-4 inline-block stroke-2"
               />
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </div>
@@ -41,34 +41,35 @@
     <div
       class="mt-16 border-t pt-8 lg:flex items-center justify-between"
       :class="
-        color === 'light'
+        page === 'home'
           ? 'text-white border-white border-opacity-30'
           : 'border-gray-200'
       "
     >
       <div class="flex space-x-6 order-2 justify-center">
-        <NuxtLink
+        <a
           v-for="item in social"
           target="_blank"
+          rel="noopener"
           :key="item.name"
-          :to="item.href"
+          :href="item.href"
           class="transition"
           :class="
-            color === 'light'
+            page === 'home'
               ? 'text-gray-200 hover:text-gray-50'
               : 'text-gray-400 hover:text-gray-500'
           "
         >
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-        </NuxtLink>
+        </a>
       </div>
       <p
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
-        :class="color === 'light' ? 'text-gray-200' : 'text-gray-400'"
+        :class="page === 'home' ? 'text-gray-200' : 'text-gray-400'"
       >
-        &copy; 2023 Astar Network - The Future of Smart Contracts for
-        Multichain. All Rights Reserved.
+        &copy; 2022 Astar Network - The Future of Smart Contracts for Multichain.
+        All Rights Reserved.
       </p>
     </div>
   </footer>
@@ -83,7 +84,7 @@ const Github = resolveComponent("IconGithub");
 const Youtube = resolveComponent("IconYoutube");
 
 interface Props {
-  color?: string;
+  page?: string;
 }
 const props = defineProps<Props>();
 
@@ -99,13 +100,13 @@ const nav = [
   {
     name: "Apply",
     nav: [
-      {
-        name: "Careers",
-        href: "https://angel.co/company/astar-network",
+      { 
+        name: "Careers", 
+        href: "https://angel.co/company/astar-network", 
       },
       {
         name: "Astar Japan Lab",
-        href: "/japan",
+        href: "https://astar.network/japan/",
       },
       {
         name: "Astar Space Lab",
@@ -181,3 +182,5 @@ const social = [
   },
 ];
 </script>
+
+<style scoped lang="postcss"></style>

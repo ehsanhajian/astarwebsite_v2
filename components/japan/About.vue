@@ -49,3 +49,5 @@ const advantages = [
   },
 ];
 </script>
+
+<style scoped lang="scss"></style>

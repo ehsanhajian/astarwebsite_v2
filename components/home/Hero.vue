@@ -9,8 +9,7 @@
         The Future of Smart Contracts for Multichain
       </h1>
       <p class="sm:text-xl mt-6 sm:mt-10 mb-8 sm:mb-14">
-        Astar is a scalable decentralized blockchain for the next big Web3
-        innovations.
+        Astar is a scalable decentralized blockchain for the next big Web3 innovations.
       </p>
       <div class="sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4">
         <Button
@@ -19,6 +18,7 @@
           size="lg"
           href="https://docs.astar.network/"
           target="_blank"
+          rel="noopener"
           class="w-[280px] sm:w-auto"
         >
           Documentation
@@ -29,6 +29,7 @@
           size="lg"
           href="https://portal.astar.network/"
           target="_blank"
+          rel="noopener"
           class="w-[280px] sm:w-auto"
         >
           Launch App
@@ -38,3 +39,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import Button from "~/components/Button.vue";
+</script>

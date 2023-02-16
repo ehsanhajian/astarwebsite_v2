@@ -31,11 +31,12 @@
               </h3>
             </div>
           </span>
-          <NuxtLink
+          <a
             v-else
-            :to="item.href"
+            :href="item.href"
             class="block hover:brightness-125"
             target="_blank"
+            rel="noopener"
           >
             <img
               class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
@@ -50,7 +51,7 @@
                 <span class="whitespace-nowrap">-></span>
               </h3>
             </div>
-          </NuxtLink>
+          </a>
         </li>
       </template>
     </ul>
@@ -91,3 +92,5 @@ const building = [
   },
 ];
 </script>
+
+<style scoped lang="scss"></style>

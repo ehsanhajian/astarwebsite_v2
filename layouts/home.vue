@@ -1,37 +1,29 @@
 <template>
-  <div class="bg-white text-gray-600 font-roboto">
-    <slot name="hero" />
-    <slot name="main" />
-    <IncubationFooter />
+  <div class="overflow-hidden">
+    <Header />
+    <slot />
   </div>
 </template>
 
 <script setup lang="ts">
 const route = useRoute();
-const { t } = useI18n();
 
 const meta = {
-  url: "https://astar.network/incubation",
-  ogImage: "https://astar.network/social-preview-incubation.png",
+  title: "Astar Network - The Future of Smart Contracts for Multichain.",
+  siteName: "Astar Network",
+  url: "https://astar.network",
+  ogImage: "https://astar.network/social-preview.png",
   twitter: "@AstarNetwork",
 };
 
-const site_name = t("meta.title");
-const title = route.meta.title
-  ? `${t(route.meta.title)} | ${t("meta.title")}`
-  : t("meta.title");
-const url = route.meta.slug ? `${meta.url}/${route.meta.slug}` : meta.url;
-const description = route.meta.description
-  ? t(route.meta.description)
-  : t("meta.description");
-
 useHead({
-  title: title,
+  title: `${route.meta.pageTitle} | ${meta.title}`,
+  charset: "utf-8",
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: url,
+      href: `${meta.url}/${route.meta.slug}`,
     },
     { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
   ],
@@ -39,8 +31,7 @@ useHead({
     lang: "en",
   },
   meta: [
-    { name: "description", content: description },
-
+    { name: "description", content: route.meta.description },
     // Twitter
     {
       hid: "twitter:card",
@@ -51,17 +42,17 @@ useHead({
     {
       hid: "twitter:url",
       name: "twitter:url",
-      content: url,
+      content: `${meta.url}/${route.meta.slug}`,
     },
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: title,
+      content: `${route.meta.pageTitle} | ${meta.title}`,
     },
     {
       hid: "twitter:description",
       name: "twitter:description",
-      content: description,
+      content: route.meta.description,
     },
     {
       hid: "twitter:image",
@@ -73,23 +64,23 @@ useHead({
     {
       hid: "og:site_name",
       property: "og:site_name",
-      content: site_name,
+      content: meta.siteName,
     },
     { hid: "og:type", property: "og:type", content: "website" },
     {
       hid: "og:url",
       property: "og:url",
-      content: url,
+      content: meta.url,
     },
     {
       hid: "og:title",
       property: "og:title",
-      content: title,
+      content: `${route.meta.pageTitle} | ${meta.title}`,
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: description,
+      content: route.meta.description,
     },
     {
       hid: "og:image",
@@ -104,8 +95,11 @@ useHead({
     {
       hid: "og:image:alt",
       property: "og:image:alt",
-      content: site_name,
+      content: meta.title,
     },
   ],
+  script: [{ src: "https://js.hsforms.net/forms/v2.js" }],
 });
 </script>
+
+<style lang="postcss"></style>
