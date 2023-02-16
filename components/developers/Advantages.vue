@@ -41,7 +41,8 @@ const advantages = [
   },
   {
     name: "Secure",
-    description: "Astar Network uses the shared security of the Polkadot Relay Chain.",
+    description:
+      "Astar Network uses the shared security of the Polkadot Relay Chain.",
     image: "advantages-secure.svg",
   },
   {
@@ -51,10 +52,9 @@ const advantages = [
   },
   {
     name: "Build2Earn",
-    description: "Use our dApp staking mechanism to support your development on Astar Network.",
+    description:
+      "Use our dApp staking mechanism to support your development on Astar Network.",
     image: "advantages-income.svg",
   },
 ];
 </script>
-
-<style scoped lang="scss"></style>

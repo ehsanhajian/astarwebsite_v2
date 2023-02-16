@@ -13,7 +13,6 @@
         <Button
           href="https://astarjapan.substack.com/about"
           target="_blank"
-          rel="noopener"
           size="xl"
         >
           Subscribe
@@ -22,7 +21,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped lang="postcss"></style>

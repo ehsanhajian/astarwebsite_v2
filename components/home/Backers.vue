@@ -139,5 +139,3 @@ const logos = [
   },
 ];
 </script>
-
-<style scoped lang="postcss"></style>

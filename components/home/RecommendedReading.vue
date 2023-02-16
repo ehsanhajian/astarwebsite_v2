@@ -28,15 +28,14 @@
               {{ item.title }}
             </h3>
             <p class="my-3">{{ item.description }}</p>
-            <a
-              :href="item.href"
+            <NuxtLink
+              :to="item.href"
               target="_blank"
-              rel="noopener"
               class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition flex items-center"
             >
               Learn more<span class="sr-only"> about {{ item.title }}</span>
               <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
-            </a>
+            </NuxtLink>
           </div>
         </li>
       </template>
@@ -49,15 +48,14 @@
         <h3 class="font-bold text-2xl leading-tight">Receive newsletter</h3>
         <p>
           Unsubscribe at any time.
-          <a
-            href="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
+          <NuxtLink
+            to="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
             target="_blank"
-            rel="noopener"
             class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition whitespace-nowrap inline-flex items-center"
           >
             Privacy policy
             <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
-          </a>
+          </NuxtLink>
         </p>
       </div>
       <form class="sm:flex">
@@ -71,7 +69,7 @@
           class="mb-2 sm:mb-0 w-full rounded-xl border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-space-sky focus:ring-space-sky sm:max-w-xs mr-2 text-gray-900"
           placeholder="Enter your email"
         />
-        <Button href="#" class="w-full sm:w-auto">Subscribe</Button>
+        <Button class="w-full sm:w-auto">Subscribe</Button>
       </form>
     </div> -->
   </div>
@@ -88,8 +86,7 @@ const reading = [
   },
   {
     title: "$ASTR Tokenomics",
-    description:
-      "$ASTR governance, incentives and features that unlock Web3.",
+    description: "$ASTR governance, incentives and features that unlock Web3.",
     href: "https://docs.astar.network/docs/about/token-economics/economics",
     image: "reading-token.svg",
   },
@@ -102,5 +99,3 @@ const reading = [
   },
 ];
 </script>
-
-<style scoped lang="postcss"></style>
