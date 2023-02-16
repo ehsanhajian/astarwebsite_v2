@@ -58,14 +58,14 @@
       "incubation": {
         "title": "Incubation",
         "duration": "3 months",
-        "dates": "March 15th to Mid June",
+        "dates": "Mid March to June 18th",
         "description": "This phase includes sessions from the world's best innovators, mentoring and feedback on strategies and development assistance from Sony Network Communications and Astar Foundation. We will match Sony's resources with Web3 startup technologies to create use cases.",
         "description_short": "During the incubation program, we will provide sessions with global VCs and Web3 companies, mentoring on business and technology strategies, and matching with resources from the Sony group."
       },
       "demo": {
         "title": "Demo Day",
-        "duration": "1 month",
-        "dates": "Feb 17th to March 6th",
+        "duration": "",
+        "dates": "June 18th",
         "description": "Demo Day will be held in June at Sony Group Corporation Headquarters in Tokyo during Japan Blockchain. About 200 people, including companies and investors participating in the incubation program, will attend.",
         "description_short": "Demo day will be held in June at Sony Group Corporation Headquarters in Tokyo."
       }
