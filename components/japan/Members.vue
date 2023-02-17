@@ -492,6 +492,16 @@ const members = [
         image: "Sense It Smart .jpg",
         href: "https://www.senseitsmart.com",
       },
+      {
+       name: "goeswell",
+       image: "goezwell.png",
+       href: "https://goeswell.co.jp/",
+      },
+      {
+       name: "COSMIZE",
+       image: "COSMIZE.png",
+       href: "https://app.cosmize.io/",
+      },
     ],
   },
   {
