@@ -497,6 +497,11 @@ const members = [
        image: "goezwell.png",
        href: "https://goeswell.co.jp/",
       },
+      {
+       name: "COSMIZE",
+       image: "COSMIZE.png",
+       href: "https://app.cosmize.io/",
+      },
     ],
   },
   {
