@@ -47,7 +47,7 @@ const developers = [
     name: "Developer",
     image: "become-developer.svg",
     description: "Create a dApp or infrastructure on our blockchain.",
-    href: "https://docs.astar.network/docs/quickstart/",
+    href: "https://docs.astar.network/docs/build/",
     color: "text-space-pink hover:text-space-pink-lighter",
   },
   {
