@@ -502,6 +502,11 @@ const members = [
        image: "COSMIZE.png",
        href: "https://app.cosmize.io/",
       },
+       {
+        name: "KiHeiTai",
+        image: "KiHeiTai.png",
+        href: "https://kiheitai.co.jp/ja/homepage/",
+      },
     ],
   },
   {
@@ -546,11 +551,6 @@ const members = [
         name: "Rodos Alchemy Star",
         image: "rodos.png",
         href: "http://rodos.tech/",
-      },
-      {
-        name: "KiHeiTai",
-        image: "KiHeiTai.png",
-        href: "https://kiheitai.co.jp/ja/homepage/",
       },
     ],
   },
