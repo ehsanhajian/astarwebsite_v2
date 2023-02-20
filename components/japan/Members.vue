@@ -547,6 +547,11 @@ const members = [
         image: "rodos.png",
         href: "http://rodos.tech/",
       },
+      {
+        name: "KiHeiTai",
+        image: "KiHeiTai.png",
+        href: "https://kiheitai.co.jp/ja/homepage/",
+      },
     ],
   },
 ];
