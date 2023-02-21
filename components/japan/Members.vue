@@ -151,7 +151,7 @@ const members = [
         name: "SOLIZE",
         image: "SOLIZE.png",
         href: "https://www.solize.com/",
-       },
+      },
       {
         name: "F Ventures",
         image: "f-ventures.png",
@@ -324,7 +324,7 @@ const members = [
       },
       {
         name: "LATEGRA,Inc.",
-        image: "lategra.png",
+        image: "lategra-horizontal.png",
         href: "https://lategra.co.jp/",
       },
       {
@@ -493,14 +493,14 @@ const members = [
         href: "https://www.senseitsmart.com",
       },
       {
-       name: "goeswell",
-       image: "goezwell.png",
-       href: "https://goeswell.co.jp/",
+        name: "goeswell",
+        image: "goezwell.png",
+        href: "https://goeswell.co.jp/",
       },
       {
-       name: "COSMIZE",
-       image: "COSMIZE.png",
-       href: "https://app.cosmize.io/",
+        name: "COSMIZE",
+        image: "COSMIZE.png",
+        href: "https://app.cosmize.io/",
       },
     ],
   },
