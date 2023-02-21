@@ -66,7 +66,7 @@
                         target="_blank"
                         class="flex items-center transition text-space-cyan hover:underline hover:text-space-cyan-lighter mt-5 outline-none"
                       >
-                        More info in the article
+                        Learn more about this discovery
                         <span class="sr-only">
                           about {{ discoveries[discoveryId]["title"] }}
                         </span>
@@ -161,7 +161,11 @@
                     Astar.js
                   </span>
                 </li>
-                <li>WASM tooling and showcase dapps</li>
+                <li>
+                  <span @click="clickAction('meshNetworks')" class="popup-link">
+                    Mesh Networks
+                  </span>
+                </li>
                 <li>XCM smart contracts</li>
                 <li>dApp staking</li>
               </ul>
@@ -320,6 +324,13 @@ const discoveries: { [index: string]: Discovery } = {
       "Astar.js is an essential tool for anyone looking to build a dApp on the Astar network. Its modular design and comprehensive feature set make it easy for developers to create powerful and scalable decentralised applications. In addition to the many packages it contains, it also supports EVM and substrate native structures. Whether you're a seasoned blockchain developer or just starting out, Astar.js is a valuable tool to have in your toolkit.",
     href: "https://medium.com/astar-network/overview-23e6eaa321c2",
     image: "astarjs.svg",
+  },
+  meshNetworks: {
+    title: "Mesh Networks",
+    description:
+      "Connect to any dApp from anywhere! Our mesh network distributes the infrastructure that allows you to access the blockchain. Astar mesh network is a peer-to-peer (P2P) model to create a secure, shared environment of RPC nodes for you to interact with the network. The nodes send traffic between themselves rather than through a central server.",
+    href: "#",
+    image: "mesh-networks.svg",
   },
   comingSoon: {
     title: "Coming soon!",
