@@ -502,6 +502,16 @@ const members = [
        image: "COSMIZE.png",
        href: "https://app.cosmize.io/",
       },
+       {
+        name: "KiHeiTai",
+        image: "KiHeiTai.png",
+        href: "https://kiheitai.co.jp/ja/homepage/",
+      },
+      {
+       name: "ORPHE",
+       image: "orphe.png",
+       href: "https://orphe.io/",
+      },
     ],
   },
   {
