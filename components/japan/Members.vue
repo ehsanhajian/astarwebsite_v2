@@ -512,6 +512,11 @@ const members = [
        image: "orphe.png",
        href: "https://orphe.io/",
       },
+      {
+       name: "EXGroundswell",
+       image: "EXGroundswell.png",
+       href: "https://www.exgroundswell.com/",
+      },
     ],
   },
   {
