@@ -47,6 +47,7 @@ const logos = [
   { name: "BwareLabs", image: "bwarelabs.svg" },
   { name: "Blockdeamon", image: "blockdaemon.svg" },
   { name: "OnFinality", image: "onfinality.svg" },
+  { name: "SubWallet", image: "subwallet.png" },
   { name: "Talisman", image: "talisman.svg" },
   { name: "Metamask", image: "metamask.svg" },
   { name: "Polkadot.js", image: "polkadot.svg" },
