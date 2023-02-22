@@ -57,6 +57,20 @@ export const mentors = [
   },
   {
     index: false,
+    name: "Alex Shin",
+    title: "Founder Shinlabs.xyz",
+    profile:
+      "previously cofounder/Partner at Hashed, advisor to Solana, Avalabs, Republic, ArringtonCapital, DSRV etc. EIR at SamsungNEXT. Crypto VC, product tinkerer. Passionate about keeping Asia competitive in the web3 category.",
+    image: "alex.jpg",
+    expertise: ["Sales/IR", "Strategy", "Product"],
+    links: {
+      website: "",
+      linkedin: "https://www.linkedin.com/in/alexhashed/",
+      twitter: "https://twitter.com/AlexShin",
+    },
+  },
+  {
+    index: false,
     name: "Andrew Vranjes",
     title: "VP of Sales and GM for APAC at Blockdaemon",
     profile:
@@ -82,10 +96,7 @@ export const mentors = [
     profile:
       "Bill Laboon is the Head of Education and Grants at the Web3 Foundation, after spending the previous five years teaching Computer Science at the University of Pittsburgh.  He is the author of two books: A Friendly Introduction to Software Testing, an undergraduate textbook; and Strength in Numbers, a near-future novel set in a world in which cryptocurrency has eliminated traditional money.",
     image: "bill.jpg",
-    expertise: [
-      "Polkadot",
-      "Technical Education",
-    ],
+    expertise: ["Polkadot", "Technical Education"],
     links: {
       website: "https://web3.foundation/",
       linkedin: "https://www.linkedin.com/in/billlaboon/",
@@ -140,6 +151,20 @@ export const mentors = [
   },
   {
     index: false,
+    name: "Michael Smith Jr.",
+    title: "GM, Microsoft for Startups APAC",
+    profile:
+      "Michael Smit Jr. is the current Microsoft for Startups APAC GM leading a team to empower and service the Startups and Digital Native businesses primarily across ASEAN with the complete Microsoft Platform. Prior to Microsoft, Michael lead the Solutions Architecture team in APJ for AWS Startup segment. Before AWS, Michael was a Partner at SeedPlus, a 20M USD fund that is in investor in many notable (Homage, Qoala, Neuron Mobility, Appknox, CardUp, Engage Rocket, Kyklo, Lapasar, Moglix, Rukita, Travelstop)  Startups across ASEAN. Before becoming a VC, Michael held numerous leadership roles in regional Startups and was part of the original tech giant in ASEAN – Yahoo.",
+    image: "michael.jpg",
+    expertise: ["Infra", "Finance", "Strategy", "Sales", "Product", "Org"],
+    links: {
+      website: "",
+      linkedin: "https://www.linkedin.com/in/michaelsmithsgp/",
+      twitter: "https://twitter.com/dreampipe",
+    },
+  },
+  {
+    index: false,
     name: "Roy",
     title: "Partner at HashKey Capital",
     profile:
@@ -159,6 +184,20 @@ export const mentors = [
   },
   {
     index: false,
+    name: "Santiago Balaguer",
+    title: "Parity BD Lead",
+    profile:
+      "Santiago is an Argentinian Engineer working as BD Lead at Parity. In his role, he helps parachain projects develop in order to successfully connect to Polkadot.",
+    image: "santiago.jpg",
+    expertise: ["Strategy", "Product"],
+    links: {
+      website: "",
+      linkedin: "",
+      twitter: "https://twitter.com/SantiBalaguer",
+    },
+  },
+  {
+    index: false,
     name: "Vittorio Rivabella",
     title: "Lead developers experience at Alchemy",
     profile:
@@ -170,7 +209,7 @@ export const mentors = [
       "Strategy",
       "Product",
       "Community",
-      "Marketing"
+      "Marketing",
     ],
     links: {
       website: "https://www.alchemy.com/",
@@ -185,12 +224,7 @@ export const mentors = [
     profile:
       "Shi Khai leads LongHash Ventures, which specializes in bootstrapping Web3 ecosystems. LongHashX Accelerator is Asia’s first and leading Web3 accelerator, which supported >60 web3 startups and helped them raise >$150m in funding. LongHashX partners include Polkadot, Filecoin, and Axelar, and notable alumni include Astar, Xanpool, and Lit Protocol.",
     image: "wei.jpg",
-    expertise: [
-      "Multi-chain infrastructure",
-      "DAOs",
-      "Tokenomics",
-      "Strategy",
-    ],
+    expertise: ["Multi-chain infrastructure", "DAOs", "Tokenomics", "Strategy"],
     links: {
       website: "https://www.longhash.vc",
       linkedin: "https://www.linkedin.com/in/shikhai",
