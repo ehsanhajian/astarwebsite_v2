@@ -329,7 +329,7 @@ const discoveries: { [index: string]: Discovery } = {
     title: "Mesh Networks",
     description:
       "Connect to any dApp from anywhere! Our mesh network distributes the infrastructure that allows you to access the blockchain. Astar mesh network is a peer-to-peer (P2P) model to create a secure, shared environment of RPC nodes for you to interact with the network. The nodes send traffic between themselves rather than through a central server.",
-    href: "#",
+    href: "https://medium.com/astar-network/decentracademy-1-building-reliable-infrastructure-with-a-mesh-network-96737992a048",
     image: "mesh-networks.svg",
   },
   comingSoon: {
