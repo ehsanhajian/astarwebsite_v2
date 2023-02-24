@@ -91,6 +91,20 @@ export const mentors = [
   },
   {
     index: false,
+    name: "Ben Perszyk",
+    title: "Partner at Polychain",
+    profile:
+      "Ben is a partner at Polychain Capital and is primarily focused on leading venture investments into early stage categories across a number of different crypto verticals. He has deep experience investing in and working with teams in a number of Layer-1 ecosystems, as well as DeFi, interoperability protocols, L2 scaling solutions, and gaming. ",
+    image: "ben.jpg",
+    expertise: ["Strategy", "Token Economics", "Fundraising"],
+    links: {
+      website: "",
+      linkedin: "",
+      twitter: "https://twitter.com/BenPerszyk",
+    },
+  },
+  {
+    index: false,
     name: "Bill Laboon",
     title: "Head of Education and Grants at Web3 Foundation",
     profile:
