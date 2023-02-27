@@ -517,6 +517,11 @@ const members = [
        image: "EXGroundswell.png",
        href: "https://www.exgroundswell.com/",
       },
+      {
+       name: "UPBOND",
+       image: "UPBOND.png",
+       href: "https://www.upbond.io/",
+      },
     ],
   },
   {
