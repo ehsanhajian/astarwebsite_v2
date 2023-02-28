@@ -489,7 +489,7 @@ const members = [
       },
       {
         name: "Sense It Smart",
-        image: "Sense It Smart .jpg",
+        image: "Sense It Smart.jpg",
         href: "https://www.senseitsmart.com",
       },
       {
