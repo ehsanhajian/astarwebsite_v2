@@ -144,6 +144,10 @@ const nav = [
         name: "Terms of Use",
         href: "https://docs.google.com/document/d/1gxM0PEzFq7nW5VB11pMcDUaaKxfMz3BjTDtmEem_oo4/edit?usp=sharing",
       },
+      {
+        name: "Contact Us",
+        href: "/contact",
+      },
     ],
   },
 ];
