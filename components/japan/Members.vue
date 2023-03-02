@@ -178,6 +178,11 @@ const members = [
         href: "https://innovationlaw.jp/",
       },
       {
+       name: "ZeLo",
+       image: "ZeLo.jpg",
+       href: "https://zelojapan.com/",
+      },
+      {
         name: "AMT",
         image: "AMT.png",
         href: "https://www.amt-law.com/",
