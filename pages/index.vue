@@ -12,8 +12,8 @@
         </NuxtLink>
       </div>
       <div class="bg-black">
-        <div class="absolute z-0 w-screen h-screen flex items-center">
-          <ScrollParallax :speed="0.25">
+        <div class="absolute z-0 w-full h-screen flex items-center">
+          <ScrollParallax :speed="0.25" class="mx-auto">
             <video webkit-playsinline playsinline muted autoplay loop>
               <source src="~/assets/videos/astar.mp4" type="video/mp4" />
             </video>
