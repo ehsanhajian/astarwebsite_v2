@@ -19,7 +19,7 @@
               >
                 Contact Us
               </h1>
-              <p class="text-lg sm:text-xl lg:text-2xl">
+              <p class="sm:text-xl lg:text-2xl">
                 Get in touch with the Astar Network team
               </p>
             </div>
@@ -38,7 +38,7 @@
               class="h-16 w-16 mx-auto"
               aria-hidden="true"
             />
-            <h2 class="font-bold text-2xl my-2">{{ item.title }}</h2>
+            <h2 class="font-bold text-2xl sm:my-2">{{ item.title }}</h2>
             <p class="text-gray-300 mb-6">{{ item.description }}</p>
             <Button :href="item.button">
               <component
