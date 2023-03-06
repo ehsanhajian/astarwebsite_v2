@@ -80,6 +80,11 @@ export const partners = [
         image: "hashkey.svg",
         href: "https://capital.hashkey.com/",
       },
+      {
+        name: "Polychain",
+        image: "polychain.svg",
+        href: "https://polychain.capital/",
+      },
       // {
       //   name: "Parity Technologies",
       //   image: "parity.png",

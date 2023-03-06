@@ -151,7 +151,7 @@ const members = [
         name: "SOLIZE",
         image: "SOLIZE.png",
         href: "https://www.solize.com/",
-       },
+      },
       {
         name: "F Ventures",
         image: "f-ventures.png",
@@ -176,6 +176,11 @@ const members = [
         name: "So & Sato",
         image: "innovationlaw.png",
         href: "https://innovationlaw.jp/",
+      },
+      {
+       name: "ZeLo",
+       image: "ZeLo.jpg",
+       href: "https://zelojapan.com/",
       },
       {
         name: "AMT",
@@ -324,7 +329,7 @@ const members = [
       },
       {
         name: "LATEGRA,Inc.",
-        image: "lategra.png",
+        image: "LATEGRA.png",
         href: "https://lategra.co.jp/",
       },
       {
@@ -489,18 +494,38 @@ const members = [
       },
       {
         name: "Sense It Smart",
-        image: "Sense It Smart .jpg",
+        image: "Sense It Smart.jpg",
         href: "https://www.senseitsmart.com",
       },
       {
-       name: "goeswell",
-       image: "goezwell.png",
-       href: "https://goeswell.co.jp/",
+        name: "goeswell",
+        image: "goezwell.png",
+        href: "https://goeswell.co.jp/",
       },
       {
-       name: "COSMIZE",
-       image: "COSMIZE.png",
-       href: "https://app.cosmize.io/",
+        name: "COSMIZE",
+        image: "COSMIZE.png",
+        href: "https://app.cosmize.io/",
+      },
+       {
+        name: "KiHeiTai",
+        image: "KiHeiTai.png",
+        href: "https://kiheitai.co.jp/ja/homepage/",
+      },
+      {
+       name: "ORPHE",
+       image: "orphe.png",
+       href: "https://orphe.io/",
+      },
+      {
+       name: "EXGroundswell",
+       image: "EXGroundswell.png",
+       href: "https://www.exgroundswell.com/",
+      },
+      {
+       name: "UPBOND",
+       image: "UPBOND.png",
+       href: "https://www.upbond.io/",
       },
     ],
   },
