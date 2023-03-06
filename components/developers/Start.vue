@@ -62,13 +62,13 @@ const building = [
   {
     title: "Launch your EVM dApps",
     image: "building-ethereum.svg",
-    href: "https://docs.astar.network/docs/EVM/",
+    href: "https://docs.astar.network/docs/build/EVM//",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
     title: "Launch your WASM dApps",
     image: "building-wasm.svg",
-    href: "https://docs.astar.network/docs/wasm/",
+    href: "https://docs.astar.network/docs/build/wasm/",
     color: "bg-space-purple hover:bg-space-purple-lighter",
   },
   {
@@ -86,7 +86,7 @@ const building = [
   {
     title: "DApps Templates",
     image: "building-template.svg",
-    href: "https://github.com/AstarNetwork/wasm-showcase-dapps",
+    href: "https://github.com/orgs/swanky-dapps/repositories",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",
   },
 ];
