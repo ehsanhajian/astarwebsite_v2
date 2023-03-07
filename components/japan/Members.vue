@@ -478,11 +478,6 @@ const members = [
         href: "http://paimastudios.com/",
       },
       {
-        name: "LATEGRA Inc.",
-        image: "LATEGRA.png",
-        href: "https://lategra.co.jp/",
-      },
-      {
         name: "POLYGLOTS",
         image: "POLYGLOTS.png",
         href: "https://www.polyglots.net/",
