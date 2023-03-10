@@ -528,13 +528,8 @@ const members = [
        href: "https://www.upbond.io/",
       },
       {
-       name: "GEOMETRON",
-       image: "geometron.png",
-       href: "https://www.geometron.jp/",
-      },
-      {
        name: "HANNON",
-       image: "hann.jpg",
+       image: "hann.jpeg",
        href: "https://funandnatural.com/smp/product/list/58",
       },
     ],
