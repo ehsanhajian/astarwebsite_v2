@@ -532,6 +532,11 @@ const members = [
        image: "geometron.png",
        href: "https://www.geometron.jp/",
       },
+      {
+       name: "HANNON",
+       image: "hann.jpg",
+       href: "https://funandnatural.com/smp/product/list/58",
+      },
     ],
   },
   {
