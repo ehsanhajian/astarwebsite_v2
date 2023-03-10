@@ -527,6 +527,11 @@ const members = [
        image: "UPBOND.png",
        href: "https://www.upbond.io/",
       },
+      {
+       name: "GEOMETRON",
+       image: "geometron.png",
+       href: "https://www.geometron.jp/",
+      },
     ],
   },
   {
