@@ -105,6 +105,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  script: [{ src: "//embed.typeform.com/next/embed.js" }],
+});
+
 definePageMeta({
   layout: false,
   title: "Contact Us",
