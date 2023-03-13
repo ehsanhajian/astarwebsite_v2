@@ -40,19 +40,60 @@
             />
             <h2 class="font-bold text-2xl sm:my-2">{{ item.title }}</h2>
             <p class="text-gray-300 mb-6">{{ item.description }}</p>
-            <Button :href="item.button">
-              <component
-                v-if="item.slug === 'technical'"
-                :is="Discord"
-                class="h-5 w-5 mr-1.5"
-                aria-hidden="true"
-              />
-              {{ item.buttonLabel }}
-              <IconArrowTopRightOnSquare
-                v-if="item.slug === 'technical'"
-                class="w-5 h-5 ml-1 stroke-2"
-              />
-            </Button>
+
+            <template v-if="item.slug === 'marketing'">
+              <button
+                class="btn"
+                data-tf-popup="cC7Nn0Wa"
+                data-tf-opacity="100"
+                data-tf-size="100"
+                data-tf-iframe-props="title=Marketing Request"
+                data-tf-transitive-search-params
+                data-tf-medium="snippet"
+              >
+                {{ item.buttonLabel }}
+              </button>
+            </template>
+
+            <template v-else-if="item.slug === 'technical'">
+              <Button href="https://discord.gg/Z3nC9U4" target="_blank">
+                <component
+                  :is="Discord"
+                  class="h-5 w-5 mr-1.5"
+                  aria-hidden="true"
+                />
+                {{ item.buttonLabel }}
+                <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+              </Button>
+            </template>
+
+            <template v-else-if="item.slug === 'partnerships'">
+              <button
+                class="btn"
+                data-tf-popup="XcL9Ii6l"
+                data-tf-opacity="100"
+                data-tf-size="100"
+                data-tf-iframe-props="title=Partnerships"
+                data-tf-transitive-search-params
+                data-tf-medium="snippet"
+              >
+                {{ item.buttonLabel }}
+              </button>
+            </template>
+
+            <template v-else>
+              <button
+                class="btn"
+                data-tf-popup="Z9EpmvwP"
+                data-tf-opacity="100"
+                data-tf-size="100"
+                data-tf-iframe-props="title=General Inquiries"
+                data-tf-transitive-search-params
+                data-tf-medium="snippet"
+              >
+                {{ item.buttonLabel }}
+              </button>
+            </template>
           </li>
         </ul>
       </div>
@@ -81,15 +122,13 @@ const options = [
     slug: "marketing",
     title: "Marketing Request",
     description: "Interested in working together on a co-marketing campaign?",
-    button: "/contact/marketing-request",
-    buttonLabel: "Let’s Connect",
+    buttonLabel: "Let's Connect",
     icon: Marketing,
   },
   {
     slug: "partnerships",
     title: "Partnerships",
     description: "dApp staking and integrations support.",
-    button: "",
     buttonLabel: "Get support",
     icon: Partnerships,
   },
@@ -98,7 +137,6 @@ const options = [
     title: "Technical Support",
     description:
       "If you have any technical problems or questions, please ask in Discord",
-    button: "https://discord.gg/Z3nC9U4",
     buttonLabel: "Discord Channel",
     icon: Technical,
   },
@@ -107,7 +145,6 @@ const options = [
     title: "For all other Inquiries",
     description:
       "Partnership request, listing, business services, events, etc.",
-    button: "",
     buttonLabel: "Contact Us",
     icon: null,
   },
@@ -121,6 +158,27 @@ const options = [
     180deg,
     rgba(8, 16, 41, 0) 30%,
     rgba(8, 16, 41, 100) 100%
+  );
+}
+.btn {
+  @apply shadow font-medium transition-all inline-block hover:cursor-pointer text-white rounded-xl px-4 py-2;
+  background: linear-gradient(
+    120deg,
+    #e6007a -5.88%,
+    #703ac2 15.42%,
+    #0070eb 40.77%,
+    #0297fb 72.21%,
+    #0ae2ff 95.53%
+  );
+}
+.btn:hover {
+  background: linear-gradient(
+    120deg,
+    #ff1994 -5.88%,
+    #8e4fee 15.42%,
+    #3091f9 40.77%,
+    #3db1ff 72.21%,
+    #3fe9ff 95.53%
   );
 }
 </style>

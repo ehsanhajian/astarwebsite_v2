@@ -13,6 +13,7 @@ export default defineNuxtConfig({
           })(window,document,'script','dataLayer','GTM-53GS73F');`,
           type: "text/javascript",
         },
+        {src:"//embed.typeform.com/next/embed.js"}
       ],
     },
   },
