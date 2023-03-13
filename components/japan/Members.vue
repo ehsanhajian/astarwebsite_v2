@@ -153,6 +153,11 @@ const members = [
         href: "https://www.solize.com/",
       },
       {
+       name: "Deloitte Tohmatsu Consulting LLC",
+       image: "Deloitte.jpg",
+       href: "https://www2.deloitte.com/jp/ja.html",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -471,11 +476,6 @@ const members = [
         name: "Paima Studios",
         image: "paima.png",
         href: "http://paimastudios.com/",
-      },
-      {
-        name: "LATEGRA Inc.",
-        image: "LATEGRA.png",
-        href: "https://lategra.co.jp/",
       },
       {
         name: "POLYGLOTS",
