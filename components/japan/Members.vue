@@ -527,6 +527,11 @@ const members = [
        image: "UPBOND.png",
        href: "https://www.upbond.io/",
       },
+      {
+       name: "HANNON",
+       image: "hann.jpeg",
+       href: "https://funandnatural.com/smp/product/list/58",
+      },
     ],
   },
   {
