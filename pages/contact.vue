@@ -125,7 +125,7 @@ const options = [
   {
     slug: "marketing",
     title: "Marketing Request",
-    description: "Interested in working together on a co-marketing campaign?",
+    description: "Interested in working together on your creative ideas?",
     buttonLabel: "Let's Connect",
     icon: Marketing,
   },
