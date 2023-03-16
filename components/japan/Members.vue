@@ -542,6 +542,11 @@ const members = [
        image: "geometron.png",
        href: "https://www.geometron.jp/",
       },
+      {
+       name: "kyotoma",
+       image: "kyotoma.png",
+       href: "http://www.kyotoma.co.jp/",
+      },
     ],
   },
   {
