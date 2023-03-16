@@ -158,6 +158,11 @@ const members = [
        href: "https://www2.deloitte.com/jp/ja.html",
       },
       {
+       name: "vector",
+       image: "vector.png",
+       href: "https://vectorinc.co.jp/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
