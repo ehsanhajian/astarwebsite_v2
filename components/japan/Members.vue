@@ -158,6 +158,11 @@ const members = [
        href: "https://www2.deloitte.com/jp/ja.html",
       },
       {
+       name: "vector",
+       image: "vector.png",
+       href: "https://vectorinc.co.jp/",
+      },
+      {
         name: "F Ventures",
         image: "f-ventures.png",
         href: "https://f-ventures.vc/",
@@ -531,6 +536,16 @@ const members = [
        name: "HANNON",
        image: "hann.jpeg",
        href: "https://funandnatural.com/smp/product/list/58",
+      },
+      {
+       name: "GEOMETRON",
+       image: "geometron.png",
+       href: "https://www.geometron.jp/",
+      },
+      {
+       name: "kyotoma",
+       image: "kyotoma.png",
+       href: "http://www.kyotoma.co.jp/",
       },
     ],
   },
