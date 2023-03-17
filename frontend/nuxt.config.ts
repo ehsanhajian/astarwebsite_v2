@@ -20,7 +20,15 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "~/modules/sitemap",
     "@nuxtjs/i18n",
+    "@nuxtjs/strapi"
   ],
+  strapi: {
+    url: process.env.STRAPI_URL || 'http://192.168.0.16:1337',
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+    cookieName: 'strapi_jwt'
+  },
   i18n: {
     baseUrl: "https://astar.network",
     locales: [
