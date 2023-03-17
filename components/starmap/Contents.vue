@@ -166,8 +166,11 @@
                     Mesh Networks
                   </span>
                 </li>
-                <li>XCM smart contracts</li>
-                <li>dApp staking</li>
+                <li>
+                  <span @click="clickAction('ink')" class="popup-link">
+                    Zero to ink! Hero
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -203,9 +206,9 @@
                 We can look forward to discoveries that relate to the following:
               </p>
               <ul class="list-disc pl-4">
-                <li>Swanky Suite and projects</li>
-                <li>Token economics</li>
-                <li>Decentralized tooling</li>
+                <li>Wasm on Astar!</li>
+                <li>RMRK ink! NFT</li>
+                <li>Swanky/Decentralized Tooling</li>
               </ul>
             </div>
           </div>
@@ -240,10 +243,9 @@
                 We can look forward to discoveries that relate to the following:
               </p>
               <ul class="list-disc pl-4">
-                <li>Astar SDK</li>
-                <li>Decentralization of our infrastructure</li>
-                <li>Developer tooling improvements</li>
-                <li>Learning Hub for dApp developers</li>
+                <li>DApp Staking Update</li>
+                <li>Tokenomics</li>
+                <li>XCM Contracts</li>
               </ul>
             </div>
           </div>
@@ -331,6 +333,13 @@ const discoveries: { [index: string]: Discovery } = {
       "Connect to any dApp from anywhere! Our mesh network distributes the infrastructure that allows you to access the blockchain. Astar mesh network is a peer-to-peer (P2P) model to create a secure, shared environment of RPC nodes for you to interact with the network. The nodes send traffic between themselves rather than through a central server.",
     href: "https://medium.com/astar-network/decentracademy-1-building-reliable-infrastructure-with-a-mesh-network-96737992a048",
     image: "mesh-networks.svg",
+  },
+  ink: {
+    title: "Zero to Ink! Hero",
+    description:
+      "Mint your ink! NFT, build a Uniswap V2 DEX, or create a simple flipper contract! \n\nBecoming a robust Layer 1 requires us to jumpstart Astar’s Wasm environment with the development of ink! smart contracts. For that reason, we created From Zero to ink! Hero guide to help you build your ink! dApp.",
+    href: "https://medium.com/astar-network/from-zero-to-ink-hero-9a0c11c58758",
+    image: "zero-to-ink-hero.jpg",
   },
   comingSoon: {
     title: "Coming soon!",
