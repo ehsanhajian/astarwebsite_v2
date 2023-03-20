@@ -73,6 +73,11 @@ const members = [
         href: "https://www.softbank.jp/",
       },
       {
+       name: "SB PaymentService",
+       image: "SB PaymentService.jpg",
+       href: "http://www.sbpayment.jp/",
+      },
+      {
         name: "Accenture",
         image: "accenture.png",
         href: "https://www.accenture.com/",
