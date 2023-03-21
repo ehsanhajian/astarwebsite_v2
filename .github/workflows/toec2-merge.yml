@@ -1,5 +1,4 @@
-name: CMS Deploy
-name: Deploy to Firebase Hosting on merge
+name: CMS Deploy to EC2
 'on':
   push:
     branches:
