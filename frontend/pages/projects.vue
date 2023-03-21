@@ -45,8 +45,10 @@
       </div>
     </template>
     <template #earth>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full mb-40">
-        <nav class="flex flex-wrap justify-center gap-6 mb-12 category-nav">
+      <div class="relative z-10 mb-40">
+        <nav
+          class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 max-w-4xl mx-auto px-4 sm:px-6 category-nav"
+        >
           <a @click="filter = 0" :class="filter === 0 && 'current'">All</a>
           <a
             v-for="category in categories"
@@ -56,14 +58,24 @@
             {{ category.attributes.name }}
           </a>
         </nav>
-        <ul class="grid grid-cols-5 gap-6">
+        <ul class="grid grid-cols-4 gap-6 max-w-7xl mx-auto px-4 sm:px-6">
           <li v-for="item in filteredProject">
-            <a :href="item.attributes.website">
-              <img
-                :src="useStrapiMedia(item.attributes.logo.data.attributes.url)"
-                :alt="item.attributes.name"
-                class="w-48 h-24 object-contain"
-              />
+            <a :href="item.attributes.website" target="_blank">
+              <span class="block transition hover:shadow-lg">
+                <img
+                  :src="
+                    useStrapiMedia(item.attributes.logo.data.attributes.url)
+                  "
+                  :alt="item.attributes.name"
+                  class="w-60 h-28 object-contain mx-auto"
+                />
+              </span>
+              <span class="text-center block text-gray-600 mt-3 mb-1">
+                {{ item.attributes.name }}
+              </span>
+              <span class="text-center block text-gray-400 text-sm">
+                {{ item.attributes.project_categories.data[0].attributes.name }}
+              </span>
             </a>
           </li>
         </ul>
@@ -112,7 +124,7 @@ definePageMeta({
 }
 
 .category-nav a {
-  @apply text-space-blue hover:text-space-blue-lighter cursor-pointer text-lg;
+  @apply text-space-blue hover:text-space-blue-lighter cursor-pointer;
 }
 .category-nav a.current {
   @apply text-space-gray cursor-default;

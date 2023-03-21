@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     "@nuxtjs/strapi"
   ],
   strapi: {
-    url: process.env.STRAPI_URL || 'http://192.168.0.16:1337',
+    url: process.env.STRAPI_URL,
     prefix: '/api',
     version: 'v4',
     cookie: {},
