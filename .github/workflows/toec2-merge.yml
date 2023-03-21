@@ -2,7 +2,7 @@ name: CMS Deploy to EC2
 'on':
   push:
     branches:
-      - main
+      - ecosystem-page
 jobs:
   build:
     name: Build
