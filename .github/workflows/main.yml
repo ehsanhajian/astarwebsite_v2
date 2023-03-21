@@ -16,7 +16,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/astarwebsite_v2/backend
+            npm install pm2@latest -g
             npm install
             NODE_ENV=production npm run build
-          run: npm install pm2@latest -g
         
