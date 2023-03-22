@@ -27,12 +27,12 @@
         </div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <h2 class="title text-center mb-6">
+        <h2 class="title text-center mb-6 !text-4xl">
           <span>Who's Building on Astar Network</span>
         </h2>
       </div>
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <p class="text-xl mb-6">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+        <p class="text-xl mb-6 text-center">
           Check out some of the many projects and DApps with Astar Network
           deployments.
         </p>
@@ -58,19 +58,19 @@
             {{ category.attributes.name }}
           </a>
         </nav>
-        <ul class="grid grid-cols-4 gap-6 max-w-7xl mx-auto px-4 sm:px-6">
+        <ul class="grid grid-cols-4 gap-8 max-w-7xl mx-auto px-4 sm:px-6">
           <li v-for="item in filteredProject">
             <a :href="item.attributes.website" target="_blank">
-              <span class="block transition hover:shadow-lg">
+              <span class="block transition hover:shadow-lg py-5">
                 <img
                   :src="
                     useStrapiMedia(item.attributes.logo.data.attributes.url)
                   "
                   :alt="item.attributes.name"
-                  class="w-60 h-28 object-contain mx-auto"
+                  class="w-56 h-20 object-contain mx-auto"
                 />
               </span>
-              <span class="text-center block text-gray-600 mt-3 mb-1">
+              <span class="text-center block text-gray-600 my-1">
                 {{ item.attributes.name }}
               </span>
               <span class="text-center block text-gray-400 text-sm">
