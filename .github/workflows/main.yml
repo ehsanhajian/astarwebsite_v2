@@ -14,8 +14,4 @@ jobs:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            cd ~/astarwebsite_v2/backend
-            npm install
-            npm install pm2@latest
-            NODE_ENV=production npm run build
+          script: sh deploy.sh
