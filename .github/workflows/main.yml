@@ -1,11 +1,12 @@
 name: CMS Deploy to EC2
-'on':
+on:
   push:
     branches:
       - ecosystem-page
+
 jobs:
-  build:
-    name: Build
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Executing remote ssh commands using ssh key
