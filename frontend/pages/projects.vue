@@ -16,7 +16,9 @@
           width="1728"
           height="1728"
         />
-        <div class="min-h-[50vh] flex items-center justify-start">
+        <div
+          class="portrait:min-h-[50vh] landscape:min-h-[60vh] flex items-center justify-start"
+        >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <h1
               class="text-4xl sm:text-6xl lg:text-7xl font-extrabold drop-shadow text-center leading-none pt-12"
@@ -27,12 +29,12 @@
         </div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <h2 class="title text-center mb-6 !text-4xl">
+        <h2 class="title text-center mb-6">
           <span>Who's Building on Astar Network</span>
         </h2>
       </div>
       <div class="max-w-3xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <p class="text-xl mb-6 text-center">
+        <p class="sm:text-xl mb-6 text-center">
           Check out some of the many projects and DApps with Astar Network
           deployments.
         </p>
@@ -47,7 +49,7 @@
     <template #earth>
       <div class="relative z-10 mb-40">
         <nav
-          class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 max-w-4xl mx-auto px-4 sm:px-6 category-nav"
+          class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 max-w-4xl mx-auto px-4 sm:px-6 category-nav text-sm sm:text-base"
         >
           <a @click="filter = 0" :class="filter === 0 && 'current'">All</a>
           <a
@@ -58,10 +60,15 @@
             {{ category.attributes.name }}
           </a>
         </nav>
-        <ul class="grid grid-cols-4 gap-8 max-w-7xl mx-auto px-4 sm:px-6">
+        <ul
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto px-4 sm:px-6"
+        >
           <li v-for="item in filteredProject">
-            <a :href="item.attributes.website" target="_blank">
-              <span class="block transition hover:shadow-lg py-5">
+            <NuxtLink :to="item.attributes.website" target="_blank">
+              <span
+                class="block transition py-4 px-2"
+                :class="item.attributes.website && 'hover:shadow-lg'"
+              >
                 <img
                   :src="
                     useStrapiMedia(item.attributes.logo.data.attributes.url)
@@ -70,13 +77,13 @@
                   class="w-56 h-20 object-contain mx-auto"
                 />
               </span>
-              <span class="text-center block text-gray-600 my-1">
+              <span class="text-center block text-gray-600 mt-1">
                 {{ item.attributes.name }}
               </span>
               <span class="text-center block text-gray-400 text-sm">
                 {{ item.attributes.project_categories.data[0].attributes.name }}
               </span>
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -87,12 +94,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue";
-
 const { find } = useStrapi();
 
-const { data: projects } = await find("projects?populate=*");
-const { data: categories } = await find("project-categories");
+const { data: projects } = await find(
+  "projects?sort=name&pagination[limit]=-1&populate=*"
+);
+const { data: categories } = await find("project-categories?sort=name");
 
 const filter = ref(0);
 
