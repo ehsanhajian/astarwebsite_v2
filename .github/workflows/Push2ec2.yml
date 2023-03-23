@@ -15,3 +15,5 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
            ip a
+           cd ~/astarwebsite_v2
+           git pull
