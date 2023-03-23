@@ -13,12 +13,5 @@ jobs:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-           cd ~/astarwebsite_v2
-           git pull
-           npm install pg --save
-           cd ~/astarwebsite_v2/backend
-           npm install
-           NODE_ENV=production npm run build
-           cp ~/ecosystem.config.js .
-           sudo systemctl restart pm2-ubuntu.service
+          script: sh deploy.sh
+        
