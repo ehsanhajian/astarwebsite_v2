@@ -26,6 +26,9 @@
       </div>
       <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         <div class="mb-24">
+          <h2 class="title text-center text-3xl sm:text-4xl mb-6 sm:mb-8">
+            <span>Sign up for Wasm RMRK NFT</span>
+          </h2>
           <div
             class="border border-gray-500 rounded-3xl overflow-hidden"
             data-tf-widget="y15vHT0R"
