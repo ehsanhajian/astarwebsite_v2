@@ -13,4 +13,5 @@ jobs:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          script: sh deploy.sh
+          script: |
+           ip a
