@@ -16,11 +16,9 @@ jobs:
           script: |
            cd ~/astarwebsite_v2
            git pull
-           npm install pm2 -g
            npm install pg --save
-           pm2 kill
            cd ~/astarwebsite_v2/backend
            npm install
            NODE_ENV=production npm run build
            cp ~/ecosystem.config.js .
-           pm2 start ecosystem.config.js
+           sudo systemctl restart pm2-ubuntu.service
