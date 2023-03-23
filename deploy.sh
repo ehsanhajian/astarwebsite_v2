@@ -2,6 +2,7 @@ echo "Jump to app folder"
 cd ~/astarwebsite_v2
 
 echo "Update app from Git"
+git stash
 git pull
 npm install pg --save
 
