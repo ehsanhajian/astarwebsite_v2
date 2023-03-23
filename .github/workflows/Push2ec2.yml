@@ -15,8 +15,9 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
            cd ~/astarwebsite_v2
+           git stash
            git pull
-           npm install pg --save
+           npm install pg
            cd ~/astarwebsite_v2/backend
            npm install
            NODE_ENV=production npm run build
