@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-         cd /home/runner/work/astarwebsite_v2/astarwebsite_v2/frontend
+         cd frontend
          npm ci && npm run generate
          ls .output/public/index.html
       - name: Configure AWS Credentials
@@ -22,4 +22,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy app build to S3 bucket
-        run: aws s3 sync .output/public/  s3://astar-git.astar.network --delete
+        run: aws s3 sync frontend/.output/public/  s3://astar-git.astar.network --delete
