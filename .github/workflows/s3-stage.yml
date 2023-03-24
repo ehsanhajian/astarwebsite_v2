@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: pwd
+      - run: cd /home/runner/work/astarwebsite_v2/astarwebsite_v2/frontend
       - run: npm ci && npm run generate
       - run: ls .output/public/index.html
       - name: Configure AWS Credentials
