@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     "@nuxtjs/strapi"
   ],
   strapi: {
-    url: process.env.STRAPI_URL,
+    url: "https://community.astar.network",
     prefix: '/api',
     version: 'v4',
     cookie: {},
