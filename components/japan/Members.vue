@@ -344,7 +344,7 @@ const members = [
       },
       {
        name: "LATEGRA",
-       image: "lategra.png",
+       image: "lategra.jpg",
        href: "https://lategra.co.jp/",
       },
       {
