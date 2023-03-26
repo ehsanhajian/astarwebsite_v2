@@ -343,9 +343,9 @@ const members = [
         href: "https://nf-times.com/",
       },
       {
-        name: "LATEGRA,Inc.",
-        image: "LATEGRA.png",
-        href: "https://lategra.co.jp/",
+       name: "LATEGRA",
+       image: "lategra.jpg",
+       href: "https://lategra.co.jp/",
       },
       {
         name: "58",
