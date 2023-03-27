@@ -335,7 +335,7 @@ const discoveries: { [index: string]: Discovery } = {
     image: "mesh-networks.svg",
   },
   ink: {
-    title: "Zero to Ink! Hero",
+    title: "Zero to ink! Hero",
     description:
       "Mint your ink! NFT, build a Uniswap V2 DEX, or create a simple flipper contract! \n\nBecoming a robust Layer 1 requires us to jumpstart Astar’s Wasm environment with the development of ink! smart contracts. For that reason, we created From Zero to ink! Hero guide to help you build your ink! dApp.",
     href: "https://medium.com/astar-network/from-zero-to-ink-hero-9a0c11c58758",

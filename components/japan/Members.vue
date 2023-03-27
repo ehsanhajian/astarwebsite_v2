@@ -73,6 +73,11 @@ const members = [
         href: "https://www.softbank.jp/",
       },
       {
+       name: "SB PaymentService",
+       image: "SB PaymentService.jpg",
+       href: "http://www.sbpayment.jp/",
+      },
+      {
         name: "Accenture",
         image: "accenture.png",
         href: "https://www.accenture.com/",
@@ -338,9 +343,9 @@ const members = [
         href: "https://nf-times.com/",
       },
       {
-        name: "LATEGRA,Inc.",
-        image: "LATEGRA.png",
-        href: "https://lategra.co.jp/",
+       name: "LATEGRA",
+       image: "lategra.jpg",
+       href: "https://lategra.co.jp/",
       },
       {
         name: "58",
