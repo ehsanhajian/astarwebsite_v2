@@ -12,13 +12,13 @@
         </NuxtLink>
       </div>
       <div class="bg-black">
-        <div class="absolute z-0 w-full h-screen flex items-center">
+        <!-- <div class="absolute z-0 w-full h-screen flex items-center">
           <ScrollParallax :speed="0.25" class="mx-auto">
             <video webkit-playsinline playsinline muted autoplay loop>
               <source src="~/assets/videos/astar.mp4" type="video/mp4" />
             </video>
           </ScrollParallax>
-        </div>
+        </div> -->
         <div class="space-gradient mix-blend-screen">
           <img
             class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
@@ -34,7 +34,7 @@
             width="1728"
             height="1728"
           />
-          <HomeHero />
+          <HomeHeroWasm />
           <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">
             <HomeWelcome />
           </div>
