@@ -18,11 +18,11 @@
         <Button
           variant="outlined"
           size="lg"
-          href="#"
+          href="https://www.crowdcast.io/c/wasm-launch-day"
           target="_blank"
           class="w-[280px] sm:w-auto"
         >
-          Check it out now!
+          Sign up now!
           <IconArrowTopRightOnSquare class="w-6 h-6 ml-1 stroke-2" />
         </Button>
       </div>
