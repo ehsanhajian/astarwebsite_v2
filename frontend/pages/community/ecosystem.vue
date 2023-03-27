@@ -23,7 +23,7 @@
             <h1
               class="text-4xl sm:text-6xl lg:text-7xl font-extrabold drop-shadow text-center leading-none pt-12"
             >
-              Projects & <br />Deployments
+              Ecosystem
             </h1>
           </div>
         </div>
@@ -77,12 +77,20 @@
                   class="w-56 h-20 object-contain mx-auto"
                 />
               </span>
-              <span class="text-center block text-gray-600 mt-1">
+              <span class="text-center block text-gray-600 my-1">
                 {{ item.attributes.name }}
               </span>
-              <span class="text-center block text-gray-400 text-sm">
+              <ul class="flex justify-center">
+                <li
+                  v-for="category in item.attributes.project_categories.data"
+                  class="text-xs bg-gray-200 text-gray-500 py-0.5 px-2 rounded m-0.5 whitespace-nowrap"
+                >
+                  {{ category.attributes.name }}
+                </li>
+              </ul>
+              <!-- <span class="text-center block text-gray-400 text-sm">
                 {{ item.attributes.project_categories.data[0].attributes.name }}
-              </span>
+              </span> -->
             </NuxtLink>
           </li>
         </ul>
