@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project"
+    "displayName": "Project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,12 +18,12 @@
       "unique": true
     },
     "logo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "website": {
       "type": "string"
@@ -32,6 +33,9 @@
       "relation": "manyToMany",
       "target": "api::project-category.project-category",
       "mappedBy": "projects"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }

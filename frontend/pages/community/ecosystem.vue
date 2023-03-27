@@ -88,9 +88,12 @@
                   {{ category.attributes.name }}
                 </li>
               </ul>
-              <!-- <span class="text-center block text-gray-400 text-sm">
-                {{ item.attributes.project_categories.data[0].attributes.name }}
-              </span> -->
+              <span
+                v-if="item.attributes.description"
+                class="text-center block text-gray-400 text-sm mt-1"
+              >
+                {{ item.attributes.description }}
+              </span>
             </NuxtLink>
           </li>
         </ul>
