@@ -61,42 +61,75 @@
                   </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink
-                    to="#"
-                    class="text-white block border-t border-gray-600 px-6 py-5"
-                  >
-                    Network
-                  </NuxtLink>
-                  <ul class="px-6 py-4 text-sm">
-                    <li v-for="item in network" class="mb-6">
-                      <span
-                        class="uppercase block border-b border-gray-600 text-gray-400 pb-1 mb-3"
-                        >{{ item.label }}</span
-                      >
-                      <ul>
-                        <li v-for="nav in item.nav">
-                          <NuxtLink
-                            class="inline-block py-2 text-white hover:underline transition hover:text-space-cyan-lighter"
-                            :to="nav.href"
-                            target="_blank"
-                          >
-                            {{ nav.label }}
-                            <ArrowTopRightOnSquareIcon
-                              class="w-4 h-4 inline-block stroke-2"
-                            />
-                          </NuxtLink>
+                  <Disclosure as="div" v-slot="{ open }">
+                    <DisclosureButton
+                      class="text-white border-t border-gray-600 px-6 py-5 w-full flex justify-between items-center"
+                    >
+                      <span>Network</span>
+                      <ChevronDownIcon
+                        :class="[
+                          open ? 'rotate-180 transform' : '',
+                          'h-4 w-4 stroke-2',
+                        ]"
+                        aria-hidden="true"
+                      />
+                    </DisclosureButton>
+                    <DisclosurePanel as="div" class="px-10 pb-8 text-sm">
+                      <ul class="space-y-8">
+                        <li v-for="item in network">
+                          <span class="uppercase block text-gray-400 mb-2">
+                            {{ item.label }}
+                          </span>
+                          <ul class="space-y-2">
+                            <li v-for="nav in item.nav">
+                              <NuxtLink
+                                class="flex items-center"
+                                :to="nav.href"
+                                target="_blank"
+                              >
+                                {{ nav.label }}
+                                <ArrowTopRightOnSquareIcon
+                                  class="w-4 h-4 stroke-2 ml-1"
+                                />
+                              </NuxtLink>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
-                    </li>
-                  </ul>
+                    </DisclosurePanel>
+                  </Disclosure>
                 </li>
                 <li>
-                  <NuxtLink
-                    to="/community"
-                    class="text-white block border-t border-gray-600 px-6 py-5"
-                  >
-                    Community
-                  </NuxtLink>
+                  <Disclosure as="div" v-slot="{ open }">
+                    <DisclosureButton
+                      class="text-white border-t border-gray-600 px-6 py-5 w-full flex justify-between items-center"
+                    >
+                      <span>Community</span>
+                      <ChevronDownIcon
+                        :class="[
+                          open ? 'rotate-180 transform' : '',
+                          'h-4 w-4 stroke-2',
+                        ]"
+                        aria-hidden="true"
+                      />
+                    </DisclosureButton>
+                    <DisclosurePanel as="div" class="px-10 pb-8 text-sm">
+                      <NuxtLink
+                        class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
+                        to="/community"
+                      >
+                        Overview
+                        <ArrowRightIcon class="w-4 h-4 ml-2" />
+                      </NuxtLink>
+                      <NuxtLink
+                        class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
+                        to="/community/ecosystem"
+                      >
+                        Ecosystem
+                        <ArrowRightIcon class="w-4 h-4 ml-2" />
+                      </NuxtLink>
+                    </DisclosurePanel>
+                  </Disclosure>
                 </li>
                 <li>
                   <NuxtLink
@@ -131,8 +164,17 @@ import {
   XMarkIcon,
   Bars3Icon,
   ArrowTopRightOnSquareIcon,
+  ChevronDownIcon,
+  ArrowRightIcon,
 } from "@heroicons/vue/24/outline";
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
+import {
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/vue";
 
 interface Network {
   label: string;
