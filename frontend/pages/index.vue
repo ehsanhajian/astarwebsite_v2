@@ -8,7 +8,7 @@
           class="link--hiring"
         >
           We are hiring!
-          <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+          <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
         </NuxtLink>
       </div>
       <div class="bg-black">
@@ -79,6 +79,7 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 definePageMeta({

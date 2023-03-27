@@ -81,7 +81,7 @@
                             target="_blank"
                           >
                             {{ nav.label }}
-                            <IconArrowTopRightOnSquare
+                            <ArrowTopRightOnSquareIcon
                               class="w-4 h-4 inline-block stroke-2"
                             />
                           </NuxtLink>
@@ -115,7 +115,7 @@
                   class="w-full"
                 >
                   Launch App
-                  <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+                  <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
                 </Button>
               </div>
             </nav>
@@ -127,7 +127,11 @@
 </template>
 
 <script setup lang="ts">
-import { XMarkIcon, Bars3Icon } from "@heroicons/vue/24/outline";
+import {
+  XMarkIcon,
+  Bars3Icon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/vue/24/outline";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 
 interface Network {

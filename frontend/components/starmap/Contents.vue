@@ -70,7 +70,7 @@
                         <span class="sr-only">
                           about {{ discoveries[discoveryId]["title"] }}
                         </span>
-                        <IconArrowTopRightOnSquare
+                        <ArrowTopRightOnSquareIcon
                           class="w-5 h-5 stroke-2 ml-1"
                         />
                       </NuxtLink>
@@ -292,8 +292,10 @@
 </template>
 
 <script setup lang="ts">
-import { XMarkIcon } from "@heroicons/vue/24/outline";
-import { ref } from "vue";
+import {
+  XMarkIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/vue/24/outline";
 import {
   Dialog,
   DialogPanel,

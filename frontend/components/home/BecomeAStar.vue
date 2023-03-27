@@ -34,7 +34,7 @@
           class="hover:underline transition flex items-center"
         >
           Learn more<span class="sr-only"> about {{ item.name }}</span>
-          <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+          <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
         </NuxtLink>
       </li>
     </ul>
@@ -42,6 +42,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const developers = [
   {
     name: "Developer",

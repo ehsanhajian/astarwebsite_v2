@@ -27,7 +27,7 @@
             class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
           >
             Watch video
-            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+            <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
       </NuxtLink>
@@ -66,7 +66,7 @@
                 class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
               >
                 Watch video
-                <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+                <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
               </span>
             </div>
           </NuxtLink>
@@ -81,13 +81,15 @@
         target="_blank"
       >
         YouTube
-        <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+        <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
       </Button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const videos = [
   {
     title: "getting_started: The Astar Portal - What is it?",

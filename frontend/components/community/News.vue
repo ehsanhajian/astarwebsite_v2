@@ -22,7 +22,7 @@
             class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
           >
             Read article
-            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+            <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </NuxtLink>
       </li>
@@ -30,13 +30,15 @@
     <div class="text-center mt-12 sm:mt-20">
       <Button size="lg" href="https://medium.com/astar-network" target="_blank">
         Medium
-        <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+        <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
       </Button>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const news = [
   {
     publishedDate: "Jan 15 2022",

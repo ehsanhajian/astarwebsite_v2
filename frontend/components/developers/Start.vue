@@ -47,7 +47,7 @@
             <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
               <h3 class="text-lg sm:text-xl font-bold leading-tight">
                 {{ item.title }}
-                <span class="whitespace-nowrap">-></span>
+                <ArrowRightIcon class="inline-block w-6 h-6 stroke-2" />
               </h3>
             </div>
           </NuxtLink>
@@ -58,6 +58,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+
 const building = [
   {
     title: "Launch your EVM dApps",

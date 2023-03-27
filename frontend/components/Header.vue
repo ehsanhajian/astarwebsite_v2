@@ -41,10 +41,10 @@
                 ]"
               >
                 <span>Network</span>
-                <IconChevronDown
+                <ChevronDownIcon
                   :class="[
                     open ? 'text-space-cyan-light' : 'text-gray-200',
-                    'ml-2 h-5 w-5 group-hover:text-space-cyan-light',
+                    'ml-1 h-4 w-4 group-hover:text-space-cyan-light stroke-2',
                   ]"
                   aria-hidden="true"
                 />
@@ -60,7 +60,7 @@
                 target="_blank"
               >
                 Launch App
-                <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+                <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
               </Button>
             </div>
           </div>
@@ -91,7 +91,7 @@
                         target="_blank"
                       >
                         {{ nav.label }}
-                        <IconArrowTopRightOnSquare
+                        <ArrowTopRightOnSquareIcon
                           class="w-4 h-4 inline-block stroke-2"
                         />
                       </NuxtLink>
@@ -109,6 +109,10 @@
 
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
+import {
+  ChevronDownIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/vue/24/outline";
 
 const network = [
   {
