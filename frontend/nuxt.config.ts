@@ -20,8 +20,16 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "~/modules/sitemap",
     "@nuxtjs/i18n",
-    "@nuxtjs/strapi"
+    "@nuxtjs/strapi",
+    "@nuxtjs/apollo"
   ],
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: 'https://community.astar.network/graphql'
+      }
+    },
+  },
   strapi: {
     url: "https://community.astar.network",
     prefix: '/api',

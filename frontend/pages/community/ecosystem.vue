@@ -105,12 +105,76 @@
 </template>
 
 <script setup lang="ts">
-const { find } = useStrapi();
+import gql from "graphql-tag";
 
-const { data: projects } = await find(
-  "projects?sort=name&pagination[limit]=-1&populate=*"
-);
-const { data: categories } = await find("project-categories?sort=name");
+const query = gql`
+  query getAllData {
+    projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
+      data {
+        attributes {
+          name
+          website
+          description
+          logo {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+          project_categories {
+            data {
+              id
+              attributes {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+    projectCategories(pagination: { page: 1, pageSize: 20 }, sort: "name") {
+      data {
+        id
+        attributes {
+          name
+        }
+      }
+    }
+  }
+`;
+
+const { data } = await useAsyncQuery(query);
+
+interface Category {
+  id: number;
+  attributes: {
+    name: string;
+  };
+}
+
+interface Project {
+  attributes: {
+    name: string;
+    website?: string;
+    description?: string;
+    logo: {
+      data: {
+        attributes: {
+          url: string;
+        };
+      };
+    };
+    project_categories: {
+      data: Category[];
+    };
+  };
+}
+
+let projects: Project[] = [];
+let categories: Category[] = [];
+projects = data.value.projects.data;
+categories = data.value.projectCategories.data;
 
 const filter = ref(0);
 
