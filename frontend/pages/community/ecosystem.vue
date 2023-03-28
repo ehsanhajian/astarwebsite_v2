@@ -51,13 +51,19 @@
         <nav
           class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 max-w-4xl mx-auto px-4 sm:px-6 category-nav text-sm sm:text-base"
         >
-          <a @click="filter = 0" :class="filter === 0 && 'current'">All</a>
+          <a @click="filter = 0" :class="filter === 0 && 'current'">
+            All
+            <span class="text-xs">({{ projects.length }})</span>
+          </a>
           <a
             v-for="category in categories"
             @click="filter = category.id"
             :class="filter === category.id && 'current'"
           >
             {{ category.attributes.name }}
+            <span class="text-xs">
+              ({{ category.attributes.projects.data.length }})
+            </span>
           </a>
         </nav>
         <ul
@@ -122,7 +128,7 @@ const query = gql`
               }
             }
           }
-          project_categories {
+          project_categories(sort: "name") {
             data {
               id
               attributes {
@@ -138,6 +144,11 @@ const query = gql`
         id
         attributes {
           name
+          projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
+            data {
+              id
+            }
+          }
         }
       }
     }
@@ -146,33 +157,8 @@ const query = gql`
 
 const { data } = await useAsyncQuery(query);
 
-interface Category {
-  id: number;
-  attributes: {
-    name: string;
-  };
-}
-
-interface Project {
-  attributes: {
-    name: string;
-    website?: string;
-    description?: string;
-    logo: {
-      data: {
-        attributes: {
-          url: string;
-        };
-      };
-    };
-    project_categories: {
-      data: Category[];
-    };
-  };
-}
-
-let projects: Project[] = [];
-let categories: Category[] = [];
+let projects = [];
+let categories = [];
 projects = data.value.projects.data;
 categories = data.value.projectCategories.data;
 
