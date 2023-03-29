@@ -22,7 +22,9 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/strapi",
     "@nuxtjs/apollo",
-    "nuxt3-lazy-load"
+    ['nuxt3-lazy-load', {
+      defaultImage: '/images/placeholder.svg',
+    }]
   ],
   apollo: {
     clients: {
