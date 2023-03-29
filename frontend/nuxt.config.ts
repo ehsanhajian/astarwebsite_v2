@@ -21,7 +21,8 @@ export default defineNuxtConfig({
     "~/modules/sitemap",
     "@nuxtjs/i18n",
     "@nuxtjs/strapi",
-    "@nuxtjs/apollo"
+    "@nuxtjs/apollo",
+    "nuxt3-lazy-load"
   ],
   apollo: {
     clients: {

@@ -48,61 +48,48 @@
     </template>
     <template #earth>
       <div class="relative z-10 mb-40">
-        <nav
-          class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 max-w-4xl mx-auto px-4 sm:px-6 category-nav text-sm sm:text-base"
-        >
-          <a @click="filter = 0" :class="filter === 0 && 'current'">
-            All
-            <span class="text-xs">({{ projects.length }})</span>
-          </a>
-          <a
-            v-for="category in categories"
-            @click="filter = category.id"
-            :class="filter === category.id && 'current'"
+        <TabGroup>
+          <TabList
+            class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-12 max-w-4xl mx-auto px-4 sm:px-6 text-sm sm:text-base"
           >
-            {{ category.attributes.name }}
-            <span class="text-xs">
-              ({{ category.attributes.projects.data.length }})
-            </span>
-          </a>
-        </nav>
-        <ul
-          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto px-4 sm:px-6"
-        >
-          <li v-for="item in filteredProject">
-            <NuxtLink :to="item.attributes.website" target="_blank">
-              <span
-                class="block transition py-4 px-2"
-                :class="item.attributes.website && 'hover:shadow-lg'"
+            <Tab as="template" v-slot="{ selected }">
+              <button
+                :class="{
+                  'tab current': selected,
+                  tab: !selected,
+                }"
               >
-                <img
-                  :src="
-                    useStrapiMedia(item.attributes.logo.data.attributes.url)
-                  "
-                  :alt="item.attributes.name"
-                  class="w-56 h-20 object-contain mx-auto"
-                />
-              </span>
-              <span class="text-center block text-gray-600 my-1">
-                {{ item.attributes.name }}
-              </span>
-              <ul class="flex justify-center">
-                <li
-                  v-for="category in item.attributes.project_categories.data"
-                  class="text-xs bg-gray-200 text-gray-500 py-0.5 px-2 rounded m-0.5 whitespace-nowrap"
-                >
-                  {{ category.attributes.name }}
-                </li>
-              </ul>
-              <span
-                v-if="item.attributes.description"
-                class="text-center block text-gray-400 text-sm mt-1"
+                All
+                <span class="text-xs">({{ projects.length }})</span>
+              </button>
+            </Tab>
+            <Tab
+              as="template"
+              v-slot="{ selected }"
+              v-for="category in categories"
+            >
+              <button
+                :class="{
+                  'tab current': selected,
+                  tab: !selected,
+                }"
               >
-                {{ item.attributes.description }}
-              </span>
-            </NuxtLink>
-          </li>
-        </ul>
+                {{ category.attributes.name }}
+                <span class="text-xs">
+                  ({{ category.attributes.projects.data.length }})
+                </span>
+              </button>
+            </Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel class="tab-panel">
+              <CommunityLogoList :projects="projects" />
+            </TabPanel>
+            <TabPanel class="tab-panel" v-for="item in categories">
+              <CommunityLogoList :projects="item.attributes.projects.data" />
+            </TabPanel>
+          </TabPanels>
+        </TabGroup>
       </div>
       <hr class="mb-20" />
       <Footer />
@@ -111,78 +98,96 @@
 </template>
 
 <script setup lang="ts">
-// import gql from "graphql-tag";
+import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
+import gql from "graphql-tag";
 
-// const query = gql`
-//   query getAllData {
-//     projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
-//       data {
-//         attributes {
-//           name
-//           website
-//           description
-//           logo {
-//             data {
-//               attributes {
-//                 url
-//               }
-//             }
-//           }
-//           project_categories(sort: "name") {
-//             data {
-//               id
-//               attributes {
-//                 name
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     projectCategories(pagination: { page: 1, pageSize: 20 }, sort: "name") {
-//       data {
-//         id
-//         attributes {
-//           name
-//           projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
-//             data {
-//               id
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
-// const { data } = await useAsyncQuery(query);
+const query = gql`
+  query getAllData {
+    projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
+      data {
+        attributes {
+          name
+          website
+          description
+          logo {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+          project_categories(sort: "name") {
+            data {
+              id
+              attributes {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+    projectCategories(pagination: { page: 1, pageSize: 20 }, sort: "name") {
+      data {
+        id
+        attributes {
+          name
+          projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
+            data {
+              id
+              attributes {
+                name
+                website
+                description
+                logo {
+                  data {
+                    attributes {
+                      url
+                    }
+                  }
+                }
+                project_categories(sort: "name") {
+                  data {
+                    id
+                    attributes {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+const { data } = await useAsyncQuery(query);
 
 let projects = [];
 let categories = [];
-// projects = data.value.projects.data;
-// categories = data.value.projectCategories.data;
+projects = data.value.projects.data;
+categories = data.value.projectCategories.data;
 
-const { find } = useStrapi();
+// const { find } = useStrapi();
+// const projectData = await find(
+//   "projects?sort=name&pagination[limit]=-1&populate=*"
+// );
+// const categoryData = await find(
+//   "project-categories?sort=name&pagination[limit]=-1&populate=*"
+// );
+// projects = projectData.data;
+// categories = categoryData.data;
 
-const projectData = await find(
-  "projects?sort=name&pagination[limit]=-1&populate=*"
-);
-const categoryData = await find(
-  "project-categories?sort=name&pagination[limit]=-1&populate=*"
-);
-projects = projectData.data;
-categories = categoryData.data;
-
-const filter = ref(0);
-
-const filteredProject = computed(() => {
-  if (filter.value === 0) return projects;
-  return projects.filter((project) =>
-    project.attributes.project_categories.data.some(
-      (category) => category.id === filter.value
-    )
-  );
-});
+// const filter = ref(0);
+// const filteredProject = computed(() => {
+//   if (filter.value === 0) return projects;
+//   return projects.filter((project) =>
+//     project.attributes.project_categories.data.some(
+//       (category) => category.id === filter.value
+//     )
+//   );
+// });
 
 definePageMeta({
   layout: false,
@@ -202,10 +207,14 @@ definePageMeta({
   );
 }
 
-.category-nav a {
+.tab {
   @apply text-space-blue hover:text-space-blue-lighter cursor-pointer;
 }
-.category-nav a.current {
-  @apply text-space-gray cursor-default;
+.tab.current {
+  @apply text-space-gray cursor-default outline-0;
+}
+
+.tab-panel {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto px-4 sm:px-6;
 }
 </style>

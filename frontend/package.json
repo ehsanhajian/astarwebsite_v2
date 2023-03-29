@@ -23,5 +23,8 @@
     "sitemap": "^7.1.1",
     "vue3-carousel": "^0.2.9",
     "vue3-parallax": "^0.1.4"
+  },
+  "dependencies": {
+    "nuxt3-lazy-load": "^1.0.4"
   }
 }
