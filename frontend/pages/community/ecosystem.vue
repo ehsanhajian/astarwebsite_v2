@@ -111,56 +111,67 @@
 </template>
 
 <script setup lang="ts">
-import gql from "graphql-tag";
+// import gql from "graphql-tag";
 
-const query = gql`
-  query getAllData {
-    projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
-      data {
-        attributes {
-          name
-          website
-          description
-          logo {
-            data {
-              attributes {
-                url
-              }
-            }
-          }
-          project_categories(sort: "name") {
-            data {
-              id
-              attributes {
-                name
-              }
-            }
-          }
-        }
-      }
-    }
-    projectCategories(pagination: { page: 1, pageSize: 20 }, sort: "name") {
-      data {
-        id
-        attributes {
-          name
-          projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
-            data {
-              id
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+// const query = gql`
+//   query getAllData {
+//     projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
+//       data {
+//         attributes {
+//           name
+//           website
+//           description
+//           logo {
+//             data {
+//               attributes {
+//                 url
+//               }
+//             }
+//           }
+//           project_categories(sort: "name") {
+//             data {
+//               id
+//               attributes {
+//                 name
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     projectCategories(pagination: { page: 1, pageSize: 20 }, sort: "name") {
+//       data {
+//         id
+//         attributes {
+//           name
+//           projects(pagination: { page: 1, pageSize: 1000 }, sort: "name") {
+//             data {
+//               id
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
-const { data } = await useAsyncQuery(query);
+// const { data } = await useAsyncQuery(query);
 
 let projects = [];
 let categories = [];
-projects = data.value.projects.data;
-categories = data.value.projectCategories.data;
+// projects = data.value.projects.data;
+// categories = data.value.projectCategories.data;
+
+const { find } = useStrapi();
+
+const projectData = await find(
+  "projects?sort=name&pagination[limit]=-1&populate=*"
+);
+const categoryData = await find(
+  "project-categories?sort=name&pagination[limit]=-1&populate=*"
+);
+projects = projectData.data;
+categories = categoryData.data;
 
 const filter = ref(0);
 
