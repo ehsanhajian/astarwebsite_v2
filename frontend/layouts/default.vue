@@ -9,6 +9,7 @@
         alt=""
         width="2000"
         height="464"
+        data-not-lazy
       />
       <div class="bg-white">
         <slot name="earth" />

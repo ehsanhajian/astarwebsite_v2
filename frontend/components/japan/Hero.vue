@@ -8,6 +8,7 @@
           alt="Astar Japan Lab"
           width="1050"
           height="1050"
+          data-not-lazy
         />
         <div class="px-4 sm:px-6">
           <h1 class="max-w-4xl mx-auto mb-6">
@@ -18,6 +19,7 @@
               alt=""
               width="912"
               height="114"
+              data-not-lazy
             />
           </h1>
           <p class="sm:text-lg max-w-3xl mx-auto">

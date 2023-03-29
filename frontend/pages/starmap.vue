@@ -8,6 +8,7 @@
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <StarmapHero />
       </div>

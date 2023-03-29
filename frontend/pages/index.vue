@@ -14,7 +14,14 @@
       <div class="bg-black">
         <div class="absolute z-0 w-full h-screen flex items-center">
           <ScrollParallax :speed="0.25" class="mx-auto">
-            <video webkit-playsinline playsinline muted autoplay loop>
+            <video
+              webkit-playsinline
+              playsinline
+              muted
+              autoplay
+              loop
+              data-not-lazy
+            >
               <source src="~/assets/videos/astar.mp4" type="video/mp4" />
             </video>
           </ScrollParallax>
@@ -26,6 +33,7 @@
             alt=""
             width="1728"
             height="1281"
+            data-not-lazy
           />
           <img
             class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
@@ -33,6 +41,7 @@
             alt=""
             width="1728"
             height="1728"
+            data-not-lazy
           />
           <HomeHero />
           <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">

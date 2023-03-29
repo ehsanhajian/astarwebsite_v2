@@ -8,6 +8,7 @@
           alt=""
           width="1728"
           height="1281"
+          data-not-lazy
         />
         <ScrollParallax :speed="0.2">
           <img
@@ -16,6 +17,7 @@
             alt="Developers"
             width="1106"
             height="804"
+            data-not-lazy
           />
         </ScrollParallax>
         <img
@@ -24,6 +26,7 @@
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <DevelopersHero />
       </div>

@@ -8,6 +8,7 @@
           alt=""
           width="1728"
           height="1281"
+          data-not-lazy
         />
         <img
           class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
@@ -15,6 +16,7 @@
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <div
           class="portrait:min-h-[50vh] landscape:min-h-[60vh] flex items-center justify-start"
