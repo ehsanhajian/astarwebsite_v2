@@ -29,7 +29,7 @@
         <div class="space-gradient mix-blend-screen">
           <img
             class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-            src="/images/common/space-cloud.png"
+            src="/images/common/space-cloud.webp"
             alt=""
             width="1728"
             height="1281"

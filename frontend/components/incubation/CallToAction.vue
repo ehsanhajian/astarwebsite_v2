@@ -1,7 +1,7 @@
 <template>
   <section class="bg-black">
     <div
-      class="sm:flex bg-[url('/assets/images/incubation/sub-page-hero.svg')] bg-center bg-repeat"
+      class="sm:flex bg-[url('/images/incubation/sub-page-hero.svg')] bg-center bg-repeat"
     >
       <div
         class="w-full bg-[url('/assets/images/incubation/cta.svg')] bg-right bg-no-repeat hidden sm:block"
@@ -26,8 +26,9 @@
           <NuxtLink
             to="mailto:info@startale.org"
             class="text-space-sky-lighter hover:text-space-sky-light hover:underline"
-            >info@startale.org</NuxtLink
           >
+            info@startale.org
+          </NuxtLink>
         </p>
       </div>
       <div class="w-full hidden sm:block" />

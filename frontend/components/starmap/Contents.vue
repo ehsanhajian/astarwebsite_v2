@@ -110,7 +110,7 @@
   <div
     class="relative z-10 bg-cover"
     style="
-      background-image: url(/images/starmap/nebula.png);
+      background-image: url(/images/starmap/nebula.webp);
       background-position: center top;
       background-repeat: no-repeat;
     "

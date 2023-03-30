@@ -44,7 +44,7 @@ const offer = [
   {
     lead: t("program.offer.support.lead"),
     text: t("program.offer.support.text"),
-    image: "support.jpg",
+    image: "support.webp",
     id: "support",
     class: "lg:max-w-[456px] min-w-[340px]",
   },

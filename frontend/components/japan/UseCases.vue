@@ -36,34 +36,34 @@ const cases = [
   {
     title:
       "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
-    image: "astarfarm.png",
+    image: "astarfarm.webp",
     href: "",
   },
   {
     title: 'Shiden NFT was distributed at "MILIYAH NFT Club".',
-    image: "miliyah.png",
+    image: "miliyah.webp",
     href: "",
   },
   {
     title: '"Left-Handed Ellen" NFT sales case study using Astar',
-    image: "ellen.png",
+    image: "ellen.webp",
     href: "",
   },
   {
     title:
       "Distributed Shiden Network's NFT by audio at a live music concert venue.",
-    image: "revolt.png",
+    image: "revolt.webp",
     href: "",
   },
   {
     title: "Astar Network advertised in Nikkei Newspaper and distributed NFT",
-    image: "nikkei.png",
+    image: "nikkei.webp",
     href: "",
   },
   {
     title:
       "Shiden Network's NFT was distributed in real time via audio on RKB.",
-    image: "rkb.png",
+    image: "rkb.webp",
     href: "",
   },
 ];

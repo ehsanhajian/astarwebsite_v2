@@ -52,22 +52,22 @@ export const partners = [
       },
       {
         name: "Dragonfly Capital",
-        image: "dragonfly.png",
+        image: "dragonfly.webp",
         href: "https://www.dragonfly.xyz/",
       },
       {
         name: "Fenbushi Capital",
-        image: "fenbushi.png",
+        image: "fenbushi.webp",
         href: "https://www.fenbushicapital.vc/",
       },
       {
         name: "LongHash Ventures",
-        image: "longhash.png",
+        image: "longhash.webp",
         href: "https://www.longhash.vc/",
       },
       {
         name: "Next Web Capital",
-        image: "nwc.png",
+        image: "nwc.webp",
         href: "https://nextweb.capital/",
       },
       {
@@ -87,7 +87,7 @@ export const partners = [
       },
       // {
       //   name: "Parity Technologies",
-      //   image: "parity.png",
+      //   image: "parity.webp",
       //   href: "https://www.parity.io/",
       // },
     ],
