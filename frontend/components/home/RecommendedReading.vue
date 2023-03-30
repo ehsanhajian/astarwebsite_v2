@@ -17,7 +17,7 @@
         >
           <div class="-mx-5 -mt-12 -mb-4">
             <img
-              :src="useAsset('home/' + item.image)"
+              :src="'/images/home/' + item.image"
               :alt="item.title"
               width="460"
               height="370"

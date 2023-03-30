@@ -22,14 +22,14 @@
               loop
               data-not-lazy
             >
-              <source src="~/assets/videos/astar.mp4" type="video/mp4" />
+              <source src="/videos/astar.mp4" type="video/mp4" />
             </video>
           </ScrollParallax>
         </div>
         <div class="space-gradient mix-blend-screen">
           <img
             class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-            src="~/assets/images/common/space-cloud.png"
+            src="/images/common/space-cloud.png"
             alt=""
             width="1728"
             height="1281"
@@ -37,7 +37,7 @@
           />
           <img
             class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
-            src="~/assets/images/common/space-stars.svg"
+            src="/images/common/space-stars.svg"
             alt=""
             width="1728"
             height="1728"
@@ -64,14 +64,14 @@
           <HomeBackers />
           <img
             class="w-full"
-            src="~/assets/images/home/footer-sky.svg"
+            src="/images/home/footer-sky.svg"
             alt=""
             width="1728"
             height="290"
           />
           <img
             class="w-full"
-            src="~/assets/images/home/footer-landscape.svg"
+            src="/images/home/footer-landscape.svg"
             alt=""
             width="1728"
             height="220"
@@ -153,7 +153,7 @@ definePageMeta({
   background: linear-gradient(260deg, #3d41f8 0.16%, #58cef4 94.67%);
 }
 .footer-inner {
-  background-image: url(~/assets/images/home/footer-reflect.svg);
+  background-image: url(/images/home/footer-reflect.svg);
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;

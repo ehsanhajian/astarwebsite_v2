@@ -4,7 +4,7 @@
       <div class="text-center">
         <img
           class="landscape:hidden mt-24 max-w-[640px] mx-auto w-full"
-          src="~/assets/images/japan/hero-portrait.svg"
+          src="/images/japan/hero-portrait.svg"
           alt="Astar Japan Lab"
           width="1050"
           height="1050"
@@ -15,7 +15,7 @@
             <span class="sr-only">Astar Japan Lab</span>
             <img
               class="w-full mx-auto"
-              src="~/assets/images/japan/title.svg"
+              src="/images/japan/title.svg"
               alt=""
               width="912"
               height="114"

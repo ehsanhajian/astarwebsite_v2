@@ -6,7 +6,7 @@
     <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 sm:gap-y-16">
       <li v-for="(item, index) in advantages">
         <img
-          :src="useAsset('developers/' + item.image)"
+          :src="'/images/developers/' + item.image"
           :alt="item.name"
           data-aos="fade-up"
           :data-aos-delay="index * 100"

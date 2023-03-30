@@ -38,7 +38,7 @@
                       ? 'w-96 lg:h-20 w-80'
                       : 'lg:w-48 lg:h-20 w-44'
                   "
-                  :src="useAsset('incubation/partners/' + item.image)"
+                  :src="'/images/incubation/partners/' + item.image"
                   :alt="item.name"
                 />
               </NuxtLink>

@@ -16,18 +16,9 @@
               <footer class="mt-8">
                 <div class="md:flex md:items-center md:justify-center">
                   <div class="md:flex-shrink-0">
-                    <!-- <nuxt-img
-                      format="webp"
-                      quality="90"
-                      width="128"
-                      height="128"
-                      class="mx-auto h-16 w-16 rounded-full"
-                      :src="`/testimonials/${item.image}`"
-                      :alt="item.name"
-                    /> -->
                     <img
                       class="mx-auto h-16 w-16 rounded-full"
-                      :src="useAsset('developers/testimonials/' + item.image)"
+                      :src="'/images/developers/testimonials/' + item.image"
                       :alt="item.name"
                     />
                   </div>

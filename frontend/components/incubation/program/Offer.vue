@@ -18,7 +18,7 @@
           </div>
           <div class="lg:shrink-0" :class="index === 1 && 'order-1'">
             <img
-              :src="useAsset('incubation/program/' + item.image)"
+              :src="'/images/incubation/program/' + item.image"
               :alt="item.text"
               class="w-full"
               :class="item.class"

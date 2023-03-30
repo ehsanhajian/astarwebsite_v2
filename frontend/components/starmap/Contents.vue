@@ -82,9 +82,7 @@
                       <img
                         class=""
                         :src="
-                          useAsset(
-                            'starmap/' + discoveries[discoveryId]['image']
-                          )
+                          '/images/starmap/' + discoveries[discoveryId]['image']
                         "
                         :alt="discoveries[discoveryId]['title']"
                         width="580"
@@ -111,9 +109,11 @@
 
   <div
     class="relative z-10 bg-cover"
-    :style="`background-image: url(${useAsset(
-      'starmap/nebula.png'
-    )}); background-position:center top; background-repeat:no-repeat;`"
+    style="
+      background-image: url(/images/starmap/nebula.png);
+      background-position: center top;
+      background-repeat: no-repeat;
+    "
   >
     <div class="md:absolute w-full">
       <div

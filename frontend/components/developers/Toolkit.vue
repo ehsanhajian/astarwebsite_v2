@@ -3,7 +3,7 @@
     <div data-aos="zoom-out-left" class="absolute right-4 z-[4]">
       <img
         class="h-48 lg:h-auto float-animation"
-        src="~/assets/images/developers/toolkit-bg.svg"
+        src="/images/developers/toolkit-bg.svg"
         alt="Astar Developer Toolkit"
         width="556"
         height="294"
@@ -30,7 +30,7 @@
           <div v-for="item in logos" class="flex items-center justify-center">
             <img
               class="h-12 w-32 lg:w-48 object-contain"
-              :src="useAsset('developers/toolkit/' + item.image)"
+              :src="'/images/developers/toolkit/' + item.image"
               :alt="item.name"
             />
           </div>

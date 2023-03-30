@@ -12,7 +12,7 @@
         <div class="mb-4">
           <img
             class="mx-auto"
-            :src="useAsset('home/' + item.image)"
+            :src="'/images/home/' + item.image"
             :alt="item.name"
             data-aos="fade-up"
             :data-aos-delay="index * 200"

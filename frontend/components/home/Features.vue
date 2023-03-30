@@ -9,7 +9,7 @@
         :class="index % 2 === 0 && 'sm:order-2'"
       >
         <img
-          :src="useAsset('home/' + item.image)"
+          :src="'/images/home/' + item.image"
           :alt="item.title"
           class="mx-auto"
           width="614"

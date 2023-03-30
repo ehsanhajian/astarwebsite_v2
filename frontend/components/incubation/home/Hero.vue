@@ -43,7 +43,7 @@
         class="w-full lg:w-[38%] flex justify-center lg:justify-end mt-2 mb-6 lg:my-0 pb-8"
       >
         <img
-          src="~/assets/images/incubation/home/hero-logos.svg"
+          src="/images/incubation/home/hero-logos.svg"
           alt="by Sony Network Communications and Astar"
           class="max-w-[200px] sm:max-w-[340px] lg:max-w-full w-full lg:pl-16"
           data-not-lazy

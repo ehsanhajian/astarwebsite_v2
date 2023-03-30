@@ -4,7 +4,7 @@
       <div class="space-gradient relative">
         <img
           class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-cloud.png"
+          src="/images/common/space-cloud.png"
           alt=""
           width="1728"
           height="1281"
@@ -13,7 +13,7 @@
         <ScrollParallax :speed="0.2">
           <img
             class="absolute z-[3] w-screen h-screen object-scale-down portrait:hidden"
-            src="~/assets/images/japan/hero-landscape.svg"
+            src="/images/japan/hero-landscape.svg"
             alt="Astar Japan Lab"
             width="1460"
             height="808"
@@ -22,7 +22,7 @@
         </ScrollParallax>
         <img
           class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"
@@ -44,7 +44,7 @@
           <JapanNewsletter class="py-8 sm:py-16 lg:py-28" />
           <img
             class="w-full"
-            src="~/assets/images/japan/footer-landscape.svg"
+            src="/images/japan/footer-landscape.svg"
             alt=""
             width="1728"
             height="220"

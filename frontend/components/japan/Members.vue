@@ -22,7 +22,7 @@
           <NuxtLink :to="item.href" target="_blank">
             <img
               class="h-16 sm:h-20 lg:sm:h-24 w-44 lg:w-48 object-contain"
-              :src="useAsset('japan/members/' + item.image)"
+              :src="'/images/japan/members/' + item.image"
               :alt="item.name"
             />
           </NuxtLink>
@@ -153,14 +153,14 @@ const members = [
         href: "https://www.solize.com/",
       },
       {
-       name: "Deloitte Tohmatsu Consulting LLC",
-       image: "Deloitte.jpg",
-       href: "https://www2.deloitte.com/jp/ja.html",
+        name: "Deloitte Tohmatsu Consulting LLC",
+        image: "Deloitte.jpg",
+        href: "https://www2.deloitte.com/jp/ja.html",
       },
       {
-       name: "vector",
-       image: "vector.png",
-       href: "https://vectorinc.co.jp/",
+        name: "vector",
+        image: "vector.png",
+        href: "https://vectorinc.co.jp/",
       },
       {
         name: "F Ventures",
@@ -188,9 +188,9 @@ const members = [
         href: "https://innovationlaw.jp/",
       },
       {
-       name: "ZeLo",
-       image: "ZeLo.jpg",
-       href: "https://zelojapan.com/",
+        name: "ZeLo",
+        image: "ZeLo.jpg",
+        href: "https://zelojapan.com/",
       },
       {
         name: "AMT",
@@ -512,40 +512,40 @@ const members = [
         image: "COSMIZE.png",
         href: "https://app.cosmize.io/",
       },
-       {
+      {
         name: "KiHeiTai",
         image: "KiHeiTai.png",
         href: "https://kiheitai.co.jp/ja/homepage/",
       },
       {
-       name: "ORPHE",
-       image: "orphe.png",
-       href: "https://orphe.io/",
+        name: "ORPHE",
+        image: "orphe.png",
+        href: "https://orphe.io/",
       },
       {
-       name: "EXGroundswell",
-       image: "EXGroundswell.png",
-       href: "https://www.exgroundswell.com/",
+        name: "EXGroundswell",
+        image: "EXGroundswell.png",
+        href: "https://www.exgroundswell.com/",
       },
       {
-       name: "UPBOND",
-       image: "UPBOND.png",
-       href: "https://www.upbond.io/",
+        name: "UPBOND",
+        image: "UPBOND.png",
+        href: "https://www.upbond.io/",
       },
       {
-       name: "HANNON",
-       image: "hann.jpeg",
-       href: "https://funandnatural.com/smp/product/list/58",
+        name: "HANNON",
+        image: "hann.jpeg",
+        href: "https://funandnatural.com/smp/product/list/58",
       },
       {
-       name: "GEOMETRON",
-       image: "geometron.png",
-       href: "https://www.geometron.jp/",
+        name: "GEOMETRON",
+        image: "geometron.png",
+        href: "https://www.geometron.jp/",
       },
       {
-       name: "kyotoma",
-       image: "kyotoma.png",
-       href: "http://www.kyotoma.co.jp/",
+        name: "kyotoma",
+        image: "kyotoma.png",
+        href: "http://www.kyotoma.co.jp/",
       },
     ],
   },

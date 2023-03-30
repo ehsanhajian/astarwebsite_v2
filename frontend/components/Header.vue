@@ -19,7 +19,7 @@
             <span class="sr-only">Astar Network</span>
             <img
               class="h-10 w-auto sm:h-14"
-              src="~/assets/images/common/logo.svg"
+              src="/images/common/logo.svg"
               alt="Astar Network"
               width="188"
               height="60"

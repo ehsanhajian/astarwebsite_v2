@@ -3,7 +3,7 @@
     <div class="shrink-0 mb-8 sm:mb-0" data-aos="zoom-out-right">
       <img
         class="mx-auto max-w-[280px] sm:max-w-[350px] lg:max-w-full float-animation"
-        src="~/assets/images/home/welcome-astronaut.svg"
+        src="/images/home/welcome-astronaut.svg"
         alt="Welcome to the leading multichain smart contracts platform"
         width="450"
         height="750"

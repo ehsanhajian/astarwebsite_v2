@@ -4,7 +4,7 @@
       <div class="space-gradient relative">
         <img
           class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-cloud.png"
+          src="/images/common/space-cloud.png"
           alt=""
           width="1728"
           height="1281"
@@ -12,7 +12,7 @@
         />
         <img
           class="absolute z-[2] right-0 -bottom-4 lg:bottom-4 portrait:max-h-[50vh] landscape:max-h-[80vh] w-auto"
-          src="~/assets/images/community/hero.svg"
+          src="/images/community/hero.svg"
           alt="Community"
           width="1106"
           height="804"
@@ -20,7 +20,7 @@
         />
         <img
           class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"

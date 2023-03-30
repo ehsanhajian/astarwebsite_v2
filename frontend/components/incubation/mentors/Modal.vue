@@ -33,7 +33,7 @@
                 <div class="shrink-0 max-w-[280px] lg:max-w-[320px] mx-auto">
                   <img
                     class="w-full object-cover rounded-sm mb-8"
-                    :src="useAsset('incubation/mentors/' + mentor.image)"
+                    :src="'/images/incubation/mentors/' + mentor.image"
                     :alt="mentor.name"
                   />
                   <IncubationMentorsModalDetail

@@ -6,47 +6,29 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
       >
         <li v-for="(item, index) in news">
-          <NuxtLink
-            v-if="item.href !== ''"
-            :to="item.href"
-            target="_blank"
-            class="block group"
-          >
+          <NuxtLink :to="item.href" target="_blank" class="block group">
             <div
               class="mb-4"
               data-aos="flip-left"
               :data-aos-delay="index * 100"
             >
               <img
-                class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
-                :src="useAsset('japan/use-cases/' + item.image)"
+                class="h-52 w-full object-cover rounded-3xl"
+                :class="item.href !== '' && 'group-hover:brightness-125'"
+                :src="'/images/japan/use-cases/' + item.image"
                 :alt="item.title"
               />
             </div>
             <p
-              class="font-medium mb-2 transition group-hover:underline group-hover:text-blue-600"
+              class="font-medium mb-2 line-clamp-3"
+              :class="
+                item.href !== '' &&
+                'transition group-hover:underline group-hover:text-blue-600'
+              "
             >
               {{ item.title }}
             </p>
           </NuxtLink>
-          <div v-else>
-            <div
-              class="mb-4"
-              data-aos="flip-left"
-              :data-aos-delay="index * 100"
-            >
-              <img
-                class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
-                :src="useAsset('japan/use-cases/' + item.image)"
-                :alt="item.title"
-              />
-            </div>
-            <p
-              class="font-medium mb-2 transition group-hover:underline group-hover:text-blue-600"
-            >
-              {{ item.title }}
-            </p>
-          </div>
         </li>
       </ul>
     </div>

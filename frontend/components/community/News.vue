@@ -9,7 +9,7 @@
           <div class="mb-4" data-aos="flip-left" :data-aos-delay="index * 100">
             <img
               class="h-52 w-full object-cover rounded-3xl group-hover:brightness-125"
-              :src="useAsset('community/medium/' + item.id + '.jpg')"
+              :src="'/images/community/medium/' + item.id + '.jpg'"
               :alt="item.title"
             />
           </div>
