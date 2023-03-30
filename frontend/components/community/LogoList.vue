@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    v-for="item in projects"
+    v-for="item in sortedProjects"
     :to="item.attributes.website"
     target="_blank"
   >
@@ -40,5 +40,13 @@ const props = defineProps({
     type: Array,
     default: [],
   },
+});
+
+const sortedProjects = props.projects.sort((a, b) => {
+  if (a.attributes.name.toLowerCase() > b.attributes.name.toLowerCase()) {
+    return 1;
+  } else {
+    return -1;
+  }
 });
 </script>
