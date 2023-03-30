@@ -94,5 +94,4 @@ projects = data.value.projects.data.sort((a, b) => {
     return -1;
   }
 });
-console.log(projects);
 </script>
