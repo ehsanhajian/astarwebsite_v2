@@ -36,6 +36,13 @@
     },
     "description": {
       "type": "string"
+    },
+    "logo_white": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
