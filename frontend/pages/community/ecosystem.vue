@@ -208,15 +208,4 @@ definePageMeta({
     rgba(8, 16, 41, 100) 100%
   );
 }
-
-.tab {
-  @apply text-space-blue hover:text-space-blue-lighter cursor-pointer;
-}
-.tab.current {
-  @apply text-space-gray cursor-default outline-0;
-}
-
-.tab-panel {
-  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto px-4 sm:px-6;
-}
 </style>

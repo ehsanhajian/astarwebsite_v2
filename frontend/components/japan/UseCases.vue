@@ -5,13 +5,9 @@
       <ul
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
       >
-        <li v-for="(item, index) in news">
+        <li v-for="item in cases">
           <NuxtLink :to="item.href" target="_blank" class="block group">
-            <div
-              class="mb-4"
-              data-aos="flip-left"
-              :data-aos-delay="index * 100"
-            >
+            <div class="mb-4">
               <img
                 class="h-52 w-full object-cover rounded-3xl"
                 :class="item.href !== '' && 'group-hover:brightness-125'"
@@ -36,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-const news = [
+const cases = [
   {
     title:
       "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
