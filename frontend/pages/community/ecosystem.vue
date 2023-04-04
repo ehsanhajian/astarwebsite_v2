@@ -193,9 +193,10 @@ categories = data.value.projectCategories.data;
 
 definePageMeta({
   layout: false,
-  title: "Projects",
-  slug: "projects",
-  description: "",
+  title: "Ecosystem",
+  slug: "ecosystem",
+  description:
+    "Who's Building on Astar Network. Check out some of the many projects and DApps with Astar Network deployments.",
 });
 </script>
 

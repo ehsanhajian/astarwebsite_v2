@@ -11,7 +11,7 @@
           Subscribe to our newsletter to receive the latest update in Japanese.
         </p>
         <Button
-          href="https://astarjapan.substack.com/about"
+          href="https://astarjapanlab.substack.com/about"
           target="_blank"
           size="xl"
         >

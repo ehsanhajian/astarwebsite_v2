@@ -53,7 +53,7 @@ const building = [
   {
     title: "Launch your EVM dApps",
     image: "building-ethereum.svg",
-    href: "https://docs.astar.network/docs/build/EVM//",
+    href: "https://docs.astar.network/docs/build/EVM/",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
