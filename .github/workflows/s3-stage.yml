@@ -5,7 +5,10 @@ name: Astar-Stage-SynctoS3
       - ecosystem-page
   pull_request:
     branches:
-      - ecosystem-page 
+      - ecosystem-page
+  workflow_dispatch:
+    name:
+      - from Strapi
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
