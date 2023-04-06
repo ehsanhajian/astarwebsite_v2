@@ -3,16 +3,18 @@
     class="text-center landscape:min-h-screen landscape:flex landscape:items-center landscape:justify-center z-10 relative mb-24"
   >
     <div class="pt-16 sm:pt-24">
-      <h1 class="sr-only">April 6th = Wasm Launch Day</h1>
+      <h1 class="sr-only">April 6th Wasm Launch Day</h1>
       <img
         class="landscape:block portrait:hidden w-full max-w-[1500px] mx-auto"
         src="/images/home/wasm-landscape.svg"
-        alt=""
+        alt="April 6th Wasm Launch Day"
+        data-not-lazy
       />
       <img
         class="landscape:hidden portrait:block w-full max-w-[800px] mx-auto"
         src="/images/home/wasm-portrait.svg"
-        alt=""
+        alt="April 6th Wasm Launch Day"
+        data-not-lazy
       />
       <div class="mt-4 lg:mt-8">
         <Button
