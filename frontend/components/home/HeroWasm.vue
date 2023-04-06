@@ -25,9 +25,13 @@
           class="w-[280px] sm:w-auto"
         >
           Sign up now!
-          <IconArrowTopRightOnSquare class="w-6 h-6 ml-1 stroke-2" />
+          <ArrowTopRightOnSquareIcon class="w-6 h-6 ml-1 stroke-2" />
         </Button>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+</script>
