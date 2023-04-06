@@ -344,7 +344,7 @@ const discoveries: { [index: string]: Discovery } = {
   wasm: {
     title: "Wasm on Astar!",
     description:
-      "We have enabled Polkadot ink! smart contracts on Astar Network, making us the first parachain to support a stable Wasm environment. Software developers can now use Rust programming to build their projects and ideas on Astar.\n\nWebAssembly is important for our blockchain because it provides a more secure, portable, efficient, interoperable, and developer-friendly environment for running code, which can help improve the performance, security, and interoperability of the applications built on Astar.",
+      "We have enabled ink! smart contracts on Astar Network, making us the first parachain to support a stable Wasm environment. Software developers can now use Rust programming to build their projects and ideas on Astar.\n\nWebAssembly is important for our blockchain because it provides a portable and developer-friendly environment for running code, which improves the performance, security, and interoperability of the applications built on Astar.",
     href: "https://medium.com/astar-network/wasm-launch-day-april-6-1efa94dba798",
     image: "wasm.webp",
   },
