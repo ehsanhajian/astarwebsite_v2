@@ -341,6 +341,13 @@ const discoveries: { [index: string]: Discovery } = {
     href: "https://medium.com/astar-network/from-zero-to-ink-hero-9a0c11c58758",
     image: "zero-to-ink-hero.jpg",
   },
+  wasm: {
+    title: "Wasm on Astar!",
+    description:
+      "We have enabled ink! smart contracts on Astar Network, making us the first parachain to support a stable Wasm environment. Software developers can now use Rust programming to build their projects and ideas on Astar.\n\nWebAssembly is important for our blockchain because it provides a portable and developer-friendly environment for running code, which improves the performance, security, and interoperability of the applications built on Astar.",
+    href: "https://medium.com/astar-network/wasm-launch-day-april-6-1efa94dba798",
+    image: "wasm.webp",
+  },
   comingSoon: {
     title: "Coming soon!",
     description: "",
