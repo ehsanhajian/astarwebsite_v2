@@ -20,12 +20,12 @@
           target="_blank"
         >
           Learn more<span class="sr-only"> about Astar Space Lab</span>
-          <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+          <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
         </Button>
       </div>
       <div class="shrink-0">
         <img
-          src="~/assets/images/community/space-lab.svg"
+          src="/images/community/space-lab.svg"
           alt="Astar Space Lab"
           class="rounded-b-3xl lg:rounded-r-3xl"
           width="929"
@@ -35,3 +35,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+</script>

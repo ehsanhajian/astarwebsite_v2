@@ -3,7 +3,7 @@
     <div class="group cursor-pointer" @click="handleClick">
       <img
         class="w-full object-cover rounded-sm shadow-lg group-hover:opacity-90 transition"
-        :src="useAsset('incubation/mentors/' + mentor.image)"
+        :src="'/images/incubation/mentors/' + mentor.image"
         :alt="mentor.name"
       />
       <h2

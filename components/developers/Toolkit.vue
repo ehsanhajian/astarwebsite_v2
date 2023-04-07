@@ -3,7 +3,7 @@
     <div data-aos="zoom-out-left" class="absolute right-4 z-[4]">
       <img
         class="h-48 lg:h-auto float-animation"
-        src="~/assets/images/developers/toolkit-bg.svg"
+        src="/images/developers/toolkit-bg.svg"
         alt="Astar Developer Toolkit"
         width="556"
         height="294"
@@ -16,22 +16,31 @@
       <p class="text-center mb-12 sm:mb-28">
         All your favorite tools and integrations work natively with Astar.<br />
         <NuxtLink
-          to="https://portal.astar.network/#/astar/dapp-staking/discover"
-          target="_blank"
+          to="/community/ecosystem"
           class="text-space-cyan transition hover:text-space-cyan-light hover:underline"
         >
-          Explore all projects building on Astar ->
+          Explore all projects building on Astar
+          <ArrowRightIcon class="inline-block w-5 h-5 stroke-2" />
         </NuxtLink>
       </p>
       <div class="px-4 sm:px-6">
         <div
           class="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-20 sm:grid-cols-4 lg:grid-cols-5"
         >
-          <div v-for="item in logos" class="flex items-center justify-center">
+          <div
+            v-for="item in projects"
+            class="flex items-center justify-center"
+          >
             <img
+              :src="
+                useStrapiMedia(
+                  item.attributes.logo_white.data !== null
+                    ? item.attributes.logo_white.data.attributes.url
+                    : item.attributes.logo.data.attributes.url
+                )
+              "
+              :alt="item.attributes.name"
               class="h-12 w-32 lg:w-48 object-contain"
-              :src="useAsset('developers/toolkit/' + item.image)"
-              :alt="item.name"
             />
           </div>
         </div>
@@ -41,20 +50,48 @@
 </template>
 
 <script setup lang="ts">
-const logos = [
-  { name: "Swanky", image: "swanky.png" },
-  { name: "Alchemy", image: "alchemy.svg" },
-  { name: "BwareLabs", image: "bwarelabs.svg" },
-  { name: "Blockdeamon", image: "blockdaemon.svg" },
-  { name: "OnFinality", image: "onfinality.svg" },
-  { name: "SubWallet", image: "subwallet.png" },
-  { name: "Talisman", image: "talisman.svg" },
-  { name: "Metamask", image: "metamask.svg" },
-  { name: "Polkadot.js", image: "polkadot.svg" },
-  { name: "Solidity", image: "solidity.png" },
-  { name: "ink!", image: "ink.svg" },
-  { name: "Remix", image: "remix.svg" },
-  { name: "HardHat", image: "hardhat.svg" },
-  { name: "OpenBrush", image: "openbrush.svg" },
-];
+import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+
+import gql from "graphql-tag";
+
+const query = gql`
+  query getAllData {
+    projects(
+      pagination: { page: 1, pageSize: 100 }
+      filters: { project_categories: { id: { eq: 16 } } }
+    ) {
+      data {
+        attributes {
+          name
+          website
+          description
+          logo_white {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+          logo {
+            data {
+              attributes {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+const { data } = await useAsyncQuery(query);
+
+let projects = [];
+projects = data.value.projects.data.sort((a, b) => {
+  if (a.attributes.name.toLowerCase() > b.attributes.name.toLowerCase()) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
 </script>

@@ -4,10 +4,11 @@
       <div class="space-gradient relative">
         <img
           class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <StarmapHero />
       </div>

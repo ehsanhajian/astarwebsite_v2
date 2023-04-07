@@ -5,7 +5,7 @@
     <div class="sm:mr-12 mb-6" data-aos="zoom-out-right">
       <img
         class="mx-auto max-w-[280px] sm:max-w-[400px] lg:max-w-none"
-        src="~/assets/images/japan/news-image.svg"
+        src="/images/japan/news-image.svg"
         alt="News"
         width="670"
         height="564"

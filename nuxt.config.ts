@@ -20,7 +20,26 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "~/modules/sitemap",
     "@nuxtjs/i18n",
+    "@nuxtjs/strapi",
+    "@nuxtjs/apollo",
+    ['nuxt3-lazy-load', {
+      defaultImage: '/images/placeholder.png',
+    }]
   ],
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: 'https://community.astar.network/graphql'
+      }
+    },
+  },
+  strapi: {
+    url: "https://community.astar.network",
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+    cookieName: 'strapi_jwt'
+  },
   i18n: {
     baseUrl: "https://astar.network",
     locales: [

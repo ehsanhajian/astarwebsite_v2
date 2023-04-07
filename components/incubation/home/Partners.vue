@@ -24,7 +24,7 @@
     </div>
     <div class="bg-gray-50 py-4 lg:py-12 px-4 lg:px-16 lg:shrink-0">
       <img
-        src="~/assets/images/incubation/home/partners.svg"
+        src="/images/incubation/home/partners.svg"
         alt="Partners"
         class="min-w-[300px]"
       />

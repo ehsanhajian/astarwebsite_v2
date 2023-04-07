@@ -17,29 +17,15 @@
           data-aos="flip-left"
           :data-aos-delay="index * 100"
         >
-          <span v-if="item.href === ''" class="block">
-            <img
-              class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
-              :src="useAsset('developers/' + item.image)"
-              :alt="item.title"
-              width="182"
-              height="184"
-            />
-            <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
-              <h3 class="text-lg sm:text-xl font-bold leading-tight">
-                {{ item.title }}
-              </h3>
-            </div>
-          </span>
           <NuxtLink
-            v-else
             :to="item.href"
-            class="block hover:brightness-125"
+            class="block"
+            :class="item.href != '' && 'hover:brightness-125'"
             target="_blank"
           >
             <img
               class="mx-auto w-32 sm:w-auto mb-2 -mt-12"
-              :src="useAsset('developers/' + item.image)"
+              :src="'/images/developers/' + item.image"
               :alt="item.title"
               width="182"
               height="184"
@@ -47,7 +33,10 @@
             <div class="px-4 sm:px-6 lg:px-7 pb-8 sm:pb-8">
               <h3 class="text-lg sm:text-xl font-bold leading-tight">
                 {{ item.title }}
-                <span class="whitespace-nowrap">-></span>
+                <ArrowRightIcon
+                  v-if="item.href != ''"
+                  class="inline-block w-6 h-6 stroke-2"
+                />
               </h3>
             </div>
           </NuxtLink>
@@ -58,6 +47,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowRightIcon } from "@heroicons/vue/24/outline";
+
 const building = [
   {
     title: "Launch your EVM dApps",

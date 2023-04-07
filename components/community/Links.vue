@@ -24,7 +24,7 @@
             :class="index === 2 ? 'border-space-gray-dark' : 'border-white'"
           >
             {{ item.to }}
-            <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+            <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
       </NuxtLink>
@@ -33,6 +33,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const links = [
   {
     label: "Announcements, Developments, Articles",

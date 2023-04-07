@@ -28,7 +28,7 @@
               "
             >
               {{ item.name }}
-              <IconArrowTopRightOnSquare
+              <ArrowTopRightOnSquareIcon
                 v-if="item.href.includes('https')"
                 class="w-4 h-4 inline-block stroke-2"
               />
@@ -75,6 +75,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const Twitter = resolveComponent("IconTwitter");
 const Discord = resolveComponent("IconDiscord");
 const Telegram = resolveComponent("IconTelegram");

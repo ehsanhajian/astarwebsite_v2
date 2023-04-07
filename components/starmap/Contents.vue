@@ -70,7 +70,7 @@
                         <span class="sr-only">
                           about {{ discoveries[discoveryId]["title"] }}
                         </span>
-                        <IconArrowTopRightOnSquare
+                        <ArrowTopRightOnSquareIcon
                           class="w-5 h-5 stroke-2 ml-1"
                         />
                       </NuxtLink>
@@ -82,9 +82,7 @@
                       <img
                         class=""
                         :src="
-                          useAsset(
-                            'starmap/' + discoveries[discoveryId]['image']
-                          )
+                          '/images/starmap/' + discoveries[discoveryId]['image']
                         "
                         :alt="discoveries[discoveryId]['title']"
                         width="580"
@@ -111,9 +109,11 @@
 
   <div
     class="relative z-10 bg-cover"
-    :style="`background-image: url(${useAsset(
-      'starmap/nebula.png'
-    )}); background-position:center top; background-repeat:no-repeat;`"
+    style="
+      background-image: url(/images/starmap/nebula.webp);
+      background-position: center top;
+      background-repeat: no-repeat;
+    "
   >
     <div class="md:absolute w-full">
       <div
@@ -190,7 +190,7 @@
               >発展</span
             >
           </div>
-          <div class="md:max-w-[400px] xl:max-w-[540px] order-1">
+          <div class="md:max-w-[400px] xl:max-w-[540px] order-1 relative z-10">
             <h2 class="title mb-4">
               <span class="text-3xl lg:text-4xl">The Growth Nebula</span>
             </h2>
@@ -206,7 +206,11 @@
                 We can look forward to discoveries that relate to the following:
               </p>
               <ul class="list-disc pl-4">
-                <li>Wasm on Astar!</li>
+                <li>
+                  <span @click="clickAction('wasm')" class="popup-link">
+                    Wasm on Astar!
+                  </span>
+                </li>
                 <li>RMRK ink! NFT</li>
                 <li>Swanky/Decentralized Tooling</li>
               </ul>
@@ -294,8 +298,10 @@
 </template>
 
 <script setup lang="ts">
-import { XMarkIcon } from "@heroicons/vue/24/outline";
-import { ref } from "vue";
+import {
+  XMarkIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/vue/24/outline";
 import {
   Dialog,
   DialogPanel,
@@ -339,12 +345,12 @@ const discoveries: { [index: string]: Discovery } = {
     description:
       "Mint your ink! NFT, build a Uniswap V2 DEX, or create a simple flipper contract! \n\nBecoming a robust Layer 1 requires us to jumpstart Astar’s Wasm environment with the development of ink! smart contracts. For that reason, we created From Zero to ink! Hero guide to help you build your ink! dApp.",
     href: "https://medium.com/astar-network/from-zero-to-ink-hero-9a0c11c58758",
-    image: "zero-to-ink-hero.jpg",
+    image: "zero-to-ink-hero.webp",
   },
   wasm: {
     title: "Wasm on Astar!",
     description:
-      "We have enabled ink! smart contracts on Astar Network, making us the first parachain to support a stable Wasm environment. Software developers can now use Rust programming to build their projects and ideas on Astar.\n\nWebAssembly is important for our blockchain because it provides a portable and developer-friendly environment for running code, which improves the performance, security, and interoperability of the applications built on Astar.",
+      "We have enabled ink! smart contracts on Astar Network, making us the first parachain to support a stable Wasm environment. Software developers can now use Rust programming to build their projects and ideas on Astar. \n\nWebAssembly is important for our blockchain because it provides a portable and developer-friendly environment for running code, which improves the performance, security, and interoperability of the applications built on Astar.",
     href: "https://medium.com/astar-network/wasm-launch-day-april-6-1efa94dba798",
     image: "wasm.webp",
   },

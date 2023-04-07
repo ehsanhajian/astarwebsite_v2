@@ -9,7 +9,7 @@
         :class="index % 2 === 0 && 'sm:order-2'"
       >
         <img
-          :src="useAsset('home/' + item.image)"
+          :src="'/images/home/' + item.image"
           :alt="item.title"
           class="mx-auto"
           width="614"
@@ -23,7 +23,7 @@
         <p>{{ item.description }}</p>
         <NuxtLink :to="item.href" target="_blank" class="flex items-center">
           Learn more<span class="sr-only"> about {{ item.title }}</span>
-          <IconArrowTopRightOnSquare class="w-5 h-5 stroke-2 ml-1" />
+          <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
         </NuxtLink>
       </div>
     </div>
@@ -31,6 +31,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const features = [
   {
     title: "Multichain Smart Contracts",

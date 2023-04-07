@@ -5,7 +5,7 @@
     >
       <li v-for="(item, index) in advantages" class="text-center">
         <img
-          :src="useAsset('japan/' + item.image)"
+          :src="'/images/japan/' + item.image"
           :alt="item.text"
           data-aos="fade-up"
           :data-aos-delay="index * 100"

@@ -5,10 +5,11 @@
     <div class="relative z-10">
       <img
         class="w-full"
-        src="~/assets/images/common/cloud.svg"
+        src="/images/common/cloud.svg"
         alt=""
         width="2000"
         height="464"
+        data-not-lazy
       />
       <div class="bg-white">
         <slot name="earth" />
