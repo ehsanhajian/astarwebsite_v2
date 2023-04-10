@@ -31,15 +31,17 @@
           <li
             v-for="item in options"
             :class="item.slug === 'other' && 'md:col-span-3'"
-            class="border border-gray-400 px-4 py-8 rounded-3xl"
+            class="border border-gray-400 px-4 py-8 rounded-3xl flex flex-col justify-between items-center"
           >
-            <component
-              :is="item.icon"
-              class="h-16 w-16 mx-auto"
-              aria-hidden="true"
-            />
-            <h2 class="font-bold text-2xl sm:my-2">{{ item.title }}</h2>
-            <p class="text-gray-300 mb-6">{{ item.description }}</p>
+            <div>
+              <component
+                :is="item.icon"
+                class="h-16 w-16 mx-auto"
+                aria-hidden="true"
+              />
+              <h2 class="font-bold text-2xl sm:my-2">{{ item.title }}</h2>
+              <p class="text-gray-300 mb-6">{{ item.description }}</p>
+            </div>
 
             <template v-if="item.slug === 'marketing'">
               <button
@@ -63,7 +65,7 @@
                   aria-hidden="true"
                 />
                 {{ item.buttonLabel }}
-                <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+                <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
               </Button>
             </template>
 
@@ -105,6 +107,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 useHead({
   script: [{ src: "//embed.typeform.com/next/embed.js" }],
 });
