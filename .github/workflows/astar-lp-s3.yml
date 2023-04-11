@@ -5,7 +5,10 @@ name: Astar-SynctoS3
       - main
   pull_request:
     branches:
-      - main 
+      - main
+  workflow_dispatch:
+    name:
+      - from Strapi
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
