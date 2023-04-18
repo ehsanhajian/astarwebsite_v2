@@ -51,7 +51,7 @@ const links = [
   {
     label: "Join the Community",
     to: "Go to Discord",
-    href: "https://discord.gg/Z3nC9U4",
+    href: "https://discord.gg/astarnetwork",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",
   },
 ];
