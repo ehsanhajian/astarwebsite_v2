@@ -58,7 +58,7 @@
             </template>
 
             <template v-else-if="item.slug === 'technical'">
-              <Button href="https://discord.gg/Z3nC9U4" target="_blank">
+              <Button href="https://discord.gg/astarnetwork" target="_blank">
                 <component
                   :is="Discord"
                   class="h-5 w-5 mr-1.5"

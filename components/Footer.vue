@@ -95,7 +95,7 @@ const nav = [
     nav: [
       { name: "Docs", href: "https://docs.astar.network/" },
       { name: "GitHub", href: "https://github.com/AstarNetwork" },
-      { name: "Discord", href: "https://discord.gg/Z3nC9U4" },
+      { name: "Discord", href: "https://discord.gg/astarnetwork" },
     ],
   },
   {
@@ -162,7 +162,7 @@ const social = [
   },
   {
     name: "Discord",
-    href: "https://discord.gg/Z3nC9U4",
+    href: "https://discord.gg/astarnetwork",
     icon: Discord,
   },
   {
