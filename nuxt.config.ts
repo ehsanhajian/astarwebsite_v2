@@ -28,8 +28,11 @@ export default defineNuxtConfig({
   ],
   apollo: {
     clients: {
-      default: {
+      community: {
         httpEndpoint: 'https://community.astar.network/graphql'
+      },
+      subsocial: {
+        httpEndpoint: 'https://squid.subsquid.io/subsocial/graphql'
       }
     },
   },

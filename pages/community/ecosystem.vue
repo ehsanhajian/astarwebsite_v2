@@ -164,7 +164,8 @@ const query = gql`
     }
   }
 `;
-const { data } = await useAsyncQuery(query);
+const { clients } = useApollo();
+const { data } = await useAsyncQuery(query, { client: clients.community });
 
 let projects = [];
 let categories = [];

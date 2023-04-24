@@ -39,6 +39,29 @@
 </template>
 
 <script setup lang="ts">
+import gql from "graphql-tag";
+
+// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
+const japanNewsSpace = 11132;
+const query = gql`
+  query PostsBySpaceId {
+    posts(where: { space: { id_eq: "${japanNewsSpace}" } }, orderBy: id_DESC) {
+      publishedDate: createdOnDay
+      text: title
+      href: canonical
+    }
+  }
+`;
+
+const { clients } = useApollo();
+
+try {
+  const { data } = await useAsyncQuery(query, { client: clients.subsocial });
+  console.log("data", data);
+} catch (error) {
+  console.log("catched", error);
+}
+
 const news = [
   {
     publishedDate: "Oct 21 2022",
