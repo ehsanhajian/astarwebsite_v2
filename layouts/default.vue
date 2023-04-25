@@ -22,7 +22,7 @@
 const route = useRoute();
 
 const meta = {
-  title: "Astar Network - The Future of Smart Contracts for Multichain",
+  title: "Astar Network - The Future of Multichain Smart Contracts",
   siteName: "Astar Network",
   url: "https://astar.network",
   ogImage: "https://astar.network/social-preview.png",
