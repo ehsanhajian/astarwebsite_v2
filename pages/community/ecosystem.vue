@@ -164,8 +164,7 @@ const query = gql`
     }
   }
 `;
-const { clients } = useApollo();
-const { data } = await useAsyncQuery(query, { client: clients.community });
+const { data } = await useAsyncQuery({query, clientId: 'community'});
 
 let projects = [];
 let categories = [];
