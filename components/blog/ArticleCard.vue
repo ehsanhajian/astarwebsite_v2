@@ -8,7 +8,7 @@
       <img
         :src="post.image"
         alt=""
-        class="object-cover w-full h-[260px] group-hover:brightness-110"
+        class="object-cover w-full h-[240px] group-hover:brightness-110"
       />
       <div class="p-5 pb-12">
         <time class="text-gray-400 text-tiny">{{ post.publishedDate }}</time>

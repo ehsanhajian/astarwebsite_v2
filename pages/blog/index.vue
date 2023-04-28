@@ -29,8 +29,10 @@
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 class="text-center text-4xl font-semibold mb-12">Latest Posts</h2>
-        <ul class="grid grid-cols-3 gap-12">
-          <BlogArticleCard v-for="post in posts" :post="post"/>
+        <ul
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+        >
+          <BlogArticleCard v-for="post in posts" :post="post" />
         </ul>
       </div>
     </template>
@@ -57,17 +59,24 @@ const query = gql`
   }
 `;
 
-const { data } = await useAsyncQuery({query, clientId: 'subsocial'});
-const posts = data.value.posts.map((item: { publishedDate: string | number | Date; }) => {
-  const date = new Date(item.publishedDate);
-    const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+const { data } = await useAsyncQuery({ query, clientId: "subsocial" });
+const posts = data.value.posts.map(
+  (item: { publishedDate: string | number | Date }) => {
+    const date = new Date(item.publishedDate);
+    const formattedDate = date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    });
     return {
-        ...item,
-        image: item.image ? 'https://ipfs.subsocial.network/ipfs/' + item.image : '/images/blog/placeholder.webp',
-        publishedDate: formattedDate
+      ...item,
+      image: item.image
+        ? "https://ipfs.subsocial.network/ipfs/" + item.image
+        : "/images/blog/placeholder.webp",
+      publishedDate: formattedDate,
     };
-});
-
+  }
+);
 
 definePageMeta({
   layout: false,

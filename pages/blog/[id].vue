@@ -9,12 +9,14 @@
           width="1728"
           height="1728"
         />
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 w-full pt-36">
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 w-full pt-20 sm:pt-28 lg:pt-36"
+        >
           <div class="text-center">
             <img
               src="/images/blog/placeholder.webp"
               alt=""
-              class="object-cover w-full h-[520px] shadow-xl"
+              class="object-cover w-full lg:h-[520px] shadow-xl"
             />
           </div>
         </div>
@@ -23,13 +25,15 @@
       <article class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 mb-32">
         <header class="text-center mb-12">
           <time class="text-gray-400">Mar 27, 2023</time>
-          <h1 class="text-4xl font-semibold leading-tight text-white">
+          <h1
+            class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight text-white"
+          >
             Article title here {{ $route.params.id }}
           </h1>
         </header>
         <div class="entry-content leading-9">Article content here</div>
         <footer class="mt-16">
-          <div class="flex mb-12">
+          <div class="flex mb-12 text-tiny lg:text-base">
             <p class="mr-2 mt-3">Tags:</p>
             <div class="flex flex-wrap">
               <NuxtLink
@@ -40,17 +44,17 @@
               </NuxtLink>
             </div>
           </div>
-          <div class="flex border border-gray-500 rounded-3xl p-8">
-            <div class="shrink-0 mr-4">
+          <div class="flex border border-gray-500 rounded-3xl px-3 py-6 sm:p-8">
+            <div class="shrink-0 mr-3 sm:mr-4">
               <img
                 src="/images/blog/placeholder.webp"
                 alt=""
-                class="object-cover w-16 h-16 rounded-full"
+                class="object-cover w-12 sm:w-16 h-12 sm:h-16 rounded-full"
               />
             </div>
             <div class="flex-1">
-              <h3 class="font-bold text-xl mb-2">Author Name</h3>
-              <p>
+              <h3 class="font-bold text-lg lg:text-xl mb-2">Author Name</h3>
+              <p class="text-tiny lg:text-base">
                 Author profile: Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -63,8 +67,12 @@
       </article>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <h2 class="text-center text-4xl font-semibold mb-12">Related Posts</h2>
-        <ul class="grid grid-cols-3 gap-12">
+        <h2 class="text-center text-3xl lg:text-4xl font-semibold mb-12">
+          Related Posts
+        </h2>
+        <ul
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+        >
           <BlogArticleCard />
           <BlogArticleCard />
           <BlogArticleCard />
