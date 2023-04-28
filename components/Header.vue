@@ -176,6 +176,8 @@ import {
   ArrowRightIcon,
 } from "@heroicons/vue/24/outline";
 
+let open = false;
+
 const network = [
   {
     label: "Explorer",

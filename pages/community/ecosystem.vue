@@ -164,7 +164,7 @@ const query = gql`
     }
   }
 `;
-const { data } = await useAsyncQuery(query);
+const { data } = await useAsyncQuery({query, clientId: 'community'});
 
 let projects = [];
 let categories = [];
