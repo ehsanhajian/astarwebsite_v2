@@ -24,7 +24,7 @@
         <header class="text-center mb-12">
           <time class="text-gray-400">Mar 27, 2023</time>
           <h1 class="text-4xl font-semibold leading-tight text-white">
-            Article title here
+            Article title here {{ $route.params.id }}
           </h1>
         </header>
         <div class="entry-content leading-9">Article content here</div>

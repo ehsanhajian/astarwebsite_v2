@@ -30,12 +30,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 class="text-center text-4xl font-semibold mb-12">Latest Posts</h2>
         <ul class="grid grid-cols-3 gap-12">
-          <BlogArticleCard />
-          <BlogArticleCard />
-          <BlogArticleCard />
-          <BlogArticleCard />
-          <BlogArticleCard />
-          <BlogArticleCard />
+          <BlogArticleCard v-for="post in posts" :post="post"/>
         </ul>
       </div>
     </template>
@@ -46,6 +41,34 @@
 </template>
 
 <script setup lang="ts">
+import gql from "graphql-tag";
+
+// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
+const japanNewsSpace = 11132;
+const query = gql`
+  query PostsBySpaceId {
+    posts(where: { space: { id_eq: "${japanNewsSpace}" } }, orderBy: id_DESC) {
+      publishedDate: createdOnDay
+      title
+      href: canonical
+      image
+      id
+    }
+  }
+`;
+
+const { data } = await useAsyncQuery({query, clientId: 'subsocial'});
+const posts = data.value.posts.map((item: { publishedDate: string | number | Date; }) => {
+  const date = new Date(item.publishedDate);
+    const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    return {
+        ...item,
+        image: item.image ? 'https://ipfs.subsocial.network/ipfs/' + item.image : '/images/blog/placeholder.webp',
+        publishedDate: formattedDate
+    };
+});
+
+
 definePageMeta({
   layout: false,
   title: "Blog",
