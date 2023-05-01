@@ -28,7 +28,7 @@ const meta = {
   ogImage: "https://astar.network/social-preview.png",
   twitter: "@AstarNetwork",
   description:
-    "Astar is a scalable decentralised blockchain for next big Web3 innovations",
+    "Japan's most popular smart contract platform supporting both EVM and WebAssembly (Wasm) environments, and the tools and languages developers already know.",
 };
 
 const title = route.meta.title

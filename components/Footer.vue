@@ -106,10 +106,6 @@ const nav = [
         href: "https://angel.co/company/astar-network",
       },
       {
-        name: "Astar Japan Lab",
-        href: "/japan",
-      },
-      {
         name: "Astar Space Lab",
         href: "https://astarnetwork.notion.site/Astar-SpaceLabs-bee19d9d13ab41ba8d113347ae56448f",
       },
