@@ -70,9 +70,7 @@
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
         >
-          <BlogArticleCard />
-          <BlogArticleCard />
-          <BlogArticleCard />
+          <BlogArticleCard v-for="post in posts" :post="post" />
         </ul>
       </div>
     </template>
@@ -128,6 +126,39 @@ const post = data.value.posts.map(
     };
   }
 )[0];
+
+const astarSpace = 11132;
+const querySpace = gql`
+  query PostsBySpaceId {
+    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_eq: "${post.tagsOriginal}", id_not_eq: "${id}" }, orderBy: id_DESC) {
+      publishedDate: createdOnDay
+      title
+      href: canonical
+      image
+      id
+    }
+  }
+`;
+
+const dataRelated = await useAsyncQuery({ query: querySpace, clientId: "subsocial" });
+const posts = dataRelated.data.value.posts.map(
+  (item: { publishedDate: string | number | Date }) => {
+    const date = new Date(item.publishedDate);
+    const formattedDate = date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    });
+    return {
+      ...item,
+      image: item.image
+        ? "https://ipfs.subsocial.network/ipfs/" + item.image
+        : "/images/blog/placeholder.webp",
+      publishedDate: formattedDate,
+    };
+  }
+);
+
 
 definePageMeta({
   layout: false,
