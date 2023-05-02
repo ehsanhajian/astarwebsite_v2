@@ -14,7 +14,7 @@
         >
           <div class="text-center">
             <img
-              src="/images/blog/placeholder.webp"
+              :src="post.image"
               alt=""
               class="object-cover w-full lg:h-[520px] shadow-xl"
             />
@@ -24,42 +24,39 @@
 
       <article class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 mb-32">
         <header class="text-center mb-12">
-          <time class="text-gray-400">Mar 27, 2023</time>
+          <time class="text-gray-400">{{ post.publishedDate }}</time>
           <h1
             class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight text-white"
           >
-            Article title here {{ $route.params.id }}
+            {{ post.title }}
           </h1>
         </header>
-        <div class="entry-content leading-9">Article content here</div>
+        <div class="entry-content leading-9">{{ post.content }}</div>
         <footer class="mt-16">
           <div class="flex mb-12 text-tiny lg:text-base">
             <p class="mr-2 mt-3">Tags:</p>
             <div class="flex flex-wrap">
               <NuxtLink
+                v-for="tag in post.tagsOriginal.split(',')"
                 href="#"
                 class="block text-white border border-gray-500 py-2 px-4 rounded-full hover:bg-white/10 mr-1 mb-2"
               >
-                Tag
+                {{ tag }}
               </NuxtLink>
             </div>
           </div>
           <div class="flex border border-gray-500 rounded-3xl px-3 py-6 sm:p-8">
             <div class="shrink-0 mr-3 sm:mr-4">
               <img
-                src="/images/blog/placeholder.webp"
+                :src="post.authorImg"
                 alt=""
                 class="object-cover w-12 sm:w-16 h-12 sm:h-16 rounded-full"
               />
             </div>
             <div class="flex-1">
-              <h3 class="font-bold text-lg lg:text-xl mb-2">Author Name</h3>
+              <h3 class="font-bold text-lg lg:text-xl mb-2">{{ post.author.profileSpace.name }}</h3>
               <p class="text-tiny lg:text-base">
-                Author profile: Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+                <div v-html="post.body" />
               </p>
             </div>
           </div>
@@ -86,6 +83,52 @@
 </template>
 
 <script setup lang="ts">
+import gql from "graphql-tag";
+import MarkdownIt from 'markdown-it'
+const md = new MarkdownIt()
+
+// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
+const route = useRoute();
+const id = route.params.id;
+
+const query = gql`
+  query PostsBySpaceId {
+    posts(where: { id_eq: "${id}" }, orderBy: id_DESC) {
+      publishedDate: createdOnDay
+      title
+      href: canonical
+      image
+      id
+      body
+      tagsOriginal
+      author: ownedByAccount { profileSpace { name, image } }
+    }
+  }
+`;
+
+const { data } = await useAsyncQuery({ query, clientId: "subsocial" });
+const post = data.value.posts.map(
+  (item: { publishedDate: string | number | Date }) => {
+    const date = new Date(item.publishedDate);
+    const formattedDate = date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    });
+    return {
+      ...item,
+      image: item.image
+        ? "https://ipfs.subsocial.network/ipfs/" + item.image
+        : "/images/blog/placeholder.webp",
+      authorImg: item.author.profileSpace.image
+        ? "https://ipfs.subsocial.network/ipfs/" + item.author.profileSpace.image
+        : "/images/blog/placeholder.webp",
+      publishedDate: formattedDate,
+      body: md.render(item.body).replace(/\n/g, '<br />'),
+    };
+  }
+)[0];
+
 definePageMeta({
   layout: false,
   title: "Article",
