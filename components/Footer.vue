@@ -103,11 +103,7 @@ const nav = [
     nav: [
       {
         name: "Careers",
-        href: "https://angel.co/company/astar-network",
-      },
-      {
-        name: "Astar Japan Lab",
-        href: "/japan",
+        href: "https://wellfound.com/company/astar-network",
       },
       {
         name: "Astar Space Lab",

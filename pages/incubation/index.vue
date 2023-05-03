@@ -3,7 +3,7 @@
     <template #hero>
       <div class="bg-black">
         <div
-          class="bg-[url('/assets/images/incubation/home/hero-bg.svg')] bg-center bg-repeat"
+          class="bg-[url('/images/incubation/home/hero-bg.svg')] bg-center bg-repeat"
         >
           <div class="relative z-10 h-screen">
             <IncubationHeader />
@@ -13,7 +13,7 @@
       </div>
       <div class="w-full -mt-12 lg:absolute sm:top-[75vh]">
         <div
-          class="bg-[url('/assets/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-8 sm:ml-24 lg:ml-[50vw] min-h-[410px] sm:min-h-[616px] lg:min-h-[820px] bg-cover bg-[length:600px_410px] sm:bg-[length:900px_616px] lg:bg-[length:1200px_820px]"
+          class="bg-[url('/images/incubation/home/hero-rocket.svg')] bg-left bg-no-repeat ml-8 sm:ml-24 lg:ml-[50vw] min-h-[410px] sm:min-h-[616px] lg:min-h-[820px] bg-[length:600px_410px] sm:bg-[length:900px_616px] lg:bg-[length:1200px_820px]"
         />
       </div>
     </template>

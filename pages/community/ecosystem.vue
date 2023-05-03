@@ -164,7 +164,7 @@ const query = gql`
     }
   }
 `;
-const { data } = await useAsyncQuery({query, clientId: 'community'});
+const { data } = await useAsyncQuery({ query, clientId: "community" });
 
 let projects = [];
 let categories = [];
@@ -194,7 +194,7 @@ categories = data.value.projectCategories.data;
 definePageMeta({
   layout: false,
   title: "Ecosystem",
-  slug: "ecosystem",
+  slug: "community/ecosystem",
   description:
     "Who's Building on Astar Network. Check out some of the many projects and DApps with Astar Network deployments.",
 });
