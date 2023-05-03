@@ -31,7 +31,7 @@
             {{ post.title }}
           </h1>
         </header>
-        <div class="entry-content leading-9">{{ post.content }}</div>
+        <div class="entry-content leading-9" v-html="post.body" />
         <footer class="mt-16">
           <div class="flex mb-12 text-tiny lg:text-base">
             <p class="mr-2 mt-3">Tags:</p>
@@ -54,9 +54,11 @@
               />
             </div>
             <div class="flex-1">
-              <h3 class="font-bold text-lg lg:text-xl mb-2">{{ post.author.profileSpace.name }}</h3>
+              <h3 class="font-bold text-lg lg:text-xl mb-2">
+                {{ post.author.profileSpace.name }}
+              </h3>
               <p class="text-tiny lg:text-base">
-                <div v-html="post.body" />
+                please add author's profile here
               </p>
             </div>
           </div>
@@ -82,8 +84,8 @@
 
 <script setup lang="ts">
 import gql from "graphql-tag";
-import MarkdownIt from 'markdown-it'
-const md = new MarkdownIt()
+import MarkdownIt from "markdown-it";
+const md = new MarkdownIt();
 
 // The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
 const route = useRoute();
@@ -119,10 +121,11 @@ const post = data.value.posts.map(
         ? "https://ipfs.subsocial.network/ipfs/" + item.image
         : "/images/blog/placeholder.webp",
       authorImg: item.author.profileSpace.image
-        ? "https://ipfs.subsocial.network/ipfs/" + item.author.profileSpace.image
+        ? "https://ipfs.subsocial.network/ipfs/" +
+          item.author.profileSpace.image
         : "/images/blog/placeholder.webp",
       publishedDate: formattedDate,
-      body: md.render(item.body).replace(/\n/g, '<br />'),
+      body: md.render(item.body),
     };
   }
 )[0];
@@ -140,7 +143,10 @@ const querySpace = gql`
   }
 `;
 
-const dataRelated = await useAsyncQuery({ query: querySpace, clientId: "subsocial" });
+const dataRelated = await useAsyncQuery({
+  query: querySpace,
+  clientId: "subsocial",
+});
 const posts = dataRelated.data.value.posts.map(
   (item: { publishedDate: string | number | Date }) => {
     const date = new Date(item.publishedDate);
@@ -159,6 +165,7 @@ const posts = dataRelated.data.value.posts.map(
   }
 );
 
+console.log(query);
 
 definePageMeta({
   layout: false,
@@ -181,11 +188,6 @@ definePageMeta({
 .entry-content {
   @apply prose prose-invert lg:prose-xl prose-a:text-space-cyan hover:prose-a:text-space-cyan-lighter prose-headings:text-white bg-space-gray-dark tracking-wider prose-headings:font-bold prose-blockquote:font-normal prose-blockquote:py-3 prose-blockquote:pl-7 prose-blockquote:pr-5 prose-blockquote:bg-white/5 prose-strong:font-medium;
 }
-.entry-content h2 a,
-.entry-content h3 a,
-.entry-content h4 a {
-  @apply text-white no-underline;
-}
 .entry-content p code {
   font-size: 0.9em;
   @apply bg-white/20 font-normal rounded p-2;
@@ -194,7 +196,7 @@ definePageMeta({
 .entry-content p code::after {
   @apply hidden;
 }
-.entry-content strong {
+/* .entry-content strong {
   background: linear-gradient(transparent 60%, #69275c 60%);
-}
+}*/
 </style>
