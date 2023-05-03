@@ -3,7 +3,7 @@
     <template #space>
       <div class="banner--hiring">
         <NuxtLink
-          to="https://angel.co/company/astar-network"
+          to="https://wellfound.com/company/astar-network"
           target="_blank"
           class="link--hiring"
         >
