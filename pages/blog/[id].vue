@@ -165,8 +165,6 @@ const posts = dataRelated.data.value.posts.map(
   }
 );
 
-console.log(query);
-
 definePageMeta({
   layout: false,
   title: "Article",
