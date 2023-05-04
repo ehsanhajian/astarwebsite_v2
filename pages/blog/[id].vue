@@ -58,7 +58,7 @@
                 {{ post.author.profileSpace.name }}
               </h3>
               <p class="text-tiny lg:text-base">
-                please add author's profile here
+                {{ post.author.profileSpace.about }}
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ const query = gql`
       id
       body
       tagsOriginal
-      author: ownedByAccount { profileSpace { name, image } }
+      author: ownedByAccount { profileSpace { name, image, about } }
     }
   }
 `;
