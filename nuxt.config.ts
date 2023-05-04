@@ -74,5 +74,6 @@ export default defineNuxtConfig({
   plugins: [{ src: "~/plugins/aos" }],
   sitemap: {
     siteUrl: "https://astar.network",
+    discoverImages: false,
   },
 });
