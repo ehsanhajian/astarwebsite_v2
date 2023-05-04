@@ -29,11 +29,26 @@
 import { mentors } from "../../content/mentors";
 import { ref } from "vue";
 
+const { t } = useI18n();
+const seoTitle = `${t("meta.mentors.title")} | ${t("meta.title")}`;
+const seoDescription = t("meta.mentors.description");
+const seoImage = "https://astar.network/social-preview-incubation.png";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
+
 definePageMeta({
   layout: false,
-  pageTitle: "meta.mentors.title",
-  slug: "mentors",
-  description: "meta.mentors.description",
 });
 
 const open = ref(false);

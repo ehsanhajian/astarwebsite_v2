@@ -91,6 +91,23 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
+import { meta } from "../content/meta";
+const seoTitle = `${meta.siteName} - ${meta.tagline}`;
+const seoDescription = meta.description;
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => meta.image,
+  ogImageUrl: () => meta.image,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => meta.image,
+});
+
 definePageMeta({
   layout: false,
 });

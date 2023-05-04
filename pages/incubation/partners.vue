@@ -53,11 +53,26 @@
 <script setup lang="ts">
 import { partners } from "../../content/partners";
 
+const { t } = useI18n();
+const seoTitle = `${t("meta.partners.title")} | ${t("meta.title")}`;
+const seoDescription = t("meta.partners.description");
+const seoImage = "https://astar.network/social-preview-incubation.png";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
+
 definePageMeta({
   layout: false,
-  title: "meta.partners.title",
-  slug: "partners",
-  description: "meta.partners.description",
 });
 
 const { locale } = useI18n();

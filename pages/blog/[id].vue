@@ -165,11 +165,25 @@ const posts = dataRelated.data.value.posts.map(
   }
 );
 
+import { meta } from "../../content/meta";
+const seoTitle = `${post.title} | ${meta.siteName}`;
+const seoDescription = "description";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => post.image,
+  ogImageUrl: () => post.image,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => post.image,
+});
+
 definePageMeta({
   layout: false,
-  title: "Article",
-  slug: "article",
-  description: "Get in touch with the Astar Network team",
 });
 </script>
 

@@ -41,11 +41,25 @@
 </template>
 
 <script setup lang="ts">
+import { meta } from "../../content/meta";
+const seoTitle = `Community | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription = "A star is born together with our awesome community.";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => meta.image,
+  ogImageUrl: () => meta.image,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => meta.image,
+});
+
 definePageMeta({
   layout: false,
-  title: "Community",
-  slug: "community",
-  description: "A star is born together with our awesome community.",
 });
 </script>
 

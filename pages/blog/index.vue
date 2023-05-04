@@ -78,11 +78,26 @@ const posts = data.value.posts.map(
   }
 );
 
+import { meta } from "../../content/meta";
+const seoTitle = `Blog | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription =
+  "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => meta.image,
+  ogImageUrl: () => meta.image,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => meta.image,
+});
+
 definePageMeta({
   layout: false,
-  title: "Blog",
-  slug: "blog",
-  description: "Get in touch with the Astar Network team",
 });
 </script>
 

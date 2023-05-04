@@ -113,11 +113,25 @@ useHead({
   script: [{ src: "//embed.typeform.com/next/embed.js" }],
 });
 
+import { meta } from "../content/meta";
+const seoTitle = `Contact Us | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription = "Get in touch with the Astar Network team";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => meta.image,
+  ogImageUrl: () => meta.image,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => meta.image,
+});
+
 definePageMeta({
   layout: false,
-  title: "Contact Us",
-  slug: "contact",
-  description: "Get in touch with the Astar Network team",
 });
 
 const Marketing = resolveComponent("IconMarketingRequest");

@@ -21,11 +21,26 @@
 </template>
 
 <script setup lang="ts">
+import { meta } from "../content/meta";
+const seoTitle = `2023 Starmap | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription =
+  "Embarking on a new journey to reach our full potential.";
+
+useServerSeoMeta({
+  ogTitle: () => seoTitle,
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogDescription: () => seoDescription,
+  ogImage: () => meta.image,
+  ogImageUrl: () => meta.image,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => meta.image,
+});
+
 definePageMeta({
   layout: false,
-  title: "2023 Starmap",
-  slug: "starmap",
-  description: "Embarking on a new journey to reach our full potential.",
 });
 </script>
 
