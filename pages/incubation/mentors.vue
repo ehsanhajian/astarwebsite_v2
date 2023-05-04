@@ -29,18 +29,23 @@
 import { mentors } from "../../content/mentors";
 import { ref } from "vue";
 
+const route = useRoute();
+import { meta } from "../../content/meta";
 const { t } = useI18n();
 const seoTitle = `${t("meta.mentors.title")} | ${t("meta.title")}`;
 const seoDescription = t("meta.mentors.description");
 const seoImage = "https://astar.network/social-preview-incubation.png";
+const seoUrl = `${meta.url}${route.fullPath}`;
 
 useServerSeoMeta({
-  ogTitle: () => seoTitle,
   title: () => seoTitle,
   description: () => seoDescription,
+  ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => seoImage,
   ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,

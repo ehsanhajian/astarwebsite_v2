@@ -94,14 +94,17 @@ import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 import { meta } from "../content/meta";
 const seoTitle = `${meta.siteName} - ${meta.tagline}`;
 const seoDescription = meta.description;
+const seoUrl = meta.url;
 
 useServerSeoMeta({
-  ogTitle: () => seoTitle,
   title: () => seoTitle,
   description: () => seoDescription,
+  ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => meta.image,
   ogImageUrl: () => meta.image,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,

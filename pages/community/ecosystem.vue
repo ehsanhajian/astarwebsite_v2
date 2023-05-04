@@ -171,18 +171,22 @@ let categories = [];
 projects = data.value.projects.data;
 categories = data.value.projectCategories.data;
 
+const route = useRoute();
 import { meta } from "../../content/meta";
 const seoTitle = `Ecosystem | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Who's Building on Astar Network. Check out some of the many projects and DApps with Astar Network deployments.";
+const seoUrl = `${meta.url}${route.fullPath}`;
 
 useServerSeoMeta({
-  ogTitle: () => seoTitle,
   title: () => seoTitle,
   description: () => seoDescription,
+  ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => meta.image,
   ogImageUrl: () => meta.image,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,

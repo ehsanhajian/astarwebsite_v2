@@ -168,14 +168,17 @@ const posts = dataRelated.data.value.posts.map(
 import { meta } from "../../content/meta";
 const seoTitle = `${post.title} | ${meta.siteName}`;
 const seoDescription = "Please add the article description here";
+const seoUrl = `${meta.url}${route.fullPath}`;
 
 useServerSeoMeta({
-  ogTitle: () => seoTitle,
   title: () => seoTitle,
   description: () => seoDescription,
+  ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => post.image,
   ogImageUrl: () => post.image,
+  ogType: () => "article",
+  ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,

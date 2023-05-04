@@ -45,18 +45,22 @@
 <script setup lang="ts">
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
+const route = useRoute();
 import { meta } from "../content/meta";
 const seoTitle = `Developers | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Build Ethereum and native dApps on Astar and be the part of multichain innovation.";
+const seoUrl = `${meta.url}${route.fullPath}`;
 
 useServerSeoMeta({
-  ogTitle: () => seoTitle,
   title: () => seoTitle,
   description: () => seoDescription,
+  ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => meta.image,
   ogImageUrl: () => meta.image,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
