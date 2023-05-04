@@ -167,7 +167,7 @@ const posts = dataRelated.data.value.posts.map(
 
 import { meta } from "../../content/meta";
 const seoTitle = `${post.title} | ${meta.siteName}`;
-const seoDescription = "description";
+const seoDescription = "Please add the article description here";
 
 useServerSeoMeta({
   ogTitle: () => seoTitle,
