@@ -51,20 +51,21 @@ const seoTitle = `Developers | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Build Ethereum and native dApps on Astar and be the part of multichain innovation.";
 const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}developers.png`;
 
 useServerSeoMeta({
   title: () => seoTitle,
   description: () => seoDescription,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
-  ogImage: () => meta.image,
-  ogImageUrl: () => meta.image,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
   ogType: () => "website",
   ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
-  twitterImage: () => meta.image,
+  twitterImage: () => seoImage,
 });
 
 definePageMeta({

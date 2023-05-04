@@ -177,20 +177,21 @@ const seoTitle = `Ecosystem | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Who's Building on Astar Network. Check out some of the many projects and DApps with Astar Network deployments.";
 const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}ecosystem.png`;
 
 useServerSeoMeta({
   title: () => seoTitle,
   description: () => seoDescription,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
-  ogImage: () => meta.image,
-  ogImageUrl: () => meta.image,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
   ogType: () => "website",
   ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
-  twitterImage: () => meta.image,
+  twitterImage: () => seoImage,
 });
 
 definePageMeta({

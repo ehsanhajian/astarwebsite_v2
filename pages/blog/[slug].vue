@@ -169,7 +169,6 @@ const posts = dataRelated.data.value.posts.map(
 
 import { meta } from "../../content/meta";
 const seoTitle = `${post.title} | ${meta.siteName}`;
-const seoDescription = "Please add the article description here";
 
 useServerSeoMeta({
   title: () => seoTitle,
@@ -189,6 +188,14 @@ useServerSeoMeta({
   twitterDescription: () => post.summary,
   twitterImage: () => post.image,
 });
+
+useSchemaOrg([
+  defineArticle({
+    author: {
+      name: post.author.profileSpace.name,
+    },
+  }),
+]);
 
 definePageMeta({
   layout: false,

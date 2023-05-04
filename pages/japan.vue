@@ -69,20 +69,21 @@ const seoTitle = `Astar Japan Lab | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.";
 const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}japan.png`;
 
 useServerSeoMeta({
   title: () => seoTitle,
   description: () => seoDescription,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
-  ogImage: () => meta.image,
-  ogImageUrl: () => meta.image,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
   ogType: () => "website",
   ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
-  twitterImage: () => meta.image,
+  twitterImage: () => seoImage,
 });
 
 definePageMeta({

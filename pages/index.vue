@@ -95,20 +95,21 @@ import { meta } from "../content/meta";
 const seoTitle = `${meta.siteName} - ${meta.tagline}`;
 const seoDescription = meta.description;
 const seoUrl = meta.url;
+const seoImage = `${meta.image}common.png`;
 
 useServerSeoMeta({
   title: () => seoTitle,
   description: () => seoDescription,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
-  ogImage: () => meta.image,
-  ogImageUrl: () => meta.image,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
   ogType: () => "website",
   ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
-  twitterImage: () => meta.image,
+  twitterImage: () => seoImage,
 });
 
 definePageMeta({

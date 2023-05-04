@@ -38,8 +38,8 @@ import { meta } from "../../content/meta";
 const { t } = useI18n();
 const seoTitle = t("meta.title");
 const seoDescription = t("meta.description");
-const seoImage = "https://astar.network/social-preview-incubation.png";
 const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}incubation.png`;
 
 useServerSeoMeta({
   title: () => seoTitle,

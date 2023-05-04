@@ -118,20 +118,21 @@ import { meta } from "../content/meta";
 const seoTitle = `Contact Us | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription = "Get in touch with the Astar Network team";
 const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}common.png`;
 
 useServerSeoMeta({
   title: () => seoTitle,
   description: () => seoDescription,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
-  ogImage: () => meta.image,
-  ogImageUrl: () => meta.image,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
   ogType: () => "website",
   ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
-  twitterImage: () => meta.image,
+  twitterImage: () => seoImage,
 });
 
 definePageMeta({
