@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     "@nuxtjs/strapi",
     "@nuxtjs/apollo",
     "nuxt-simple-sitemap",
+    "nuxt-schema-org",
     [
       "nuxt3-lazy-load",
       {
@@ -29,6 +30,14 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://astar.network',
+    }
+  },
+  schemaOrg: {
+    host: 'https://astar.network',
+  },
   apollo: {
     clients: {
       community: {

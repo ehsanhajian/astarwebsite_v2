@@ -185,6 +185,14 @@ useServerSeoMeta({
   twitterImage: () => post.image,
 });
 
+useSchemaOrg([
+  defineArticle({
+    author: {
+      name: post.author.profileSpace.name,
+    },
+  }),
+]);
+
 definePageMeta({
   layout: false,
 });

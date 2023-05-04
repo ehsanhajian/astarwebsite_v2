@@ -18,22 +18,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const route = useRoute();
-const { locale } = useI18n();
-import { meta } from "../content/meta";
-const seoUrl = `${meta.url}${route.fullPath}`;
-useHead(() => ({
-  htmlAttrs: { lang: locale.value },
-  link: [
-    {
-      rel: "canonical",
-      href: seoUrl,
-    },
-  ],
-}));
-</script>
-
 <style lang="postcss">
 body {
   @apply text-gray-200 bg-space-gray-dark;
