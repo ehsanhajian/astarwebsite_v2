@@ -18,30 +18,33 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxtjs/tailwindcss",
-    "~/modules/sitemap",
     "@nuxtjs/i18n",
     "@nuxtjs/strapi",
     "@nuxtjs/apollo",
-    ['nuxt3-lazy-load', {
-      defaultImage: '/images/placeholder.png',
-    }]
+    "nuxt-simple-sitemap",
+    [
+      "nuxt3-lazy-load",
+      {
+        defaultImage: "/images/placeholder.png",
+      },
+    ],
   ],
   apollo: {
     clients: {
       community: {
-        httpEndpoint: 'https://community.astar.network/graphql'
+        httpEndpoint: "https://community.astar.network/graphql",
       },
       subsocial: {
-        httpEndpoint: 'https://squid.subsquid.io/subsocial/graphql'
-      }
+        httpEndpoint: "https://squid.subsquid.io/subsocial/graphql",
+      },
     },
   },
   strapi: {
     url: "https://community.astar.network",
-    prefix: '/api',
-    version: 'v4',
+    prefix: "/api",
+    version: "v4",
     cookie: {},
-    cookieName: 'strapi_jwt'
+    cookieName: "strapi_jwt",
   },
   i18n: {
     baseUrl: "https://astar.network",
@@ -70,6 +73,6 @@ export default defineNuxtConfig({
   },
   plugins: [{ src: "~/plugins/aos" }],
   sitemap: {
-    hostname: "https://astar.network",
+    siteUrl: "https://astar.network",
   },
 });
