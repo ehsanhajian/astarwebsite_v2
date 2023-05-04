@@ -3,7 +3,7 @@
     <!-- post.slug is the slug of the article -->
     <NuxtLink
       :href="'/blog/' + post.id"
-      class="block rounded overflow-hidden bg-space-gray group hover:bg-space-gray-lighter transition"
+      class="block rounded overflow-hidden bg-space-gray group hover:bg-space-gray-lighter transition h-full"
     >
       <img
         :src="post.image"

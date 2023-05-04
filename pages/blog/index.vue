@@ -19,7 +19,7 @@
               >
                 Blog
               </h1>
-              <p class="lg:text-lg max-w-3xl mx-auto">
+              <p class="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto">
                 The latest posts about all things Astar Network, major news,
                 ecosystem announcements, engineering updates, and more.
               </p>
