@@ -50,6 +50,7 @@ const query = gql`
       title
       href: canonical
       image
+      slug
       id
     }
   }
@@ -74,21 +75,27 @@ const posts = data.value.posts.map(
   }
 );
 
+const route = useRoute();
 import { meta } from "../../content/meta";
 const seoTitle = `Tag | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription = "Tag description";
+const seoDescription =
+  "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
+const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}blog.png`;
 
 useServerSeoMeta({
-  ogTitle: () => seoTitle,
   title: () => seoTitle,
   description: () => seoDescription,
+  ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
-  ogImage: () => meta.image,
-  ogImageUrl: () => meta.image,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
-  twitterImage: () => meta.image,
+  twitterImage: () => seoImage,
 });
 
 definePageMeta({
