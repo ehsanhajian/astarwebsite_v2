@@ -13,7 +13,7 @@
       <div class="p-5 pb-12">
         <time class="text-gray-400 text-tiny">{{ post.publishedDate }}</time>
         <p class="text-white text-lg line-clamp-3 leading-7 mt-1">
-          Article title: {{ post.title }}
+          {{ post.title }}
         </p>
       </div>
     </NuxtLink>
