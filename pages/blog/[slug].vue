@@ -92,13 +92,12 @@ const route = useRoute();
 const slug = route.params.slug;
 
 const query = gql`
-  query PostsBySpaceId {
+  query PostsBySlug {
     posts(where: { slug_eq: "${slug}" }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
       image
-      id
       body
       summary
       tagsOriginal
@@ -133,14 +132,13 @@ const post = data.value.posts.map(
 
 const astarSpace = 11132;
 const querySpace = gql`
-  query PostsBySpaceId {
+  query PostsByTag {
     posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_eq: "${post.tagsOriginal}", slug_not_eq: "${slug}" }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
       image
       slug
-      id
     }
   }
 `;
@@ -169,23 +167,25 @@ const posts = dataRelated.data.value.posts.map(
 
 import { meta } from "../../content/meta";
 const seoTitle = `${post.title} | ${meta.siteName}`;
+const seoDescription = post.summary;
+const seoUrl = `${meta.url}${route.fullPath}`;
 
 useServerSeoMeta({
   title: () => seoTitle,
-  description: () => post.summary,
+  description: () => seoDescription,
   author: () => post.author.profileSpace.name,
   ogSiteName: () => "Astar Network",
   ogLocale: () => "en_US",
   ogTitle: () => seoTitle,
-  ogDescription: () => post.summary,
+  ogDescription: () => seoDescription,
   ogImage: () => post.image,
   ogImageUrl: () => post.image,
   ogType: () => "article",
-  ogUrl: () => "https://astar.network/blog/" + post.slug,
+  ogUrl: () => seoUrl,
   twitterSite: () => "@AstarNetwork",
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
-  twitterDescription: () => post.summary,
+  twitterDescription: () => seoDescription,
   twitterImage: () => post.image,
 });
 
