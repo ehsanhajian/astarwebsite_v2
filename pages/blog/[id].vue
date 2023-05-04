@@ -125,7 +125,7 @@ const post = data.value.posts.map(
           item.author.profileSpace.image
         : "/images/blog/placeholder.webp",
       publishedDate: formattedDate,
-      body: md.render(item.body),
+      body: item.body ? md.render(item.body) : "",
     };
   }
 )[0];
