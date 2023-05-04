@@ -2,7 +2,7 @@
   <li>
     <!-- post.slug is the slug of the article -->
     <NuxtLink
-      :href="'/blog/' + post.id"
+      :href="'/blog/' + post.slug"
       class="block rounded overflow-hidden bg-space-gray group hover:bg-space-gray-lighter transition h-full"
     >
       <img
@@ -23,8 +23,8 @@
 <script setup lang="ts">
 const props = defineProps({
   post: {
-    type: Array,
-    default: [],
+    type: Object,
+    default: null,
   },
 });
 </script>

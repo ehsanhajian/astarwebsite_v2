@@ -54,6 +54,7 @@ const query = gql`
       title
       href: canonical
       image
+      slug
       id
     }
   }

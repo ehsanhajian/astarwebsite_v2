@@ -89,17 +89,18 @@ const md = new MarkdownIt();
 
 // The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
 const route = useRoute();
-const id = route.params.id;
+const slug = route.params.slug;
 
 const query = gql`
   query PostsBySpaceId {
-    posts(where: { id_eq: "${id}" }, orderBy: id_DESC) {
+    posts(where: { slug_eq: "${slug}" }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
       image
       id
       body
+      summary
       tagsOriginal
       author: ownedByAccount { profileSpace { name, image, about } }
     }
@@ -133,11 +134,12 @@ const post = data.value.posts.map(
 const astarSpace = 11132;
 const querySpace = gql`
   query PostsBySpaceId {
-    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_eq: "${post.tagsOriginal}", id_not_eq: "${id}" }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_eq: "${post.tagsOriginal}", slug_not_eq: "${slug}" }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
       image
+      slug
       id
     }
   }
@@ -168,30 +170,25 @@ const posts = dataRelated.data.value.posts.map(
 import { meta } from "../../content/meta";
 const seoTitle = `${post.title} | ${meta.siteName}`;
 const seoDescription = "Please add the article description here";
-const seoUrl = `${meta.url}${route.fullPath}`;
 
 useServerSeoMeta({
   title: () => seoTitle,
-  description: () => seoDescription,
+  description: () => post.summary,
+  author: () => post.author.profileSpace.name,
+  ogSiteName: () => "Astar Network",
+  ogLocale: () => "en_US",
   ogTitle: () => seoTitle,
-  ogDescription: () => seoDescription,
+  ogDescription: () => post.summary,
   ogImage: () => post.image,
   ogImageUrl: () => post.image,
   ogType: () => "article",
-  ogUrl: () => seoUrl,
+  ogUrl: () => "https://astar.network/blog/" + post.slug,
+  twitterSite: () => "@AstarNetwork",
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
-  twitterDescription: () => seoDescription,
+  twitterDescription: () => post.summary,
   twitterImage: () => post.image,
 });
-
-useSchemaOrg([
-  defineArticle({
-    author: {
-      name: post.author.profileSpace.name,
-    },
-  }),
-]);
 
 definePageMeta({
   layout: false,
