@@ -228,7 +228,7 @@ export const mentors = [
     links: {
       website: "https://www.alchemy.com/",
       linkedin: "https://www.linkedin.com/in/vittorio-rivabella/",
-      twitter: "twitter.com/vittostack",
+      twitter: "https://twitter.com/vittostack",
     },
   },
   {

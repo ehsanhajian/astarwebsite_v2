@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 const route = useRoute();
-import { meta } from "../../content/meta";
+import { meta } from "@/content/meta";
 const { t } = useI18n();
 const seoTitle = `${t("meta.program.title")} | ${t("meta.title")}`;
 const seoDescription = t("meta.program.description");
