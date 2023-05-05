@@ -38,7 +38,7 @@
             <div class="flex flex-wrap">
               <NuxtLink
                 v-for="tag in post.tagsOriginal.split(',')"
-                href="#"
+                :href="'/blog/tag/' + tag"
                 class="block text-white border border-gray-500 py-2 px-4 rounded-full hover:bg-white/10 mr-1 mb-2"
               >
                 {{ tag }}

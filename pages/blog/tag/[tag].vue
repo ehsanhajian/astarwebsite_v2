@@ -18,7 +18,7 @@
               <h1
                 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
               >
-                TagName here
+                {{ tag }}
               </h1>
             </div>
           </div>
@@ -42,16 +42,18 @@
 import gql from "graphql-tag";
 
 // The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
+const route = useRoute();
+const tag = route.params.tag;
+
 const astarSpace = 11132;
 const query = gql`
-  query PostsBySpaceId {
-    posts(where: { space: { id_eq: "${astarSpace}" } }, orderBy: id_DESC) {
+query PostsByTag {
+    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_eq: "${tag}" }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
       image
       slug
-      id
     }
   }
 `;
@@ -75,8 +77,7 @@ const posts = data.value.posts.map(
   }
 );
 
-const route = useRoute();
-import { meta } from "../../content/meta";
+import { meta } from "../../../content/meta";
 const seoTitle = `Tag | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
