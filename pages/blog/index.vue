@@ -85,7 +85,7 @@ const posts = data.value.posts.map(
 
 const route = useRoute();
 import { meta } from "../../content/meta";
-const seoTitle = `Blog | ${meta.siteName} - ${meta.tagline}`;
+const seoTitle = `Astar Blog | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
 const seoUrl = `${meta.url}${route.fullPath}`;
