@@ -17,6 +17,7 @@
               :src="post.image"
               alt=""
               class="object-cover w-full lg:h-[520px] shadow-xl"
+              data-not-lazy
             />
           </div>
         </div>
