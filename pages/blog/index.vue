@@ -28,7 +28,11 @@
         </div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <h2 class="text-center text-4xl font-semibold mb-12">Latest Posts</h2>
+        <h2
+          class="text-center text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12"
+        >
+          Latest Posts
+        </h2>
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
         >

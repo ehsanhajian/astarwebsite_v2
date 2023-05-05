@@ -10,7 +10,7 @@
         alt=""
         class="object-cover w-full h-[240px] group-hover:brightness-110"
       />
-      <div class="p-5 pb-12">
+      <div class="p-4 sm:p-5 pb-8 sm:pb-12">
         <time class="text-gray-400 text-tiny">{{ post.publishedDate }}</time>
         <p class="text-white text-lg line-clamp-3 leading-7 mt-1">
           {{ post.title }}

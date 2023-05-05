@@ -14,7 +14,7 @@
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div class="text-center">
-              <p class="text-2xl">Tag:</p>
+              <p class="text-lg sm:text-2xl -mb-2">Tag:</p>
               <h1
                 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
               >
