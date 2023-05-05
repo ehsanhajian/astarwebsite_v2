@@ -51,10 +51,10 @@
 </template>
 
 <script setup lang="ts">
-import { partners } from "../../content/partners";
+import { partners } from "@/content/partners";
 
 const route = useRoute();
-import { meta } from "../../content/meta";
+import { meta } from "@/content/meta";
 const { t } = useI18n();
 const seoTitle = `${t("meta.partners.title")} | ${t("meta.title")}`;
 const seoDescription = t("meta.partners.description");

@@ -172,7 +172,7 @@ projects = data.value.projects.data;
 categories = data.value.projectCategories.data;
 
 const route = useRoute();
-import { meta } from "../../content/meta";
+import { meta } from "@/content/meta";
 const seoTitle = `Ecosystem | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Who's Building on Astar Network. Check out some of the many projects and DApps with Astar Network deployments.";

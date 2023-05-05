@@ -64,7 +64,7 @@
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 const route = useRoute();
-import { meta } from "../content/meta";
+import { meta } from "@/content/meta";
 const seoTitle = `Astar Japan Lab | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.";

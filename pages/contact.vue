@@ -114,7 +114,7 @@ useHead({
 });
 
 const route = useRoute();
-import { meta } from "../content/meta";
+import { meta } from "@/content/meta";
 const seoTitle = `Contact Us | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription = "Get in touch with the Astar Network team";
 const seoUrl = `${meta.url}${route.fullPath}`;

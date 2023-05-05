@@ -26,11 +26,11 @@
 </template>
 
 <script setup lang="ts">
-import { mentors } from "../../content/mentors";
+import { mentors } from "@/content/mentors";
 import { ref } from "vue";
 
 const route = useRoute();
-import { meta } from "../../content/meta";
+import { meta } from "@/content/meta";
 const { t } = useI18n();
 const seoTitle = `${t("meta.mentors.title")} | ${t("meta.title")}`;
 const seoDescription = t("meta.mentors.description");

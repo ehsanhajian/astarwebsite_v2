@@ -42,7 +42,7 @@
 
 <script setup lang="ts">
 const route = useRoute();
-import { meta } from "../../content/meta";
+import { meta } from "@/content/meta";
 const seoTitle = `Community | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription = "A star is born together with our awesome community.";
 const seoUrl = `${meta.url}${route.fullPath}`;

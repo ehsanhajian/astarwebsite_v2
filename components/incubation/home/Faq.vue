@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { faqs } from "../../../content/faqs";
+import { faqs } from "@/content/faqs";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/vue/24/outline";
 
