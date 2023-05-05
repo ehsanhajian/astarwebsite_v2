@@ -13,8 +13,8 @@
 <script setup lang="ts">
 import gql from "graphql-tag";
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
-const astarSpace = 11132;
+// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
+const astarSpace = 10802;
 const query = gql`
   query PostsBySpaceId {
     posts(where: { space: { id_eq: "${astarSpace}" } }, orderBy: id_DESC, limit: 6) {

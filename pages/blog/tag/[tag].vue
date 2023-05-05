@@ -41,14 +41,14 @@
 <script setup lang="ts">
 import gql from "graphql-tag";
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
+// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
 const route = useRoute();
 const tag = route.params.tag;
 
-const astarSpace = 11132;
+const astarSpace = 10802;
 const query = gql`
 query PostsByTag {
-    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_eq: "${tag}" }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${tag}" }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
