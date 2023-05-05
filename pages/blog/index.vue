@@ -17,7 +17,7 @@
               <h1
                 class="text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight drop-shadow"
               >
-                Blog
+                Astar Blog
               </h1>
               <p class="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto">
                 The latest posts about all things Astar Network, major news,
@@ -85,7 +85,7 @@ const posts = data.value.posts.map(
 
 const route = useRoute();
 import { meta } from "../../content/meta";
-const seoTitle = `Blog | ${meta.siteName} - ${meta.tagline}`;
+const seoTitle = `Astar Blog | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription =
   "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
 const seoUrl = `${meta.url}${route.fullPath}`;
