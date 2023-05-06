@@ -45,7 +45,7 @@ import gql from "graphql-tag";
 const japanNewsSpace = 11215;
 const query = gql`
   query PostsBySpaceId {
-    posts(where: { space: { id_eq: "${japanNewsSpace}" } }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${japanNewsSpace}" }, hidden_eq: false }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       text: title
       href: canonical

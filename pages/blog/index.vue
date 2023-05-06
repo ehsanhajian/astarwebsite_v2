@@ -53,7 +53,7 @@ import gql from "graphql-tag";
 const astarSpace = 10802;
 const query = gql`
   query PostsBySpaceId {
-    posts(where: { space: { id_eq: "${astarSpace}" } }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, hidden_eq: false }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
