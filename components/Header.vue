@@ -32,7 +32,7 @@
           </div>
 
           <div class="hidden lg:flex lg:items-center">
-            <nav class="flex space-x-4 xl:space-x-10">
+            <nav class="flex space-x-4 xl:space-x-8">
               <NuxtLink to="/starmap" class="nav-item">2023 Starmap</NuxtLink>
               <NuxtLink to="/developers" class="nav-item">Developers</NuxtLink>
 
@@ -153,7 +153,7 @@
               <!-- <NuxtLink to="/community" class="nav-item">Community</NuxtLink> -->
               <NuxtLink to="/japan" class="nav-item">Japan</NuxtLink>
             </nav>
-            <div class="ml-6 xl:ml-12">
+            <div class="mx-6 xl:mx-8">
               <Button
                 variant="outlined"
                 href="https://portal.astar.network/"
@@ -163,6 +163,8 @@
                 <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
               </Button>
             </div>
+
+            <LangSwitcher />
           </div>
         </div>
       </div>

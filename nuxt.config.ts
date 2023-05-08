@@ -32,11 +32,11 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      siteUrl: 'https://astar.network',
-    }
+      siteUrl: "https://astar.network",
+    },
   },
   schemaOrg: {
-    host: 'https://astar.network',
+    host: "https://astar.network",
   },
   apollo: {
     clients: {
@@ -62,13 +62,13 @@ export default defineNuxtConfig({
         code: "en",
         name: "English",
         iso: "en-US",
-        file: "en.json",
+        files: ["en.json", "en-incubation.json"],
       },
       {
         code: "ja",
         name: "日本語",
         iso: "ja-JP",
-        file: "ja.json",
+        files: ["ja.json", "ja-incubation.json"],
       },
     ],
     langDir: "lang",

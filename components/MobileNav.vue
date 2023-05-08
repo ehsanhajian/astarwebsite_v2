@@ -158,6 +158,8 @@
                   <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
                 </Button>
               </div>
+
+              <div class="text-center"><LangSwitcher /></div>
             </nav>
           </div>
         </PopoverPanel>
