@@ -3,11 +3,15 @@
     v-for="locale in availableLocales"
     :key="locale.code"
     :to="switchLocalePath(locale.code)"
-    >{{ locale.name }}</NuxtLink
   >
+    <GlobeAltIcon class="w-6 h-6 inline-block" />
+    {{ locale.name }}
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
+import { GlobeAltIcon } from "@heroicons/vue/24/outline";
+
 const { locale, locales } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 

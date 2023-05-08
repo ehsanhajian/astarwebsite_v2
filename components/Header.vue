@@ -153,7 +153,7 @@
               <!-- <NuxtLink to="/community" class="nav-item">Community</NuxtLink> -->
               <NuxtLink to="/japan" class="nav-item">Japan</NuxtLink>
             </nav>
-            <div class="mx-6 xl:mx-8">
+            <div class="ml-4 xl:ml-6">
               <Button
                 variant="outlined"
                 href="https://portal.astar.network/"
@@ -163,9 +163,9 @@
                 <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
               </Button>
             </div>
-
-            <LangSwitcher />
           </div>
+
+          <div class="hidden lg:block"><LangSwitcher /></div>
         </div>
       </div>
     </div>
