@@ -1,0 +1,62 @@
+{
+  "home": {
+    "hero": {
+      "title": "The Future of Multichain Smart Contracts",
+      "description": "Astar is a scalable decentralized blockchain for the next big Web3 innovations.",
+      "doc": "Documentation",
+      "app": "Launch App"
+    },
+    "welcome": "Welcome to Astar Network!",
+    "gateway": "The Gateway in the Multichain Era",
+    "ecosystem": {
+      "title": "",
+      "developer": {
+        "title": "Developer",
+        "description": "Create a dApp or infrastructure on our blockchain."
+      },
+      "collator": {
+        "title": "Collator",
+        "description": "Run a node to support the blockchain."
+      },
+      "staker": {
+        "title": "Staker",
+        "description": "Stake $ASTR and earn staking rewards."
+      },
+      "users": {
+        "title": "Users",
+        "description": "Use $ASTR tokens and be a part of the Web3 movement."
+      }
+    },
+    "reading": {
+      "title": "Recommended Reading",
+      "description": "Learn more about where and how Astar was born.",
+      "vision": {
+        "title": "Welcome to Astar",
+        "description": "Vision of Astar and the powerful blockchain technology that makes it possible."
+      },
+      "tokenomics": {
+        "title": "$ASTR Tokenomics",
+        "description": "$ASTR governance, incentives and features that unlock Web3."
+      },
+      "ecosystem": {
+        "title": "Explore the ecosystem",
+        "description": "Join our ecosystem and understand the power of Astar Network."
+      }
+    },
+    "features": {
+      "multichain": {
+        "title": "Multichain Smart Contracts",
+        "description": "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more; allowing for the free flow of assets and communications between multiple ecosystems."
+      },
+      "build2earn": {
+        "title": "Build2Earn",
+        "description": "The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive $ASTR rewards through our dApp staking mechanism."
+      },
+      "web2_web3": {
+        "title": "Web2 + Web3",
+        "description": "Astar supports both Web2 and Web3 developers. We support developers joining the Web3 revolution through our multi-virtual machine to deploy smart contracts using EVM and WASM."
+      }
+    },
+    "backers": "Backed By"
+  }
+}
