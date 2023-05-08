@@ -60,16 +60,9 @@
                 <span>{{ $t("incubation.cta.apply") }}</span>
               </IncubationButton>
             </nav>
-            <NuxtLink
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              :to="switchLocalePath(locale.code)"
-              class="nav-item border-l border-gray-500 pl-4 ml-6"
-            >
-              <GlobeAltIcon class="w-6 h-6 inline-block" />
-              {{ locale.name }}
-            </NuxtLink>
           </div>
+
+          <div class="hidden lg:block"><LangSwitcher /></div>
         </div>
       </div>
     </Popover>
@@ -77,15 +70,9 @@
 </template>
 
 <script setup lang="ts">
-import { GlobeAltIcon } from "@heroicons/vue/24/outline";
-import { Popover, PopoverButton } from "@headlessui/vue";
+import { Popover } from "@headlessui/vue";
 
 const route = useRoute();
-const { locale, locales } = useI18n();
-const switchLocalePath = useSwitchLocalePath();
-const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value);
-});
 const localePath = useLocalePath();
 </script>
 

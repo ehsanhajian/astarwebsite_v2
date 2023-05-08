@@ -35,7 +35,8 @@
       </NuxtLink>
     </nav>
     <p class="text-sm">
-      © 2023 {{ $t("incubation.meta.title") }}. All Rights Reserved
+      &copy; {{ new Date().getFullYear() }} {{ $t("incubation.meta.title") }}.
+      All Rights Reserved
     </p>
   </footer>
 </template>

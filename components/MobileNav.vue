@@ -159,7 +159,7 @@
                 </Button>
               </div>
 
-              <div class="text-center"><LangSwitcher /></div>
+              <div class="text-center text-lg"><LangSwitcher /></div>
             </nav>
           </div>
         </PopoverPanel>
