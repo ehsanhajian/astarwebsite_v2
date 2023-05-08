@@ -24,7 +24,7 @@
             <div
               class="flex items-center justify-between px-4 py-5 sm:px-6 sm:py-8"
             >
-              <NuxtLink to="/" class="block">
+              <NuxtLink :to="localePath('/')" class="block">
                 <img
                   class="h-10 w-auto sm:h-14"
                   src="/images/common/logo.svg"
@@ -46,7 +46,7 @@
               <ul class="border-b border-gray-600">
                 <li>
                   <NuxtLink
-                    to="/starmap"
+                    :to="localePath('/starmap')"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                   >
                     2023 Starmap
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <NuxtLink
-                    to="/developers"
+                    :to="localePath('/developers')"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                   >
                     Developers
@@ -116,21 +116,21 @@
                     <DisclosurePanel as="div" class="px-10 pb-8 text-sm">
                       <NuxtLink
                         class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
-                        to="/community"
+                        :to="localePath('/community')"
                       >
                         Overview
                         <ArrowRightIcon class="w-4 h-4 ml-2" />
                       </NuxtLink>
                       <NuxtLink
                         class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
-                        to="/community/ecosystem"
+                        :to="localePath('/community/ecosystem')"
                       >
                         Ecosystem
                         <ArrowRightIcon class="w-4 h-4 ml-2" />
                       </NuxtLink>
                       <NuxtLink
                         class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
-                        to="/blog"
+                        :to="localePath('/blog')"
                       >
                         Blog
                         <ArrowRightIcon class="w-4 h-4 ml-2" />
@@ -140,7 +140,7 @@
                 </li>
                 <li>
                   <NuxtLink
-                    to="/japan"
+                    :to="localePath('/japan')"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                   >
                     Japan
@@ -169,6 +169,8 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
+
 import {
   XMarkIcon,
   Bars3Icon,

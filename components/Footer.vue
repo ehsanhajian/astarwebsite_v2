@@ -32,7 +32,6 @@
                 v-if="item.href.includes('https')"
                 class="w-4 h-4 inline-block stroke-2"
               />
-              <span v-else class="ml-0.5">-></span>
             </NuxtLink>
           </li>
         </ul>
@@ -76,6 +75,8 @@
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
+
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
 const Twitter = resolveComponent("IconTwitter");
@@ -123,7 +124,7 @@ const nav = [
   {
     name: "Learn",
     nav: [
-      { name: "Blog", href: "/blog" },
+      { name: "Astar Blog", href: localePath("/blog") },
       { name: "Videos", href: "https://www.youtube.com/c/AstarNetwork" },
       { name: "Forum", href: "https://forum.astar.network/" },
     ],
@@ -145,7 +146,7 @@ const nav = [
       },
       {
         name: "Contact Us",
-        href: "/contact",
+        href: localePath("/contact"),
       },
     ],
   },

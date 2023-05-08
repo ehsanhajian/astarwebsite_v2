@@ -1,11 +1,11 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-    <h2 class="title text-center mb-12 sm:mb-16"><span>Blog</span></h2>
+    <h2 class="title text-center mb-12 sm:mb-16"><span>Astar Blog</span></h2>
     <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
       <BlogArticleCard v-for="post in posts" :post="post" />
     </ul>
     <div class="text-center mt-12 sm:mt-20">
-      <Button size="lg" href="/blog"> Blog -> </Button>
+      <Button size="lg" href="/blog">Astar Blog -></Button>
     </div>
   </div>
 </template>
