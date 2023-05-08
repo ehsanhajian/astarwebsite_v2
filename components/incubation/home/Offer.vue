@@ -6,7 +6,7 @@
     <h2
       class="text-center mt-2 mb-8 sm:mb-12 mx-auto max-w-2xl text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
     >
-      {{ $t("meta.partners.description") }}
+      {{ $t("incubation.meta.partners.description") }}
     </h2>
     <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-8">
       <li
@@ -21,7 +21,7 @@
           :to="`/incubation/program#${item.link}`"
           class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
         >
-          {{ $t("learn_more") }}
+          {{ $t("incubation.learn_more") }}
           <ArrowRightIcon class="w-5 h-5 inline-block ml-1" />
         </NuxtLink>
       </li>
@@ -36,17 +36,17 @@ const { t } = useI18n();
 
 const offer = [
   {
-    text: t("program.offer.connection.lead"),
+    text: t("incubation.program.offer.connection.lead"),
     image: "icon-connection.svg",
     link: "connection",
   },
   {
-    text: t("program.offer.support.lead"),
+    text: t("incubation.program.offer.support.lead"),
     image: "icon-support.svg",
     link: "support",
   },
   {
-    text: t("program.offer.grow.lead"),
+    text: t("incubation.program.offer.grow.lead"),
     image: "icon-grow.svg",
     link: "grow",
   },

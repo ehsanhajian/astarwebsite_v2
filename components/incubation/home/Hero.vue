@@ -19,7 +19,7 @@
             class="w-[240px] sm:w-auto"
           >
             <span>
-              {{ $t("cta.apply") }}
+              {{ $t("incubation.cta.apply") }}
               <ArrowTopRightOnSquareIcon
                 class="w-6 h-6 inline-block align-sub"
               />
@@ -33,7 +33,7 @@
             class="w-[240px] sm:w-auto"
           >
             <span>
-              {{ $t("learn_more") }}
+              {{ $t("incubation.learn_more") }}
               <ArrowRightIcon class="w-6 h-6 inline-block" />
             </span>
           </IncubationButton>

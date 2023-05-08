@@ -35,21 +35,21 @@
                 class="nav-item"
                 :class="route.meta.slug === 'program' && 'current'"
               >
-                <span>{{ $t("meta.program.title") }}</span>
+                <span>{{ $t("incubation.meta.program.title") }}</span>
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/incubation/partners')"
                 class="nav-item"
                 :class="route.meta.slug === 'partners' && 'current'"
               >
-                <span>{{ $t("meta.partners.title") }}</span>
+                <span>{{ $t("incubation.meta.partners.title") }}</span>
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/incubation/mentors')"
                 class="nav-item"
                 :class="route.meta.slug === 'mentors' && 'current'"
               >
-                <span>{{ $t("meta.mentors.title") }}</span>
+                <span>{{ $t("incubation.meta.mentors.title") }}</span>
               </NuxtLink>
               <IncubationButton
                 href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
@@ -57,7 +57,7 @@
                 color="secondary"
                 target="_blank"
               >
-                <span>{{ $t("cta.apply") }}</span>
+                <span>{{ $t("incubation.cta.apply") }}</span>
               </IncubationButton>
             </nav>
             <NuxtLink

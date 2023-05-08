@@ -33,21 +33,27 @@
                   class="nav-item"
                   :class="route.meta.slug === 'program' && 'current'"
                 >
-                  <PopoverButton>{{ $t("meta.program.title") }}</PopoverButton>
+                  <PopoverButton>
+                    {{ $t("incubation.meta.program.title") }}
+                  </PopoverButton>
                 </NuxtLink>
                 <NuxtLink
                   :to="localePath('/incubation/partners')"
                   class="nav-item"
                   :class="route.meta.slug === 'partners' && 'current'"
                 >
-                  <PopoverButton>{{ $t("meta.partners.title") }}</PopoverButton>
+                  <PopoverButton>
+                    {{ $t("incubation.meta.partners.title") }}
+                  </PopoverButton>
                 </NuxtLink>
                 <NuxtLink
                   :to="localePath('/incubation/mentors')"
                   class="nav-item"
                   :class="route.meta.slug === 'mentors' && 'current'"
                 >
-                  <PopoverButton>{{ $t("meta.mentors.title") }}</PopoverButton>
+                  <PopoverButton>
+                    {{ $t("incubation.meta.mentors.title") }}
+                  </PopoverButton>
                 </NuxtLink>
                 <IncubationButton
                   href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
@@ -57,7 +63,7 @@
                   target="_blank"
                   class="w-full my-6"
                 >
-                  {{ $t("cta.apply") }}
+                  {{ $t("incubation.cta.apply") }}
                   <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
                 </IncubationButton>
               </nav>

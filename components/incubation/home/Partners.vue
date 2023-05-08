@@ -4,12 +4,12 @@
   >
     <div class="mb-12 sm:mb-0">
       <p class="font-bold text-2xl sm:text-3xl title">
-        <span>{{ $t("meta.partners.title") }}</span>
+        <span>{{ $t("incubation.meta.partners.title") }}</span>
       </p>
       <h2
         class="mt-2 mb-8 text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
       >
-        {{ $t("meta.partners.description") }}
+        {{ $t("incubation.meta.partners.description") }}
       </h2>
       <IncubationButton
         variant="outlined"
@@ -17,7 +17,7 @@
         :href="localePath('/incubation/partners')"
       >
         <span>
-          {{ $t("partners.learn_more") }}
+          {{ $t("incubation.partners.learn_more") }}
           <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
         </span>
       </IncubationButton>
