@@ -90,7 +90,6 @@ const seoTitle = `${t("blog.title")} | ${meta.siteName} - ${meta.tagline}`;
 const seoDescription = t("blog.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}blog.png`;
-console.log(seoUrl);
 
 useServerSeoMeta({
   title: () => seoTitle,
