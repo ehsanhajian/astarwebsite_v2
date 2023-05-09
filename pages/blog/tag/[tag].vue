@@ -41,11 +41,13 @@
 <script setup lang="ts">
 import gql from "graphql-tag";
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
 const route = useRoute();
 const tag = route.params.tag;
 
-const astarSpace = 10802;
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale } = useI18n();
+const astarSpace = locale.value === 'ja' ? 11132 : 10802;
+
 const query = gql`
 query PostsByTag {
     posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${tag}" }, orderBy: id_DESC) {

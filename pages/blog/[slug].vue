@@ -88,7 +88,6 @@ import gql from "graphql-tag";
 import MarkdownIt from "markdown-it";
 const md = new MarkdownIt();
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
 const route = useRoute();
 const slug = route.params.slug;
 
@@ -131,7 +130,10 @@ const post = data.value.posts.map(
   }
 )[0];
 
-const astarSpace = 10802;
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale } = useI18n();
+const astarSpace = locale.value === 'ja' ? 11132 : 10802;
+
 const querySpace = gql`
   query PostsByTag {
     posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${post.tagsOriginal}", slug_not_eq: "${slug}" }, orderBy: id_DESC) {
