@@ -1,9 +1,12 @@
 {
   "blog": {
-    "title": "Astar Blog",
-    "description": "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.",
-    "latest": "Latest Posts",
-    "tags": "Tags",
-    "related": "Related Posts"
+    "title": "Astarブログ",
+    "description": "Astar Networkに関する、ニュース、エコシステム、技術アップデートなど、最新情報をお届けします",
+    "latest": "最新記事",
+    "tags": "タグ",
+    "tag": "タグ",
+    "related": "関連記事",
+    "no_articles": "このタグの日本語記事はありません",
+    "back": "ブログトップへ戻る"
   }
 }

@@ -35,11 +35,11 @@
         <div class="entry-content leading-9" v-html="post.body" />
         <footer class="mt-16">
           <div class="flex mb-12 text-tiny lg:text-base">
-            <p class="mr-2 mt-3">Tags:</p>
+            <p class="mr-2 mt-3">{{ $t("blog.tags") }}:</p>
             <div class="flex flex-wrap">
               <NuxtLink
                 v-for="tag in post.tagsOriginal.split(',')"
-                :href="'/blog/tag/' + tag"
+                :href="i18n + '/blog/tag/' + tag"
                 class="block text-white border border-gray-500 py-2 px-4 rounded-full hover:bg-white/10 mr-1 mb-2"
               >
                 {{ tag }}
@@ -68,7 +68,7 @@
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 class="text-center text-3xl lg:text-4xl font-semibold mb-12">
-          Related Posts
+          {{ $t("blog.related") }}
         </h2>
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
@@ -132,7 +132,8 @@ const post = data.value.posts.map(
 
 // The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
 const { locale } = useI18n();
-const astarSpace = locale.value === 'ja' ? 11132 : 10802;
+const astarSpace = locale.value === "ja" ? 11132 : 10802;
+const i18n = locale.value === "ja" ? "/ja" : "";
 
 const querySpace = gql`
   query PostsByTag {

@@ -14,7 +14,7 @@
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div class="text-center">
-              <p class="text-lg sm:text-2xl -mb-2">Tag:</p>
+              <p class="text-lg sm:text-2xl -mb-2">{{ $t("blog.tag") }}:</p>
               <h1
                 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
               >
@@ -27,9 +27,19 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+          v-if="posts.length > 0"
         >
           <BlogArticleCard v-for="post in posts" :post="post" />
         </ul>
+        <div v-else class="text-center">
+          <p class="mb-6">{{ $t("blog.no_articles") }}</p>
+          <NuxtLink
+            :to="localePath('/blog')"
+            class="text-space-cyan hover:text-space-cyan-lighter hover:underline"
+          >
+            {{ $t("blog.back") }} ->
+          </NuxtLink>
+        </div>
       </div>
     </template>
     <template #earth>
@@ -40,13 +50,14 @@
 
 <script setup lang="ts">
 import gql from "graphql-tag";
+const localePath = useLocalePath();
 
 const route = useRoute();
 const tag = route.params.tag;
 
 // The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
 const { locale } = useI18n();
-const astarSpace = locale.value === 'ja' ? 11132 : 10802;
+const astarSpace = locale.value === "ja" ? 11132 : 10802;
 
 const query = gql`
 query PostsByTag {
