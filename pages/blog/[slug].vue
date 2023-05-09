@@ -91,9 +91,14 @@ const md = new MarkdownIt();
 const route = useRoute();
 const slug = route.params.slug;
 
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale } = useI18n();
+const astarSpace = locale.value === "ja" ? 11132 : 10802;
+const i18n = locale.value === "ja" ? "/ja" : "";
+
 const query = gql`
   query PostsBySlug {
-    posts(where: { slug_eq: "${slug}" }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, slug_eq: "${slug}", hidden_eq: false }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
@@ -130,14 +135,14 @@ const post = data.value.posts.map(
   }
 )[0];
 
-// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
-const { locale } = useI18n();
-const astarSpace = locale.value === "ja" ? 11132 : 10802;
-const i18n = locale.value === "ja" ? "/ja" : "";
+const orConditions = post.tagsOriginal
+  .split(",")
+  .map((tag: string) => `{ tagsOriginal_containsInsensitive: "${tag}" }`)
+  .join(", ");
 
 const querySpace = gql`
   query PostsByTag {
-    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${post.tagsOriginal}", slug_not_eq: "${slug}" }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, AND: { OR: [${orConditions}] }, slug_not_eq: "${slug}", hidden_eq: false }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical

@@ -61,7 +61,7 @@ const astarSpace = locale.value === "ja" ? 11132 : 10802;
 
 const query = gql`
 query PostsByTag {
-    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${tag}" }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${tag}", hidden_eq: false }, orderBy: id_DESC) {
       publishedDate: createdOnDay
       title
       href: canonical
