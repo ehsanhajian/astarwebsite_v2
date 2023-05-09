@@ -1,7 +1,6 @@
 {
   "home": {
     "hero": {
-      "title": "The Future of Multichain Smart Contracts",
       "description": "Astar is a scalable decentralized blockchain for the next big Web3 innovations.",
       "doc": "Documentation",
       "app": "Launch App"
@@ -9,7 +8,7 @@
     "welcome": "Welcome to Astar Network!",
     "gateway": "The Gateway in the Multichain Era",
     "ecosystem": {
-      "title": "",
+      "title": "Join Our Fast-Growing Ecosystem",
       "developer": {
         "title": "Developer",
         "description": "Create a dApp or infrastructure on our blockchain."
