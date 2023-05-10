@@ -92,7 +92,7 @@ const route = useRoute();
 const slug = route.params.slug;
 
 // The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 const astarSpace = locale.value === "ja" ? 11132 : 10802;
 const i18n = locale.value === "ja" ? "/ja" : "";
 
@@ -184,14 +184,14 @@ useServerSeoMeta({
   description: () => seoDescription,
   author: () => post.author.profileSpace.name,
   ogSiteName: () => "Astar Network",
-  ogLocale: () => "en_US",
+  ogLocale: () => locale.value,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => post.image,
   ogImageUrl: () => post.image,
   ogType: () => "article",
   ogUrl: () => seoUrl,
-  twitterSite: () => "@AstarNetwork",
+  twitterSite: () => `@${t("meta.twitter")}`,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,

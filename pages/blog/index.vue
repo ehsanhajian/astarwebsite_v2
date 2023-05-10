@@ -86,7 +86,7 @@ const posts = data.value.posts.map(
 const route = useRoute();
 const { t } = useI18n();
 import { meta } from "@/content/meta";
-const seoTitle = `${t("blog.title")} | ${meta.siteName} - ${meta.tagline}`;
+const seoTitle = `${t("blog.title")} | ${meta.siteName} - ${t("meta.tagline")}`;
 const seoDescription = t("blog.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}blog.png`;

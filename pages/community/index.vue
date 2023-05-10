@@ -42,9 +42,12 @@
 
 <script setup lang="ts">
 const route = useRoute();
+const { t } = useI18n();
 import { meta } from "@/content/meta";
-const seoTitle = `Community | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription = "A star is born together with our awesome community.";
+const seoTitle = `${t("community.title")} | ${meta.siteName} - ${t(
+  "meta.tagline"
+)}`;
+const seoDescription = t("community.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}community.png`;
 

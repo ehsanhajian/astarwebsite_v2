@@ -172,10 +172,12 @@ projects = data.value.projects.data;
 categories = data.value.projectCategories.data;
 
 const route = useRoute();
+const { t } = useI18n();
 import { meta } from "@/content/meta";
-const seoTitle = `Ecosystem | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription =
-  "Who's Building on Astar Network. Check out some of the many projects and DApps with Astar Network deployments.";
+const seoTitle = `${t("ecosystem.title")} | ${meta.siteName} - ${t(
+  "meta.tagline"
+)}`;
+const seoDescription = t("ecosystem.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}ecosystem.png`;
 
