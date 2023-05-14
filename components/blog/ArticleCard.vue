@@ -7,7 +7,7 @@
     >
       <img
         :src="post.image"
-        alt=""
+        :alt="post.title"
         class="object-cover w-full h-[240px] group-hover:brightness-110"
       />
       <div class="p-4 sm:p-5 pb-8 sm:pb-12">
@@ -22,7 +22,7 @@
 
 <script setup lang="ts">
 const { locale } = useI18n();
-const i18n = locale.value === 'ja' ? '/ja' : '';
+const i18n = locale.value === "ja" ? "/ja" : "";
 
 const props = defineProps({
   post: {

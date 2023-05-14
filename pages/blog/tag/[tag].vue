@@ -92,8 +92,7 @@ const posts = data.value.posts.map(
 
 import { meta } from "@/content/meta";
 const seoTitle = `${tag} | ${meta.siteName} - ${t("meta.tagline")}`;
-const seoDescription =
-  "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
+const seoDescription = t("blog.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}blog.png`;
 
