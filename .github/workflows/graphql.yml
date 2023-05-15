@@ -1,4 +1,4 @@
-name: Log posts by space ID
+name: Get latest articles
 
 on:
   push:
@@ -22,3 +22,19 @@ jobs:
           query='{"query":"query PostsBySpaceId { posts(where: {space: {id_eq: \"10802\"}, AND: {hidden_not_eq: true}}, orderBy: id_DESC) {slug}}"}'
           response=$(curl -X POST -H "Content-Type: application/json" -d "$query" https://squid.subsquid.io/subsocial/graphql)
           echo "::set-output name=response::$response"
+          
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci && npm run generate
+      - run: ls .output/public/index.html
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync .output/public/  s3://astarwebtest --delete
