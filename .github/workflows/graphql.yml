@@ -33,6 +33,3 @@ jobs:
               - merge-info
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Display latest release
-        run: echo "Latest release: ${{ steps.get_latest_release.outputs.data }}"
