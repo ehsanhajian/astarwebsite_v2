@@ -11,22 +11,47 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        uses: jorgebg/stateful-action@v0.1
 
       - name: Install cURL
         run: sudo apt-get install curl -y
 
+      - name: Retrieve previous state
+        id: get_previous_state
+        uses: octokit/request-action@v2.x
+        with:
+          route: GET /astarwebsite_v2/ehsanhajian/main/contents/state.json
+          headers: |
+            {
+              "authorization": "Bearer ${{ secrets.GITHUB_TOKEN }}"
+            }
+
       - name: Execute GraphQL query
         id: execute_query
         run: |
-          query='{"query":"query PostsBySpaceId { posts(where: {space: {id_eq: \"10802\"}, AND: {hidden_not_eq: true}}, orderBy: id_DESC) {slug}}"}'
+          query='{"query":"query PostsBySpaceId { posts(where: {space: {id_eq: \"11405\"}, AND: {hidden_not_eq: true}}, orderBy: id_DESC) {slug}}"}'
           response=$(curl -X POST -H "Content-Type: application/json" -d "$query" https://squid.subsquid.io/subsocial/graphql)
           echo "::set-output name=response::$response"
 
+      - name: Store current state
+        id: store_current_state
+        uses: octokit/request-action@v2.x
+        with:
+          route: PUT /astarwebsite_v2/ehsanhajian/main/contents/state.json
+          headers: |
+            {
+              "authorization": "Bearer ${{ secrets.GITHUB_TOKEN }}",
+              "Content-Type": "application/json"
+            }
+          body: |
+            {
+              "message": "Updating state",
+              "content": "$(echo ${{ steps.execute_query.outputs.response }} | base64 --wrap=0)",
+              "sha": "${{ steps.get_previous_state.outputs.data.sha }}"
+            }
+
   build_and_deploy:
-    runs-on: ubuntu-latest
     needs: logPostsBySpaceId
-    if: ${{ steps.logPostsBySpaceId.outputs.response != '' }}
+    if: ${{ steps.logPostsBySpaceId.outputs.execute_query != '' }}
 
     steps:
       - name: Checkout repository
@@ -54,4 +79,4 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy app build to S3 bucket
-        run: aws s3 sync .output/public/ s3://astarwebtest --delete
+        run: aws s3 sync .output/public/ s3://astar.network --delete
