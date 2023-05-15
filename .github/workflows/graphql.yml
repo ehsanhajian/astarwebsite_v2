@@ -24,8 +24,8 @@ jobs:
               }
             }
           variables: |
-              "owner": "${{ github.event.repository.owner.name }}",
-              "repo": "${{ github.event.repository.name }}"
+              owner: ${{ github.event.repository.owner.name }}
+              repo: ${{ github.event.repository.name }}
           mediaType: |
             previews:
               - merge-info
