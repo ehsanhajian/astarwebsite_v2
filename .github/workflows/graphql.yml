@@ -52,6 +52,8 @@ jobs:
               "content": "$(echo ${{ steps.execute_query.outputs.response }} | base64 --wrap=0)",
               "sha": "${{ steps.get_previous_state.outputs.data.sha }}"
             }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build_and_deploy:
     runs-on: ubuntu-latest
