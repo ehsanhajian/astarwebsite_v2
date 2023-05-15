@@ -13,26 +13,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
-      - name: Install dependencies
-        run: npm install
-
       - name: Log latest release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          query=$(cat <<EOF
+        uses: octokit/graphql-action@v2.x
+        id: get_latest_release
+        with:
+          query: |
             query PostsBySpaceId {
               posts(where: { space: { id_eq: "10802" }, hidden_not_eq: true }, orderBy: { field: ID, direction: DESC }) {
                 slug
               }
             }
-          EOF
-          )
-          echo "query=$query"
-          echo "const { graphql } = require('@octokit/graphql');\nconst result = graphql(query, { headers: { authorization: 'Bearer $GITHUB_TOKEN' } }).then(console.log('latest release:', result));" > graphql.js
-          node graphql.js
+          variables: |
+            owner: ${{ github.event.repository.owner.name }}
+            repo: ${{ github.event.repository.name }}
+          mediaType:
+            previews:
+              - merge-info
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Display latest release
+        run: echo "Latest release: ${{ steps.get_latest_release.outputs.data }}"
