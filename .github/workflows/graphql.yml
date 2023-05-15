@@ -22,6 +22,3 @@ jobs:
           query='{"query":"query PostsBySpaceId { posts(where: {space: {id_eq: \"10802\"}, AND: {hidden_not_eq: true}}, orderBy: id_DESC) {slug}}"}'
           response=$(curl -X POST -H "Content-Type: application/json" -d "$query" https://squid.subsquid.io/subsocial/graphql)
           echo "::set-output name=response::$response"
-
-      - name: Display query result
-        run: echo "Query result: ${{ steps.execute_query.outputs.response }}"
