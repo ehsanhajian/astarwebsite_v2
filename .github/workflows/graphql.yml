@@ -1,4 +1,5 @@
 name: Log latest release
+
 on:
   push:
     branches:
@@ -7,22 +8,31 @@ on:
 jobs:
   logLatestRelease:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: octokit/graphql-action@v2.x
-        id: get_latest_release
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          query: |
-            query PostsBySpaceId {
-            posts(where: { space: { id_eq: "10802" }, hidden_not_eq: true }, orderBy: { field: ID, direction: DESC }) {
-            slug
-              }
-             }
-          variables: |
-           owner: ${{ github.event.repository.owner.name }}
-           repo: ${{ github.event.repository.name }}
-          mediaType: |
-            previews:
-            - merge-info
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Log latest release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo 'latest release: ${{ steps.get_latest_release.outputs.data }}'"
+        run: |
+          query=$(cat <<EOF
+            query PostsBySpaceId {
+              posts(where: { space: { id_eq: "10802" }, hidden_not_eq: true }, orderBy: { field: ID, direction: DESC }) {
+                slug
+              }
+            }
+          EOF
+          )
+          echo "query=$query"
+          result=$(npx @octokit/graphql -q "$query" -H "authorization: Bearer $GITHUB_TOKEN")
+          echo "latest release: $result"
