@@ -1,9 +1,8 @@
 name: Get latest articles
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   logPostsBySpaceId:
@@ -26,6 +25,7 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     needs: logPostsBySpaceId
+    if: ${{ steps.logPostsBySpaceId.outputs.response != '' }}
 
     steps:
       - name: Checkout repository
@@ -34,7 +34,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install dependencies
         run: npm ci
