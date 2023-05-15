@@ -25,6 +25,7 @@ jobs:
         
   build_and_deploy:
     runs-on: ubuntu-latest
+    uses: actions/checkout@v3
     steps:
       - run: npm ci && npm run generate
       - run: ls .output/public/index.html
