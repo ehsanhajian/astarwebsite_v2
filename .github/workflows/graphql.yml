@@ -16,10 +16,11 @@ jobs:
           mediaType: |
            previews:
            - merge-info
+          variables: |
+           owner: ${{ github.event.repository.owner.name }}
+           repo: ${{ github.event.repository.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          owner: ${{ github.event.repository.owner.name }}
-          repo: ${{ github.event.repository.name }}
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
