@@ -34,5 +34,5 @@ jobs:
           EOF
           )
           echo "query=$query"
-          echo "const { graphql } = require('@octokit/graphql');\nconst result = await graphql(query, { headers: { authorization: 'Bearer $GITHUB_TOKEN' } });\nconsole.log('latest release:', result);" > graphql.js
+          echo "const { graphql } = require('@octokit/graphql');\nconst result = graphql(query, { headers: { authorization: 'Bearer $GITHUB_TOKEN' } }).then(console.log('latest release:', result));" > graphql.js
           node graphql.js
