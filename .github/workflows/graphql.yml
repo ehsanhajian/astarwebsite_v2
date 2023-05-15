@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install cURL
         run: sudo apt-get install curl -y
@@ -24,9 +24,7 @@ jobs:
           echo "::set-output name=response::$response"
         
   build_and_deploy:
-    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - run: npm ci && npm run generate
       - run: ls .output/public/index.html
       - name: Configure AWS Credentials
