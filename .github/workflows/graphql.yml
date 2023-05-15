@@ -8,9 +8,9 @@ jobs:
   logLatestRelease:
     runs-on: ubuntu-latest
     steps:
-  - uses: octokit/graphql-action@v2.x
-    with:
-      query: |
+     - uses: octokit/graphql-action@v2.x
+       with:
+       query: |
         query  pullRequest(
           $repo:String!
           $owner:String!) {
@@ -23,8 +23,8 @@ jobs:
             }
           }
         }
-      owner: ${{ github.event.repository.owner.name }}
-      repo: ${{ github.event.repository.name }}
+       owner: ${{ github.event.repository.owner.name }}
+       repo: ${{ github.event.repository.name }}
       mediaType: |
         previews:
         - merge-info
