@@ -4,26 +4,29 @@
       <div class="space-gradient relative">
         <img
           class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-cloud.png"
+          src="/images/common/space-cloud.webp"
           alt=""
           width="1728"
           height="1281"
+          data-not-lazy
         />
         <ScrollParallax :speed="0.2">
           <img
             class="absolute z-[3] w-screen h-screen object-scale-down portrait:hidden"
-            src="~/assets/images/japan/hero-landscape.svg"
+            src="/images/japan/hero-landscape.svg"
             alt="Astar Japan Lab"
             width="1460"
             height="808"
+            data-not-lazy
           />
         </ScrollParallax>
         <img
           class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <JapanHero />
       </div>
@@ -41,7 +44,7 @@
           <JapanNewsletter class="py-8 sm:py-16 lg:py-28" />
           <img
             class="w-full"
-            src="~/assets/images/japan/footer-landscape.svg"
+            src="/images/japan/footer-landscape.svg"
             alt=""
             width="1728"
             height="220"
@@ -60,12 +63,31 @@
 <script setup lang="ts">
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
+const route = useRoute();
+import { meta } from "@/content/meta";
+const seoTitle = `Astar Japan Lab | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription =
+  "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.";
+const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}japan.png`;
+
+useServerSeoMeta({
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogTitle: () => seoTitle,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
+
 definePageMeta({
   layout: false,
-  title: "Astar Japan Lab",
-  slug: "japan",
-  description:
-    "Astar Japan Lab was established to actively conduct research and development, gather knowledge, and exchange opinions on the development of services and business creation using the Astar Network in Japan, with the aim of further developing the Astar Network.",
 });
 </script>
 

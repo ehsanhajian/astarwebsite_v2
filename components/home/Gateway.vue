@@ -7,7 +7,7 @@
     </h2>
     <div data-aos="fade-up">
       <img
-        src="~/assets/images/home/gateway.svg"
+        src="/images/home/gateway.svg"
         alt="The Gateway in the multichain era"
         width="1260"
         height="684"

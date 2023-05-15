@@ -4,7 +4,7 @@
       <div class="space-gradient relative">
         <img
           class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"
@@ -31,15 +31,17 @@
           <li
             v-for="item in options"
             :class="item.slug === 'other' && 'md:col-span-3'"
-            class="border border-gray-400 px-4 py-8 rounded-3xl"
+            class="border border-gray-400 px-4 py-8 rounded-3xl flex flex-col justify-between items-center"
           >
-            <component
-              :is="item.icon"
-              class="h-16 w-16 mx-auto"
-              aria-hidden="true"
-            />
-            <h2 class="font-bold text-2xl sm:my-2">{{ item.title }}</h2>
-            <p class="text-gray-300 mb-6">{{ item.description }}</p>
+            <div>
+              <component
+                :is="item.icon"
+                class="h-16 w-16 mx-auto"
+                aria-hidden="true"
+              />
+              <h2 class="font-bold text-2xl sm:my-2">{{ item.title }}</h2>
+              <p class="text-gray-300 mb-6">{{ item.description }}</p>
+            </div>
 
             <template v-if="item.slug === 'marketing'">
               <button
@@ -56,14 +58,14 @@
             </template>
 
             <template v-else-if="item.slug === 'technical'">
-              <Button href="https://discord.gg/Z3nC9U4" target="_blank">
+              <Button href="https://discord.gg/astarnetwork" target="_blank">
                 <component
                   :is="Discord"
                   class="h-5 w-5 mr-1.5"
                   aria-hidden="true"
                 />
                 {{ item.buttonLabel }}
-                <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+                <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
               </Button>
             </template>
 
@@ -105,15 +107,36 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 useHead({
   script: [{ src: "//embed.typeform.com/next/embed.js" }],
 });
 
+const route = useRoute();
+import { meta } from "@/content/meta";
+const seoTitle = `Contact Us | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription = "Get in touch with the Astar Network team";
+const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}common.png`;
+
+useServerSeoMeta({
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogTitle: () => seoTitle,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
+
 definePageMeta({
   layout: false,
-  title: "Contact Us",
-  slug: "contact",
-  description: "Get in touch with the Astar Network team",
 });
 
 const Marketing = resolveComponent("IconMarketingRequest");

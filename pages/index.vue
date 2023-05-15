@@ -3,36 +3,45 @@
     <template #space>
       <div class="banner--hiring">
         <NuxtLink
-          to="https://angel.co/company/astar-network"
+          to="https://wellfound.com/company/astar-network"
           target="_blank"
           class="link--hiring"
         >
           We are hiring!
-          <IconArrowTopRightOnSquare class="w-5 h-5 ml-1 stroke-2" />
+          <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
         </NuxtLink>
       </div>
       <div class="bg-black">
         <div class="absolute z-0 w-full h-screen flex items-center">
           <ScrollParallax :speed="0.25" class="mx-auto">
-            <video webkit-playsinline playsinline muted autoplay loop>
-              <source src="~/assets/videos/astar.mp4" type="video/mp4" />
+            <video
+              webkit-playsinline
+              playsinline
+              muted
+              autoplay
+              loop
+              data-not-lazy
+            >
+              <source src="/videos/astar.mp4" type="video/mp4" />
             </video>
           </ScrollParallax>
         </div>
         <div class="space-gradient mix-blend-screen">
           <img
             class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-            src="~/assets/images/common/space-cloud.png"
+            src="/images/common/space-cloud.webp"
             alt=""
             width="1728"
             height="1281"
+            data-not-lazy
           />
           <img
             class="fixed z-[2] portrait:h-screen landscape:w-screen object-cover"
-            src="~/assets/images/common/space-stars.svg"
+            src="/images/common/space-stars.svg"
             alt=""
             width="1728"
             height="1728"
+            data-not-lazy
           />
           <HomeHero />
           <div class="welcome-bg -mt-44 pt-44 pb-32 sm:pb-64">
@@ -55,14 +64,14 @@
           <HomeBackers />
           <img
             class="w-full"
-            src="~/assets/images/home/footer-sky.svg"
+            src="/images/home/footer-sky.svg"
             alt=""
             width="1728"
             height="290"
           />
           <img
             class="w-full"
-            src="~/assets/images/home/footer-landscape.svg"
+            src="/images/home/footer-landscape.svg"
             alt=""
             width="1728"
             height="220"
@@ -79,7 +88,29 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
+
+import { meta } from "@/content/meta";
+const seoTitle = `${meta.siteName} - ${meta.tagline}`;
+const seoDescription = meta.description;
+const seoUrl = meta.url;
+const seoImage = `${meta.image}common.png`;
+
+useServerSeoMeta({
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogTitle: () => seoTitle,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
 
 definePageMeta({
   layout: false,
@@ -143,7 +174,7 @@ definePageMeta({
   background: linear-gradient(260deg, #3d41f8 0.16%, #58cef4 94.67%);
 }
 .footer-inner {
-  background-image: url(~/assets/images/home/footer-reflect.svg);
+  background-image: url(/images/home/footer-reflect.svg);
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;

@@ -13,10 +13,7 @@
         v-for="item in offer"
         class="p-6 lg:p-10 rounded border border-gray-500"
       >
-        <img
-          :src="useAsset('incubation/home/' + item.image)"
-          :alt="item.text"
-        />
+        <img :src="'/images/incubation/home/' + item.image" :alt="item.text" />
         <p class="text-black text-xl mt-5 mb-2 leading-snug">
           {{ item.text }}
         </p>

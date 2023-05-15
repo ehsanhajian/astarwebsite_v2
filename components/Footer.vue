@@ -28,10 +28,11 @@
               "
             >
               {{ item.name }}
-              <IconArrowTopRightOnSquare
+              <ArrowTopRightOnSquareIcon
                 v-if="item.href.includes('https')"
                 class="w-4 h-4 inline-block stroke-2"
               />
+              <span v-else class="ml-0.5">-></span>
             </NuxtLink>
           </li>
         </ul>
@@ -75,6 +76,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+
 const Twitter = resolveComponent("IconTwitter");
 const Discord = resolveComponent("IconDiscord");
 const Telegram = resolveComponent("IconTelegram");
@@ -93,7 +96,7 @@ const nav = [
     nav: [
       { name: "Docs", href: "https://docs.astar.network/" },
       { name: "GitHub", href: "https://github.com/AstarNetwork" },
-      { name: "Discord", href: "https://discord.gg/Z3nC9U4" },
+      { name: "Discord", href: "https://discord.gg/astarnetwork" },
     ],
   },
   {
@@ -101,11 +104,7 @@ const nav = [
     nav: [
       {
         name: "Careers",
-        href: "https://angel.co/company/astar-network",
-      },
-      {
-        name: "Astar Japan Lab",
-        href: "/japan",
+        href: "https://wellfound.com/company/astar-network",
       },
       {
         name: "Astar Space Lab",
@@ -124,7 +123,7 @@ const nav = [
   {
     name: "Learn",
     nav: [
-      { name: "Blog", href: "https://medium.com/astar-network" },
+      { name: "Blog", href: "/blog" },
       { name: "Videos", href: "https://www.youtube.com/c/AstarNetwork" },
       { name: "Forum", href: "https://forum.astar.network/" },
     ],
@@ -160,7 +159,7 @@ const social = [
   },
   {
     name: "Discord",
-    href: "https://discord.gg/Z3nC9U4",
+    href: "https://discord.gg/astarnetwork",
     icon: Discord,
   },
   {

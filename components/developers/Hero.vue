@@ -30,7 +30,7 @@
                 aria-hidden="true"
               />
               <div class="hidden sm:inline-block">{{ item.name }}</div>
-              <IconArrowTopRightOnSquare
+              <ArrowTopRightOnSquareIcon
                 class="w-5 h-5 stroke-2 ml-1 hidden sm:inline-block"
               />
             </Button>
@@ -42,9 +42,13 @@
 </template>
 
 <script setup lang="ts">
+import {
+  DocumentTextIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/vue/24/outline";
+
 const Github = resolveComponent("IconGithub");
 const Discord = resolveComponent("IconDiscord");
-const Docs = resolveComponent("IconDocumentation");
 
 const hero = [
   {
@@ -52,7 +56,7 @@ const hero = [
     href: "https://github.com/AstarNetwork/Astar",
     icon: Github,
   },
-  { name: "Docs", href: "https://docs.astar.network/", icon: Docs },
-  { name: "Discord", href: "https://discord.gg/Z3nC9U4", icon: Discord },
+  { name: "Docs", href: "https://docs.astar.network/", icon: DocumentTextIcon },
+  { name: "Discord", href: "https://discord.gg/astarnetwork", icon: Discord },
 ];
 </script>

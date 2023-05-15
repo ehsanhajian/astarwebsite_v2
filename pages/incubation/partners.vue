@@ -38,7 +38,7 @@
                       ? 'w-96 lg:h-20 w-80'
                       : 'lg:w-48 lg:h-20 w-44'
                   "
-                  :src="useAsset('incubation/partners/' + item.image)"
+                  :src="'/images/incubation/partners/' + item.image"
                   :alt="item.name"
                 />
               </NuxtLink>
@@ -51,13 +51,33 @@
 </template>
 
 <script setup lang="ts">
-import { partners } from "../../content/partners";
+import { partners } from "@/content/partners";
+
+const route = useRoute();
+import { meta } from "@/content/meta";
+const { t } = useI18n();
+const seoTitle = `${t("meta.partners.title")} | ${t("meta.title")}`;
+const seoDescription = t("meta.partners.description");
+const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}incubation.png`;
+
+useServerSeoMeta({
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogTitle: () => seoTitle,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
 
 definePageMeta({
   layout: false,
-  title: "meta.partners.title",
-  slug: "partners",
-  description: "meta.partners.description",
 });
 
 const { locale } = useI18n();

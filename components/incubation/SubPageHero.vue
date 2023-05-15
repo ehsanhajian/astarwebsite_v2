@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <div
-      class="bg-[url('/assets/images/incubation/sub-page-hero.svg')] bg-center bg-repeat h-[60vh] sm:h-[75vh] flex flex-col"
+      class="bg-[url('/images/incubation/sub-page-hero.svg')] bg-center bg-repeat h-[60vh] sm:h-[75vh] flex flex-col"
     >
       <IncubationHeader />
       <section class="flex items-center h-full pb-16">

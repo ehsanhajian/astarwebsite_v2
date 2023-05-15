@@ -4,10 +4,11 @@
       <div class="space-gradient relative">
         <img
           class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <StarmapHero />
       </div>
@@ -20,11 +21,31 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute();
+import { meta } from "@/content/meta";
+const seoTitle = `2023 Starmap | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription =
+  "Embarking on a new journey to reach our full potential.";
+const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}starmap.png`;
+
+useServerSeoMeta({
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogTitle: () => seoTitle,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
+
 definePageMeta({
   layout: false,
-  title: "2023 Starmap",
-  slug: "starmap",
-  description: "Embarking on a new journey to reach our full potential.",
 });
 </script>
 

@@ -4,26 +4,29 @@
       <div class="space-gradient relative">
         <img
           class="absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-cloud.png"
+          src="/images/common/space-cloud.webp"
           alt=""
           width="1728"
           height="1281"
+          data-not-lazy
         />
         <ScrollParallax :speed="0.2">
           <img
             class="absolute z-[2] right-0 portrait:max-h-[40vh] landscape:max-h-[65vh] landscape:xl:max-h-[80vh] w-auto"
-            src="~/assets/images/developers/hero.svg"
+            src="/images/developers/hero.svg"
             alt="Developers"
             width="1106"
             height="804"
+            data-not-lazy
           />
         </ScrollParallax>
         <img
           class="fixed z-[3] portrait:h-screen landscape:w-screen object-cover"
-          src="~/assets/images/common/space-stars.svg"
+          src="/images/common/space-stars.svg"
           alt=""
           width="1728"
           height="1728"
+          data-not-lazy
         />
         <DevelopersHero />
       </div>
@@ -42,12 +45,31 @@
 <script setup lang="ts">
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
+const route = useRoute();
+import { meta } from "@/content/meta";
+const seoTitle = `Developers | ${meta.siteName} - ${meta.tagline}`;
+const seoDescription =
+  "Build Ethereum and native dApps on Astar and be the part of multichain innovation.";
+const seoUrl = `${meta.url}${route.fullPath}`;
+const seoImage = `${meta.image}developers.png`;
+
+useServerSeoMeta({
+  title: () => seoTitle,
+  description: () => seoDescription,
+  ogTitle: () => seoTitle,
+  ogDescription: () => seoDescription,
+  ogImage: () => seoImage,
+  ogImageUrl: () => seoImage,
+  ogType: () => "website",
+  ogUrl: () => seoUrl,
+  twitterCard: () => "summary_large_image",
+  twitterTitle: () => seoTitle,
+  twitterDescription: () => seoDescription,
+  twitterImage: () => seoImage,
+});
+
 definePageMeta({
   layout: false,
-  title: "Developers",
-  slug: "developers",
-  description:
-    "Build Ethereum and native dApps on Astar and be the part of multichain innovation.",
 });
 </script>
 

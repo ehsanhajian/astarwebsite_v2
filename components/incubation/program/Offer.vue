@@ -18,7 +18,7 @@
           </div>
           <div class="lg:shrink-0" :class="index === 1 && 'order-1'">
             <img
-              :src="useAsset('incubation/program/' + item.image)"
+              :src="'/images/incubation/program/' + item.image"
               :alt="item.text"
               class="w-full"
               :class="item.class"
@@ -44,7 +44,7 @@ const offer = [
   {
     lead: t("program.offer.support.lead"),
     text: t("program.offer.support.text"),
-    image: "support.jpg",
+    image: "support.webp",
     id: "support",
     class: "lg:max-w-[456px] min-w-[340px]",
   },

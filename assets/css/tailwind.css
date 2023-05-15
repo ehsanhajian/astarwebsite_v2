@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@900&family=Roboto+Mono:wght@300&family=Roboto:wght@300,400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@900&family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -77,5 +77,15 @@
 
   .float-animation {
     animation: 2s float infinite;
+  }
+
+  .tab {
+    @apply text-space-blue hover:text-space-blue-lighter cursor-pointer;
+  }
+  .tab.current {
+    @apply text-space-gray cursor-default outline-0;
+  }
+  .tab-panel {
+    @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto px-4 sm:px-6;
   }
 }

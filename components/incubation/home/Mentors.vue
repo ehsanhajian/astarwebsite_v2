@@ -40,7 +40,7 @@
 
 <script setup lang="ts">
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
-import { mentors } from "../../../content/mentors";
+import { mentors } from "@/content/mentors";
 import { ref } from "vue";
 
 const localePath = useLocalePath();

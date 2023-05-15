@@ -3,7 +3,7 @@
     <div data-aos="zoom-out-right" class="absolute z-[4]">
       <img
         class="max-h-80 sm:max-h-full lg:h-auto"
-        src="~/assets/images/developers/multichain-bg.svg"
+        src="/images/developers/multichain-bg.svg"
         alt="Multichain Future"
         width="814"
         height="498"
@@ -25,7 +25,7 @@
         <li v-for="item in future" class="flex">
           <div class="mr-8 shrink-0">
             <img
-              :src="useAsset('developers/' + item.image)"
+              :src="'/images/developers/' + item.image"
               :alt="item.name"
               width="60"
               height="60"
