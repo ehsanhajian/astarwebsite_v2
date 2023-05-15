@@ -55,8 +55,6 @@ jobs:
 
   build_and_deploy:
     needs: logPostsBySpaceId
-    if: ${{ steps.logPostsBySpaceId.outputs.execute_query != '' }}
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
