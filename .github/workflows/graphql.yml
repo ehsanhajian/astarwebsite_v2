@@ -18,14 +18,17 @@ jobs:
         id: get_latest_release
         with:
           query: |
-            query PostsBySpaceId {
-              posts(where: { space: { id_eq: "10802" }, hidden_not_eq: true }, orderBy: { field: ID, direction: DESC }) {
-                slug
+            query LatestRelease($spaceId: ID!) {
+              space(id: $spaceId) {
+                latestRelease {
+                  slug
+                }
               }
             }
           variables: |
               owner: ${{ github.event.repository.owner.name }}
               repo: ${{ github.event.repository.name }}
+              "spaceId": "10802"
           mediaType: |
             previews:
               - merge-info
