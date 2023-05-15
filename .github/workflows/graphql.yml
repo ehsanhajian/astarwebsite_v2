@@ -1,4 +1,4 @@
-name: Log latest release
+name: Graphql
 on:
   push:
     branches:
@@ -13,8 +13,17 @@ jobs:
         with:
           query: |
             query PostsBySpaceId { posts(where: {space: {id_eq: \"10802\"}, AND: {hidden_not_eq: true}}, orderBy: id_DESC) {slug}}"}' https://squid.subsquid.io/subsocial/graphql
-          owner: ${{ github.event.repository.owner.name }}
-          repo: ${{ github.event.repository.name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo 'latest release: ${{ steps.get_latest_release.outputs.data }}'"
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci && npm run generate
+      - run: ls .output/public/index.html
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Deploy app build to S3 bucket
+        run: aws s3 sync .output/public/  s3://astarwebtest --delete
