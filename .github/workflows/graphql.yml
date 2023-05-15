@@ -13,7 +13,7 @@ jobs:
         with:
           query: |
             query PostsBySpaceId { posts(where: {space: {id_eq: \"10802\"}, AND: {hidden_not_eq: true}} orderBy: id_DESC) {slug}}"}' https://squid.subsquid.io/subsocial/graphql
-          variable: |
+          variables: |
            owner: ${{ github.event.repository.owner.name }}
            repo: ${{ github.event.repository.name }}
           mediaType: |
