@@ -1,8 +1,6 @@
 name: Get latest articles
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   push:
     branches:
       - main
