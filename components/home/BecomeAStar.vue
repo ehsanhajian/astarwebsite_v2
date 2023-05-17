@@ -62,14 +62,14 @@ const developers = [
   {
     name: "Staker",
     image: "become-staker.svg",
-    description: "Stake $ASTR and earn staking rewards.",
+    description: "Stake ASTR and earn staking rewards.",
     href: "https://portal.astar.network/#/astar/dapp-staking/discover",
     color: "text-space-cyan hover:text-space-cyan-lighter",
   },
   {
     name: "Users",
     image: "become-users.svg",
-    description: "Use $ASTR tokens and be a part of the Web3 movement.",
+    description: "Use ASTR tokens and be a part of the Web3 movement.",
     href: "https://portal.astar.network/#/astar/assets",
     color: "text-space-teal hover:text-space-teal-lighter",
   },

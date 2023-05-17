@@ -43,7 +43,7 @@ const features = [
   },
   {
     title: "Build2Earn",
-    description: `The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive $ASTR rewards through our dApp staking mechanism.`,
+    description: `The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive ASTR rewards through our dApp staking mechanism.`,
     href: "https://docs.astar.network/docs/dapp-staking/",
     image: "features-basic-income.svg",
   },
