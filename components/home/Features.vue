@@ -43,14 +43,14 @@ const features = [
   },
   {
     title: "Build2Earn",
-    description: `The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive $ASTR rewards through our dApp staking mechanism.`,
+    description: `The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive ASTR rewards through our dApp staking mechanism.`,
     href: "https://docs.astar.network/docs/dapp-staking/",
     image: "features-basic-income.svg",
   },
   {
     title: "Web2 + Web3",
     description:
-      "Astar supports both Web2 and Web3 developers. We support developers joining the Web3 revolution through our multi-virtual machine to deploy smart contracts using EVM and WASM.",
+      "Astar Network supports tools and languages that software developers often work with already, and our multichain-native Wasm + EVM runtime environments provide ultimate freedom and flexibility to build uniquely innovative solutions that simply can't be replicated on any other platform.",
     href: "https://docs.astar.network/docs/build/",
     image: "features-web2-web3.svg",
   },
