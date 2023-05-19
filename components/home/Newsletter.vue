@@ -11,8 +11,8 @@
             <span>Don't miss a beat.</span>
           </h2>
           <p>
-            Sign-up for our newsletter to stay up-to-date and E-mail Sign-up
-            learn about the latest developments.
+            Sign-up for our newsletter to stay up-to-date and learn about the
+            latest developments.
           </p>
         </div>
         <div class="shrink-0 text-center">
