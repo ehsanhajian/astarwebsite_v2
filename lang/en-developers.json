@@ -6,11 +6,12 @@
       "title": "Start Building on Astar",
       "evm": "Launch your EVM dApps",
       "wasm": "Launch your WASM dApps",
-      "collator": "Run a Collator ",
-      "exchange": "Integrate an Exchange ",
+      "collator": "Run a Collator",
+      "exchange": "Integrate an Exchange",
       "templates": "DApps Templates"
     },
     "why": {
+      "title": "Why Astar?",
       "evm": {
         "title": "EVM compatible",
         "description": "Easily launch EVM dApps written in Solidity or Vyper."
@@ -59,13 +60,13 @@
     "toolkit": {
       "title": "Reach into Astar Developer Toolkit",
       "description": "All your favorite tools and integrations work natively with Astar.",
-      "ecosytem": "Explore all projects building on Astar"
+      "ecosystem": "Explore all projects building on Astar"
     },
     "testimonials": {
       "title": "Testimonials",
-      "ben": "Astar is a layer 1 blockchain built on Substrate. Through Polkadot’s shared security and XCMP, Astar's progress on WASM support can enable very unique use-cases to the Polkadot ecosystem.",
+      "ben": "Astar is a layer 1 blockchain built on Substrate. Through Polkadot's shared security and XCMP, Astar's progress on WASM support can enable very unique use-cases to the Polkadot ecosystem.",
       "miko": "One of the most significant problems left unsolved by Satoshi Nakamoto has been to optimize developer incentives for contributing to projects. Astar has shown incredible innovation in this.",
-      "michael": "It’s rare that we find teams and products as obssesed with improving Web3 developer experience as we are at Alchemy, but Astar is exactly that. Features like dApp Staking and XCMP are gamechangers for developers, which is why we’re so excited to be a part of the Astar ecosystem."
+      "michael": "It's rare that we find teams and products as obssesed with improving Web3 developer experience as we are at Alchemy, but Astar is exactly that. Features like dApp Staking and XCMP are gamechangers for developers, which is why we're so excited to be a part of the Astar ecosystem."
     }
   }
 }

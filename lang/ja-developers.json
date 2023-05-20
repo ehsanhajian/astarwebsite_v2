@@ -1,71 +1,72 @@
 {
   "developers": {
-    "title": "Developers",
-    "description": "Be part of the exciting world of multichain innovation by building EVM and WASM dApps on Astar Network. Astar XVM SDK is the foundation of our multichain smart contracts.",
+    "title": "開発者",
+    "description": "Astar Network上でEVMとWASMのdAppを構築し、マルチチェーン時代の一員になろう！Astar XVM SDKは、私たちのマルチチェーンスマートコントラクトの基礎となります。",
     "start": {
-      "title": "Start Building on Astar",
-      "evm": "Launch your EVM dApps",
-      "wasm": "Launch your WASM dApps",
-      "collator": "Run a Collator ",
-      "exchange": "Integrate an Exchange ",
-      "templates": "DApps Templates"
+      "title": "Astarで開発を始めよう",
+      "evm": "EVM dAppsを構築",
+      "wasm": "WASM dAppsを構築",
+      "collator": "コレーターの実行",
+      "exchange": "取引所へ連携",
+      "templates": "DAppsテンプレート"
     },
     "why": {
+      "title": "Astarが選ばれる理由",
       "evm": {
-        "title": "EVM compatible",
-        "description": "Easily launch EVM dApps written in Solidity or Vyper."
+        "title": "EVM対応",
+        "description": "SolidityやVyperで書かれたEVM dAppsを簡単に構築可能"
       },
       "wasm": {
         "title": "WASM dApps",
-        "description": "Launch next generation Polkadot native dApps"
+        "description": "次世代のPolkadotネイティブdAppsを構築"
       },
       "scalable": {
-        "title": "Scalable",
-        "description": "Astar is future-proof and built for scalability."
+        "title": "スケーラブル",
+        "description": "将来を見据え、スケーラビリティを重視した設計"
       },
       "secure": {
-        "title": "Secure",
-        "description": "Astar Network uses the shared security of the Polkadot Relay Chain."
+        "title": "セキュア",
+        "description": "Astar Networkは、Polkadotリレーチェーンの共有セキュリティを使用"
       },
       "xcm": {
         "title": "XCM",
-        "description": "Interact with other blockchains with trustless bridges."
+        "description": "他のブロックチェーンと信頼性のあるブリッジで相互運用可能"
       },
       "build2earn": {
         "title": "Build2Earn",
-        "description": "Use our dApp staking mechanism to support your development on Astar Network."
+        "description": "Astar Networkでの開発を支援するため、dAppステーキングメカニズムを使用"
       }
     },
     "multichain": {
-      "title": "Multichain Future",
-      "description": "Astar Network will be the go-to blockchain for Web3 and beyond by focusing on the key aspect of interoperability.",
+      "title": "マルチチェーンの未来",
+      "description": "Astar Networkは、相互運用性の重要な側面に焦点を当てることで、Web3およびその先のブロックチェーンにおける必要不可欠な存在となるでしょう",
       "defi": {
         "title": "DeFi",
-        "description": "The quantity and quality of options available for our user base boost our decentralized finance sector. In addition to very low fees and quick transaction speed, our XCM compatibility with other parachains allow for more secure transfers and swaps within our ecosystem."
+        "description": "ユーザーベースに対して利用可能なオプションの数と品質は、分散型金融セクターを向上させます。さらに、非常に低い手数料と高速なトランザクションスピードに加え、他のパラチェーンとのXCM互換性により、私たちのエコシステム内でより安全な送金やスワップが可能です。"
       },
       "nft": {
         "title": "NFT",
-        "description": "Astar's NFT environment is inviting for small and large communities alike. From personal collections to full-scale projects by renowned Japanese IPs, we have all the tools necessary to help connect the team with the interested communities."
+        "description": "AstarのNFT環境は、小規模なコミュニティから大規模なコミュニティまで、幅広く対応しています。個人的なコレクションから、有名な日本のIPによる本格的なプロジェクトまで、チームと関心のあるコミュニティをつなぐために必要なツールはすべて揃っています。"
       },
       "infra": {
-        "title": "Leading Infra Providers",
-        "description": "Our goal is to provide the most secure and efficient connections to other leading blockchains. Considering the high level of importance this has, we take a rigorous approach when integrating bridges and other infra."
+        "title": "インフラプロバイダー",
+        "description": "私たちの目標は、他の主要なブロックチェーンとの最も安全で効率的な接続を提供することです。この重要性の高さを考慮し、ブリッジやその他のインフラを統合する際には、厳格なアプローチをとっています。"
       },
       "dao": {
         "title": "DAO",
-        "description": "Decentralized autonomous organizations are the future. Our community will help mold the shape of the network through means which are transparent and accessible."
+        "description": "分散型自律組織は私たちの未来です。私たちのコミュニティは、透明性が高く、アクセスしやすい手段で、ネットワークを形成するのをサポートします。"
       }
     },
     "toolkit": {
-      "title": "Reach into Astar Developer Toolkit",
-      "description": "All your favorite tools and integrations work natively with Astar.",
-      "ecosytem": "Explore all projects building on Astar"
+      "title": "Astarの開発者ツールキット",
+      "description": "既にお使いのツールや統合機能は全てAstarでネイティブに動作します",
+      "ecosystem": "Astar上で開発されているプロジェクトを見る"
     },
     "testimonials": {
-      "title": "Testimonials",
-      "ben": "Astar is a layer 1 blockchain built on Substrate. Through Polkadot’s shared security and XCMP, Astar's progress on WASM support can enable very unique use-cases to the Polkadot ecosystem.",
-      "miko": "One of the most significant problems left unsolved by Satoshi Nakamoto has been to optimize developer incentives for contributing to projects. Astar has shown incredible innovation in this.",
-      "michael": "It’s rare that we find teams and products as obssesed with improving Web3 developer experience as we are at Alchemy, but Astar is exactly that. Features like dApp Staking and XCMP are gamechangers for developers, which is why we’re so excited to be a part of the Astar ecosystem."
+      "title": "利用者の声",
+      "ben": "AstarはSubstrate上に構築されたレイヤー1のブロックチェーンです。Polkadotの共有セキュリティとXCMPを通じて、AstarのWASMサポートの進展は、Polkadotエコシステムに非常にユニークなユースケースを可能にします。",
+      "miko": "Satoshi Nakamotoが未解決のまま残した最も大きな問題の1つは、プロジェクトに貢献する開発者のインセンティブを最適化することでした。Astarはこの点で、驚くべき革新性を示しています。",
+      "michael": "私たちAlchemyがWeb3開発者体験の向上に情熱を注ぐチームやプロダクトに出会うことは珍しいですが、Astarはまさにそのような存在です。dAppステーキングやXCMPなどの機能は、開発者にとって画期的であり、それがAstarエコシステムに喜んで参加している理由です。"
     }
   }
 }
