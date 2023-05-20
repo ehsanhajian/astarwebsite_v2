@@ -1,32 +1,27 @@
 {
   "japan": {
     "title": "Astar Japan Lab",
-    "description": "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.",
-    "register": "Register Now",
+    "description": "Astar Japan Labは、研究開発を行い、知識を収集し、魅力的な日本企業とのコラボレーションを通じて、日本のサービスやビジネスの成長を促進しています。",
+    "register": "今すぐ登録する",
     "features": {
-      "business_opportunities": "Creating business opportunities in Japan with Astar Network",
-      "use_cases": "Proposed blockchain and NFT use cases",
-      "solution": "Engaging Solution Providers",
-      "vc": "Introduction of overseas VC for web startups from Japan",
-      "group_study": "Group study sessions to advance use cases for Astar",
-      "connect": "Connect with the Astar community and ambassadors"
+      "business_opportunities": "Astar Networkを活用して、日本におけるビジネス機会を創出",
+      "use_cases": "ブロックチェーンやNFT導入の提案",
+      "solution": "ソリューションプロバイダーとの連携",
+      "vc": "日本発のWeb3スタートアップ企業へ、海外のVCを紹介",
+      "group_study": "Astar先行導入事例のグループ勉強会",
+      "connect": "Astarのコミュニティやアンバサダーとの連携"
     },
     "members": {
-      "title": "Registered Members",
-      "description": "Companies and communities that wish to join our organization and have been approved by the participating companies in the organization."
+      "title": "登録メンバー",
+      "description": "Astar Japan Labへの参加を希望し、参加企業によって承認された企業やコミュニティ"
     },
     "use_cases": {
-      "calbee": "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
-      "miliyah": "Shiden NFT was distributed at \"MILIYAH NFT Club\".",
-      "ellen": "\"Left-Handed Ellen\" NFT sales case study using Astar",
-      "revolt": "Distributed Shiden Network's NFT by audio at a live music concert venue.",
-      "nikkei": "Astar Network advertised in Nikkei Newspaper and distributed NFT",
-      "rkb": "Shiden Network's NFT was distributed in real time via audio on RKB."
+      "title": "導入事例"
     },
     "newsletter": {
-      "title": "Join Our Newsletter!",
-      "description": "Subscribe to our newsletter to receive the latest update in Japanese.",
-      "button": "Subscribe"
+      "title": "ニュースレター",
+      "description": "ニュースレターを購読すると、Astarの最新情報を日本語で受け取ることができます",
+      "subscribe": "購読する"
     }
   }
 }

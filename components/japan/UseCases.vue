@@ -1,7 +1,9 @@
 <template>
   <div class="bg-gradient-to-b from-white to-[#D0E9F0] relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="title text-center mb-12 sm:mb-16"><span>Use Cases</span></h2>
+      <h2 class="title text-center mb-12 sm:mb-16">
+        <span>{{ $t("japan.use_cases.title") }}</span>
+      </h2>
       <ul
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
       >

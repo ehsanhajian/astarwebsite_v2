@@ -25,26 +25,22 @@
             <h1
               class="text-4xl sm:text-6xl lg:text-7xl font-extrabold drop-shadow text-center leading-none pt-12"
             >
-              Ecosystem
+              {{ $t("ecosystem.title") }}
             </h1>
           </div>
         </div>
       </div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         <h2 class="title text-center mb-6">
-          <span>Who's Building on Astar Network</span>
+          <span class="whitespace-pre-wrap">{{ $t("ecosystem.who") }}</span>
         </h2>
       </div>
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         <p class="sm:text-xl mb-6 text-center">
-          Check out some of the many projects and DApps with Astar Network
-          deployments.
+          {{ $t("ecosystem.description") }}
         </p>
         <p class="text-sm">
-          Note: The information presented on this page, including project names,
-          logos, and links to external web pages, is made available solely for
-          general information purposes and is by no means an endorsement of the
-          project, the content of its web pages, or the team.
+          {{ $t("ecosystem.note") }}
         </p>
       </div>
     </template>

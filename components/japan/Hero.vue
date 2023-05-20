@@ -23,9 +23,7 @@
             />
           </h1>
           <p class="sm:text-lg max-w-3xl mx-auto">
-            Astar Japan Lab fuels the growth of Japanese services and businesses
-            by conducting research and development, gathering knowledge, and
-            collaborating with exciting and established companies.
+            {{ $t("japan.description") }}
           </p>
         </div>
       </div>
