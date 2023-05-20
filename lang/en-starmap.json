@@ -1,0 +1,26 @@
+{
+  "starmap": {
+    "title": "2023 Starmap",
+    "description": "Embarking on a new journey to reach our full potential",
+    "reborn": {
+      "title": "The Reborn Nebula",
+      "description": "Our journey begins in the Reborn Nebula where we aim to make the first discoveries of the year. Each one will upgrade our network with innovative features, pushing us further to our goal of becoming a powerful layer 1. Follow along and join us in celebrating each discovery throughout the year.",
+      "plan": "In this quarter we can look forward to discoveries that relate to the following:"
+    },
+    "growth": {
+      "title": "The Growth Nebula",
+      "description": "We continue to grow at a steady pace while bringing true innovation to our users and builders alike. In this quarter we focus on growing out some some of our key features as well as introducing new ones.",
+      "plan": "We can look forward to discoveries that relate to the following:"
+    },
+    "expansion": {
+      "title": "The Expansion Nebula",
+      "description": "At Astar we plan to expand our reach even further. By creating high quality tools and projects, we can further attract top talent. We will focus on improving not only the user experience, but also the developer experience.",
+      "plan": "We can look forward to discoveries that relate to the following:"
+    },
+    "shine": {
+      "title": "The Shine Nebula",
+      "description": "We now approach the last nebula in 2023. By now we have made many great discoveries and grown to new heights - as Web3 technology, and as a team. But we are not done yet. We plan to shine like a star to close out the year and prepare for the 2024 journey ahead.",
+      "plan": "We're excited for this quarter. Stay tuned for more info."
+    }
+  }
+}

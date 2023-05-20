@@ -134,20 +134,17 @@
           </div>
           <div class="md:max-w-[400px] xl:max-w-[540px] sm:ml-10 relative z-10">
             <h2 class="title mb-4">
-              <span class="text-3xl lg:text-4xl">The Reborn Nebula</span>
+              <span class="text-3xl lg:text-4xl">
+                {{ $t("starmap.reborn.title") }}
+              </span>
             </h2>
             <div class="xl:text-lg">
               <p class="mb-8">
-                Our journey begins in the Reborn Nebula where we aim to make the
-                first discoveries of the year. Each one will upgrade our network
-                with innovative features, pushing us further to our goal of
-                becoming a powerful layer 1. Follow along and join us in
-                celebrating each discovery throughout the year.
+                {{ $t("starmap.reborn.description") }}
               </p>
               <h3 class="font-bold text-xl">Q1</h3>
               <p>
-                In this quarter we can look forward to discoveries that relate
-                to the following:
+                {{ $t("starmap.reborn.plan") }}
               </p>
               <ul class="list-disc pl-4">
                 <li>
@@ -187,23 +184,23 @@
             </span>
             <span
               class="font-jp kanji leading-tight tracking-wide sm:[writing-mode:vertical-lr]"
-              >発展</span
             >
+              発展
+            </span>
           </div>
           <div class="md:max-w-[400px] xl:max-w-[540px] order-1 relative z-10">
             <h2 class="title mb-4">
-              <span class="text-3xl lg:text-4xl">The Growth Nebula</span>
+              <span class="text-3xl lg:text-4xl">
+                {{ $t("starmap.growth.title") }}
+              </span>
             </h2>
             <div class="xl:text-lg">
               <p class="mb-8">
-                We continue to grow at a steady pace while bringing true
-                innovation to our users and builders alike. In this quarter we
-                focus on growing out some some of our key features as well as
-                introducing new ones.
+                {{ $t("starmap.growth.description") }}
               </p>
               <h3 class="font-bold text-xl">Q2</h3>
               <p>
-                We can look forward to discoveries that relate to the following:
+                {{ $t("starmap.growth.plan") }}
               </p>
               <ul class="list-disc pl-4">
                 <li>
@@ -233,18 +230,17 @@
           </div>
           <div class="md:max-w-[400px] xl:max-w-[540px] sm:ml-10 relative z-10">
             <h2 class="title mb-4">
-              <span class="text-3xl lg:text-4xl">The Expansion Nebula</span>
+              <span class="text-3xl lg:text-4xl">{{
+                $t("starmap.expansion.title")
+              }}</span>
             </h2>
             <div class="xl:text-lg">
               <p class="mb-8">
-                At Astar we plan to expand our reach even further. By creating
-                high quality tools and projects, we can further attract top
-                talent. We will focus on improving not only the user experience,
-                but also the developer experience.
+                {{ $t("starmap.expansion.description") }}
               </p>
               <h3 class="font-bold text-xl">Q3</h3>
               <p>
-                We can look forward to discoveries that relate to the following:
+                {{ $t("starmap.expansion.plan") }}
               </p>
               <ul class="list-disc pl-4">
                 <li>DApp Staking Update</li>
@@ -272,18 +268,16 @@
           </div>
           <div class="md:max-w-[400px] xl:max-w-[540px] order-1">
             <h2 class="title mb-4">
-              <span class="text-3xl lg:text-4xl">The Shine Nebula</span>
+              <span class="text-3xl lg:text-4xl">
+                {{ $t("starmap.shine.title") }}
+              </span>
             </h2>
             <div class="xl:text-lg">
               <p class="mb-8">
-                We now approach the last nebula in 2023. By now we have made
-                many great discoveries and grown to new heights - as Web3
-                technology, and as a team. But we are not done yet. We plan to
-                shine like a star to close out the year and prepare for the 2024
-                journey ahead.
+                {{ $t("starmap.shine.description") }}
               </p>
               <h3 class="font-bold text-xl">Q4</h3>
-              <p>We’re excited for this quarter. Stay tuned for more info.</p>
+              <p>{{ $t("starmap.shine.plan") }}</p>
             </div>
           </div>
         </div>
