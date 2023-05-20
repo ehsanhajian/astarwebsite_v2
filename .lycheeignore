@@ -5,6 +5,10 @@ file://.*
 https://twitter.com/*
 https://wellfound.com/*
 https://www.linkedin.com/*
+https://www.youtube.com/*
+http://img.youtube.com/*
+https://ipfs.subsocial.network/*
+https://www.googletagmanager.com/*
 
 # ecosystem
 https://cloud-ace.jp/*
@@ -16,3 +20,8 @@ https://cloud-ace.jp/*
 https://novawallet.io/*
 https://hashkey.capital/*
 https://www.kraken.com/*
+
+# others
+https://astar.network/images/ogp/
+https://v3.nuxtjs.org/api/configuration/nuxt.config
+https://community.astar.network/graphql
