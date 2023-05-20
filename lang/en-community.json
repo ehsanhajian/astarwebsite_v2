@@ -3,18 +3,9 @@
     "title": "Community",
     "description": "The true stars of our ecosystem.",
     "links": {
-      "blog": {
-        "title": "Announcements, Developments, Articles",
-        "button": "Go to Blog"
-      },
-      "video": {
-        "title": "Demos, Tutorials, Recaps, Events, AMAs",
-        "button": "Go to YouTube"
-      },
-      "community": {
-        "title": "Join the Community",
-        "button": "Go to Discord"
-      }
+      "blog": "Announcements, Developments, Articles",
+      "video": "Demos, Tutorials, Recaps, Events, AMAs",
+      "community": "Join the Community"
     },
     "connect": {
       "title": "Connect with Us",

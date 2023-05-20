@@ -1,35 +1,26 @@
 {
   "community": {
     "title": "コミュニティ",
-    "description": "The true stars of our ecosystem.",
+    "description": "エコシステムの真のStar（星）たち",
     "links": {
-      "blog": {
-        "title": "Announcements, Developments, Articles",
-        "button": "Go to Blog"
-      },
-      "video": {
-        "title": "Demos, Tutorials, Recaps, Events, AMAs",
-        "button": "Go to YouTube"
-      },
-      "community": {
-        "title": "Join the Community",
-        "button": "Go to Discord"
-      }
+      "blog": "お知らせ、開発、記事",
+      "video": "デモ、チュートリアル、イベント、AMA",
+      "community": "コミュニティへ\n参加"
     },
     "connect": {
-      "title": "Connect with Us",
-      "announcements": "Announcements",
-      "engineering": "Engineering",
-      "followers": "followers",
-      "members": "members",
-      "stars": "stars",
-      "subscribes": "subscribes",
-      "topics": "topics"
+      "title": "Astarとつながろう",
+      "announcements": "告知",
+      "engineering": "エンジニアリング",
+      "followers": "フォロワー",
+      "members": "メンバー",
+      "stars": "スター",
+      "subscribes": "購読者",
+      "topics": "トピック"
     },
-    "astar_space_labs": "Get started building on Astar and become a part of our vibrant ecosystem. Our community leaders support you along your building journey.",
+    "astar_space_labs": "さぁ、Astarで開発して、活気あるエコシステムの一員になりましょう！コミュニティリーダーがあなたの開発をサポートします。",
     "video": {
-      "title": "Featured Videos",
-      "watch": "Watch video"
+      "title": "おすすめ動画",
+      "watch": "動画を見る"
     }
   }
 }
