@@ -57,7 +57,7 @@
                     :to="localePath('/developers')"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                   >
-                    Developers
+                    {{ $t("developers.title") }}
                   </NuxtLink>
                 </li>
                 <li>
@@ -65,7 +65,9 @@
                     <DisclosureButton
                       class="text-white border-t border-gray-600 px-6 py-5 w-full flex justify-between items-center"
                     >
-                      <span>Network</span>
+                      <span>
+                        {{ locale === "ja" ? "ネットワーク" : "Network" }}
+                      </span>
                       <ChevronDownIcon
                         :class="[
                           open ? 'rotate-180 transform' : '',
@@ -104,7 +106,7 @@
                     <DisclosureButton
                       class="text-white border-t border-gray-600 px-6 py-5 w-full flex justify-between items-center"
                     >
-                      <span>Community</span>
+                      <span>{{ $t("community.title") }}</span>
                       <ChevronDownIcon
                         :class="[
                           open ? 'rotate-180 transform' : '',
@@ -118,21 +120,21 @@
                         class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
                         :to="localePath('/community')"
                       >
-                        Overview
+                        {{ locale === "ja" ? "概要" : "Overview" }}
                         <ArrowRightIcon class="w-4 h-4 ml-2" />
                       </NuxtLink>
                       <NuxtLink
                         class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
                         :to="localePath('/community/ecosystem')"
                       >
-                        Ecosystem
+                        {{ $t("ecosystem.title") }}
                         <ArrowRightIcon class="w-4 h-4 ml-2" />
                       </NuxtLink>
                       <NuxtLink
                         class="flex items-center py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
                         :to="localePath('/blog')"
                       >
-                        Blog
+                        {{ locale === "ja" ? "ブログ" : "Blog" }}
                         <ArrowRightIcon class="w-4 h-4 ml-2" />
                       </NuxtLink>
                     </DisclosurePanel>
@@ -143,7 +145,7 @@
                     :to="localePath('/japan')"
                     class="text-white block border-t border-gray-600 px-6 py-5"
                   >
-                    Japan
+                    Japan Lab
                   </NuxtLink>
                 </li>
               </ul>
@@ -154,7 +156,7 @@
                   size="lg"
                   class="w-full"
                 >
-                  Launch App
+                  {{ $t("home.hero.app") }}
                   <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
                 </Button>
               </div>
@@ -170,6 +172,8 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath();
+
+const { locale } = useI18n();
 
 import {
   XMarkIcon,
