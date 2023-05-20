@@ -3,3 +3,16 @@ file://.*
 
 # Twitter its API does not like us
 https://twitter.com/*
+https://wellfound.com/*
+https://www.linkedin.com/*
+
+# ecosystem
+https://cloud-ace.jp/*
+https://bwarelabs.com/*
+https://dappradar.com/*
+https://www.huobi.com/*
+https://www.bitget.com/*
+https://cloud-ace.jp/*
+https://novawallet.io/*
+https://hashkey.capital/*
+https://www.kraken.com/*
