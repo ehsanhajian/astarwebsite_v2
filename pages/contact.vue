@@ -15,12 +15,12 @@
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div class="text-center">
               <h1
-                class="text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight drop-shadow"
+                class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
               >
-                Contact Us
+                {{ $t("contact.title") }}
               </h1>
               <p class="sm:text-xl lg:text-2xl">
-                Get in touch with the Astar Network team
+                {{ $t("contact.description") }}
               </p>
             </div>
           </div>
@@ -150,32 +150,30 @@ const Discord = resolveComponent("IconDiscord");
 const options = [
   {
     slug: "marketing",
-    title: "Marketing Request",
-    description: "Interested in working together on your creative ideas?",
-    buttonLabel: "Let's Connect",
+    title: t("contact.marketing.title"),
+    description: t("contact.marketing.description"),
+    buttonLabel: t("contact.marketing.button"),
     icon: Marketing,
   },
   {
     slug: "partnerships",
-    title: "Partnerships",
-    description: "dApp staking and integrations support.",
-    buttonLabel: "Get support",
+    title: t("contact.partnerships.title"),
+    description: t("contact.partnerships.description"),
+    buttonLabel: t("contact.partnerships.button"),
     icon: Partnerships,
   },
   {
     slug: "technical",
-    title: "Technical Support",
-    description:
-      "If you have any technical problems or questions, please ask in Discord",
-    buttonLabel: "Discord Channel",
+    title: t("contact.technical.title"),
+    description: t("contact.technical.description"),
+    buttonLabel: t("contact.technical.button"),
     icon: Technical,
   },
   {
     slug: "other",
-    title: "For all other Inquiries",
-    description:
-      "Partnership request, listing, business services, events, etc.",
-    buttonLabel: "Contact Us",
+    title: t("contact.other.title"),
+    description: t("contact.other.description"),
+    buttonLabel: t("contact.other.button"),
     icon: null,
   },
 ];
