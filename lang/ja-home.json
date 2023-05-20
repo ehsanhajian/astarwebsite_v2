@@ -1,59 +1,62 @@
 {
   "home": {
     "hero": {
-      "description": "Astar is a scalable decentralized blockchain for the next big Web3 innovations.",
-      "doc": "Documentation",
-      "app": "Launch App"
+      "description": "Astarは次世代のWeb3イノベーションへのスケーラブルな分散型ブロックチェーンです",
+      "doc": "ドキュメント",
+      "app": "アプリへ"
     },
-    "welcome": "Welcome to Astar Network!",
-    "gateway": "The Gateway in the Multichain Era",
+    "welcome": {
+      "title": "Astar Networkへようこそ！",
+      "description": "Astarは日本で最大のスマートコントラクト・プラットフォームです。Ethereum Virtual Machine（EVM）とWebAeembly（Wasm）の両環境をサポートし、Cross-Virtual Machineを用いることによって両環境間の相互運用を実現します。Astarの革新的なBuild2Earnプログラムは、開発者が分散型アプリケーション（dApp）を開発するためのインセンティブを提供します。"
+    },
+    "gateway": "マルチチェーン時代の\nゲートウェイ",
     "ecosystem": {
-      "title": "Join Our Fast-Growing Ecosystem",
+      "title": "急成長中のエコシステムに\n参加しよう",
       "developer": {
-        "title": "Developer",
-        "description": "Create a dApp or infrastructure on our blockchain."
+        "title": "開発者",
+        "description": "Astarのチェーン上にdAppやインフラを構築"
       },
       "collator": {
-        "title": "Collator",
-        "description": "Run a node to support the blockchain."
+        "title": "コレーター",
+        "description": "ブロックチェーンをサポートするノードを実行"
       },
       "staker": {
-        "title": "Staker",
-        "description": "Stake $ASTR and earn staking rewards."
+        "title": "ステーカー",
+        "description": "ASTRをステーキングして報酬を獲得"
       },
       "users": {
-        "title": "Users",
-        "description": "Use $ASTR tokens and be a part of the Web3 movement."
+        "title": "ユーザー",
+        "description": "ASTRトークンを使い、Web3ムーブメントに参加"
       }
     },
     "reading": {
-      "title": "Recommended Reading",
-      "description": "Learn more about where and how Astar was born.",
+      "title": "まずはお読みください",
+      "description": "Astarが誕生した経緯や過程を詳しくご紹介します",
       "vision": {
-        "title": "Welcome to Astar",
-        "description": "Vision of Astar and the powerful blockchain technology that makes it possible."
+        "title": "Astarへようこそ",
+        "description": "Astarのビジョンと、それを実現する強力なブロックチェーン技術"
       },
       "tokenomics": {
-        "title": "$ASTR Tokenomics",
-        "description": "$ASTR governance, incentives and features that unlock Web3."
+        "title": "ASTRのトークンエコノミクス",
+        "description": "Web3を解き放つASTRのガバナンス、インセンティブ、及びその機能"
       },
       "ecosystem": {
-        "title": "Explore the ecosystem",
-        "description": "Join our ecosystem and understand the power of Astar Network."
+        "title": "エコシステムを探る",
+        "description": "Astarのエコシステムに参加し、そのパワーを実感"
       }
     },
     "features": {
       "multichain": {
-        "title": "Multichain Smart Contracts",
-        "description": "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more; allowing for the free flow of assets and communications between multiple ecosystems."
+        "title": "マルチチェーンスマートコントラクト",
+        "description": "Astarは、Ethereum、Polkadot、Cosmos等のチェーンと接続し、複数のエコシステム間での自由な資産移動やコミュニケーションを可能にします。"
       },
       "build2earn": {
         "title": "Build2Earn",
-        "description": "The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive $ASTR rewards through our dApp staking mechanism."
+        "description": "Astarは、Build2Earnプログラムを先駆けて導入することで、開発者を支援し、エコシステムを成長させています。開発者は分散型アプリケーション（dApp）を開発・運用すると、ステーキングメカニズムを通してインセンティブを得ることができます。"
       },
       "web2_web3": {
         "title": "Web2 + Web3",
-        "description": "Astar supports both Web2 and Web3 developers. We support developers joining the Web3 revolution through our multi-virtual machine to deploy smart contracts using EVM and WASM."
+        "description": "Astar Networkは、ソフトウェア開発者が既によく使用しているツールや言語をサポートしています。また、マルチチェーンネイティブのWasm + EVMランタイム環境は、他のプラットフォームにはない独自の革新的なソリューションを構築することができ、究極の自由度と柔軟性を提供しています。"
       }
     },
     "backers": "Backed By"

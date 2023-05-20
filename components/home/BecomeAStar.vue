@@ -4,7 +4,9 @@
       <span
         class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight title"
       >
-        <span>Join Our<br />Fast-Growing Ecosystem</span>
+        <span class="whitespace-pre-wrap">
+          {{ $t("home.ecosystem.title") }}
+        </span>
       </span>
     </h2>
     <ul class="grid sm:grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-8">
@@ -33,7 +35,7 @@
           :class="item.color"
           class="hover:underline transition flex items-center"
         >
-          Learn more<span class="sr-only"> about {{ item.name }}</span>
+          {{ $t("learn_more") }}
           <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
         </NuxtLink>
       </li>
@@ -44,32 +46,34 @@
 <script setup lang="ts">
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
+const { t } = useI18n();
+
 const developers = [
   {
-    name: "Developer",
+    name: t("home.ecosystem.developer.title"),
     image: "become-developer.svg",
-    description: "Create a dApp or infrastructure on our blockchain.",
+    description: t("home.ecosystem.developer.description"),
     href: "https://docs.astar.network/docs/build/",
     color: "text-space-pink hover:text-space-pink-lighter",
   },
   {
-    name: "Collator",
+    name: t("home.ecosystem.collator.title"),
     image: "become-collator.svg",
-    description: "Run a node to support the blockchain.",
+    description: t("home.ecosystem.collator.description"),
     href: "https://docs.astar.network/docs/nodes/",
     color: "text-space-sky hover:text-space-sky-lighter",
   },
   {
-    name: "Staker",
+    name: t("home.ecosystem.staker.title"),
     image: "become-staker.svg",
-    description: "Stake $ASTR and earn staking rewards.",
+    description: t("home.ecosystem.staker.description"),
     href: "https://portal.astar.network/#/astar/dapp-staking/discover",
     color: "text-space-cyan hover:text-space-cyan-lighter",
   },
   {
-    name: "Users",
+    name: t("home.ecosystem.users.title"),
     image: "become-users.svg",
-    description: "Use $ASTR tokens and be a part of the Web3 movement.",
+    description: t("home.ecosystem.users.description"),
     href: "https://portal.astar.network/#/astar/assets",
     color: "text-space-teal hover:text-space-teal-lighter",
   },
