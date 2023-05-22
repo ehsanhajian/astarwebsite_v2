@@ -54,7 +54,9 @@
 
       <HomeBecomeAStar class="pt-32 sm:pt-64 pb-32 sm:pb-64" />
 
-      <HomeRecommendedReading class="pb-24" />
+      <HomeRecommendedReading class="sm:py-24" />
+
+      <HomeNewsletter class="pb-12 sm:py-12" />
     </template>
 
     <template #earth>
