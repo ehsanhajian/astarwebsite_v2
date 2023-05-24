@@ -41,13 +41,14 @@
 <script setup lang="ts">
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
-const { t } = useI18n();
+const { locale, t } = useI18n();
+const i18n = locale.value === "ja" ? "/ja" : "";
 
 const links = [
   {
     label: t("community.links.blog"),
     to: "Astar Blog",
-    href: "/blog",
+    href: i18n + "/blog",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {

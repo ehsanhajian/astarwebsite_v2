@@ -5,7 +5,7 @@
       <BlogArticleCard v-for="post in posts" :post="post" />
     </ul>
     <div class="text-center mt-12 sm:mt-20">
-      <Button size="lg" href="/blog">Astar Blog -></Button>
+      <Button size="lg" :href="localePath('/blog')">Astar Blog -></Button>
     </div>
   </div>
 </template>
@@ -47,4 +47,6 @@ const posts = data.value.posts.map(
     };
   }
 );
+
+const localePath = useLocalePath();
 </script>
