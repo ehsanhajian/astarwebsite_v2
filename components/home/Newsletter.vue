@@ -8,11 +8,10 @@
           <h2
             class="font-bold text-2xl sm:text-3xl lg:text-4xl leading-tight mb-3 text-center sm:text-left"
           >
-            <span>Don't miss a beat.</span>
+            <span>{{ $t("home.newsletter.title") }}</span>
           </h2>
           <p>
-            Sign-up for our newsletter to stay up-to-date and learn about the
-            latest developments.
+            {{ $t("home.newsletter.description") }}
           </p>
         </div>
         <div class="shrink-0 text-center">
@@ -21,7 +20,7 @@
             target="_blank"
             size="lg"
           >
-            E-mail Sign-up
+            {{ $t("home.newsletter.signup") }}
             <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
           </Button>
         </div>
