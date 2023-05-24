@@ -38,6 +38,8 @@
           <BlogArticleCard v-for="post in posts" :post="post" />
         </ul>
       </div>
+
+      <HomeNewsletter class="py-20 sm:py-32" />
     </template>
     <template #earth>
       <Footer />

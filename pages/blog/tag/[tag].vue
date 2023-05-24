@@ -41,6 +41,8 @@
           </NuxtLink>
         </div>
       </div>
+
+      <HomeNewsletter class="py-20 sm:py-32" />
     </template>
     <template #earth>
       <Footer />

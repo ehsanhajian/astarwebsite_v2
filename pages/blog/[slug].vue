@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <article class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 mb-32">
+      <article class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 mb-12">
         <header class="text-center mb-12">
           <time class="text-gray-400">{{ post.publishedDate }}</time>
           <h1
@@ -65,6 +65,8 @@
           </div>
         </footer>
       </article>
+
+      <HomeNewsletter class="mb-36" />
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 class="text-center text-3xl lg:text-4xl font-semibold mb-12">
@@ -222,7 +224,7 @@ definePageMeta({
 }
 
 .entry-content {
-  @apply prose prose-invert lg:prose-xl prose-a:text-space-cyan hover:prose-a:text-space-cyan-lighter prose-headings:text-white bg-space-gray-dark tracking-wider prose-headings:font-bold prose-blockquote:font-normal prose-blockquote:py-3 prose-blockquote:pl-7 prose-blockquote:pr-5 prose-blockquote:bg-white/5 prose-strong:font-medium;
+  @apply prose prose-invert lg:prose-xl mx-auto prose-a:text-space-cyan hover:prose-a:text-space-cyan-lighter prose-headings:text-white bg-space-gray-dark tracking-wider prose-headings:font-bold prose-blockquote:font-normal prose-blockquote:py-3 prose-blockquote:pl-7 prose-blockquote:pr-5 prose-blockquote:bg-white/5 prose-strong:font-medium;
 }
 .entry-content p code {
   font-size: 0.9em;
