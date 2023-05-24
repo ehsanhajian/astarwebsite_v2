@@ -3,7 +3,7 @@
     v-for="locale in availableLocales"
     :key="locale.code"
     :to="switchLocalePath(locale.code)"
-    class="text-white"
+    class="text-white text-tiny xl:text-base"
   >
     <GlobeAltIcon class="w-6 h-6 inline-block" />
     {{ locale.name }}

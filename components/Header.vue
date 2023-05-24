@@ -32,7 +32,7 @@
           </div>
 
           <div class="hidden lg:flex lg:items-center">
-            <nav class="flex space-x-4 xl:space-x-8">
+            <nav class="flex items-center space-x-4 xl:space-x-8">
               <NuxtLink :to="localePath('/starmap')" class="nav-item">
                 2023 Starmap
               </NuxtLink>
@@ -46,7 +46,7 @@
                     open
                       ? 'text-space-cyan-light'
                       : 'text-white hover:text-space-cyan-light',
-                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition',
+                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition text-tiny xl:text-base',
                   ]"
                 >
                   <span>
@@ -106,7 +106,7 @@
                     open
                       ? 'text-space-cyan-light'
                       : 'text-white hover:text-space-cyan-light',
-                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition',
+                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition text-tiny xl:text-base',
                   ]"
                 >
                   <span>{{ $t("community.title") }}</span>
@@ -250,6 +250,6 @@ const network = [
 
 <style lang="postcss" scoped>
 .nav-item {
-  @apply text-white hover:text-space-cyan-light font-medium transition;
+  @apply text-white hover:text-space-cyan-light font-medium transition text-tiny xl:text-base;
 }
 </style>
