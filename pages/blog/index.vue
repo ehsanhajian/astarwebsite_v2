@@ -10,7 +10,7 @@
           height="1728"
         />
         <div
-          class="min-h-[50vh] sm:min-h-[60vh] flex items-center justify-start"
+          class="min-h-[50vh] sm:min-h-[60vh] flex items-center justify-start py-28"
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div class="text-center">
@@ -50,7 +50,7 @@ import gql from "graphql-tag";
 
 // The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
 const { locale } = useI18n();
-const astarSpace = locale.value === "ja" ? 11132 : 10802;
+const astarSpace = locale.value === "ja" ? 11315 : 10802;
 const query = gql`
   query PostsBySpaceId {
     posts(where: { space: { id_eq: "${astarSpace}" }, hidden_eq: false }, orderBy: id_DESC) {
