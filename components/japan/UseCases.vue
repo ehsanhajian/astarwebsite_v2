@@ -34,37 +34,36 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const cases = [
   {
-    title:
-      "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
+    title: t("japan.use_cases.astar_farm"),
     image: "astarfarm.webp",
     href: "",
   },
   {
-    title: 'Shiden NFT was distributed at "MILIYAH NFT Club".',
+    title: t("japan.use_cases.miliyah"),
     image: "miliyah.webp",
     href: "",
   },
   {
-    title: '"Left-Handed Ellen" NFT sales case study using Astar',
+    title: t("japan.use_cases.ellen"),
     image: "ellen.webp",
     href: "",
   },
   {
-    title:
-      "Distributed Shiden Network's NFT by audio at a live music concert venue.",
+    title: t("japan.use_cases.revolt"),
     image: "revolt.webp",
     href: "",
   },
   {
-    title: "Astar Network advertised in Nikkei Newspaper and distributed NFT",
+    title: t("japan.use_cases.nikkei"),
     image: "nikkei.webp",
     href: "",
   },
   {
-    title:
-      "Shiden Network's NFT was distributed in real time via audio on RKB.",
+    title: t("japan.use_cases.rkb"),
     image: "rkb.webp",
     href: "",
   },

@@ -7,7 +7,7 @@
           target="_blank"
           class="link--hiring"
         >
-          We are hiring!
+          {{ $t("home.hiring") }}
           <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
         </NuxtLink>
       </div>

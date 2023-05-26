@@ -16,7 +16,13 @@
       "description": "Astar Japan Labへの参加を希望し、参加企業によって承認された企業やコミュニティ"
     },
     "use_cases": {
-      "title": "導入事例"
+      "title": "導入事例",
+      "astar_farm": "Astar NetworkのGameFiプロジェクト「AstarFarm」が、博報堂、カルビーとコラボし、ゲームプレイヤーに実際の商品を抽選でプレゼント",
+      "miliyah": "「MILIYAH NFT Club」にてShiden NetworkのNFTを配布",
+      "ellen": "「左ききのエレン」がAstarを使ってNFTを販売",
+      "revolt": "ライブハウスで、Shiden NetworkのNFTを音声で配布",
+      "nikkei": "Astar Networkが日経新聞に広告を掲載し、NFTを配布",
+      "rkb": "RKBラジオで、Shiden NetworkのNFTをリアルタイムで配信"
     },
     "newsletter": {
       "title": "ニュースレター",

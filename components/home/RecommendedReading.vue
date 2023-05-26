@@ -30,11 +30,15 @@
             <p class="my-3">{{ item.description }}</p>
             <NuxtLink
               :to="item.href"
-              target="_blank"
+              :target="item.href.includes('https') ? '_blank' : '_self'"
               class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition flex items-center"
             >
               {{ $t("learn_more") }}
-              <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
+              <ArrowTopRightOnSquareIcon
+                v-if="item.href.includes('https')"
+                class="w-5 h-5 stroke-2 ml-1"
+              />
+              <span v-else>-></span>
             </NuxtLink>
           </div>
         </li>
@@ -46,7 +50,8 @@
 <script setup lang="ts">
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+const i18n = locale.value === "ja" ? "/ja" : "";
 
 const reading = [
   {
@@ -64,7 +69,7 @@ const reading = [
   {
     title: t("home.reading.ecosystem.title"),
     description: t("home.reading.ecosystem.description"),
-    href: "https://docs.astar.network/docs/ecosystem/",
+    href: i18n + "/community/ecosystem/",
     image: "reading-ecosystem.svg",
   },
 ];

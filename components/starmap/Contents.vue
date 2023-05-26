@@ -66,7 +66,7 @@
                         target="_blank"
                         class="flex items-center transition text-space-cyan hover:underline hover:text-space-cyan-lighter mt-5 outline-none"
                       >
-                        Learn more about this discovery
+                        {{ $t("starmap.learn_more") }}
                         <span class="sr-only">
                           about {{ discoveries[discoveryId]["title"] }}
                         </span>
@@ -149,23 +149,27 @@
               <ul class="list-disc pl-4">
                 <li>
                   <span @click="clickAction('xvm')" class="popup-link">
-                    Cross-Virtual Machine (XVM): The Portal to the Future
+                    {{ $t("starmap.reborn.xvm.title") }}
                   </span>
                 </li>
                 <li>
-                  Astar UI Library &
+                  {{
+                    locale === "ja"
+                      ? "Astar UIライブラリ &"
+                      : "Astar UI Library &"
+                  }}
                   <span @click="clickAction('astarjs')" class="popup-link">
                     Astar.js
                   </span>
                 </li>
                 <li>
                   <span @click="clickAction('meshNetworks')" class="popup-link">
-                    Mesh Networks
+                    {{ $t("starmap.reborn.mesh.title") }}
                   </span>
                 </li>
                 <li>
                   <span @click="clickAction('ink')" class="popup-link">
-                    Zero to ink! Hero
+                    {{ $t("starmap.reborn.ink.title") }}
                   </span>
                 </li>
               </ul>
@@ -205,11 +209,16 @@
               <ul class="list-disc pl-4">
                 <li>
                   <span @click="clickAction('wasm')" class="popup-link">
-                    Wasm on Astar!
+                    {{ $t("starmap.growth.wasm.title") }}
                   </span>
                 </li>
                 <li>RMRK ink! NFT</li>
-                <li>Swanky/Decentralized Tooling</li>
+                <li>
+                  Swanky /
+                  {{
+                    locale === "ja" ? "分散型ツール" : "Decentralized Tooling"
+                  }}
+                </li>
               </ul>
             </div>
           </div>
@@ -243,9 +252,19 @@
                 {{ $t("starmap.expansion.plan") }}
               </p>
               <ul class="list-disc pl-4">
-                <li>DApp Staking Update</li>
-                <li>Tokenomics</li>
-                <li>XCM Contracts</li>
+                <li>
+                  {{
+                    locale === "ja"
+                      ? "DAppステーキングアップデート"
+                      : "DApp Staking Update"
+                  }}
+                </li>
+                <li>
+                  {{ locale === "ja" ? "トークンエコノミクス" : "Tokenomics" }}
+                </li>
+                <li>
+                  {{ locale === "ja" ? "XCMコントラクト" : "XCM Contracts" }}
+                </li>
               </ul>
             </div>
           </div>
@@ -313,38 +332,36 @@ interface Discovery {
   image: string;
 }
 
+const { t, locale } = useI18n();
+
 const discoveries: { [index: string]: Discovery } = {
   xvm: {
-    title: "Cross-Virtual Machine (XVM): The Portal to the Future",
-    description: `As we are well-aware, WASM is the future. Currently, WASM smart contracts have a large limitation when pushing the technology for mass adoption in the EVM-dominated space. Teams are inclined to choose one or the other when developing their project. This is why we created XVM.\n\nCross-Virtual Machine (XVM) is a custom pallet and a set of interfaces that allow a smart contract in one virtual machine to communicate with another, as if they are in the same environment. In other words, with XVM, you can create an ink! smart contract and access any assets or contracts available on the EVM side. You can enjoy the best of both worlds!`,
+    title: t("starmap.reborn.xvm.title"),
+    description: t("starmap.reborn.xvm.description"),
     href: "https://medium.com/astar-network/cross-virtual-machine-creating-a-portal-to-the-future-of-smart-contracts-a96c6d2f79b8",
     image: "xvm.svg",
   },
   astarjs: {
-    title: "Astar.js",
-    description:
-      "Astar.js is an essential tool for anyone looking to build a dApp on the Astar network. Its modular design and comprehensive feature set make it easy for developers to create powerful and scalable decentralised applications. In addition to the many packages it contains, it also supports EVM and substrate native structures. Whether you're a seasoned blockchain developer or just starting out, Astar.js is a valuable tool to have in your toolkit.",
+    title: t("starmap.reborn.astarjs.title"),
+    description: t("starmap.reborn.astarjs.description"),
     href: "https://medium.com/astar-network/overview-23e6eaa321c2",
     image: "astarjs.svg",
   },
   meshNetworks: {
-    title: "Mesh Networks",
-    description:
-      "Connect to any dApp from anywhere! Our mesh network distributes the infrastructure that allows you to access the blockchain. Astar mesh network is a peer-to-peer (P2P) model to create a secure, shared environment of RPC nodes for you to interact with the network. The nodes send traffic between themselves rather than through a central server.",
+    title: t("starmap.reborn.mesh.title"),
+    description: t("starmap.reborn.mesh.description"),
     href: "https://medium.com/astar-network/decentracademy-1-building-reliable-infrastructure-with-a-mesh-network-96737992a048",
     image: "mesh-networks.svg",
   },
   ink: {
-    title: "Zero to ink! Hero",
-    description:
-      "Mint your ink! NFT, build a Uniswap V2 DEX, or create a simple flipper contract! \n\nBecoming a robust Layer 1 requires us to jumpstart Astar’s Wasm environment with the development of ink! smart contracts. For that reason, we created From Zero to ink! Hero guide to help you build your ink! dApp.",
+    title: t("starmap.reborn.ink.title"),
+    description: t("starmap.reborn.ink.description"),
     href: "https://medium.com/astar-network/from-zero-to-ink-hero-9a0c11c58758",
     image: "zero-to-ink-hero.webp",
   },
   wasm: {
-    title: "Wasm on Astar!",
-    description:
-      "We have enabled ink! smart contracts on Astar Network, making us the first parachain to support a stable Wasm environment. Software developers can now use Rust programming to build their projects and ideas on Astar. \n\nWebAssembly is important for our blockchain because it provides a portable and developer-friendly environment for running code, which improves the performance, security, and interoperability of the applications built on Astar.",
+    title: t("starmap.growth.wasm.title"),
+    description: t("starmap.growth.wasm.description"),
     href: "https://medium.com/astar-network/wasm-launch-day-april-6-1efa94dba798",
     image: "wasm.webp",
   },

@@ -30,7 +30,7 @@
       }
     },
     "reading": {
-      "title": "まずはお読みください",
+      "title": "Astarについて",
       "description": "Astarが誕生した経緯や過程を詳しくご紹介します",
       "vision": {
         "title": "Astarへようこそ",
@@ -59,11 +59,12 @@
         "description": "Astar Networkは、ソフトウェア開発者が既によく使用しているツールや言語をサポートしています。また、マルチチェーンネイティブのWasm + EVMランタイム環境は、他のプラットフォームにはない独自の革新的なソリューションを構築することができ、究極の自由度と柔軟性を提供しています。"
       }
     },
-    "backers": "Backed By",
+    "backers": "後援",
     "newsletter": {
       "title": "ニュースレター",
       "description": "ニュースレターによりAstarの最新情報をお届けします",
       "signup": "登録する"
-    }
+    },
+    "hiring": "採用中です！"
   }
 }
