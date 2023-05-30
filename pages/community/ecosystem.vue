@@ -25,7 +25,7 @@
             <h1
               class="text-4xl sm:text-6xl lg:text-7xl font-extrabold drop-shadow text-center leading-none pt-12"
             >
-              {{ $t("ecosystem.title") }}
+              Ecosystem
             </h1>
           </div>
         </div>

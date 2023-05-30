@@ -37,7 +37,7 @@
                 2023 Starmap
               </NuxtLink>
               <NuxtLink :to="localePath('/developers')" class="nav-item">
-                {{ $t("developers.title") }}
+                Developers
               </NuxtLink>
 
               <Popover v-slot="{ open }" class="relative">
@@ -49,9 +49,7 @@
                     'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition text-tiny xl:text-base',
                   ]"
                 >
-                  <span>
-                    {{ locale === "ja" ? "ネットワーク" : "Network" }}
-                  </span>
+                  <span>Network</span>
                   <ChevronDownIcon
                     :class="[
                       open
@@ -109,7 +107,7 @@
                     'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition text-tiny xl:text-base',
                   ]"
                 >
-                  <span>{{ $t("community.title") }}</span>
+                  <span>Community</span>
                   <ChevronDownIcon
                     :class="[
                       open
@@ -135,21 +133,21 @@
                       class="flex justify-between items-center w-36 py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
                       :to="localePath('/community')"
                     >
-                      {{ locale === "ja" ? "概要" : "Overview" }}
+                      Overview
                       <ArrowRightIcon class="inline-block w-5 h-5" />
                     </NuxtLink>
                     <NuxtLink
                       class="flex justify-between items-center w-36 py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
                       :to="localePath('/community/ecosystem')"
                     >
-                      {{ $t("ecosystem.title") }}
+                      Ecosystem
                       <ArrowRightIcon class="inline-block w-5 h-5" />
                     </NuxtLink>
                     <NuxtLink
                       class="flex justify-between items-center w-36 py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
                       :to="localePath('/blog')"
                     >
-                      {{ locale === "ja" ? "ブログ" : "Blog" }}
+                      Blog
                       <ArrowRightIcon class="inline-block w-5 h-5" />
                     </NuxtLink>
                   </PopoverPanel>

@@ -7,7 +7,7 @@
         <h1
           class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
         >
-          {{ $t("community.title") }}
+          Community
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
           {{ $t("community.description") }}
