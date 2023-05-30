@@ -16,22 +16,16 @@
         <span>News</span>
       </h2>
       <ul class="space-y-6">
-        <li v-for="item in news" class="sm:flex">
-          <time
-            class="w-36 shrink-0 block text-gray-400 text-sm sm:text-base"
-            >{{ item.publishedDate }}</time
-          >
+        <li v-for="post in posts" class="sm:flex">
+          <time class="w-36 shrink-0 block text-gray-400 text-sm sm:text-base">
+            {{ post.publishedDate }}
+          </time>
           <NuxtLink
-            v-if="item.href !== ''"
-            :to="item.href"
-            target="_blank"
+            :to="post.href"
             class="hover:underline transition hover:text-space-cyan-light"
           >
-            {{ item.text }}
+            {{ post.title }}
           </NuxtLink>
-          <span v-else>
-            {{ item.text }}
-          </span>
         </li>
       </ul>
     </div>
@@ -41,26 +35,34 @@
 <script setup lang="ts">
 import gql from "graphql-tag";
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/11132
-const japanNewsSpace = 11215;
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale } = useI18n();
+const astarSpace = locale.value === "ja" ? 11315 : 10802;
 const query = gql`
   query PostsBySpaceId {
-    posts(where: { space: { id_eq: "${japanNewsSpace}" }, hidden_eq: false }, orderBy: id_DESC) {
+    posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "japan", hidden_eq: false }, orderBy: id_DESC) {
       publishedDate: createdOnDay
-      text: title
+      title
       href: canonical
+      slug
+      id
     }
   }
 `;
 
-const { data } = await useAsyncQuery({query, clientId: 'subsocial'});
-const news = data.value.posts.map((item: { publishedDate: string | number | Date; }) => {
-  const date = new Date(item.publishedDate);
-    const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+const { data } = await useAsyncQuery({ query, clientId: "subsocial" });
+const posts = data.value.posts.map(
+  (item: { publishedDate: string | number | Date }) => {
+    const date = new Date(item.publishedDate);
+    const formattedDate = date.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    });
     return {
-        ...item,
-        publishedDate: formattedDate
+      ...item,
+      publishedDate: formattedDate,
     };
-});
-
+  }
+);
 </script>
