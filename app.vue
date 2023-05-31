@@ -29,6 +29,7 @@ useHead(() => ({
       href: seoUrl,
     },
   ],
+  script: [{ src: "/js/astarAi.js" }],
 }));
 
 useSchemaOrg([
