@@ -7,10 +7,10 @@
         <h1
           class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
         >
-          Community
+          {{ $t("community.title") }}
         </h1>
         <p class="text-lg sm:text-xl lg:text-2xl">
-          The true stars of our ecosystem.
+          {{ $t("community.description") }}
         </p>
       </div>
     </div>

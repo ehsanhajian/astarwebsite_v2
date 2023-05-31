@@ -10,18 +10,17 @@
           height="1728"
         />
         <div
-          class="min-h-[50vh] sm:min-h-[60vh] flex items-center justify-start"
+          class="min-h-[50vh] sm:min-h-[60vh] flex items-center justify-start py-28"
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div class="text-center">
               <h1
                 class="text-4xl sm:text-6xl lg:text-8xl font-extrabold tracking-tight drop-shadow"
               >
-                Astar Blog
+                {{ $t("blog.title") }}
               </h1>
               <p class="text-sm sm:text-base lg:text-lg max-w-3xl mx-auto">
-                The latest posts about all things Astar Network, major news,
-                ecosystem announcements, engineering updates, and more.
+                {{ $t("blog.description") }}
               </p>
             </div>
           </div>
@@ -31,7 +30,7 @@
         <h2
           class="text-center text-3xl sm:text-4xl font-semibold mb-8 sm:mb-12"
         >
-          Latest Posts
+          {{ $t("blog.latest") }}
         </h2>
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
@@ -51,8 +50,9 @@
 <script setup lang="ts">
 import gql from "graphql-tag";
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
-const astarSpace = 10802;
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale } = useI18n();
+const astarSpace = locale.value === "ja" ? 11315 : 10802;
 const query = gql`
   query PostsBySpaceId {
     posts(where: { space: { id_eq: "${astarSpace}" }, hidden_eq: false }, orderBy: id_DESC) {
@@ -86,10 +86,10 @@ const posts = data.value.posts.map(
 );
 
 const route = useRoute();
+const { t } = useI18n();
 import { meta } from "@/content/meta";
-const seoTitle = `Astar Blog | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription =
-  "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
+const seoTitle = `${t("blog.title")} | ${meta.siteName} - ${t("meta.tagline")}`;
+const seoDescription = t("blog.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}blog.png`;
 

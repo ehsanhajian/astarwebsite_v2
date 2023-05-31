@@ -9,51 +9,51 @@
         />
         <div class="ml-6 sm:ml-8 lg:ml-24">
           <p class="font-bold text-2xl sm:text-3xl title">
-            <span>{{ $t("program.timeline.subheading") }}</span>
+            <span>{{ $t("incubation.program.timeline.subheading") }}</span>
           </p>
           <h2
             class="text-white text-2xl sm:text-3xl font-medium mt-2 mb-8 sm:mb-16 leading-snug"
           >
-            {{ $t("program.timeline.heading") }}
+            {{ $t("incubation.program.timeline.heading") }}
           </h2>
         </div>
         <ol class="timeline space-y-12">
           <li class="after:bg-space-pink before:bg-space-pink">
             <div class="border-space-pink">
               <h3 class="text-space-pink">
-                {{ $t("program.timeline.application.title") }}
+                {{ $t("incubation.program.timeline.application.title") }}
                 <small class="block sm:inline">
-                  ({{ $t("program.timeline.application.dates") }})
+                  ({{ $t("incubation.program.timeline.application.dates") }})
                 </small>
               </h3>
               <p class="text-gray-300">
-                {{ $t("program.timeline.application.description") }}
+                {{ $t("incubation.program.timeline.application.description") }}
               </p>
             </div>
           </li>
           <li class="after:bg-space-sky before:bg-space-sky">
             <div class="border-space-sky">
               <h3 class="text-space-sky">
-                {{ $t("program.timeline.incubation.title") }}
+                {{ $t("incubation.program.timeline.incubation.title") }}
                 <small class="block sm:inline">
-                  ({{ $t("program.timeline.incubation.dates") }})
+                  ({{ $t("incubation.program.timeline.incubation.dates") }})
                 </small>
               </h3>
               <p class="text-gray-300">
-                {{ $t("program.timeline.incubation.description") }}
+                {{ $t("incubation.program.timeline.incubation.description") }}
               </p>
             </div>
           </li>
           <li class="after:bg-space-cyan before:bg-space-cyan">
             <div class="border-space-cyan">
               <h3 class="text-space-cyan">
-                {{ $t("program.timeline.demo.title") }}
+                {{ $t("incubation.program.timeline.demo.title") }}
                 <small class="block sm:inline">
-                  ({{ $t("program.timeline.demo.dates") }})
+                  ({{ $t("incubation.program.timeline.demo.dates") }})
                 </small>
               </h3>
               <p class="text-gray-300">
-                {{ $t("program.timeline.demo.description") }}
+                {{ $t("incubation.program.timeline.demo.description") }}
               </p>
             </div>
           </li>

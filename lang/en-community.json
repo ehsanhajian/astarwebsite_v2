@@ -1,0 +1,26 @@
+{
+  "community": {
+    "title": "Community",
+    "description": "The true stars of our ecosystem.",
+    "links": {
+      "blog": "Announcements, Developments, Articles",
+      "video": "Demos, Tutorials, Recaps, Events, AMAs",
+      "community": "Join the Community"
+    },
+    "connect": {
+      "title": "Connect with Us",
+      "announcements": "Announcements",
+      "engineering": "Engineering",
+      "followers": "followers",
+      "members": "members",
+      "stars": "stars",
+      "subscribes": "subscribes",
+      "topics": "topics"
+    },
+    "astar_space_labs": "Get started building on Astar and become a part of our vibrant ecosystem. Our community leaders support you along your building journey.",
+    "video": {
+      "title": "Featured Videos",
+      "watch": "Watch video"
+    }
+  }
+}

@@ -23,18 +23,21 @@
         to="https://docs.google.com/document/d/1gxM0PEzFq7nW5VB11pMcDUaaKxfMz3BjTDtmEem_oo4/edit?usp=sharing"
         class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
       >
-        {{ $t("nav.tac") }}
+        {{ $t("incubation.nav.tac") }}
         <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block align-sub" />
       </NuxtLink>
       <NuxtLink
         to="https://docs.google.com/document/d/1XSEQ7pPtAt9qnIVLThwWytdoOqV0aNQh/edit?usp=sharing&ouid=106208569002643720949&rtpof=true&sd=true"
         class="text-space-blue transition hover:underline hover:text-space-blue-lighter"
       >
-        {{ $t("nav.privacy") }}
+        {{ $t("incubation.nav.privacy") }}
         <ArrowTopRightOnSquareIcon class="w-5 h-5 inline-block align-sub" />
       </NuxtLink>
     </nav>
-    <p class="text-sm">© 2023 {{ $t("meta.title") }}. All Rights Reserved</p>
+    <p class="text-sm">
+      &copy; {{ new Date().getFullYear() }} {{ $t("incubation.meta.title") }}.
+      All Rights Reserved
+    </p>
   </footer>
 </template>
 

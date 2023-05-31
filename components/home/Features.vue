@@ -22,7 +22,7 @@
         </h2>
         <p>{{ item.description }}</p>
         <NuxtLink :to="item.href" target="_blank" class="flex items-center">
-          Learn more<span class="sr-only"> about {{ item.title }}</span>
+          {{ $t("learn_more") }}
           <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
         </NuxtLink>
       </div>
@@ -33,24 +33,24 @@
 <script setup lang="ts">
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
+const { t } = useI18n();
+
 const features = [
   {
-    title: "Multichain Smart Contracts",
-    description:
-      "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more; allowing for the free flow of assets and communications between multiple ecosystems.",
+    title: t("home.features.multichain.title"),
+    description: t("home.features.multichain.description"),
     href: "https://www.youtube.com/watch?v=bJgMm4SUSJQ&t=134s",
     image: "features-multichain.svg",
   },
   {
-    title: "Build2Earn",
-    description: `The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive ASTR rewards through our dApp staking mechanism.`,
+    title: t("home.features.build2earn.title"),
+    description: t("home.features.build2earn.description"),
     href: "https://docs.astar.network/docs/dapp-staking/",
     image: "features-basic-income.svg",
   },
   {
-    title: "Web2 + Web3",
-    description:
-      "Astar Network supports tools and languages that software developers often work with already, and our multichain-native Wasm + EVM runtime environments provide ultimate freedom and flexibility to build uniquely innovative solutions that simply can't be replicated on any other platform.",
+    title: t("home.features.web2_web3.title"),
+    description: t("home.features.web2_web3.description"),
     href: "https://docs.astar.network/docs/build/",
     image: "features-web2-web3.svg",
   },

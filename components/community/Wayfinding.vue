@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-8 sm:mb-16">
-      <span>Connect with Us</span>
+      <span>{{ $t("community.connect.title") }}</span>
     </h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
       <li v-for="(item, index) in social">
@@ -43,14 +43,16 @@ const Github = resolveComponent("IconGithub");
 const Youtube = resolveComponent("IconYoutube");
 const Comments = resolveComponent("IconComments");
 
+const { t } = useI18n();
+
 const social = [
   {
     name: "Twitter",
     href: "https://twitter.com/astarNetwork",
     icon: Twitter,
     stats: "+355K",
-    unit: "followers",
-    type: "Announcements",
+    unit: t("community.connect.followers"),
+    type: t("community.connect.announcements"),
     color: "text-[#1DA1F2]",
   },
   {
@@ -58,8 +60,8 @@ const social = [
     href: "https://discord.gg/astarnetwork",
     icon: Discord,
     stats: "+160K",
-    unit: "members",
-    type: "Engineering",
+    unit: t("community.connect.members"),
+    type: t("community.connect.engineering"),
     color: "text-[#5865F2]",
   },
   {
@@ -67,8 +69,8 @@ const social = [
     href: "https://t.me/PlasmOfficial",
     icon: Telegram,
     stats: "+28K",
-    unit: "members",
-    type: "Announcements",
+    unit: t("community.connect.members"),
+    type: t("community.connect.announcements"),
     color: "text-[#0088CC]",
   },
   {
@@ -76,8 +78,8 @@ const social = [
     href: "https://medium.com/astar-network",
     icon: Medium,
     stats: "+7,0K",
-    unit: "followers",
-    type: "Announcements",
+    unit: t("community.connect.followers"),
+    type: t("community.connect.announcements"),
     color: "text-gray-200",
   },
   {
@@ -85,8 +87,8 @@ const social = [
     href: "https://github.com/AstarNetwork/Astar",
     icon: Github,
     stats: "+580",
-    unit: "stars",
-    type: "Engineering",
+    unit: t("community.connect.stars"),
+    type: t("community.connect.engineering"),
     color: "text-[#FAFAFA]",
   },
   {
@@ -94,8 +96,8 @@ const social = [
     href: "https://www.youtube.com/c/AstarNetwork",
     icon: Youtube,
     stats: "+2,7K",
-    unit: "subscribes",
-    type: "Announcements",
+    unit: t("community.connect.subscribes"),
+    type: t("community.connect.announcements"),
     color: "text-[#e64747]",
   },
   {
@@ -103,8 +105,8 @@ const social = [
     href: "https://forum.astar.network/",
     icon: Comments,
     stats: "+170",
-    unit: "topics",
-    type: "Announcements",
+    unit: t("community.connect.topics"),
+    type: t("community.connect.announcements"),
     color: "text-gray-200",
   },
 ];

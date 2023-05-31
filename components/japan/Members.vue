@@ -1,11 +1,10 @@
 <template>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 text-center">
     <h2 class="title text-center mb-4 sm:mb-8">
-      <span>Registered Members</span>
+      <span>{{ $t("japan.members.title") }}</span>
     </h2>
     <p class="mb-12 max-w-3xl mx-auto text-sm sm:text-base">
-      Companies and communities that wish to join our organization and have been
-      approved by the participating companies in the organization.
+      {{ $t("japan.members.description") }}
     </p>
 
     <TabGroup>
@@ -126,7 +125,7 @@ const query = gql`
     }
   }
 `;
-const { data } = await useAsyncQuery({query, clientId: 'community'});
+const { data } = await useAsyncQuery({ query, clientId: "community" });
 
 let projects = [];
 let categories = [];

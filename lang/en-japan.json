@@ -1,0 +1,33 @@
+{
+  "japan": {
+    "title": "Astar Japan Lab",
+    "description": "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.",
+    "register": "Register Now",
+    "features": {
+      "business_opportunities": "Creating business opportunities in Japan with Astar Network",
+      "use_cases": "Proposed blockchain and NFT use cases",
+      "solution": "Engaging Solution Providers",
+      "vc": "Introduction of overseas VC for web startups from Japan",
+      "group_study": "Group study sessions to advance use cases for Astar",
+      "connect": "Connect with the Astar community and ambassadors"
+    },
+    "members": {
+      "title": "Registered Members",
+      "description": "Companies and communities that wish to join our organization and have been approved by the participating companies in the organization."
+    },
+    "use_cases": {
+      "title": "Use Cases",
+      "astar_farm": "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
+      "miliyah": "Shiden NFT was distributed at \"MILIYAH NFT Club\".",
+      "ellen": "\"Left-Handed Ellen\" NFT sales case study using Astar",
+      "revolt": "Distributed Shiden Network's NFT by audio at a live music concert venue.",
+      "nikkei": "Astar Network advertised in Nikkei Newspaper and distributed NFT",
+      "rkb": "Shiden Network's NFT was distributed in real time via audio on RKB."
+    },
+    "newsletter": {
+      "title": "Join Our Newsletter!",
+      "description": "Subscribe to our newsletter to receive the latest update in Japanese.",
+      "subscribe": "Subscribe"
+    }
+  }
+}

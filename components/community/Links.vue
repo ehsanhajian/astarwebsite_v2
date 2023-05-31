@@ -16,9 +16,11 @@
         :data-aos-delay="index * 200"
       >
         <div>
-          <span class="block text-xl lg:text-2xl font-bold leading-tight">{{
-            item.label
-          }}</span>
+          <span
+            class="block text-xl lg:text-2xl font-bold leading-tight whitespace-pre-wrap"
+          >
+            {{ item.label }}
+          </span>
           <span
             class="mt-4 border rounded-full py-1 flex justify-center items-center"
             :class="index === 2 ? 'border-space-gray-dark' : 'border-white'"
@@ -39,22 +41,25 @@
 <script setup lang="ts">
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
+const { locale, t } = useI18n();
+const i18n = locale.value === "ja" ? "/ja" : "";
+
 const links = [
   {
-    label: "Announcements, Developments, Articles",
-    to: "Go to Blog",
-    href: "/blog",
+    label: t("community.links.blog"),
+    to: "Astar Blog",
+    href: i18n + "/blog",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
-    label: "Demos, Tutorials, Recaps, Events, AMAs",
-    to: "Go to YouTube",
+    label: t("community.links.video"),
+    to: "YouTube",
     href: "https://www.youtube.com/c/AstarNetwork",
     color: "bg-space-blue hover:bg-space-blue-lighter",
   },
   {
-    label: "Join the Community",
-    to: "Go to Discord",
+    label: t("community.links.community"),
+    to: "Discord",
     href: "https://discord.gg/astarnetwork",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",
   },

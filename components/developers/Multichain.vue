@@ -14,11 +14,10 @@
     >
       <div class="mb-12 lg:mb-0">
         <h2 class="title mb-4 text-center lg:text-left">
-          <span>Multichain Future</span>
+          <span>{{ $t("developers.multichain.title") }}</span>
         </h2>
         <p class="text-center lg:text-left">
-          Astar Network will be the go-to blockchain for Web3 and beyond by
-          focusing on the key aspect of interoperability.
+          {{ $t("developers.multichain.description") }}
         </p>
       </div>
       <ul class="grid gap-12 lg:ml-28">
@@ -42,29 +41,27 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const future = [
   {
-    name: "DeFi",
-    description:
-      "The quantity and quality of options available for our user base boost our decentralized finance sector. In addition to very low fees and quick transaction speed, our XCM compatibility with other parachains allow for more secure transfers and swaps within our ecosystem.",
+    name: t("developers.multichain.defi.title"),
+    description: t("developers.multichain.defi.description"),
     image: "multichain-defi.svg",
   },
   {
-    name: "NFT",
-    description:
-      "Astar's NFT environment is inviting for small and large communities alike. From personal collections to full-scale projects by renowned Japanese IPs, we have all the tools necessary to help connect the team with the interested communities.",
+    name: t("developers.multichain.nft.title"),
+    description: t("developers.multichain.nft.description"),
     image: "multichain-nft.svg",
   },
   {
-    name: "Leading Infra Providers",
-    description:
-      "Our goal is to provide the most secure and efficient connections to other leading blockchains. Considering the high level of importance this has, we take a rigorous approach when integrating bridges and other infra.",
+    name: t("developers.multichain.infra.title"),
+    description: t("developers.multichain.infra.description"),
     image: "multichain-providers.svg",
   },
   {
-    name: "DAO",
-    description:
-      "Decentralized autonomous organizations are the future. Our community will help mold the shape of the network through means which are transparent and accessible.",
+    name: t("developers.multichain.dao.title"),
+    description: t("developers.multichain.dao.description"),
     image: "multichain-dao.svg",
   },
 ];

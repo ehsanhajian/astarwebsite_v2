@@ -14,7 +14,7 @@
           <img
             class="absolute z-[3] w-screen h-screen object-scale-down portrait:hidden"
             src="/images/japan/hero-landscape.svg"
-            alt="Astar Japan Lab"
+            :alt="$t('japan.title')"
             width="1460"
             height="808"
             data-not-lazy
@@ -65,9 +65,11 @@ import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 const route = useRoute();
 import { meta } from "@/content/meta";
-const seoTitle = `Astar Japan Lab | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription =
-  "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.";
+const { t } = useI18n();
+const seoTitle = `${t("japan.title")} | ${meta.siteName} - ${t(
+  "meta.tagline"
+)}`;
+const seoDescription = t("japan.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}japan.png`;
 

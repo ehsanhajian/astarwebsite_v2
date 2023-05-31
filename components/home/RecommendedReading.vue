@@ -3,10 +3,10 @@
     <h2
       class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-center title"
     >
-      <span>Recommended Reading</span>
+      <span>{{ $t("home.reading.title") }}</span>
     </h2>
     <p class="sm:text-xl text-center mt-4">
-      Learn more about where and how Astar was born.
+      {{ $t("home.reading.description") }}
     </p>
     <ul class="grid sm:grid-cols-3 gap-x-4 lg:gap-x-8 mt-12 sm:mt-28">
       <template v-for="(item, index) in reading">
@@ -30,73 +30,46 @@
             <p class="my-3">{{ item.description }}</p>
             <NuxtLink
               :to="item.href"
-              target="_blank"
+              :target="item.href.includes('https') ? '_blank' : '_self'"
               class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition flex items-center"
             >
-              Learn more<span class="sr-only"> about {{ item.title }}</span>
-              <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
+              {{ $t("learn_more") }}
+              <ArrowTopRightOnSquareIcon
+                v-if="item.href.includes('https')"
+                class="w-5 h-5 stroke-2 ml-1"
+              />
+              <span v-else>-></span>
             </NuxtLink>
           </div>
         </li>
       </template>
     </ul>
-
-    <!-- <div
-      class="gradient-outlined-box max-w-5xl mx-auto mt-12 lg:mt-24 sm:flex justify-center items-center p-8 lg:p-12 rounded-3xl sm:space-x-4 lg:space-x-6"
-    >
-      <div class="mb-4 sm:mb-0">
-        <h3 class="font-bold text-2xl leading-tight">Receive newsletter</h3>
-        <p>
-          Unsubscribe at any time.
-          <NuxtLink
-            to="https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing"
-            target="_blank"
-            class="text-space-cyan hover:text-space-cyan-lighter hover:underline transition whitespace-nowrap inline-flex items-center"
-          >
-            Privacy policy
-            <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
-          </NuxtLink>
-        </p>
-      </div>
-      <form class="sm:flex">
-        <label for="email-address" class="sr-only">Email address</label>
-        <input
-          id="email-address"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          class="mb-2 sm:mb-0 w-full rounded-xl border-gray-300 px-5 py-3 placeholder-gray-500 focus:border-space-sky focus:ring-space-sky sm:max-w-xs mr-2 text-gray-900"
-          placeholder="Enter your email"
-        />
-        <Button class="w-full sm:w-auto">Subscribe</Button>
-      </form>
-    </div> -->
   </div>
 </template>
 
 <script setup lang="ts">
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
+const { t, locale } = useI18n();
+const i18n = locale.value === "ja" ? "/ja" : "";
+
 const reading = [
   {
-    title: "Welcome to Astar",
-    description:
-      "Vision of Astar and the powerful blockchain technology that makes it possible.",
+    title: t("home.reading.vision.title"),
+    description: t("home.reading.vision.description"),
     href: "https://docs.astar.network/docs/getting-started",
     image: "reading-astar.svg",
   },
   {
-    title: "ASTR Tokenomics",
-    description: "ASTR governance, incentives and features that unlock Web3.",
+    title: t("home.reading.tokenomics.title"),
+    description: t("home.reading.tokenomics.description"),
     href: "https://docs.astar.network/docs/about/token-economics/economics",
     image: "reading-token.svg",
   },
   {
-    title: "Explore the ecosystem",
-    description:
-      "Join our ecosystem and understand the power of Astar Network.",
-    href: "https://docs.astar.network/docs/ecosystem/",
+    title: t("home.reading.ecosystem.title"),
+    description: t("home.reading.ecosystem.description"),
+    href: i18n + "/community/ecosystem/",
     image: "reading-ecosystem.svg",
   },
 ];

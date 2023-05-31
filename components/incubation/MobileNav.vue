@@ -20,10 +20,10 @@
           focus
           class="absolute inset-x-0 top-0 z-50 origin-top-right transform transition"
         >
-          <div class="bg-white shadow-lg min-h-screen flex items-center">
+          <div class="bg-black shadow-lg min-h-screen flex items-center">
             <PopoverButton class="absolute right-0 top-0 p-3">
               <span class="sr-only">Close menu</span>
-              <XMarkIcon class="h-8 w-8 text-gray-600" aria-hidden="true" />
+              <XMarkIcon class="h-8 w-8 text-gray-300" aria-hidden="true" />
             </PopoverButton>
 
             <div class="px-12 w-full text-center">
@@ -33,43 +33,42 @@
                   class="nav-item"
                   :class="route.meta.slug === 'program' && 'current'"
                 >
-                  <PopoverButton>{{ $t("meta.program.title") }}</PopoverButton>
+                  <PopoverButton>
+                    {{ $t("incubation.meta.program.title") }}
+                  </PopoverButton>
                 </NuxtLink>
                 <NuxtLink
                   :to="localePath('/incubation/partners')"
                   class="nav-item"
                   :class="route.meta.slug === 'partners' && 'current'"
                 >
-                  <PopoverButton>{{ $t("meta.partners.title") }}</PopoverButton>
+                  <PopoverButton>
+                    {{ $t("incubation.meta.partners.title") }}
+                  </PopoverButton>
                 </NuxtLink>
                 <NuxtLink
                   :to="localePath('/incubation/mentors')"
                   class="nav-item"
                   :class="route.meta.slug === 'mentors' && 'current'"
                 >
-                  <PopoverButton>{{ $t("meta.mentors.title") }}</PopoverButton>
+                  <PopoverButton>
+                    {{ $t("incubation.meta.mentors.title") }}
+                  </PopoverButton>
                 </NuxtLink>
                 <IncubationButton
                   href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
                   variant="contained"
-                  color="primary"
+                  color="secondary"
                   size="xl"
                   target="_blank"
                   class="w-full my-6"
                 >
-                  {{ $t("cta.apply") }}
+                  {{ $t("incubation.cta.apply") }}
                   <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
                 </IncubationButton>
               </nav>
-              <NuxtLink
-                v-for="locale in availableLocales"
-                :key="locale.code"
-                :to="switchLocalePath(locale.code)"
-                class="nav-item"
-              >
-                <GlobeAltIcon class="w-8 h-8 inline-block" />
-                {{ locale.name }}
-              </NuxtLink>
+
+              <div class="text-xl py-4"><LangSwitcher /></div>
             </div>
           </div>
         </PopoverPanel>
@@ -83,21 +82,15 @@ import {
   XMarkIcon,
   Bars3Icon,
   ArrowRightIcon,
-  GlobeAltIcon,
 } from "@heroicons/vue/24/outline";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 
 const route = useRoute();
-const { locale, locales } = useI18n();
-const switchLocalePath = useSwitchLocalePath();
-const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value);
-});
 const localePath = useLocalePath();
 </script>
 
 <style lang="postcss" scoped>
 .nav-item {
-  @apply text-black text-2xl py-4 block;
+  @apply text-white text-2xl py-4 block;
 }
 </style>

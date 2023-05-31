@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-12">
-      <span>Testimonials</span>
+      <span>{{ $t("developers.testimonials.title") }}</span>
     </h2>
     <carousel :items-to-show="1.2">
       <slide v-for="item in testimonials" class="px-2 sm:px-8">
@@ -46,23 +46,25 @@
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
+const { t } = useI18n();
+
 const testimonials = [
   {
     name: "Ben White",
     company: "Parity Technologies",
-    text: "Astar is a layer 1 blockchain built on Substrate. Through Polkadot’s shared security and XCMP, Astar's progress on WASM support can enable very unique use-cases to the Polkadot ecosystem.",
+    text: t("developers.testimonials.ben"),
     image: "ben-white.webp",
   },
   {
     name: "Miko Matsumura",
     company: "Managing Partner, gumi Cryptos Capital",
-    text: "One of the most significant problems left unsolved by Satoshi Nakamoto has been to optimize developer incentives for contributing to projects. Astar has shown incredible innovation in this.",
+    text: t("developers.testimonials.miko"),
     image: "miko-matsumura.webp",
   },
   {
     name: "Michael Garland",
     company: "Product Manager, Alchemy",
-    text: "It’s rare that we find teams and products as obssesed with improving Web3 developer experience as we are at Alchemy, but Astar is exactly that. Features like dApp Staking and XCMP are gamechangers for developers, which is why we’re so excited to be a part of the Astar ecosystem.",
+    text: t("developers.testimonials.michael"),
     image: "michael-garland.webp",
   },
 ];

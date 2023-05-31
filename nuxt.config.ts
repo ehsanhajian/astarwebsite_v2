@@ -32,11 +32,11 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      siteUrl: 'https://astar.network',
-    }
+      siteUrl: "https://astar.network",
+    },
   },
   schemaOrg: {
-    host: 'https://astar.network',
+    host: "https://astar.network",
   },
   apollo: {
     clients: {
@@ -62,13 +62,13 @@ export default defineNuxtConfig({
         code: "en",
         name: "English",
         iso: "en-US",
-        file: "en.json",
+        files: ["en.json", "en-incubation.json", "en-blog.json", "en-developers.json", "en-community.json", "en-ecosystem.json", "en-japan.json", "en-contact.json", "en-home.json", "en-ecosystem.json", "en-starmap.json"],
       },
       {
         code: "ja",
         name: "日本語",
         iso: "ja-JP",
-        file: "ja.json",
+        files: ["ja.json", "ja-incubation.json", "ja-blog.json", "ja-developers.json", "ja-community.json", "ja-ecosystem.json", "ja-japan.json", "ja-contact.json", "ja-home.json", "ja-ecosystem.json", "ja-starmap.json"],
       },
     ],
     langDir: "lang",

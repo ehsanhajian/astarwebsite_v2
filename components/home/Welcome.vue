@@ -12,13 +12,10 @@
     <div class="2xl:flex px-4 sm:px-6 lg:mr-6">
       <div class="lg:mr-4 xl:mx-8 mb-12">
         <h2 class="text-3xl lg:text-4xl font-bold leading-tight mb-6">
-          Welcome to Astar Network!
+          {{ $t("home.welcome.title") }}
         </h2>
         <p class="sm:text-xl sm:leading-loose">
-          Astar is Japan's most popular smart contract platform supporting both
-          EVM and WebAssembly (Wasm) environments, and interoperability between
-          them using a Cross-Virtual Machine. Our innovative Build2Earn program
-          allows developers to earn incentives for building decentralized apps.
+          {{ $t("home.welcome.description") }}
         </p>
       </div>
       <dl class="shrink-0">

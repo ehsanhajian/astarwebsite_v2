@@ -35,22 +35,22 @@ const { t } = useI18n();
 
 const offer = [
   {
-    lead: t("program.offer.connection.lead"),
-    text: t("program.offer.connection.text"),
+    lead: t("incubation.program.offer.connection.lead"),
+    text: t("incubation.program.offer.connection.text"),
     image: "connection.svg",
     id: "connection",
     class: "lg:max-w-[540px] min-w-[340px]",
   },
   {
-    lead: t("program.offer.support.lead"),
-    text: t("program.offer.support.text"),
+    lead: t("incubation.program.offer.support.lead"),
+    text: t("incubation.program.offer.support.text"),
     image: "support.webp",
     id: "support",
     class: "lg:max-w-[456px] min-w-[340px]",
   },
   {
-    lead: t("program.offer.grow.lead"),
-    text: t("program.offer.grow.text"),
+    lead: t("incubation.program.offer.grow.lead"),
+    text: t("incubation.program.offer.grow.text"),
     image: "grow.svg",
     id: "grow",
     class: "lg:max-w-[680px] min-w-[340px]",

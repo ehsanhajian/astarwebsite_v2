@@ -15,7 +15,7 @@
         <div
           class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 sm:py-8 lg:px-8"
         >
-          <NuxtLink to="/" class="flex">
+          <NuxtLink :to="localePath('/')" class="flex">
             <span class="sr-only">Astar Network</span>
             <img
               class="h-10 w-auto sm:h-14"
@@ -32,9 +32,13 @@
           </div>
 
           <div class="hidden lg:flex lg:items-center">
-            <nav class="flex space-x-4 xl:space-x-10">
-              <NuxtLink to="/starmap" class="nav-item">2023 Starmap</NuxtLink>
-              <NuxtLink to="/developers" class="nav-item">Developers</NuxtLink>
+            <nav class="flex items-center space-x-4 xl:space-x-8">
+              <NuxtLink :to="localePath('/starmap')" class="nav-item">
+                2023 Starmap
+              </NuxtLink>
+              <NuxtLink :to="localePath('/developers')" class="nav-item">
+                Developers
+              </NuxtLink>
 
               <Popover v-slot="{ open }" class="relative">
                 <PopoverButton
@@ -42,7 +46,7 @@
                     open
                       ? 'text-space-cyan-light'
                       : 'text-white hover:text-space-cyan-light',
-                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition',
+                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition text-tiny xl:text-base',
                   ]"
                 >
                   <span>Network</span>
@@ -100,7 +104,7 @@
                     open
                       ? 'text-space-cyan-light'
                       : 'text-white hover:text-space-cyan-light',
-                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition',
+                    'group inline-flex items-center focus:outline-none focus:ring-0 focus:ring-offset-0 font-medium transition text-tiny xl:text-base',
                   ]"
                 >
                   <span>Community</span>
@@ -127,21 +131,21 @@
                   >
                     <NuxtLink
                       class="flex justify-between items-center w-36 py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
-                      to="/community"
+                      :to="localePath('/community')"
                     >
                       Overview
                       <ArrowRightIcon class="inline-block w-5 h-5" />
                     </NuxtLink>
                     <NuxtLink
                       class="flex justify-between items-center w-36 py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
-                      to="/community/ecosystem"
+                      :to="localePath('/community/ecosystem')"
                     >
                       Ecosystem
                       <ArrowRightIcon class="inline-block w-5 h-5" />
                     </NuxtLink>
                     <NuxtLink
                       class="flex justify-between items-center w-36 py-2 text-white hover:underline transition hover:text-space-cyan-lighter whitespace-nowrap"
-                      to="/blog"
+                      :to="localePath('/blog')"
                     >
                       Blog
                       <ArrowRightIcon class="inline-block w-5 h-5" />
@@ -150,20 +154,23 @@
                 </transition>
               </Popover>
 
-              <!-- <NuxtLink to="/community" class="nav-item">Community</NuxtLink> -->
-              <NuxtLink to="/japan" class="nav-item">Japan</NuxtLink>
+              <NuxtLink :to="localePath('/japan')" class="nav-item">
+                Japan Lab
+              </NuxtLink>
             </nav>
-            <div class="ml-6 xl:ml-12">
+            <div class="ml-4 xl:ml-6">
               <Button
                 variant="outlined"
                 href="https://portal.astar.network/"
                 target="_blank"
               >
-                Launch App
+                {{ $t("home.hero.app") }}
                 <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
               </Button>
             </div>
           </div>
+
+          <div class="hidden lg:block"><LangSwitcher /></div>
         </div>
       </div>
     </div>
@@ -171,6 +178,10 @@
 </template>
 
 <script setup>
+const localePath = useLocalePath();
+
+const { locale } = useI18n();
+
 import {
   Popover,
   PopoverButton,
@@ -237,6 +248,6 @@ const network = [
 
 <style lang="postcss" scoped>
 .nav-item {
-  @apply text-white hover:text-space-cyan-light font-medium transition;
+  @apply text-white hover:text-space-cyan-light font-medium transition text-tiny xl:text-base;
 }
 </style>

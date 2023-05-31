@@ -1,7 +1,9 @@
 <template>
   <div class="bg-gradient-to-b from-white to-[#D0E9F0] relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="title text-center mb-12 sm:mb-16"><span>Use Cases</span></h2>
+      <h2 class="title text-center mb-12 sm:mb-16">
+        <span>{{ $t("japan.use_cases.title") }}</span>
+      </h2>
       <ul
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 sm:gap-y-20"
       >
@@ -32,37 +34,36 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const cases = [
   {
-    title:
-      "AstarFarm, a GameFi project on Astar Network, will collaborate with Hakuhodo and Calbee to raffle off actual products to game players!",
+    title: t("japan.use_cases.astar_farm"),
     image: "astarfarm.webp",
     href: "",
   },
   {
-    title: 'Shiden NFT was distributed at "MILIYAH NFT Club".',
+    title: t("japan.use_cases.miliyah"),
     image: "miliyah.webp",
     href: "",
   },
   {
-    title: '"Left-Handed Ellen" NFT sales case study using Astar',
+    title: t("japan.use_cases.ellen"),
     image: "ellen.webp",
     href: "",
   },
   {
-    title:
-      "Distributed Shiden Network's NFT by audio at a live music concert venue.",
+    title: t("japan.use_cases.revolt"),
     image: "revolt.webp",
     href: "",
   },
   {
-    title: "Astar Network advertised in Nikkei Newspaper and distributed NFT",
+    title: t("japan.use_cases.nikkei"),
     image: "nikkei.webp",
     href: "",
   },
   {
-    title:
-      "Shiden Network's NFT was distributed in real time via audio on RKB.",
+    title: t("japan.use_cases.rkb"),
     image: "rkb.webp",
     href: "",
   },

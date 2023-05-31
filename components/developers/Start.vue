@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-16 sm:mb-24">
-      <span>Start Building on Astar</span>
+      <span>{{ $t("developers.start.title") }}</span>
     </h2>
     <ul
       class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-2 sm:gap-y-20"
@@ -49,33 +49,35 @@
 <script setup lang="ts">
 import { ArrowRightIcon } from "@heroicons/vue/24/outline";
 
+const { t } = useI18n();
+
 const building = [
   {
-    title: "Launch your EVM dApps",
+    title: t("developers.start.evm"),
     image: "building-ethereum.svg",
     href: "https://docs.astar.network/docs/build/EVM/",
     color: "bg-space-pink hover:bg-space-pink-lighter",
   },
   {
-    title: "Launch your WASM dApps",
+    title: t("developers.start.wasm"),
     image: "building-wasm.svg",
     href: "https://docs.astar.network/docs/build/wasm/",
     color: "bg-space-purple hover:bg-space-purple-lighter",
   },
   {
-    title: "Run a Collator",
+    title: t("developers.start.collator"),
     image: "building-collator.svg",
     href: "https://docs.astar.network/docs/nodes/",
     color: "bg-space-blue hover:bg-space-blue-lighter",
   },
   {
-    title: "Integrate an Exchange",
+    title: t("developers.start.exchange"),
     image: "building-exchange.svg",
     href: "",
     color: "bg-space-sky",
   },
   {
-    title: "DApps Templates",
+    title: t("developers.start.templates"),
     image: "building-template.svg",
     href: "https://github.com/orgs/swanky-dapps/repositories",
     color: "bg-space-cyan hover:bg-space-cyan-lighter",

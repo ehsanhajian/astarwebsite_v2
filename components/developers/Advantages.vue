@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-6 sm:mb-16">
-      <span>Why Astar?</span>
+      <span>{{ $t("developers.why.title") }}</span>
     </h2>
     <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-12 sm:gap-y-16">
       <li v-for="(item, index) in advantages">
@@ -23,37 +23,37 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const advantages = [
   {
-    name: "EVM compatible",
-    description: "Easily launch EVM dApps written in Solidity or Vyper.",
+    name: t("developers.why.evm.title"),
+    description: t("developers.why.evm.description"),
     image: "advantages-ethereum.svg",
   },
   {
-    name: "WASM dApps",
-    description: "Launch next generation Polkadot native dApps",
+    name: t("developers.why.wasm.title"),
+    description: t("developers.why.wasm.description"),
     image: "advantages-wasm.svg",
   },
   {
-    name: "Scalable",
-    description: "Astar is future-proof and built for scalability.",
+    name: t("developers.why.scalable.title"),
+    description: t("developers.why.scalable.description"),
     image: "advantages-scalable.svg",
   },
   {
-    name: "Secure",
-    description:
-      "Astar Network uses the shared security of the Polkadot Relay Chain.",
+    name: t("developers.why.secure.title"),
+    description: t("developers.why.secure.description"),
     image: "advantages-secure.svg",
   },
   {
-    name: "XCM",
-    description: "Interact with other blockchains with trustless bridges.",
+    name: t("developers.why.xcm.title"),
+    description: t("developers.why.xcm.description"),
     image: "advantages-xcm.svg",
   },
   {
-    name: "Build2Earn",
-    description:
-      "Use our dApp staking mechanism to support your development on Astar Network.",
+    name: t("developers.why.build2earn.title"),
+    description: t("developers.why.build2earn.description"),
     image: "advantages-income.svg",
   },
 ];

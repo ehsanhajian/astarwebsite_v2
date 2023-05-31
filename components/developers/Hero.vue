@@ -7,12 +7,10 @@
         <h1
           class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow pt-24 sm:pt-32 lg:pt-0"
         >
-          Developers
+          {{ $t("developers.title") }}
         </h1>
         <p class="text-lg sm:text-xl">
-          Be part of the exciting world of multichain innovation by building EVM
-          and WASM dApps on Astar Network. Astar XVM SDK is the foundation of
-          our multichain smart contracts.
+          {{ $t("developers.description") }}
         </p>
         <ul
           class="hidden sm:flex justify-center sm:justify-start mt-12 space-x-2"

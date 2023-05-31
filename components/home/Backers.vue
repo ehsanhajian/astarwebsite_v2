@@ -3,7 +3,7 @@
     <h2
       class="text-center text-space-gray-dark text-3xl lg:text-4xl font-bold mb-20"
     >
-      Backed By
+      {{ $t("home.backers") }}
     </h2>
     <div
       class="grid grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-20 sm:grid-cols-4 lg:grid-cols-5"
@@ -45,7 +45,7 @@ const query = gql`
     }
   }
 `;
-const { data } = await useAsyncQuery({query, clientId: 'community'});
+const { data } = await useAsyncQuery({ query, clientId: "community" });
 
 let projects = [];
 projects = data.value.projects.data.sort((a, b) => {
