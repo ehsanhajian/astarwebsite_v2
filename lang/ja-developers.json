@@ -1,7 +1,7 @@
 {
   "developers": {
-    "title": "開発者",
-    "description": "Astar Network上でEVMとWASMのdAppを構築し、マルチチェーン時代の一員になろう！Astar XVM SDKは、私たちのマルチチェーンスマートコントラクトの基礎となります。",
+    "title": "Developers",
+    "description": "Be part of the exciting world of multichain innovation by building EVM and WASM dApps on Astar Network. Astar XVM SDK is the foundation of our multichain smart contracts.",
     "start": {
       "title": "Astarで開発を始めよう",
       "evm": "EVM dAppsを構築",

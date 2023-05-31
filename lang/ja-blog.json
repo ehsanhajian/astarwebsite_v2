@@ -1,7 +1,7 @@
 {
   "blog": {
-    "title": "Astarブログ",
-    "description": "Astar Networkに関する、ニュース、エコシステム、技術アップデートなど、最新情報をお届けします",
+    "title": "Astar Blog",
+    "description": "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.",
     "latest": "最新記事",
     "tags": "タグ",
     "tag": "タグ",
