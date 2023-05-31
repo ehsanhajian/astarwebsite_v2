@@ -14,7 +14,7 @@
           <img
             class="absolute z-[3] w-screen h-screen object-scale-down portrait:hidden"
             src="/images/japan/hero-landscape.svg"
-            alt="Astar Japan Lab"
+            :alt="$t('japan.title')"
             width="1460"
             height="808"
             data-not-lazy

@@ -7,7 +7,7 @@
         <h1
           class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow pt-24 sm:pt-32 lg:pt-0"
         >
-          Developers
+          {{ $t("developers.title") }}
         </h1>
         <p class="text-lg sm:text-xl">
           {{ $t("developers.description") }}
