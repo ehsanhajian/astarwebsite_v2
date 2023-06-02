@@ -10,11 +10,11 @@
           height="1728"
         />
         <div
-          class="min-h-[50vh] sm:min-h-[60vh] flex items-center justify-start"
+          class="min-h-[50vh] sm:min-h-[60vh] flex items-center justify-start py-28"
         >
           <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
             <div class="text-center">
-              <p class="text-lg sm:text-2xl -mb-2">Tag:</p>
+              <p class="text-lg sm:text-2xl -mb-2">{{ $t("blog.tag") }}:</p>
               <h1
                 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow"
               >
@@ -27,10 +27,22 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+          v-if="posts.length > 0"
         >
           <BlogArticleCard v-for="post in posts" :post="post" />
         </ul>
+        <div v-else class="text-center">
+          <p class="mb-6">{{ $t("blog.no_articles") }}</p>
+          <NuxtLink
+            :to="localePath('/blog')"
+            class="text-space-cyan hover:text-space-cyan-lighter hover:underline"
+          >
+            {{ $t("blog.back") }} ->
+          </NuxtLink>
+        </div>
       </div>
+
+      <HomeNewsletter class="py-20 sm:py-32" />
     </template>
     <template #earth>
       <Footer />
@@ -40,12 +52,15 @@
 
 <script setup lang="ts">
 import gql from "graphql-tag";
+const localePath = useLocalePath();
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
 const route = useRoute();
 const tag = route.params.tag;
 
-const astarSpace = 10802;
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale, t } = useI18n();
+const astarSpace = locale.value === "ja" ? 11315 : 10802;
+
 const query = gql`
 query PostsByTag {
     posts(where: { space: { id_eq: "${astarSpace}" }, tagsOriginal_containsInsensitive: "${tag}", hidden_eq: false }, orderBy: id_DESC) {
@@ -78,9 +93,8 @@ const posts = data.value.posts.map(
 );
 
 import { meta } from "@/content/meta";
-const seoTitle = `Tag | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription =
-  "The latest posts about all things Astar Network, major news, ecosystem announcements, engineering updates, and more.";
+const seoTitle = `${tag} | ${meta.siteName} - ${t("meta.tagline")}`;
+const seoDescription = t("blog.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}blog.png`;
 

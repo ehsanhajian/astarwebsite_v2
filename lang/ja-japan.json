@@ -1,0 +1,33 @@
+{
+  "japan": {
+    "title": "Astar Japan Lab",
+    "description": "Astar Japan Lab fuels the growth of Japanese services and businesses by conducting research and development, gathering knowledge, and collaborating with exciting and established companies.",
+    "register": "今すぐ登録する",
+    "features": {
+      "business_opportunities": "Astar Networkを活用して、日本におけるビジネス機会を創出",
+      "use_cases": "ブロックチェーンやNFT導入の提案",
+      "solution": "ソリューションプロバイダーとの連携",
+      "vc": "日本発のWeb3スタートアップ企業へ、海外のVCを紹介",
+      "group_study": "Astar先行導入事例のグループ勉強会",
+      "connect": "Astarのコミュニティやアンバサダーとの連携"
+    },
+    "members": {
+      "title": "登録メンバー",
+      "description": "Astar Japan Labへの参加を希望し、参加企業によって承認された企業やコミュニティ"
+    },
+    "use_cases": {
+      "title": "導入事例",
+      "astar_farm": "Astar NetworkのGameFiプロジェクト「AstarFarm」が、博報堂、カルビーとコラボし、ゲームプレイヤーに実際の商品を抽選でプレゼント",
+      "miliyah": "「MILIYAH NFT Club」にてShiden NetworkのNFTを配布",
+      "ellen": "「左ききのエレン」がAstarを使ってNFTを販売",
+      "revolt": "ライブハウスで、Shiden NetworkのNFTを音声で配布",
+      "nikkei": "Astar Networkが日経新聞に広告を掲載し、NFTを配布",
+      "rkb": "RKBラジオで、Shiden NetworkのNFTをリアルタイムで配信"
+    },
+    "newsletter": {
+      "title": "ニュースレター",
+      "description": "Astarの最新情報を日本語でお届けします！",
+      "subscribe": "購読する"
+    }
+  }
+}

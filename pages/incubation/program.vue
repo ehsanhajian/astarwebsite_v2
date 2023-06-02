@@ -2,8 +2,8 @@
   <NuxtLayout name="incubation">
     <template #hero>
       <IncubationSubPageHero
-        :title="$t('meta.program.title')"
-        :description="$t('meta.program.description')"
+        :title="$t('incubation.meta.program.title')"
+        :description="$t('incubation.meta.program.description')"
       />
     </template>
     <template #main>
@@ -19,8 +19,10 @@
 const route = useRoute();
 import { meta } from "@/content/meta";
 const { t } = useI18n();
-const seoTitle = `${t("meta.program.title")} | ${t("meta.title")}`;
-const seoDescription = t("meta.program.description");
+const seoTitle = `${t("incubation.meta.program.title")} | ${t(
+  "incubation.meta.title"
+)}`;
+const seoDescription = t("incubation.meta.program.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}incubation.png`;
 

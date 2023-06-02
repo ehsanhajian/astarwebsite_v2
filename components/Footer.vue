@@ -32,7 +32,6 @@
                 v-if="item.href.includes('https')"
                 class="w-4 h-4 inline-block stroke-2"
               />
-              <span v-else class="ml-0.5">-></span>
             </NuxtLink>
           </li>
         </ul>
@@ -68,14 +67,16 @@
         class="mt-8 order-1 text-sm lg:mt-0 text-center"
         :class="color === 'light' ? 'text-gray-200' : 'text-gray-400'"
       >
-        &copy; 2023 Astar Network - The Future of Smart Contracts for
-        Multichain. All Rights Reserved.
+        &copy; {{ new Date().getFullYear() }} Astar Network. All Rights
+        Reserved.
       </p>
     </div>
   </footer>
 </template>
 
 <script setup lang="ts">
+const localePath = useLocalePath();
+
 import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 
 const Twitter = resolveComponent("IconTwitter");
@@ -90,20 +91,22 @@ interface Props {
 }
 const props = defineProps<Props>();
 
+const { t } = useI18n();
+
 const nav = [
   {
-    name: "Build",
+    name: t("footer.build"),
     nav: [
-      { name: "Docs", href: "https://docs.astar.network/" },
+      { name: t("footer.docs"), href: "https://docs.astar.network/" },
       { name: "GitHub", href: "https://github.com/AstarNetwork" },
       { name: "Discord", href: "https://discord.gg/astarnetwork" },
     ],
   },
   {
-    name: "Apply",
+    name: t("footer.apply"),
     nav: [
       {
-        name: "Careers",
+        name: t("footer.careers"),
         href: "https://wellfound.com/company/astar-network",
       },
       {
@@ -121,31 +124,34 @@ const nav = [
     ],
   },
   {
-    name: "Learn",
+    name: t("footer.learn"),
     nav: [
-      { name: "Blog", href: "/blog" },
-      { name: "Videos", href: "https://www.youtube.com/c/AstarNetwork" },
-      { name: "Forum", href: "https://forum.astar.network/" },
+      { name: t("footer.blog"), href: localePath("/blog") },
+      {
+        name: t("footer.videos"),
+        href: "https://www.youtube.com/c/AstarNetwork",
+      },
+      { name: t("footer.forum"), href: "https://forum.astar.network/" },
     ],
   },
   {
-    name: "Other",
+    name: t("footer.other"),
     nav: [
       {
-        name: "Brand Assets",
+        name: t("footer.brand_assets"),
         href: "https://github.com/AstarNetwork/brand-assets",
       },
       {
-        name: "Privacy Policy",
+        name: t("footer.privacy_policy"),
         href: "https://docs.google.com/document/d/1jEbhRfh292TahRMRdeN4z-8MYNU27dCS_vVopV6xQgk/edit?usp=sharing",
       },
       {
-        name: "Terms of Use",
+        name: t("footer.terms_of_use"),
         href: "https://docs.google.com/document/d/1gxM0PEzFq7nW5VB11pMcDUaaKxfMz3BjTDtmEem_oo4/edit?usp=sharing",
       },
       {
-        name: "Contact Us",
-        href: "/contact",
+        name: t("footer.contact"),
+        href: localePath("/contact"),
       },
     ],
   },

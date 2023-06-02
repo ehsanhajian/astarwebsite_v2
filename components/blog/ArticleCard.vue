@@ -2,12 +2,12 @@
   <li>
     <!-- post.slug is the slug of the article -->
     <NuxtLink
-      :href="'/blog/' + post.slug"
+      :href="i18n + '/blog/' + post.slug"
       class="block rounded overflow-hidden bg-space-gray group hover:bg-space-gray-lighter transition h-full"
     >
       <img
         :src="post.image"
-        alt=""
+        :alt="post.title"
         class="object-cover w-full h-[240px] group-hover:brightness-110"
       />
       <div class="p-4 sm:p-5 pb-8 sm:pb-12">
@@ -21,6 +21,9 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n();
+const i18n = locale.value === "ja" ? "/ja" : "";
+
 const props = defineProps({
   post: {
     type: Object,

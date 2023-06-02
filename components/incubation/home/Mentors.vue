@@ -1,12 +1,12 @@
 <template>
   <section class="px-4">
     <p class="font-bold text-2xl sm:text-3xl title text-center">
-      <span>{{ $t("meta.mentors.title") }}</span>
+      <span>{{ $t("incubation.meta.mentors.title") }}</span>
     </p>
     <h2
       class="text-center mt-2 mb-12 mx-auto max-w-5xl text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
     >
-      {{ $t("meta.mentors.description") }}
+      {{ $t("incubation.meta.mentors.description") }}
     </h2>
 
     <ul
@@ -30,7 +30,7 @@
         :href="localePath('/incubation/mentors')"
       >
         <span>
-          {{ $t("mentors.learn_more") }}
+          {{ $t("incubation.mentors.learn_more") }}
           <ArrowRightIcon class="w-6 h-6 inline-block ml-1" />
         </span>
       </IncubationButton>

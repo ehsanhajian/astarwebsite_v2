@@ -1,0 +1,72 @@
+{
+  "developers": {
+    "title": "Developers",
+    "description": "Be part of the exciting world of multichain innovation by building EVM and WASM dApps on Astar Network. Astar XVM SDK is the foundation of our multichain smart contracts.",
+    "start": {
+      "title": "Astarで開発を始めよう",
+      "evm": "EVM dAppsを構築",
+      "wasm": "WASM dAppsを構築",
+      "collator": "コレーターの実行",
+      "exchange": "取引所へ連携",
+      "templates": "DAppsテンプレート"
+    },
+    "why": {
+      "title": "Astarが選ばれる理由",
+      "evm": {
+        "title": "EVM対応",
+        "description": "SolidityやVyperで書かれたEVM dAppsを簡単に構築可能"
+      },
+      "wasm": {
+        "title": "WASM dApps",
+        "description": "次世代のPolkadotネイティブdAppsを構築"
+      },
+      "scalable": {
+        "title": "スケーラブル",
+        "description": "将来を見据え、スケーラビリティを重視した設計"
+      },
+      "secure": {
+        "title": "セキュア",
+        "description": "Astar Networkは、Polkadotリレーチェーンの共有セキュリティを使用"
+      },
+      "xcm": {
+        "title": "XCM",
+        "description": "他のブロックチェーンと信頼性のあるブリッジで相互運用可能"
+      },
+      "build2earn": {
+        "title": "Build2Earn",
+        "description": "Astar Networkでの開発を支援するため、dAppステーキングメカニズムを使用"
+      }
+    },
+    "multichain": {
+      "title": "マルチチェーンの未来",
+      "description": "Astar Networkは、相互運用性の重要な側面に焦点を当てることで、Web3およびその先のブロックチェーンにおける必要不可欠な存在となるでしょう",
+      "defi": {
+        "title": "DeFi",
+        "description": "ユーザーベースに対して利用可能なオプションの数と品質は、分散型金融セクターを向上させます。さらに、非常に低い手数料と高速なトランザクションスピードに加え、他のパラチェーンとのXCM互換性により、私たちのエコシステム内でより安全な送金やスワップが可能です。"
+      },
+      "nft": {
+        "title": "NFT",
+        "description": "AstarのNFT環境は、小規模なコミュニティから大規模なコミュニティまで、幅広く対応しています。個人的なコレクションから、有名な日本のIPによる本格的なプロジェクトまで、チームと関心のあるコミュニティをつなぐために必要なツールはすべて揃っています。"
+      },
+      "infra": {
+        "title": "インフラプロバイダー",
+        "description": "私たちの目標は、他の主要なブロックチェーンとの最も安全で効率的な接続を提供することです。この重要性の高さを考慮し、ブリッジやその他のインフラを統合する際には、厳格なアプローチをとっています。"
+      },
+      "dao": {
+        "title": "DAO",
+        "description": "分散型自律組織は私たちの未来です。私たちのコミュニティは、透明性が高く、アクセスしやすい手段で、ネットワークを形成するのをサポートします。"
+      }
+    },
+    "toolkit": {
+      "title": "Astarの開発者ツールキット",
+      "description": "既にお使いのツールや統合機能は全てAstarでネイティブに動作します",
+      "ecosystem": "Astar上で開発されているプロジェクトを見る"
+    },
+    "testimonials": {
+      "title": "利用者の声",
+      "ben": "AstarはSubstrate上に構築されたレイヤー1のブロックチェーンです。Polkadotの共有セキュリティとXCMPを通じて、AstarのWASMサポートの進展は、Polkadotエコシステムに非常にユニークなユースケースを可能にします。",
+      "miko": "Satoshi Nakamotoが未解決のまま残した最も大きな問題の1つは、プロジェクトに貢献する開発者のインセンティブを最適化することでした。Astarはこの点で、驚くべき革新性を示しています。",
+      "michael": "私たちAlchemyがWeb3開発者体験の向上に情熱を注ぐチームやプロダクトに出会うことは珍しいですが、Astarはまさにそのような存在です。dAppステーキングやXCMPなどの機能は、開発者にとって画期的であり、それがAstarエコシステムに喜んで参加している理由です。"
+    }
+  }
+}

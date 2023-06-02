@@ -35,21 +35,21 @@
                 class="nav-item"
                 :class="route.meta.slug === 'program' && 'current'"
               >
-                <span>{{ $t("meta.program.title") }}</span>
+                <span>{{ $t("incubation.meta.program.title") }}</span>
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/incubation/partners')"
                 class="nav-item"
                 :class="route.meta.slug === 'partners' && 'current'"
               >
-                <span>{{ $t("meta.partners.title") }}</span>
+                <span>{{ $t("incubation.meta.partners.title") }}</span>
               </NuxtLink>
               <NuxtLink
                 :to="localePath('/incubation/mentors')"
                 class="nav-item"
                 :class="route.meta.slug === 'mentors' && 'current'"
               >
-                <span>{{ $t("meta.mentors.title") }}</span>
+                <span>{{ $t("incubation.meta.mentors.title") }}</span>
               </NuxtLink>
               <IncubationButton
                 href="https://zohb4s71q4n.typeform.com/to/f6qfzciE"
@@ -57,19 +57,12 @@
                 color="secondary"
                 target="_blank"
               >
-                <span>{{ $t("cta.apply") }}</span>
+                <span>{{ $t("incubation.cta.apply") }}</span>
               </IncubationButton>
             </nav>
-            <NuxtLink
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              :to="switchLocalePath(locale.code)"
-              class="nav-item border-l border-gray-500 pl-4 ml-6"
-            >
-              <GlobeAltIcon class="w-6 h-6 inline-block" />
-              {{ locale.name }}
-            </NuxtLink>
           </div>
+
+          <div class="hidden lg:block"><LangSwitcher /></div>
         </div>
       </div>
     </Popover>
@@ -77,15 +70,9 @@
 </template>
 
 <script setup lang="ts">
-import { GlobeAltIcon } from "@heroicons/vue/24/outline";
-import { Popover, PopoverButton } from "@headlessui/vue";
+import { Popover } from "@headlessui/vue";
 
 const route = useRoute();
-const { locale, locales } = useI18n();
-const switchLocalePath = useSwitchLocalePath();
-const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value);
-});
 const localePath = useLocalePath();
 </script>
 

@@ -22,29 +22,31 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const advantages = [
   {
-    text: "Creating business opportunities in Japan with Astar Network",
+    text: t("japan.features.business_opportunities"),
     image: "icon-japan.svg",
   },
   {
-    text: "Proposed blockchain and NFT use cases",
+    text: t("japan.features.use_cases"),
     image: "icon-nft.svg",
   },
   {
-    text: "Engaging Solution Providers",
+    text: t("japan.features.solution"),
     image: "icon-solution.svg",
   },
   {
-    text: "Introduction of overseas VC for web startups from Japan",
+    text: t("japan.features.vc"),
     image: "icon-vc.svg",
   },
   {
-    text: "Group study sessions to advance use cases for Astar",
+    text: t("japan.features.group_study"),
     image: "icon-session.svg",
   },
   {
-    text: "Connect with the Astar community and ambassadors",
+    text: t("japan.features.connect"),
     image: "icon-community.svg",
   },
 ];

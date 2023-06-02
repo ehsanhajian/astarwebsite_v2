@@ -1,0 +1,26 @@
+{
+  "community": {
+    "title": "Community",
+    "description": "The true stars of our ecosystem.",
+    "links": {
+      "blog": "お知らせ、開発、記事",
+      "video": "デモ、チュートリアル、イベント、AMA",
+      "community": "コミュニティへ\n参加"
+    },
+    "connect": {
+      "title": "Astarとつながろう",
+      "announcements": "告知",
+      "engineering": "エンジニアリング",
+      "followers": "フォロワー",
+      "members": "メンバー",
+      "stars": "スター",
+      "subscribes": "購読者",
+      "topics": "トピック"
+    },
+    "astar_space_labs": "さぁ、Astarで開発して、活気あるエコシステムの一員になりましょう！コミュニティリーダーがあなたの開発をサポートします。",
+    "video": {
+      "title": "おすすめ動画",
+      "watch": "動画を見る"
+    }
+  }
+}

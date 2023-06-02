@@ -5,17 +5,17 @@
         <h2
           class="font-extrabold text-2xl sm:text-3xl lg:text-4xl text-gray-900 leading-tight"
         >
-          Join Our Newsletter!
+          {{ $t("japan.newsletter.title") }}
         </h2>
         <p class="mt-2 mb-6">
-          Subscribe to our newsletter to receive the latest update in Japanese.
+          {{ $t("japan.newsletter.description") }}
         </p>
         <Button
           href="https://astarjapanlab.substack.com/about"
           target="_blank"
           size="xl"
         >
-          Subscribe
+          {{ $t("japan.newsletter.subscribe") }}
         </Button>
       </div>
     </div>

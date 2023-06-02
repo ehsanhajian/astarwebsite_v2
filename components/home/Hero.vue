@@ -9,8 +9,7 @@
         The Future of Multichain Smart Contracts
       </h1>
       <p class="sm:text-xl mt-6 sm:mt-10 mb-8 sm:mb-14">
-        Astar is a scalable decentralized blockchain for the next big Web3
-        innovations.
+        {{ $t("home.hero.description") }}
       </p>
       <div class="sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4">
         <Button
@@ -21,7 +20,7 @@
           target="_blank"
           class="w-[280px] sm:w-auto"
         >
-          Documentation
+          {{ $t("home.hero.doc") }}
           <ArrowTopRightOnSquareIcon class="w-6 h-6 ml-1 stroke-2" />
         </Button>
         <Button
@@ -31,7 +30,7 @@
           target="_blank"
           class="w-[280px] sm:w-auto"
         >
-          Launch App
+          {{ $t("home.hero.app") }}
           <ArrowTopRightOnSquareIcon class="w-6 h-6 ml-1 stroke-2" />
         </Button>
       </div>

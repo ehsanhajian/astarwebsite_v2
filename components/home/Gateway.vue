@@ -3,7 +3,7 @@
     <h2
       class="text-center font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight title"
     >
-      <span>The Gateway <br />in the Multichain Era</span>
+      <span class="whitespace-pre-wrap">{{ $t("home.gateway") }}</span>
     </h2>
     <div data-aos="fade-up">
       <img

@@ -7,7 +7,7 @@
           target="_blank"
           class="link--hiring"
         >
-          We are hiring!
+          {{ $t("home.hiring") }}
           <ArrowTopRightOnSquareIcon class="w-5 h-5 ml-1 stroke-2" />
         </NuxtLink>
       </div>
@@ -54,7 +54,9 @@
 
       <HomeBecomeAStar class="pt-32 sm:pt-64 pb-32 sm:pb-64" />
 
-      <HomeRecommendedReading class="pb-24" />
+      <HomeRecommendedReading class="sm:py-24" />
+
+      <HomeNewsletter class="pb-12 sm:py-12" />
     </template>
 
     <template #earth>
@@ -92,8 +94,9 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 import { meta } from "@/content/meta";
-const seoTitle = `${meta.siteName} - ${meta.tagline}`;
-const seoDescription = meta.description;
+const { t } = useI18n();
+const seoTitle = `${meta.siteName} - ${t("meta.tagline")}`;
+const seoDescription = t("meta.description");
 const seoUrl = meta.url;
 const seoImage = `${meta.image}common.png`;
 

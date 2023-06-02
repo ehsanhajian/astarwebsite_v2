@@ -1,0 +1,70 @@
+{
+  "home": {
+    "hero": {
+      "description": "Astar is a scalable decentralized blockchain for the next big Web3 innovations.",
+      "doc": "Documentation",
+      "app": "Launch App"
+    },
+    "welcome": {
+      "title": "Welcome to Astar Network!",
+      "description": "Astar is Japan's most popular smart contract platform supporting both EVM and WebAssembly (Wasm) environments, and interoperability between them using a Cross-Virtual Machine. Our innovative Build2Earn program allows developers to earn incentives for building decentralized apps."
+    },
+    "gateway": "The Gateway \nin the Multichain Era",
+    "ecosystem": {
+      "title": "Join Our \nFast-Growing Ecosystem",
+      "developer": {
+        "title": "Developer",
+        "description": "Create a dApp or infrastructure on our blockchain."
+      },
+      "collator": {
+        "title": "Collator",
+        "description": "Run a node to support the blockchain."
+      },
+      "staker": {
+        "title": "Staker",
+        "description": "Stake ASTR and earn staking rewards."
+      },
+      "users": {
+        "title": "Users",
+        "description": "Use ASTR tokens and be a part of the Web3 movement."
+      }
+    },
+    "reading": {
+      "title": "Recommended Reading",
+      "description": "Learn more about where and how Astar was born.",
+      "vision": {
+        "title": "Welcome to Astar",
+        "description": "Vision of Astar and the powerful blockchain technology that makes it possible."
+      },
+      "tokenomics": {
+        "title": "ASTR Tokenomics",
+        "description": "ASTR governance, incentives and features that unlock Web3."
+      },
+      "ecosystem": {
+        "title": "Explore the ecosystem",
+        "description": "Join our ecosystem and understand the power of Astar Network."
+      }
+    },
+    "features": {
+      "multichain": {
+        "title": "Multichain Smart Contracts",
+        "description": "Astar runs in concert with Ethereum, Polkadot, Cosmos, and more; allowing for the free flow of assets and communications between multiple ecosystems."
+      },
+      "build2earn": {
+        "title": "Build2Earn",
+        "description": "The basic income for developers! Astar pioneered Build2Earn to support builders and expand the developer community. Start building our ecosystem to receive ASTR rewards through our dApp staking mechanism."
+      },
+      "web2_web3": {
+        "title": "Web2 + Web3",
+        "description": "Astar Network supports tools and languages that software developers often work with already, and our multichain-native Wasm + EVM runtime environments provide ultimate freedom and flexibility to build uniquely innovative solutions that simply can't be replicated on any other platform."
+      }
+    },
+    "backers": "Backed By",
+    "newsletter": {
+      "title": "Don't miss a beat.",
+      "description": "Sign-up for our newsletter to stay up-to-date and learn about the latest developments.",
+      "signup": "E-mail Sign-up"
+    },
+    "hiring": "We are Hiring!"
+  }
+}

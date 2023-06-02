@@ -23,9 +23,9 @@
 <script setup lang="ts">
 const route = useRoute();
 import { meta } from "@/content/meta";
-const seoTitle = `2023 Starmap | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription =
-  "Embarking on a new journey to reach our full potential.";
+const { t } = useI18n();
+const seoTitle = `2023 Starmap | ${meta.siteName} - ${t("meta.tagline")}`;
+const seoDescription = t("starmap.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}starmap.png`;
 

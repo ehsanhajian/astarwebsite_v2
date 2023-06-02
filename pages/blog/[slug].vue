@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <article class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 mb-32">
+      <article class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 mb-12">
         <header class="text-center mb-12">
           <time class="text-gray-400">{{ post.publishedDate }}</time>
           <h1
@@ -35,11 +35,11 @@
         <div class="entry-content leading-9" v-html="post.body" />
         <footer class="mt-16">
           <div class="flex mb-12 text-tiny lg:text-base">
-            <p class="mr-2 mt-3">Tags:</p>
+            <p class="mr-2 mt-3">{{ $t("blog.tags") }}:</p>
             <div class="flex flex-wrap">
               <NuxtLink
                 v-for="tag in post.tagsOriginal.split(',')"
-                :href="'/blog/tag/' + tag"
+                :href="i18n + '/blog/tag/' + tag"
                 class="block text-white border border-gray-500 py-2 px-4 rounded-full hover:bg-white/10 mr-1 mb-2"
               >
                 {{ tag }}
@@ -66,9 +66,11 @@
         </footer>
       </article>
 
+      <HomeNewsletter class="mb-36" />
+
       <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <h2 class="text-center text-3xl lg:text-4xl font-semibold mb-12">
-          Related Posts
+          {{ $t("blog.related") }}
         </h2>
         <ul
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
@@ -88,10 +90,13 @@ import gql from "graphql-tag";
 import MarkdownIt from "markdown-it";
 const md = new MarkdownIt();
 
-// The subsocial space where the dApp staking news updates come from: https://polkaverse.com/10802
 const route = useRoute();
 const slug = route.params.slug;
-const astarSpace = 10802;
+
+// The subsocial space for news: https://polkaverse.com/10802 , and Japanese: https://polkaverse.com/11315
+const { locale, t } = useI18n();
+const astarSpace = locale.value === "ja" ? 11315 : 10802;
+const i18n = locale.value === "ja" ? "/ja" : "";
 
 const query = gql`
   query PostsBySlug {
@@ -181,14 +186,14 @@ useServerSeoMeta({
   description: () => seoDescription,
   author: () => post.author.profileSpace.name,
   ogSiteName: () => "Astar Network",
-  ogLocale: () => "en_US",
+  ogLocale: () => locale.value,
   ogTitle: () => seoTitle,
   ogDescription: () => seoDescription,
   ogImage: () => post.image,
   ogImageUrl: () => post.image,
   ogType: () => "article",
   ogUrl: () => seoUrl,
-  twitterSite: () => "@AstarNetwork",
+  twitterSite: () => `@${t("meta.twitter")}`,
   twitterCard: () => "summary_large_image",
   twitterTitle: () => seoTitle,
   twitterDescription: () => seoDescription,
@@ -219,7 +224,7 @@ definePageMeta({
 }
 
 .entry-content {
-  @apply prose prose-invert lg:prose-xl prose-a:text-space-cyan hover:prose-a:text-space-cyan-lighter prose-headings:text-white bg-space-gray-dark tracking-wider prose-headings:font-bold prose-blockquote:font-normal prose-blockquote:py-3 prose-blockquote:pl-7 prose-blockquote:pr-5 prose-blockquote:bg-white/5 prose-strong:font-medium;
+  @apply prose prose-invert lg:prose-xl mx-auto prose-a:text-space-cyan hover:prose-a:text-space-cyan-lighter prose-headings:text-white bg-space-gray-dark tracking-wider prose-headings:font-bold prose-blockquote:font-normal prose-blockquote:py-3 prose-blockquote:pl-7 prose-blockquote:pr-5 prose-blockquote:bg-white/5 prose-strong:font-medium;
 }
 .entry-content p code {
   font-size: 0.9em;

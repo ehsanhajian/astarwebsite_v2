@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
     <h2 class="title text-center mb-12 sm:mb-16">
-      <span>Featured Videos</span>
+      <span>{{ $t("community.video.title") }}</span>
     </h2>
 
     <div class="mb-12 sm:mb-16">
@@ -26,7 +26,7 @@
           <span
             class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
           >
-            Watch video
+            {{ $t("community.video.watch") }}
             <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
           </span>
         </div>
@@ -65,7 +65,7 @@
               <span
                 class="text-space-cyan group-hover:text-space-cyan-lighter group-hover:underline flex items-center"
               >
-                Watch video
+                {{ $t("community.video.watch") }}
                 <ArrowTopRightOnSquareIcon class="w-5 h-5 stroke-2 ml-1" />
               </span>
             </div>

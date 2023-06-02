@@ -5,27 +5,25 @@
         <img
           class="landscape:hidden mt-24 max-w-[640px] mx-auto w-full"
           src="/images/japan/hero-portrait.svg"
-          alt="Astar Japan Lab"
+          :alt="$t('japan.title')"
           width="1050"
           height="1050"
           data-not-lazy
         />
         <div class="px-4 sm:px-6">
           <h1 class="max-w-4xl mx-auto mb-6">
-            <span class="sr-only">Astar Japan Lab</span>
+            <span class="sr-only">{{ $t("japan.title") }}</span>
             <img
               class="w-full mx-auto"
               src="/images/japan/title.svg"
-              alt=""
+              :alt="$t('japan.title')"
               width="912"
               height="114"
               data-not-lazy
             />
           </h1>
           <p class="sm:text-lg max-w-3xl mx-auto">
-            Astar Japan Lab fuels the growth of Japanese services and businesses
-            by conducting research and development, gathering knowledge, and
-            collaborating with exciting and established companies.
+            {{ $t("japan.description") }}
           </p>
         </div>
       </div>

@@ -46,10 +46,12 @@
 import ScrollParallax from "vue3-parallax/src/components/ScrollParallax.vue";
 
 const route = useRoute();
+const { t } = useI18n();
 import { meta } from "@/content/meta";
-const seoTitle = `Developers | ${meta.siteName} - ${meta.tagline}`;
-const seoDescription =
-  "Build Ethereum and native dApps on Astar and be the part of multichain innovation.";
+const seoTitle = `${t("developers.title")} | ${meta.siteName} - ${t(
+  "meta.tagline"
+)}`;
+const seoDescription = t("developers.description");
 const seoUrl = `${meta.url}${route.fullPath}`;
 const seoImage = `${meta.image}developers.png`;
 

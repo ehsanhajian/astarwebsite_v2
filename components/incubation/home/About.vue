@@ -6,10 +6,10 @@
     <h2
       class="mt-2 mb-4 text-2xl sm:text-3xl font-medium text-black leading-tight sm:leading-snug"
     >
-      {{ $t("program.about.heading") }}
+      {{ $t("incubation.program.about.heading") }}
     </h2>
     <p class="text-lg sm:leading-loose">
-      {{ $t("program.about.description") }}
+      {{ $t("incubation.program.about.description") }}
     </p>
   </section>
 </template>
