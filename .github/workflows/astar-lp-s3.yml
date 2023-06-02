@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
-      - run: ls .output/public/index.mjs
+      - run: ls .output/server/index.mjs
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -20,4 +20,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Deploy app build to S3 bucket
-        run: aws s3 sync .output/public/  s3://astarwebtest --content-type "application/javascript" --delete
+        run: aws s3 sync .output/server/  s3://astarwebtest --content-type "application/javascript" --delete
